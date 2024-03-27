@@ -1,7 +1,7 @@
 ## Preamble 
 
 import requests     
-from key import PRT_KEY 
+from Pittsburgh.key import PRT_KEY 
 from datetime import datetime
 import pprint as PP
 pp = PP.PrettyPrinter(indent=2)
