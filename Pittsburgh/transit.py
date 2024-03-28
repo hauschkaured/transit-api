@@ -29,7 +29,6 @@ vehicle_params = {
 
 def timeFormat(x):
     string = x[0:4] + '-' + x[4:6] + '-' + x[6:8] + ' AT' + x[8:]
-    print("time02")
     return string
 
 def timeCall():
@@ -37,21 +36,18 @@ def timeCall():
     timedata = time.json()
     datatime = timedata["bustime-response"]["tm"]
     currentTime = timeFormat(datatime)
-    print("time01")
     return currentTime
 
 def busCall():
     buses = requests.get(API_URL + "getvehicles", params=vehicle_params)
     bustime = buses.json()
     data = bustime["bustime-response"]["vehicle"]
-    print("bus01")
     return data
 
 def routeCall():
     predictions = requests.get(API_URL + "getpredictions", params=prediction_params)
     bustime = predictions.json()
     data = bustime["bustime-response"]["prd"]
-    print("route01")
     return data
 
 def oneStop():
