@@ -98,7 +98,7 @@ def oneBus():
     if data == 0:
         print("THIS BUS IS NOT RUNNING RIGHT NOW.")
     else:
-        print(f"ROUTE {data["rt"]} {data["vid"]} TO {data["des"]}")
+        print(f"ROUTE {data[0]["rt"]} {data[0]["vid"]} TO {data[0]["des"]}")
 
 def multiBus():
     time = timeCall()
