@@ -8,3 +8,7 @@ stops are entered, then result includes list of buses with the stop at which the
 arrive.
 - Moved files to Pittsburgh directory.
 - Changed file name from predictions.py to transit.py.
+
+v0.2: (Mar 29, 2024)
+- Now have route tracking done (loosely). Enter route followed by list of route(s)
+to obtain all buses on a given route. 
