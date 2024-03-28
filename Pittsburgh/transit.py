@@ -125,14 +125,14 @@ elif x == "stop":
     else:
         multiStops()
 elif x == "route":
-    y = input()
+    y = input("Enter the route #(s) here: ")
     vehicle_params['rt'] = f'{y}'
     if y.count(',') == 0:
         oneRoute()
     else:
         multiRoute()
 elif x == "foamer":
-    y = input()
+    y = input("Enter the bus unit #(s) here: ")
     vehicle_params['vid'] = f'{y}'
     if y.count(',') == 0:
         oneBus()
