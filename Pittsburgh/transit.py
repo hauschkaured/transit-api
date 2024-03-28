@@ -41,8 +41,10 @@ def timeCall():
 def busCall():
     buses = requests.get(API_URL + "getvehicles", params=vehicle_params)
     bustime = buses.json()
-    data = bustime["bustime-response"]["vehicle"]
-    return data
+    if "vehicle" in bustime["bustime-response"]:
+        data = bustime["bustime-response"]["vehicle"]
+        return data
+    return 0
 
 def routeCall():
     predictions = requests.get(API_URL + "getpredictions", params=prediction_params)
@@ -88,6 +90,28 @@ def multiRoute():
     for i in range(len(data)):
         print(f"ROUTE {data[i]["rt"]} {data[i]["vid"]} TO {data[i]["des"]}")
 
+def oneBus():
+    time = timeCall()
+    data = busCall()
+    print(f"IT'S {time}")
+    print(f"YOUR SELECTED BUS IS {vehicle_params['vid']}")
+    if data == 0:
+        print("THIS BUS IS NOT RUNNING RIGHT NOW.")
+    else:
+        print(f"ROUTE {data["rt"]} {data["vid"]} TO {data["des"]}")
+
+def multiBus():
+    time = timeCall()
+    data = busCall()
+    print(f"IT'S {time}")
+    print(f"YOUR SELECTED BUSES ARE {vehicle_params['vid']}")
+    if data == 0:
+        print("NONE OF THESE BUSES ARE RUNNING RIGHT NOW.")
+    else:
+        print("THE FOLLOWING BUSES ARE RUNNING")
+        for i in range(len(data)):
+            print(f"ROUTE {data[i]["rt"]} {data[i]["vid"]} TO {data[i]["des"]}")
+
 x = input('Enter your desired operation: ')
 
 if x == '':
@@ -107,6 +131,14 @@ elif x == "route":
         oneRoute()
     else:
         multiRoute()
+elif x == "foamer":
+    y = input()
+    vehicle_params['vid'] = f'{y}'
+    if y.count(',') == 0:
+        oneBus()
+    else:
+        multiBus()
+
 
 
 
