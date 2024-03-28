@@ -1,7 +1,7 @@
 ## Preamble 
 
 import requests     
-from Pittsburgh.key import PRT_KEY 
+from key import PRT_KEY 
 from datetime import datetime
 import pprint as PP
 pp = PP.PrettyPrinter(indent=2)
@@ -23,15 +23,41 @@ time_params = {
     'unixTime': 0
 }
 
-def oneStop():
+vehicle_params = {
+    **BASE_PARAMS
+}
+
+def timeFormat(x):
+    string = x[0:4] + '-' + x[4:6] + '-' + x[6:8] + ' AT' + x[8:]
+    print("time02")
+    return string
+
+def timeCall():
     time = requests.get(API_URL + "gettime", params=time_params)
-    predictions = requests.get(API_URL + "getpredictions", params=prediction_params)
-    bustime = predictions.json()
-    data = bustime["bustime-response"]["prd"]
     timedata = time.json()
     datatime = timedata["bustime-response"]["tm"]
     currentTime = timeFormat(datatime)
-    print(f"IT'S {currentTime}")
+    print("time01")
+    return currentTime
+
+def busCall():
+    buses = requests.get(API_URL + "getvehicles", params=vehicle_params)
+    bustime = buses.json()
+    data = bustime["bustime-response"]["vehicle"]
+    print("bus01")
+    return data
+
+def routeCall():
+    predictions = requests.get(API_URL + "getpredictions", params=prediction_params)
+    bustime = predictions.json()
+    data = bustime["bustime-response"]["prd"]
+    print("route01")
+    return data
+
+def oneStop():
+    time = timeCall()
+    data = routeCall()
+    print(f"IT'S {time}")
     print(f"YOUR STOP ID'S #{prediction_params['stpid']}")
     for i in range(len(data)):
         if data[i]["prdctdn"] == "DUE":
@@ -40,14 +66,9 @@ def oneStop():
             print(f"{data[i]["rt"]} BUS {data[i]["vid"]} ARRIVES IN {data[i]["prdctdn"]} MINUTES")
 
 def multiStops():
-    time = requests.get(API_URL + "gettime", params=time_params)
-    predictions = requests.get(API_URL + "getpredictions", params=prediction_params)
-    bustime = predictions.json()
-    data = bustime["bustime-response"]["prd"]
-    timedata = time.json()
-    datatime = timedata["bustime-response"]["tm"]
-    currentTime = timeFormat(datatime)
-    print(f"IT'S {currentTime}")
+    time = timeCall()
+    data = routeCall()
+    print(f"IT'S {time}")
     print(f"YOUR STOP IDS ARE #{prediction_params['stpid']}")
     for i in range(len(data)):
         if data[i]["prdctdn"] == "DUE":
@@ -55,15 +76,27 @@ def multiStops():
         else:
             print(f"(#{data[i]["stpid"]}) BUS {data[i]["vid"]} ARRIVES IN {data[i]["prdctdn"]} MINUTES")
 
-def timeFormat(x):
-    string = x[0:4] + '-' + x[4:6] + '-' + x[6:8] + ' AT' + x[8:]
-    print(string)
-    return string
+def oneRoute():
+    time = timeCall()
+    data = busCall()
+    print(f"IT'S {time}")
+    print(f"YOUR SELECTED ROUTE IS {vehicle_params['rt']}")
+    for i in range(len(data)):
+        print(f"{data[i]["vid"]} TO {data[i]["des"]}")
+
+def multiRoute():
+    time = timeCall()
+    data = busCall()
+    print(f"IT'S {time}")
+    print(f"YOUR SELECTED ROUTES ARE {vehicle_params['rt']}")
+    for i in range(len(data)):
+        print(f"ROUTE {data[i]["rt"]} {data[i]["vid"]} TO {data[i]["des"]}")
 
 x = input('Enter your desired operation: ')
 
 if x == '':
     prediction_params['stpid'] = '18179'  
+    oneStop()
 elif x == "stop":
     y = input("Enter the stop #(s) here: ")
     prediction_params['stpid'] = f'{y}'
@@ -73,7 +106,11 @@ elif x == "stop":
         multiStops()
 elif x == "route":
     y = input()
-    prediction_params['rt'] = f'{y}'
+    vehicle_params['rt'] = f'{y}'
+    if y.count(',') == 0:
+        oneRoute()
+    else:
+        multiRoute()
 
 
 
