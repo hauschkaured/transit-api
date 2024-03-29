@@ -4,6 +4,8 @@ import requests
 from key import PRT_KEY 
 from datetime import datetime
 import pprint as PP
+import urllib 
+
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
@@ -132,21 +134,16 @@ elif x == "route":
     else:
         multiRoute()
 elif x == "foamer":
-    y = input("Enter the bus unit #(s) here: ")
-    vehicle_params['vid'] = f'{y}'
-    if y.count(',') == 0:
-        oneBus()
-    else:
-        multiBus()
-
-
-
-
-
-
-
-
-
+    a = input("series or model?: ")
+    if a == "series":
+        pass
+    elif a == "model":
+        y = input("Enter the bus unit #(s) here: ")
+        vehicle_params['vid'] = f'{y}'
+        if y.count(',') == 0:
+            oneBus()
+        else:
+            multiBus()
 
 # getvehicles
 vehicle_params = {
@@ -219,9 +216,6 @@ detour_params = {
 # locales = requests.get(API_URL + "getlocalelist", params=locale_params)
 # rtpidatafeeds = requests.get(API_URL + "getrtpidatafeeds", params=BASE_PARAMS)
 # detours = requests.get(API_URL + "getdetours", params=detour_params))
-
-
-
 
 # busNumberList = []
 # for i in range(len(data)):
