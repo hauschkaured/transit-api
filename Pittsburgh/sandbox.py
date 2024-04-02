@@ -11,18 +11,22 @@ BASE_PARAMS = {
     'format': 'json',
 }
 
-x = input("What query did you want to analyze?: ")
-
 queries = {"gettime", "getvehicles", "getroutes", "getdirections", "getstops",
             "getpatterns", "getpredictions", "getservicebulletins", "getlocales",
             "getrtpidatafeeds", "getdetours", "getagencies"}
+
 print(queries)
+x = input("What query did you want to analyze?: ")
+
+getvehicles_params = {
+    **BASE_PARAMS,
+    "rt": "61C"
+}
 
 if x in queries:
-    z = requests.get(f"{API_URL} + {x}, params=BASE_PARAMS")
-    object = z.json()
-
-pprint(object)
+    z = requests.get(API_URL + "getvehicles", params=getvehicles_params)
+    a = z.json()
+pprint(a)
 
 
 
