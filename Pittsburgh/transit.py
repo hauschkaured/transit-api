@@ -4,10 +4,12 @@ import requests
 from key import PRT_KEY 
 from datetime import datetime
 import pprint as PP
-import urllib 
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
+
+response = requests.get("https://truetime.portauthority.org/gtfsrt-bus/vehicles?debug")
+data = response.text
 
 API_URL = "https://truetime.portauthority.org/bustime/api/v3/"
 BASE_PARAMS = {
