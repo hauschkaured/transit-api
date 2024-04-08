@@ -58,8 +58,8 @@ def routeCall():
 def oneStop():
     time = timeCall()
     data = routeCall()
-    print(f"IT'S {time}")
-    print(f"YOUR STOP ID'S #{prediction_params['stpid']}")
+    print(f"It's {time}")
+    print(f"Your stop ID is #{prediction_params['stpid']}")
     for i in range(len(data)):
         if data[i]["prdctdn"] == "DUE":
             print(f"{data[i]["rt"]} bus {data[i]["vid"]} is due.")
@@ -151,7 +151,6 @@ elif x == "foamer":
 else:
     print("Sorry, this selection is not valid.")
     print("Please try running the program again.")
-
 
 vehicle_params = {
     **BASE_PARAMS,
