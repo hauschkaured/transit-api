@@ -1,9 +1,8 @@
-## Preamble 
-
-import requests     
-from key import PRT_KEY 
+import requests # API requests made with this.
+from key import PRT_KEY # Our API key is imported from the file key.py
+import pprint as PP # Printing JSON with this. 
 from datetime import datetime
-import pprint as PP
+
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
@@ -32,7 +31,7 @@ vehicle_params = {
 }
 
 def timeFormat(x):
-    string = x[0:4] + '-' + x[4:6] + '-' + x[6:8] + ' AT' + x[8:]
+    string = x[0:4] + '-' + x[4:6] + '-' + x[6:8] + ' at' + x[8:]
     return string
 
 def timeCall():
@@ -63,60 +62,63 @@ def oneStop():
     print(f"YOUR STOP ID'S #{prediction_params['stpid']}")
     for i in range(len(data)):
         if data[i]["prdctdn"] == "DUE":
-            print(f"{data[i]["rt"]} BUS {data[i]["vid"]} IS DUE")
+            print(f"{data[i]["rt"]} bus {data[i]["vid"]} is due.")
         else:
-            print(f"{data[i]["rt"]} BUS {data[i]["vid"]} ARRIVES IN {data[i]["prdctdn"]} MINUTES")
+            print(f"{data[i]["rt"]} bus {data[i]["vid"]} arrives in {data[i]["prdctdn"]} minutes.")
 
 def multiStops():
     time = timeCall()
     data = routeCall()
-    print(f"IT'S {time}")
-    print(f"YOUR STOP IDS ARE #{prediction_params['stpid']}")
+    print(f"It is {time}")
+    print(f"Your stop IDs are #{prediction_params['stpid']}")
     for i in range(len(data)):
         if data[i]["prdctdn"] == "DUE":
             print(f"(#{data[i]["stpid"]}) {data[i]["rt"]} {data[i]["vid"]} IS DUE")
         else:
-            print(f"(#{data[i]["stpid"]}) BUS {data[i]["vid"]} ARRIVES IN {data[i]["prdctdn"]} MINUTES")
+            print(f"(#{data[i]["stpid"]}) bus {data[i]["vid"]} arrives in {data[i]["prdctdn"]} minutes")
 
 def oneRoute():
     time = timeCall()
     data = busCall()
-    print(f"IT'S {time}")
-    print(f"YOUR SELECTED ROUTE IS {vehicle_params['rt']}")
+    print(f"It's {time}")
+    print(f"Your selected route is {vehicle_params['rt']}")
     for i in range(len(data)):
-        print(f"{data[i]["vid"]} TO {data[i]["des"]}")
+        print(f"{data[i]["vid"]} to {data[i]["des"]}")
 
 def multiRoute():
     time = timeCall()
     data = busCall()
-    print(f"IT'S {time}")
-    print(f"YOUR SELECTED ROUTES ARE {vehicle_params['rt']}")
+    print(f"It's {time}")
+    print(f"Your selected routes are {vehicle_params['rt']}")
     for i in range(len(data)):
-        print(f"ROUTE {data[i]["rt"]} {data[i]["vid"]} TO {data[i]["des"]}")
+        print(f"Route {data[i]["rt"]} {data[i]["vid"]} to {data[i]["des"]}")
 
 def oneBus():
     time = timeCall()
     data = busCall()
-    print(f"IT'S {time}")
-    print(f"YOUR SELECTED BUS IS {vehicle_params['vid']}")
+    print(f"It's {time}")
+    print(f"Your selected bus is {vehicle_params['vid']}")
     if data == 0:
-        print("THIS BUS IS NOT RUNNING RIGHT NOW.")
+        print("This bus is not running right now.")
     else:
-        print(f"ROUTE {data[0]["rt"]} {data[0]["vid"]} TO {data[0]["des"]}")
+        print(f"Route {data[0]["rt"]} {data[0]["vid"]} to {data[0]["des"]}")
 
 def multiBus():
     time = timeCall()
     data = busCall()
-    print(f"IT'S {time}")
-    print(f"YOUR SELECTED BUSES ARE {vehicle_params['vid']}")
+    print(f"It's {time}")
+    print(f"Your selected buses are {vehicle_params['vid']}")
     if data == 0:
-        print("NONE OF THESE BUSES ARE RUNNING RIGHT NOW.")
+        print("None of these buses are running right now.")
     else:
-        print("THE FOLLOWING BUSES ARE RUNNING")
+        print("The following buses are running:")
         for i in range(len(data)):
-            print(f"ROUTE {data[i]["rt"]} {data[i]["vid"]} TO {data[i]["des"]}")
+            print(f"Route {data[i]["rt"]} {data[i]["vid"]} to {data[i]["des"]}")
 
-x = input('Enter your desired operation: ')
+print("Welcome to TransitFoamer!")
+print("This is version 0.4.")
+print("There are three modes: stop, route, and foamer.")
+x = input("Input your selection: ")
 
 if x == '':
     prediction_params['stpid'] = '18179'  
@@ -136,7 +138,7 @@ elif x == "route":
     else:
         multiRoute()
 elif x == "foamer":
-    a = input("series or model?: ")
+    a = input("")
     if a == "series":
         pass
     elif a == "model":
@@ -146,8 +148,11 @@ elif x == "foamer":
             oneBus()
         else:
             multiBus()
+else:
+    print("Sorry, this selection is not valid.")
+    print("Please try running the program again.")
 
-# getvehicles
+
 vehicle_params = {
     **BASE_PARAMS,
     # 'vid':'7001,7002,7101,7102,7103,7104,7105,7106,3501', # COMMNENT OPTION
@@ -230,13 +235,3 @@ detour_params = {
 #         **BASE_PARAMS,
 #         'vid':f'{i}'
 #     }
-#     vehicle = requests.get(API_URL + "getvehicles", params=vehicle_params)
-#     print((vehicle.json()))
-#     print(vehicle.json()["bustime-response"])
-#     thing = vehicle.json()["bustime-response"]
-#     print(thing['vehicle'])
-#     thing2 = thing['vehicle']
-#     pprint(thing2)
-
-# for i in range(len(data)):
-#     print(f"{data[i]["rtdir"]} {data[i]["rt"]} BUS #{data[i]["vid"]} TO {data[i]["des"]} ARRIVES IN {data[i]["prdctdn"]} MINUTES")
