@@ -8,7 +8,7 @@ import pprint as PP
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
-response = requests.get("https://truetime.portauthority.org/gtfsrt-bus/vehicles?debug")
+response = requests.get("https://truetime.portauthority.org/gtfsrt-bus/vehicles")
 data = response.text
 
 API_URL = "https://truetime.portauthority.org/bustime/api/v3/"
