@@ -2,6 +2,11 @@ import requests # API requests made with this.
 from key import PRT_KEY # Our API key is imported from the file key.py
 import pprint as PP # Printing JSON with this. 
 from datetime import datetime
+import protobuf-to-dict
+my_message = MyMessage()
+ # pb_my_message is a protobuf string
+my_message.ParseFromString(pb_my_message)
+
 
 
 pp = PP.PrettyPrinter(indent=2)
@@ -62,9 +67,9 @@ def oneStop():
     print(f"Your stop ID is #{prediction_params['stpid']}")
     for i in range(len(data)):
         if data[i]["prdctdn"] == "DUE":
-            print(f"{data[i]["rt"]} bus {data[i]["vid"]} is due.")
+            print(f"{data[i]['rt']} bus {data[i]['vid']} is due.")
         else:
-            print(f"{data[i]["rt"]} bus {data[i]["vid"]} arrives in {data[i]["prdctdn"]} minutes.")
+            print(f"{data[i]['rt']} bus {data[i]['vid']} arrives in {data[i]['prdctdn']} minutes.")
 
 def multiStops():
     time = timeCall()
@@ -73,9 +78,9 @@ def multiStops():
     print(f"Your stop IDs are #{prediction_params['stpid']}")
     for i in range(len(data)):
         if data[i]["prdctdn"] == "DUE":
-            print(f"(#{data[i]["stpid"]}) {data[i]["rt"]} {data[i]["vid"]} IS DUE")
+            print(f"(#{data[i]['stpid']}) {data[i]['rt']} {data[i]['vid']} is due")
         else:
-            print(f"(#{data[i]["stpid"]}) bus {data[i]["vid"]} arrives in {data[i]["prdctdn"]} minutes")
+            print(f"(#{data[i]['stpid']}) bus {data[i]['vid']} arrives in {data[i]['prdctdn']} minutesb")
 
 def oneRoute():
     time = timeCall()
@@ -83,7 +88,7 @@ def oneRoute():
     print(f"It's {time}")
     print(f"Your selected route is {vehicle_params['rt']}")
     for i in range(len(data)):
-        print(f"{data[i]["vid"]} to {data[i]["des"]}")
+        print(f"{data[i]['vid']} to {data[i]['des']}")
 
 def multiRoute():
     time = timeCall()
@@ -91,7 +96,7 @@ def multiRoute():
     print(f"It's {time}")
     print(f"Your selected routes are {vehicle_params['rt']}")
     for i in range(len(data)):
-        print(f"Route {data[i]["rt"]} {data[i]["vid"]} to {data[i]["des"]}")
+        print(f"Route {data[i]['rt']} {data[i]['vid']} to {data[i]['des']}")
 
 def oneBus():
     time = timeCall()
@@ -101,7 +106,7 @@ def oneBus():
     if data == 0:
         print("This bus is not running right now.")
     else:
-        print(f"Route {data[0]["rt"]} {data[0]["vid"]} to {data[0]["des"]}")
+        print(f"Route {data[0]['rt']} {data[0]['vid']} to {data[0]['des']}")
 
 def multiBus():
     time = timeCall()
@@ -113,7 +118,7 @@ def multiBus():
     else:
         print("The following buses are running:")
         for i in range(len(data)):
-            print(f"Route {data[i]["rt"]} {data[i]["vid"]} to {data[i]["des"]}")
+            print(f"Route {data[i]['rt']} {data[i]['vid']} to {data[i]['des']}")
 
 print("Welcome to TransitFoamer!")
 print("This is version 0.4.")
@@ -138,7 +143,7 @@ elif x == "route":
     else:
         multiRoute()
 elif x == "foamer":
-    a = input("")
+    a = input('Series or model? Enter your selection: ')
     if a == "series":
         pass
     elif a == "model":
