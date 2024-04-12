@@ -2,33 +2,25 @@ import requests # API requests made with this.
 from key import PRT_KEY # Our API key is imported from the file key.py
 import pprint as PP # Printing JSON with this. 
 from datetime import datetime
-import protobuf-to-dict
-my_message = MyMessage()
- # pb_my_message is a protobuf string
-my_message.ParseFromString(pb_my_message)
-
-
+from google.protobuf.json_format import MessageToJson
+import json 
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
-response = requests.get("https://truetime.portauthority.org/gtfsrt-bus/vehicles")
-data = response.text
+# buses = requests.get("https://truetime.portauthority.org/gtfsrt-bus/vehicles?debug")
+# busdata = buses.text
+# print(type(busdata))
+
+# busdatajson = json.loads(busdata)
+# bustrip = requests.get("https://truetime.portauthority.org/gtfsrt-bus/trips?debug")
+# bustripdata = bustrip.text
 
 API_URL = "https://truetime.portauthority.org/bustime/api/v3/"
 BASE_PARAMS = {
     'key': PRT_KEY, 
     'format': 'json',
     'rtpidatafeed': 'Port Authority Bus',
-}
-
-prediction_params = {
-    **BASE_PARAMS
-    }  
-
-time_params = {
-    **BASE_PARAMS,
-    'unixTime': 0
 }
 
 vehicle_params = {
@@ -156,13 +148,6 @@ elif x == "foamer":
 else:
     print("Sorry, this selection is not valid.")
     print("Please try running the program again.")
-
-vehicle_params = {
-    **BASE_PARAMS,
-    # 'vid':'7001,7002,7101,7102,7103,7104,7105,7106,3501', # COMMNENT OPTION
-    # 'rt':'28X',
-    # 'tmres':'s' # OPTIONAL
-}
 
 # getdirections
 direction_params = {
