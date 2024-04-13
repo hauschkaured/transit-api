@@ -23,9 +23,44 @@ BASE_PARAMS = {
     'rtpidatafeed': 'Port Authority Bus',
 }
 
-vehicle_params = {
+prediction_params = {
     **BASE_PARAMS
+    }  
+
+time_params = {
+    **BASE_PARAMS,
+    'unixTime': 0
 }
+
+vehicle_params = {
+    **BASE_PARAMS,
+    # 'vid':'7001,7002,7101,7102,7103,7104,7105,7106,3501', # COMMNENT OPTION
+    # 'rt':'28X',
+    # 'tmres':'s' # OPTIONAL
+}
+
+def seriesPicker(x):    
+    buses = {
+        '1700':'2015 Gillig Low Floor 35 Foot',
+        '3200':'2011 New Flyer D60LFR',
+        '3300':'2013 New Flyer D60LFR',
+        '3400':'2017 New Flyer XD60',
+        '3500':'2024 New Flyer XD60',
+        '5800':'2011 Gillig Low Floor',
+        '5900':'2012 Gillig Low Floor',
+        '6000':'2014 Gillig Low Floor',
+        '6100':'2015 Gillig Low Floor',
+        '6200':'2016 Gillig Low Floor',
+        '6300':'2017 Gillig Low Floor',
+        '6400':'2018 Gillig Low Floor',
+        '6500':'2019 Gillig Low Floor',
+        '6600':'2020 Gillig Low Floor',
+        '6700':'2021 Gillig Low Floor',
+        '7000':'2020 New Flyer XE40',
+        '7100':'2021 New Flyer XE40'
+    }
+    if x in buses:
+        pass
 
 def timeFormat(x):
     string = x[0:4] + '-' + x[4:6] + '-' + x[6:8] + ' at' + x[8:]
@@ -113,8 +148,11 @@ def multiBus():
             print(f"Route {data[i]['rt']} {data[i]['vid']} to {data[i]['des']}")
 
 print("Welcome to TransitFoamer!")
+
 print("This is version 0.4.")
+
 print("There are three modes: stop, route, and foamer.")
+
 x = input("Input your selection: ")
 
 if x == '':
@@ -137,7 +175,12 @@ elif x == "route":
 elif x == "foamer":
     a = input('Series or model? Enter your selection: ')
     if a == "series":
-        pass
+        print("What series do you want to track?")
+        print("3200, 3300, 3400, 3500, 5800, 5900, 6000, 6100, 6200")
+        print("6300, 6400, 6500, 6600, 6700, 7000, 7100")
+        b = input('What series would you like? Enter your selection: ')
+        seriesPicker(b)
+
     elif a == "model":
         y = input("Enter the bus unit #(s) here: ")
         vehicle_params['vid'] = f'{y}'

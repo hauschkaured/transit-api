@@ -24,7 +24,7 @@ getvehicles_params = {
 }
 
 if x in queries:
-    z = requests.get(API_URL + "getvehicles", params=getvehicles_params)
+    z = requests.get(API_URL + f"get{x}", params=getvehicles_params)
     a = z.json()
 pprint(a)
 
