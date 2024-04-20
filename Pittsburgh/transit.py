@@ -8,7 +8,7 @@ import json
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
-# buses = requests.get("https://truetime.portauthority.org/gtfsrt-bus/vehicles?debug")
+buses = requests.get("https://truetime.portauthority.org/gtfsrt-bus/vehicles")
 # busdata = buses.text
 # print(type(busdata))
 
