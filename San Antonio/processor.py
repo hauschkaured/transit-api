@@ -1,14 +1,12 @@
 import gtfsrt_pb2
 import requests
-import json
 from google.protobuf import json_format
 import pprint as PP
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
-
-rt_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/vehicles"  # GTFS-RT Endpoint
+rt_endpoint: str = "http://gtfs.viainfo.net/vehicle/vehiclepositions.pb"  # GTFS-RT Endpoint
 output_path: str = "./gtfs_rt.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
 
 def rest_status_color_helper(code: int) -> str:
@@ -29,7 +27,7 @@ def write_to_file(path: str, content: str) -> None:
     with open(path, 'w') as f:
         f.write(content)
 
-def main() -> None:
+def main() -> dict:
     # REST GET request to get protobuf data from endpoint
     response: requests.Response = requests.get(rt_endpoint)
     bytestream, rest_status = response.content, response.status_code  # NOTE: always decode protobuf response as byte stream
@@ -50,15 +48,17 @@ def main() -> None:
     fm_str = str(feedmsg)
     data = json_format.MessageToDict(feedmsg)
 
-    vid_list = []
 
-    for vdata in data["entity"]:
-        vid = vdata["vehicle"]["vehicle"]["id"]
-        vid_list.append(vid)
+    id_list = []
 
-    vid_list.sort()
-    print(vid_list)
-   
+    for entry in data["entity"]:
+        print(f"entry: {entry}")
+        vid = entry["id"]
+        print(f"id {vid}")
+        id_list.append(vid)
+
+    id_list.sort()
+    print(id_list)
 
 
     # Write output to output_path and additional pretty prints :3 
@@ -69,3 +69,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
