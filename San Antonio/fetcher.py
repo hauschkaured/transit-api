@@ -2,7 +2,7 @@ import gtfsrt_pb2
 import requests
 from google.protobuf import json_format
 import pprint as PP
-from processr import data_process
+from stop_names import stopNames
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
@@ -27,6 +27,93 @@ def write_to_file(path: str, content: str) -> None:
     """
     with open(path, 'w') as f:
         f.write(content)
+
+def data_process(data):
+    busRoute = {}
+    busStatus = {}
+    busStopSeq = {}
+    busLat = {}
+    busLong = {}
+    busTime = {}
+    busTripId = {}
+    busDate = {}
+    busStopId = {}
+    vid_list = []
+    checkList = ["currentStatus", "currentStopSequence", "trip", "position", "vehicle"]
+    for entry in data["entity"]:
+        vid = entry["id"]
+        vid_list.append(vid)       
+        ## Layer 2 dictionary
+        attributes = entry["vehicle"]
+        ticker = 0
+        for i in checkList:
+            if i in attributes:
+                ticker += 1
+        if ticker == 5:
+            full_process(attributes, vid, busRoute, busStatus, busStopSeq, busStopId,
+                         busLat, busLong, busTime, busTripId, busDate)
+        else:
+            partial_process(attributes)
+    vid_list.sort()
+
+def partial_process(attributes):
+    pass
+
+def full_process(attributes, vid, busRoute, busStatus, busStopSeq, busStopId, 
+                 busLat, busLong, busTime, busTripId, busDate):
+    ## Dictionaries to probe and other data
+    status = attributes["currentStatus"]
+    stopseq = attributes["currentStopSequence"]
+    position = attributes["position"]
+    stopId = attributes["stopId"]
+    time = attributes["timestamp"]
+    trip = attributes["trip"]
+    vid = attributes["vehicle"]["id"]
+
+    route = trip["routeId"]
+    date = trip["startDate"]
+    tripId = trip["tripId"]
+
+    lat = position["latitude"]
+    long = position["longitude"]
+
+    busRoute[vid] = route
+    busStatus[vid] = status
+    busStopSeq[vid] = stopseq
+    busStopId[vid] = stopId
+    busLat[vid] = lat
+    busLong[vid] = long
+    busTime[vid] = time
+    busTripId[vid] = tripId
+    busDate[vid] = date
+
+    pprint(busRoute)
+
+    busesOnRoute("93", busRoute, busStopId, busStatus)
+
+
+
+    # hdg = position["bearing"]
+    # spd = position["speed"]
+def busesOnRoute(rte, busRoute, busStopId, busStatus):
+    busList = []
+    for bus in busRoute:
+        if busRoute[bus] == rte:
+            busList.append(bus)
+            status = busStatus[bus]
+            id = busStopId[bus]
+            stop = stopName(id)
+            print(f"Bus {bus} on route {rte} is {status} {stop}")    
+
+
+
+def stopName(id):
+    return stopNames[id]
+
+
+
+
+
 
 def main() -> None:
     # REST GET request to get protobuf data from endpoint

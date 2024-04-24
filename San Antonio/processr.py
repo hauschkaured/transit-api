@@ -2,44 +2,38 @@ import pprint as PP
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
-class BusData:
-    def __init__(self, status, stopseq, stopId, time, vid, route, date, tripId, lat, long):
-        self.status = status,
-        self.stopseq = stopseq,
-        self.stopId = stopId,
-        self.time = time,
-        self.vid = vid,
-        self.route = route,
-        self.date = date,
-        self.tripId = tripId,
-        self.lat = lat,
-        self.long = long
+busRoute = {}
+busStatus = {}
+busStopSeq = {}
+busLat = {}
+busLong = {}
+busTime = {}
+busTripId = {}
+busDate = {}
 
-    def __repr__(self):
-        return f'{self.status, self.stopseq, self.stopId, self.time, self.vid}'
-    
 def data_process(data):
+    vid_list = []
     checkList = ["currentStatus", "currentStopSequence", "trip", "position", "vehicle"]
     for entry in data["entity"]:
-        vid = entry["id"]        
+        vid = entry["id"]
+        vid_list.append(vid)       
         ## Layer 2 dictionary
         attributes = entry["vehicle"]
-        
         ticker = 0
         for i in checkList:
             if i in attributes:
                 ticker += 1
         if ticker == 5:
-            full_process(attributes)
+            full_process(attributes, vid)
         else:
             partial_process(attributes)
-
+    vid_list.sort()
+    pprint(busRoute)
 
 def partial_process(attributes):
     pass
 
-def full_process(attributes):
-    pprint(attributes)
+def full_process(attributes, vid):
     ## Dictionaries to probe and other data
     status = attributes["currentStatus"]
     stopseq = attributes["currentStopSequence"]
@@ -55,9 +49,18 @@ def full_process(attributes):
 
     lat = position["latitude"]
     long = position["longitude"]
+
+    busRoute[vid] = route
+    busStatus[vid] = status
+    busStopSeq[vid] = stopseq
+    busLat[vid] = lat
+    busLong[vid] = long
+    busTime[vid] = time
+    busTripId[vid] = tripId
+    busDate[vid] = date
+
     # hdg = position["bearing"]
     # spd = position["speed"]
 
     ## Further probing of dictionaries:
 
-    vid = BusData(status, stopseq, stopId, time, vid, route, date, tripId, lat, long)
