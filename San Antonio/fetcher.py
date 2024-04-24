@@ -2,6 +2,7 @@ import gtfsrt_pb2
 import requests
 from google.protobuf import json_format
 import pprint as PP
+from processr import data_process
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
@@ -27,7 +28,7 @@ def write_to_file(path: str, content: str) -> None:
     with open(path, 'w') as f:
         f.write(content)
 
-def main() -> dict:
+def main() -> None:
     # REST GET request to get protobuf data from endpoint
     response: requests.Response = requests.get(rt_endpoint)
     bytestream, rest_status = response.content, response.status_code  # NOTE: always decode protobuf response as byte stream
@@ -47,25 +48,14 @@ def main() -> dict:
     # All protobuf classes can be converted to a debug string by using the string constructor
     fm_str = str(feedmsg)
     data = json_format.MessageToDict(feedmsg)
+    data_process(data)
 
-
-    id_list = []
-
-    for entry in data["entity"]:
-        print(f"entry: {entry}")
-        vid = entry["id"]
-        print(f"id {vid}")
-        id_list.append(vid)
-
-    id_list.sort()
-    print(id_list)
-
-
+    
     # Write output to output_path and additional pretty prints :3 
     print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status}\x1b[0m]")
     print(f"\x1b[33m    debug str has size \x1b[34m{len(fm_str) / 1000} KB\x1b[0m")
-    write_to_file(output_path, fm_str)
-    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path}\x1b[0m")
+    # write_to_file(output_path, fm_str)
+    # print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path}\x1b[0m")
 
 if __name__ == "__main__":
     main()

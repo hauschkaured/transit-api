@@ -2,12 +2,6 @@ class Vehicle:
     def __init__(self, id):
         self.id = id 
         
-    
-
-
-
-
-
 ManufacturerDate = {
 17: 2015,
 32: 2011,
