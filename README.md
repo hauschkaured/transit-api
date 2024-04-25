@@ -1,9 +1,14 @@
-# transit-api
-For doing stuff with transit APIs.
+# TransitFoamer
+For doing stuff with transit GTFS-RT data. 
+
+# Version List
 
 v0.4 (Currently WIP).
 Reworking the app to stay away from API use and migrate to agency-provided GTFS-RT 
 feeds. Current cities planned to have support: Pittsburgh, San Antonio.
+
+v0.3.2 (April 25, 2024)
+- Changed name of project from transit-api to TransitFoamer.
 
 v0.3.1 (Mar 29, 2024)
 - Added option to foam entire series of buses to app, have not implemented it yet. 

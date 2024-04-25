@@ -8,7 +8,11 @@ pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
 
-rt_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/vehicles"  # GTFS-RT Endpoint
+rt1_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/vehicles"  # GTFS-RT Endpoint
+rt2_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/trips"  # GTFS-RT Endpoint
+rt3_endpoint: str = "https://truetime.portauthority.org/gtfsrt-train/vehicles"  # GTFS-RT Endpoint
+rt4_endpoint: str = "https://truetime.portauthority.org/gtfsrt-train/trips"  # GTFS-RT Endpoint
+
 output_path: str = "./gtfs_rt.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
 
 def rest_status_color_helper(code: int) -> str:
@@ -31,11 +35,11 @@ def write_to_file(path: str, content: str) -> None:
 
 def main() -> None:
     # REST GET request to get protobuf data from endpoint
-    response: requests.Response = requests.get(rt_endpoint)
+    response: requests.Response = requests.get(rt1_endpoint)
     bytestream, rest_status = response.content, response.status_code  # NOTE: always decode protobuf response as byte stream
 
     # Debug print statements, odd escape sequences are to add colors, dwai it
-    print(f"\x1b[33mGET \x1b[34m{rt_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status)}")
+    print(f"\x1b[33mGET \x1b[34m{rt1_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status)}")
     print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream) / 1000} KB\x1b[0m")
 
     # Create an empty instance of a FeedMessage (the class that holds all GTFS-RT data)
