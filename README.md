@@ -1,6 +1,8 @@
 # TransitFoamer
 For doing stuff with transit GTFS-RT data. 
 
+Disclaimer: This project is not currently in a working state. 
+
 # Version List
 
 v0.4 (Currently WIP).

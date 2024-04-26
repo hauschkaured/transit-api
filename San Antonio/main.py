@@ -2,7 +2,7 @@ import gtfsrt_pb2
 import requests
 from google.protobuf import json_format
 import pprint as PP
-from stop_names import stopNames
+from gtfs_static_stop_names import stopNames
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
@@ -39,6 +39,10 @@ def data_process(data):
     busDate = {}
     busStopId = {}
     vid_list = []
+
+    for entry in data["entity"]:
+        pprint(entry)
+
     checkList = ["currentStatus", "currentStopSequence", "trip", "position", "vehicle"]
     for entry in data["entity"]:
         vid = entry["id"]
@@ -87,14 +91,13 @@ def full_process(attributes, vid, busRoute, busStatus, busStopSeq, busStopId,
     busTripId[vid] = tripId
     busDate[vid] = date
 
-    pprint(busRoute)
-
     busesOnRoute("93", busRoute, busStopId, busStatus)
 
 
 
     # hdg = position["bearing"]
     # spd = position["speed"]
+
 def busesOnRoute(rte, busRoute, busStopId, busStatus):
     busList = []
     for bus in busRoute:
@@ -105,15 +108,8 @@ def busesOnRoute(rte, busRoute, busStopId, busStatus):
             stop = stopName(id)
             print(f"Bus {bus} on route {rte} is {status} {stop}")    
 
-
-
 def stopName(id):
     return stopNames[id]
-
-
-
-
-
 
 def main() -> None:
     # REST GET request to get protobuf data from endpoint
@@ -137,12 +133,11 @@ def main() -> None:
     data = json_format.MessageToDict(feedmsg)
     data_process(data)
 
-    
     # Write output to output_path and additional pretty prints :3 
     print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status}\x1b[0m]")
     print(f"\x1b[33m    debug str has size \x1b[34m{len(fm_str) / 1000} KB\x1b[0m")
-    # write_to_file(output_path, fm_str)
-    # print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path}\x1b[0m")
+    write_to_file(output_path, fm_str)
+    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path}\x1b[0m")
 
 if __name__ == "__main__":
     main()

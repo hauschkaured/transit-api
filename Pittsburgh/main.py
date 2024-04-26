@@ -61,7 +61,6 @@ def main() -> None:
         vid_list.append(vid)
 
     vid_list.sort()
-    print(vid_list)
    
 
 
