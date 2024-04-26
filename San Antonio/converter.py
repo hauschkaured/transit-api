@@ -1,3 +1,6 @@
+# This file is used to convert and format the .txt GTFS static feed to python 
+# files.
+
 output_path="./stops.py"
 text = open("gtfs_static_feed/stops.txt", "r")
 import pprint as PP

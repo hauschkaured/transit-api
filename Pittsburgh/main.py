@@ -54,13 +54,23 @@ def main() -> None:
     fm_str = str(feedmsg)
     data = json_format.MessageToDict(feedmsg)
 
-    vid_list = []
+    print(type(data))
+    pprint(data)
+    bus = data["entity"]
+    for i in bus:
+        possibleKeys = ["trip", "position", "timestamp", "vehicle"]
+        possiblePos = ["bearing", "latitude", "longitude", "speed"]
 
-    for vdata in data["entity"]:
-        vid = vdata["vehicle"]["vehicle"]["id"]
-        vid_list.append(vid)
+        list = [0,0,0,0,0,0,0,0]
+        keys = i["vehicle"].keys()
+        for i in range(len(possibleKeys)):
+            if possibleKeys[i] in keys:
+                list[i] = 1
+        for k in i["vehicle"]:
+            print(k)        
+        print(list)
 
-    vid_list.sort()
+
    
 
 

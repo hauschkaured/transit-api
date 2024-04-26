@@ -3,12 +3,14 @@ import requests
 from google.protobuf import json_format
 import pprint as PP
 from gtfs_static_stop_names import stopNames
+import sys
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
 rt_endpoint: str = "http://gtfs.viainfo.net/vehicle/vehiclepositions.pb"  # GTFS-RT Endpoint
-output_path: str = "./gtfs_rt.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+
+output_path: str = "./vehiclepositions.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
 
 def rest_status_color_helper(code: int) -> str:
     """
@@ -119,6 +121,8 @@ def main() -> None:
     # Debug print statements, odd escape sequences are to add colors, dwai it
     print(f"\x1b[33mGET \x1b[34m{rt_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status)}")
     print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream) / 1000} KB\x1b[0m")
+    if rest_status == 404:
+        sys.exit()
 
     # Create an empty instance of a FeedMessage (the class that holds all GTFS-RT data)
     # We will populate this later
