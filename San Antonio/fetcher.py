@@ -3,11 +3,23 @@ import requests
 from google.protobuf import json_format
 import pprint as PP
 
-## GTFS Static Feed Definitions
+## GTFS Static Feed Datasets
 
 from routes import routes 
 from stops import stops
 from agency import agency
+from trips import trips 
+from transfers import transfers
+from gtfs_calendar import gtfscalendar 
+
+## GTFS Static Feed Classes
+
+from routes import Routes 
+from stops import Stops
+from agency import Agency
+from trips import Trips 
+from transfers import Transfer
+from gtfs_calendar import Calendar 
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
@@ -46,6 +58,7 @@ def data_process(data):
     busDate = {}
     busStopId = {}
     vid_list = []
+
 
     for entry in data["entity"]:
         pprint(entry)
@@ -101,6 +114,8 @@ def full_process(attributes, vid, busRoute, busStatus, busStopSeq, busStopId,
     busesOnRoute("17", busRoute, busStopId, busStatus, busLat, busLong)
     busesOnRoute("64", busRoute, busStopId, busStatus, busLat, busLong)
     busesOnRoute("7", busRoute, busStopId, busStatus, busLat, busLong)
+
+
 
 
 
