@@ -5,24 +5,34 @@ import pprint as PP
 
 ## GTFS Static Feed Datasets
 
-from routes import routes 
-from stops import stops
 from agency import agency
-from trips import trips 
-from transfers import transfers
+from calendar_dates import calendar_dates
+from feed import feed
 from gtfs_calendar import gtfscalendar 
+from routes import routes 
+from shapes import shapes
+from stops import stops
+from transfers import transfers
+from trips import trips 
 
 ## GTFS Static Feed Classes
 
-from routes import Routes 
-from stops import Stops
 from agency import Agency
-from trips import Trips 
-from transfers import Transfer
+from calendar_dates import Dates
+from feed import Feed 
 from gtfs_calendar import Calendar 
+from routes import Routes 
+from shapes import Shapes 
+from stops import Stops
+from transfers import Transfer
+from trips import Trips 
+
+## Configured Pretty Printing
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
+
+## Endpoints and output files
 
 rt_endpoint: str = "http://gtfs.viainfo.net/vehicle/vehiclepositions.pb"  # GTFS-RT Endpoint
 rt2_endpoint: str = "http://gtfs.viainfo.net/tripupdate/tripupdates.pb"
