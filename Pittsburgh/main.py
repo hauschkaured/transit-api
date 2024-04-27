@@ -13,7 +13,11 @@ rt2_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/trips"  # GTF
 rt3_endpoint: str = "https://truetime.portauthority.org/gtfsrt-train/vehicles"  # GTFS-RT Endpoint
 rt4_endpoint: str = "https://truetime.portauthority.org/gtfsrt-train/trips"  # GTFS-RT Endpoint
 
-output_path: str = "./gtfs_rt.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path1: str = "./gtfs_rt.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path2: str = "./gtfs_trips.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path3: str = "./gtfs_trainrt.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path4: str = "./gtfs_traintrips.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+
 
 def rest_status_color_helper(code: int) -> str:
     """
@@ -35,29 +39,62 @@ def write_to_file(path: str, content: str) -> None:
 
 def main() -> None:
     # REST GET request to get protobuf data from endpoint
-    response: requests.Response = requests.get(rt1_endpoint)
-    bytestream, rest_status = response.content, response.status_code  # NOTE: always decode protobuf response as byte stream
+    response1: requests.Response = requests.get(rt1_endpoint)
+    response2: requests.Response = requests.get(rt2_endpoint)
+    response3: requests.Response = requests.get(rt3_endpoint)
+    response4: requests.Response = requests.get(rt4_endpoint)
+
+    bytestream1, rest_status1 = response1.content, response1.status_code  # NOTE: always decode protobuf response as byte stream
+    bytestream2, rest_status2 = response2.content, response2.status_code  # NOTE: always decode protobuf response as byte stream
+    bytestream3, rest_status3 = response3.content, response3.status_code  # NOTE: always decode protobuf response as byte stream
+    bytestream4, rest_status4 = response4.content, response4.status_code  # NOTE: always decode protobuf response as byte stream
+
 
     # Debug print statements, odd escape sequences are to add colors, dwai it
-    print(f"\x1b[33mGET \x1b[34m{rt1_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status)}")
-    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream) / 1000} KB\x1b[0m")
+    print(f"\x1b[33mGET \x1b[34m{rt1_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status1)}")
+    print(f"\x1b[33mGET \x1b[34m{rt2_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status2)}")
+    print(f"\x1b[33mGET \x1b[34m{rt3_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status3)}")
+    print(f"\x1b[33mGET \x1b[34m{rt4_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status4)}")
+    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream1) / 1000} KB\x1b[0m")
+    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream2) / 1000} KB\x1b[0m")
+    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream3) / 1000} KB\x1b[0m")
+    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream4) / 1000} KB\x1b[0m")
+
 
     # Create an empty instance of a FeedMessage (the class that holds all GTFS-RT data)
     # We will populate this later
-    feedmsg = gtfsrt_pb2.FeedMessage() 
+    feedmsg1 = gtfsrt_pb2.FeedMessage() 
+    feedmsg2 = gtfsrt_pb2.FeedMessage() 
+    feedmsg3 = gtfsrt_pb2.FeedMessage() 
+    feedmsg4 = gtfsrt_pb2.FeedMessage() 
+
+
+
 
     # Use byte stream from response to Parse into object
     # NOTE: The function returns a status code. The data is populated in place
-    proto_status = feedmsg.ParseFromString(bytestream)
+    proto_status1 = feedmsg1.ParseFromString(bytestream1)
+    proto_status2 = feedmsg2.ParseFromString(bytestream2)
+    proto_status3 = feedmsg3.ParseFromString(bytestream3)
+    proto_status4 = feedmsg4.ParseFromString(bytestream4)
+
 
     # All protobuf classes can be converted to a debug string by using the string constructor
-    fm_str = str(feedmsg)
-    data = json_format.MessageToDict(feedmsg)
+    fm_str1 = str(feedmsg1)
+    fm_str2 = str(feedmsg2)
+    fm_str3 = str(feedmsg3)
+    fm_str4 = str(feedmsg4)
+
+
+
+    data = json_format.MessageToDict(feedmsg1)
 
     print(type(data))
+    vid_list = []
     pprint(data)
     bus = data["entity"]
     for i in bus:
+        
         possibleKeys = ["trip", "position", "timestamp", "vehicle"]
         possiblePos = ["bearing", "latitude", "longitude", "speed"]
 
@@ -66,19 +103,21 @@ def main() -> None:
         for i in range(len(possibleKeys)):
             if possibleKeys[i] in keys:
                 list[i] = 1
-        for k in i["vehicle"]:
-            print(k)        
-        print(list)
+
 
 
    
 
 
     # Write output to output_path and additional pretty prints :3 
-    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status}\x1b[0m]")
-    print(f"\x1b[33m    debug str has size \x1b[34m{len(fm_str) / 1000} KB\x1b[0m")
-    write_to_file(output_path, fm_str)
-    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path}\x1b[0m")
+    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")
+    print(f"\x1b[33m    debug str has size \x1b[34m{len(fm_str1) / 1000} KB\x1b[0m")
+    write_to_file(output_path1, fm_str1)
+    write_to_file(output_path2, fm_str2)
+    write_to_file(output_path3, fm_str3)
+    write_to_file(output_path4, fm_str4)
+
+    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path1}\x1b[0m")
 
 if __name__ == "__main__":
     main()

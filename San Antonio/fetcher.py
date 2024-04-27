@@ -2,15 +2,20 @@ import gtfsrt_pb2
 import requests
 from google.protobuf import json_format
 import pprint as PP
-from gtfs_static_stop_names import stopNames
-import sys
+
+## GTFS Static Feed Definitions
+
+from routes import routes 
+from stops import stops
+from agency import agency
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
 rt_endpoint: str = "http://gtfs.viainfo.net/vehicle/vehiclepositions.pb"  # GTFS-RT Endpoint
-
-output_path: str = "./vehiclepositions.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+rt2_endpoint: str = "http://gtfs.viainfo.net/tripupdate/tripupdates.pb"
+output_path1: str = "./vehiclepositions.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path2: str = "./tripupdates.out"
 
 def rest_status_color_helper(code: int) -> str:
     """
@@ -48,7 +53,6 @@ def data_process(data):
     checkList = ["currentStatus", "currentStopSequence", "trip", "position", "vehicle"]
     for entry in data["entity"]:
         vid = entry["id"]
-        vid_list.append(vid)       
         ## Layer 2 dictionary
         attributes = entry["vehicle"]
         ticker = 0
@@ -93,55 +97,80 @@ def full_process(attributes, vid, busRoute, busStatus, busStopSeq, busStopId,
     busTripId[vid] = tripId
     busDate[vid] = date
 
-    busesOnRoute("93", busRoute, busStopId, busStatus)
+    busesOnRoute("93", busRoute, busStopId, busStatus, busLat, busLong)
+    busesOnRoute("17", busRoute, busStopId, busStatus, busLat, busLong)
+    busesOnRoute("64", busRoute, busStopId, busStatus, busLat, busLong)
+    busesOnRoute("7", busRoute, busStopId, busStatus, busLat, busLong)
 
 
 
     # hdg = position["bearing"]
     # spd = position["speed"]
 
-def busesOnRoute(rte, busRoute, busStopId, busStatus):
+def busesOnRoute(rte, busRoute, busStopId, busStatus, busLat, busLong): ## FUNCTION 1
     busList = []
     for bus in busRoute:
         if busRoute[bus] == rte:
             busList.append(bus)
+            stop = busStopId[bus]
+            if stop in stops:
+                name = stops[stop] 
             status = busStatus[bus]
-            id = busStopId[bus]
-            stop = stopName(id)
-            print(f"Bus {bus} on route {rte} is {status} {stop}")    
-
-def stopName(id):
-    return stopNames[id]
+            lat = busLat[bus]
+            long = busLong[bus]
+            if status == "IN_TRANSIT_TO":
+                status = "in transit to"
+            elif status == "STOPPED_AT":
+                status = "stopped at"
+            if stop in stops:
+                print(f"\x1b[33mRoute \x1b[34m{rte} #{bus} \x1b[0m is {status} {name}")    
+            if status == "in transit to":
+                print(f"    lat {lat} long {long}")
 
 def main() -> None:
     # REST GET request to get protobuf data from endpoint
-    response: requests.Response = requests.get(rt_endpoint)
-    bytestream, rest_status = response.content, response.status_code  # NOTE: always decode protobuf response as byte stream
+    response1: requests.Response = requests.get(rt_endpoint)
+    response2: requests.Response = requests.get(rt2_endpoint)
+
+    bytestream1, rest_status1 = response1.content, response1.status_code  # NOTE: always decode protobuf response as byte stream
+    bytestream2, rest_status2 = response2.content, response2.status_code  # NOTE: always decode protobuf response as byte stream
 
     # Debug print statements, odd escape sequences are to add colors, dwai it
-    print(f"\x1b[33mGET \x1b[34m{rt_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status)}")
-    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream) / 1000} KB\x1b[0m")
-    if rest_status == 404:
-        sys.exit()
+    print(f"\x1b[33mGET \x1b[34m{rt_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status1)}")
+    print(f"\x1b[33mGET \x1b[34m{rt2_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status2)}")
+
+    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream1) / 1000} KB\x1b[0m")
+    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream1) / 1000} KB\x1b[0m")
 
     # Create an empty instance of a FeedMessage (the class that holds all GTFS-RT data)
     # We will populate this later
-    feedmsg = gtfsrt_pb2.FeedMessage() 
+    feedmsg1 = gtfsrt_pb2.FeedMessage() 
+    feedmsg2 = gtfsrt_pb2.FeedMessage() 
 
     # Use byte stream from response to Parse into object
     # NOTE: The function returns a status code. The data is populated in place
-    proto_status = feedmsg.ParseFromString(bytestream)
+    proto_status1 = feedmsg1.ParseFromString(bytestream1)
+    proto_status2 = feedmsg2.ParseFromString(bytestream2)
+
 
     # All protobuf classes can be converted to a debug string by using the string constructor
-    fm_str = str(feedmsg)
-    data = json_format.MessageToDict(feedmsg)
-    data_process(data)
+    fm_str1 = str(feedmsg1)
+    fm_str2 = str(feedmsg2)
+
+    data1 = json_format.MessageToDict(feedmsg1)
+    data2 = json_format.MessageToDict(feedmsg2)
+
+    data_process(data1) 
 
     # Write output to output_path and additional pretty prints :3 
-    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status}\x1b[0m]")
-    print(f"\x1b[33m    debug str has size \x1b[34m{len(fm_str) / 1000} KB\x1b[0m")
-    write_to_file(output_path, fm_str)
-    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path}\x1b[0m")
+    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")
+    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status2}\x1b[0m]")
+    print(f"\x1b[33m    debug str1 has size \x1b[34m{len(fm_str1) / 1000} KB\x1b[0m")
+    print(f"\x1b[33m    debug str2 has size \x1b[34m{len(fm_str2) / 1000} KB\x1b[0m")
+    write_to_file(output_path1, fm_str1)
+    write_to_file(output_path2, fm_str2)
+    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path1}\x1b[0m")
+    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path2}\x1b[0m")
 
 if __name__ == "__main__":
     main()
