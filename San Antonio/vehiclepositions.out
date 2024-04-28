@@ -1,7 +1,7 @@
 header {
   gtfs_realtime_version: "2.0"
   incrementality: FULL_DATASET
-  timestamp: 1714263549
+  timestamp: 1714263740
 }
 entity {
   id: "802"
@@ -12,10 +12,10 @@ entity {
     }
     position {
       latitude: 29.4444599
-      longitude: -98.5004349
-      speed: 0
+      longitude: -98.5004272
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -31,15 +31,14 @@ entity {
       label: "803"
     }
     position {
-      latitude: 29.4427032
-      longitude: -98.6393356
-      bearing: 216.6
-      speed: 9.31136417
+      latitude: 29.4446297
+      longitude: -98.6589584
+      speed: 0
     }
-    current_stop_sequence: 8
-    stop_id: "72197"
+    current_stop_sequence: 13
+    stop_id: "72269"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -50,11 +49,11 @@ entity {
       label: "804"
     }
     position {
-      latitude: 29.4945908
-      longitude: -98.5486145
-      speed: 0
+      latitude: 29.4945869
+      longitude: -98.5486069
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -65,11 +64,11 @@ entity {
       label: "805"
     }
     position {
-      latitude: 29.4944611
-      longitude: -98.5488281
-      speed: 0.051444
+      latitude: 29.4944668
+      longitude: -98.5488434
+      speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -84,7 +83,7 @@ entity {
       longitude: -98.5011826
       speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
@@ -95,11 +94,12 @@ entity {
       label: "809"
     }
     position {
-      latitude: 29.4103489
-      longitude: -98.4986267
-      speed: 0.051444
+      latitude: 29.4126511
+      longitude: -98.4918671
+      bearing: 32.7
+      speed: 3.90974402
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -110,12 +110,11 @@ entity {
       label: "810"
     }
     position {
-      latitude: 29.4938526
-      longitude: -98.5491257
-      bearing: 349.3
-      speed: 9.56858444
+      latitude: 29.4924164
+      longitude: -98.5490494
+      speed: 0.977436
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -141,12 +140,11 @@ entity {
       label: "813"
     }
     position {
-      latitude: 29.4683838
-      longitude: -98.5160675
-      bearing: 179.8
-      speed: 27.419651
+      latitude: 29.4443722
+      longitude: -98.5153732
+      speed: 0.051444
     }
-    timestamp: 1714263548
+    timestamp: 1714263733
   }
 }
 entity {
@@ -157,11 +155,11 @@ entity {
       label: "814"
     }
     position {
-      latitude: 29.4946613
+      latitude: 29.4946651
       longitude: -98.5485
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -172,12 +170,12 @@ entity {
       label: "816"
     }
     position {
-      latitude: 29.4845448
-      longitude: -98.53302
-      bearing: 93.7
-      speed: 26.2878838
+      latitude: 29.4444599
+      longitude: -98.5150452
+      bearing: 181.6
+      speed: 26.1335526
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -188,12 +186,12 @@ entity {
       label: "817"
     }
     position {
-      latitude: 29.4924755
-      longitude: -98.548996
-      bearing: 255.4
-      speed: 3.49819207
+      latitude: 29.4923878
+      longitude: -98.5473251
+      bearing: 166.2
+      speed: 11.1119041
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -204,12 +202,12 @@ entity {
       label: "818"
     }
     position {
-      latitude: 29.4846249
-      longitude: -98.5343475
-      bearing: 87.7
-      speed: 27.3167629
+      latitude: 29.4459553
+      longitude: -98.5148544
+      bearing: 180.5
+      speed: 23.767128
     }
-    timestamp: 1714263544
+    timestamp: 1714263733
   }
 }
 entity {
@@ -225,14 +223,14 @@ entity {
       label: "819"
     }
     position {
-      latitude: 29.4225235
-      longitude: -98.4859772
-      speed: 0.051444
+      latitude: 29.4219055
+      longitude: -98.483696
+      speed: 0.102888
     }
     current_stop_sequence: 1
     stop_id: "12109"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -243,11 +241,11 @@ entity {
       label: "700"
     }
     position {
-      latitude: 29.4442883
+      latitude: 29.4442863
       longitude: -98.5013809
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263737
   }
 }
 entity {
@@ -258,11 +256,11 @@ entity {
       label: "701"
     }
     position {
-      latitude: 29.421566
-      longitude: -98.4908
+      latitude: 29.4226131
+      longitude: -98.4903641
       speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263736
   }
 }
 entity {
@@ -273,11 +271,11 @@ entity {
       label: "702"
     }
     position {
-      latitude: 29.4433899
+      latitude: 29.4433918
       longitude: -98.503273
-      speed: 0.051444
+      speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
@@ -288,11 +286,11 @@ entity {
       label: "703"
     }
     position {
-      latitude: 29.442728
-      longitude: -98.5016556
+      latitude: 29.4427319
+      longitude: -98.5016708
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263733
   }
 }
 entity {
@@ -303,11 +301,11 @@ entity {
       label: "704"
     }
     position {
-      latitude: 29.4427452
-      longitude: -98.5016098
-      speed: 0
+      latitude: 29.4427357
+      longitude: -98.5016174
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -323,15 +321,14 @@ entity {
       label: "705"
     }
     position {
-      latitude: 29.4401207
-      longitude: -98.5032959
-      bearing: 172.4
-      speed: 14.3014317
+      latitude: 29.4295597
+      longitude: -98.4946671
+      speed: 0.051444
     }
-    current_stop_sequence: 52
-    stop_id: "56847"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    current_stop_sequence: 58
+    stop_id: "78887"
+    current_status: STOPPED_AT
+    timestamp: 1714263738
   }
 }
 entity {
@@ -347,15 +344,15 @@ entity {
       label: "706"
     }
     position {
-      latitude: 29.3574638
-      longitude: -98.4113922
-      bearing: 70.9
-      speed: 20.7833767
+      latitude: 29.383419
+      longitude: -98.4045334
+      bearing: 359.5
+      speed: 23.2012424
     }
-    current_stop_sequence: 8
-    stop_id: "37593"
+    current_stop_sequence: 12
+    stop_id: "76596"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -366,18 +363,18 @@ entity {
       label: "708"
     }
     position {
-      latitude: 29.4435959
+      latitude: 29.4435844
       longitude: -98.5033
-      speed: 0.102888
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
   id: "709"
   vehicle {
     trip {
-      trip_id: "4695007"
+      trip_id: "4694967"
       route_id: "28"
       start_date: "20240427"
     }
@@ -386,15 +383,15 @@ entity {
       label: "709"
     }
     position {
-      latitude: 29.3982162
-      longitude: -98.3928
-      bearing: 89.7
-      speed: 19.8059406
+      latitude: 29.3991566
+      longitude: -98.3862381
+      bearing: 268.2
+      speed: 7.30504799
     }
-    current_stop_sequence: 53
-    stop_id: "51383"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    current_stop_sequence: 1
+    stop_id: "43949"
+    current_status: STOPPED_AT
+    timestamp: 1714263734
   }
 }
 entity {
@@ -405,11 +402,11 @@ entity {
       label: "951"
     }
     position {
-      latitude: 29.4441738
-      longitude: -98.5031586
+      latitude: 29.4441681
+      longitude: -98.5031662
       speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -425,14 +422,15 @@ entity {
       label: "710"
     }
     position {
-      latitude: 29.3352356
-      longitude: -98.6032104
-      speed: 0
+      latitude: 29.3427773
+      longitude: -98.6103821
+      bearing: 287.9
+      speed: 14.66154
     }
-    current_stop_sequence: 1
-    stop_id: "95576"
-    current_status: STOPPED_AT
-    timestamp: 1714263548
+    current_stop_sequence: 6
+    stop_id: "73939"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
@@ -443,11 +441,11 @@ entity {
       label: "952"
     }
     position {
-      latitude: 29.4438076
+      latitude: 29.4437904
       longitude: -98.5030746
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -458,11 +456,11 @@ entity {
       label: "953"
     }
     position {
-      latitude: 29.4419765
-      longitude: -98.5007
+      latitude: 29.4419689
+      longitude: -98.5006943
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -478,14 +476,14 @@ entity {
       label: "711"
     }
     position {
-      latitude: 29.4158039
-      longitude: -98.5559235
-      speed: 1.02888
+      latitude: 29.4305744
+      longitude: -98.5540466
+      speed: 0
     }
-    current_stop_sequence: 22
-    stop_id: "19676"
+    current_stop_sequence: 30
+    stop_id: "71646"
     current_status: STOPPED_AT
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -496,11 +494,11 @@ entity {
       label: "712"
     }
     position {
-      latitude: 29.4442863
-      longitude: -98.5032
+      latitude: 29.4442921
+      longitude: -98.5031891
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -511,11 +509,11 @@ entity {
       label: "954"
     }
     position {
-      latitude: 29.4419899
-      longitude: -98.5012741
-      speed: 0
+      latitude: 29.4419842
+      longitude: -98.5012817
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -526,11 +524,11 @@ entity {
       label: "713"
     }
     position {
-      latitude: 29.4428
+      latitude: 29.4427967
       longitude: -98.5015106
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -546,14 +544,15 @@ entity {
       label: "714"
     }
     position {
-      latitude: 29.5113411
-      longitude: -98.5368423
-      speed: 0
+      latitude: 29.4988
+      longitude: -98.5512161
+      bearing: 196.2
+      speed: 24.3844566
     }
-    current_stop_sequence: 35
-    stop_id: "85799"
-    current_status: STOPPED_AT
-    timestamp: 1714263544
+    current_stop_sequence: 37
+    stop_id: "32156"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263734
   }
 }
 entity {
@@ -564,11 +563,11 @@ entity {
       label: "956"
     }
     position {
-      latitude: 29.4419556
-      longitude: -98.501152
-      speed: 0
+      latitude: 29.4419575
+      longitude: -98.5011444
+      speed: 0.051444
     }
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
@@ -584,15 +583,15 @@ entity {
       label: "715"
     }
     position {
-      latitude: 29.4056549
-      longitude: -98.5025406
-      bearing: 197.6
-      speed: 2.77797604
+      latitude: 29.3884163
+      longitude: -98.5037079
+      bearing: 176.8
+      speed: 17.285183
     }
-    current_stop_sequence: 10
-    stop_id: "46157"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    current_stop_sequence: 19
+    stop_id: "76547"
+    current_status: STOPPED_AT
+    timestamp: 1714263734
   }
 }
 entity {
@@ -603,11 +602,11 @@ entity {
       label: "957"
     }
     position {
-      latitude: 29.4419804
-      longitude: -98.5009842
-      speed: 0
+      latitude: 29.4419785
+      longitude: -98.5009689
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -623,15 +622,14 @@ entity {
       label: "716"
     }
     position {
-      latitude: 29.5460072
-      longitude: -98.4028473
-      bearing: 37
-      speed: 9.98013592
+      latitude: 29.5504208
+      longitude: -98.4072647
+      speed: 0
     }
-    current_stop_sequence: 46
-    stop_id: "17426"
-    current_status: STOPPED_AT
-    timestamp: 1714263548
+    current_stop_sequence: 49
+    stop_id: "94487"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
@@ -642,11 +640,11 @@ entity {
       label: "958"
     }
     position {
-      latitude: 29.4419899
-      longitude: -98.5009079
+      latitude: 29.4419861
+      longitude: -98.5009232
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -662,14 +660,15 @@ entity {
       label: "717"
     }
     position {
-      latitude: 29.3613663
-      longitude: -98.4928894
-      speed: 0.051444
+      latitude: 29.3732662
+      longitude: -98.4979172
+      bearing: 340.2
+      speed: 14.4043198
     }
-    current_stop_sequence: 21
-    stop_id: "49236"
-    current_status: STOPPED_AT
-    timestamp: 1714263547
+    current_stop_sequence: 28
+    stop_id: "17376"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
@@ -681,10 +680,10 @@ entity {
     }
     position {
       latitude: 29.4419956
-      longitude: -98.5010452
-      speed: 0.051444
+      longitude: -98.5010376
+      speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263734
   }
 }
 entity {
@@ -700,14 +699,15 @@ entity {
       label: "718"
     }
     position {
-      latitude: 29.4021397
-      longitude: -98.632515
-      speed: 0
+      latitude: 29.4055195
+      longitude: -98.6308746
+      bearing: 100.9
+      speed: 9.77436
     }
-    current_stop_sequence: 1
-    stop_id: "46569"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 2
+    stop_id: "69537"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -723,15 +723,14 @@ entity {
       label: "719"
     }
     position {
-      latitude: 29.5455418
-      longitude: -98.58992
-      bearing: 194.9
-      speed: 15.4332
+      latitude: 29.5428219
+      longitude: -98.5811081
+      speed: 0.051444
     }
-    current_stop_sequence: 8
-    stop_id: "21203"
+    current_stop_sequence: 10
+    stop_id: "13756"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -742,11 +741,11 @@ entity {
       label: "960"
     }
     position {
-      latitude: 29.4419441
+      latitude: 29.4419422
       longitude: -98.5011063
-      speed: 0.051444
+      speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263735
   }
 }
 entity {
@@ -757,12 +756,11 @@ entity {
       label: "961"
     }
     position {
-      latitude: 29.4412632
-      longitude: -98.5122147
-      bearing: 294.2
-      speed: 15.6389761
+      latitude: 29.4527569
+      longitude: -98.5152359
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -773,12 +771,12 @@ entity {
       label: "720"
     }
     position {
-      latitude: 29.4115715
-      longitude: -98.5077438
-      bearing: 214.6
-      speed: 20.989151
+      latitude: 29.4014912
+      longitude: -98.5368652
+      bearing: 293.9
+      speed: 22.2238083
     }
-    timestamp: 1714263548
+    timestamp: 1714263733
   }
 }
 entity {
@@ -789,11 +787,12 @@ entity {
       label: "962"
     }
     position {
-      latitude: 29.4434185
-      longitude: -98.5022659
-      speed: 0.051444
+      latitude: 29.4421501
+      longitude: -98.5015
+      bearing: 84.3
+      speed: 1.90342808
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -809,15 +808,14 @@ entity {
       label: "600"
     }
     position {
-      latitude: 29.4263134
-      longitude: -98.5038681
-      bearing: 186.7
-      speed: 4.37274
+      latitude: 29.4279537
+      longitude: -98.5243378
+      speed: 0
     }
-    current_stop_sequence: 3
-    stop_id: "84569"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    current_stop_sequence: 8
+    stop_id: "89269"
+    current_status: STOPPED_AT
+    timestamp: 1714263737
   }
 }
 entity {
@@ -833,14 +831,14 @@ entity {
       label: "721"
     }
     position {
-      latitude: 29.4618816
-      longitude: -98.4661789
-      speed: 0
+      latitude: 29.4720154
+      longitude: -98.4628525
+      speed: 1.08032393
     }
-    current_stop_sequence: 13
-    stop_id: "17266"
+    current_stop_sequence: 18
+    stop_id: "88166"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -856,44 +854,37 @@ entity {
       label: "963"
     }
     position {
-      latitude: 29.4649334
-      longitude: -98.5265732
-      speed: 0
+      latitude: 29.4593258
+      longitude: -98.5210114
+      bearing: 141.4
+      speed: 2.46931219
     }
-    current_stop_sequence: 8
-    stop_id: "10203"
-    current_status: STOPPED_AT
-    timestamp: 1714263544
+    current_stop_sequence: 9
+    stop_id: "10103"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263734
   }
 }
 entity {
   id: "601"
   vehicle {
-    trip {
-      trip_id: "4693180"
-      route_id: "615"
-      start_date: "20240427"
-    }
     vehicle {
       id: "601"
       label: "601"
     }
     position {
-      latitude: 29.4023018
-      longitude: -98.6319199
-      speed: 0.051444
+      latitude: 29.4054947
+      longitude: -98.6293716
+      speed: 0.565884
     }
-    current_stop_sequence: 40
-    stop_id: "46456"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
   id: "722"
   vehicle {
     trip {
-      trip_id: "4698202"
+      trip_id: "4698234"
       route_id: "88"
       start_date: "20240427"
     }
@@ -902,15 +893,15 @@ entity {
       label: "722"
     }
     position {
-      latitude: 29.4285641
-      longitude: -98.4925766
-      bearing: 86.8
-      speed: 7.45938
+      latitude: 29.4274864
+      longitude: -98.4902039
+      bearing: 90.8
+      speed: 6.89349604
     }
-    current_stop_sequence: 67
-    stop_id: "79973"
+    current_stop_sequence: 2
+    stop_id: "81226"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263734
   }
 }
 entity {
@@ -921,11 +912,11 @@ entity {
       label: "964"
     }
     position {
-      latitude: 29.4419785
-      longitude: -98.5013046
-      speed: 0
+      latitude: 29.441988
+      longitude: -98.5012894
+      speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -936,11 +927,11 @@ entity {
       label: "723"
     }
     position {
-      latitude: 29.4291744
-      longitude: -98.5047607
-      speed: 0.051444
+      latitude: 29.42873
+      longitude: -98.5048523
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -956,15 +947,15 @@ entity {
       label: "965"
     }
     position {
-      latitude: 29.4186726
-      longitude: -98.4905396
-      bearing: 340.1
-      speed: 5.76172781
+      latitude: 29.4200439
+      longitude: -98.4909821
+      bearing: 3.5
+      speed: 2.00631595
     }
     current_stop_sequence: 3
     stop_id: "12109"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -980,22 +971,22 @@ entity {
       label: "603"
     }
     position {
-      latitude: 29.3755779
-      longitude: -98.5613098
-      speed: 0
+      latitude: 29.3755741
+      longitude: -98.5613174
+      speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "97336"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
   id: "724"
   vehicle {
     trip {
-      trip_id: "4693429"
-      route_id: "647"
+      trip_id: "4693464"
+      route_id: "648"
       start_date: "20240427"
     }
     vehicle {
@@ -1003,15 +994,14 @@ entity {
       label: "724"
     }
     position {
-      latitude: 29.5208263
-      longitude: -98.4932556
-      bearing: 270.8
-      speed: 14.7129841
+      latitude: 29.5194588
+      longitude: -98.4982376
+      speed: 0
     }
-    current_stop_sequence: 38
+    current_stop_sequence: 1
     stop_id: "10029"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    current_status: STOPPED_AT
+    timestamp: 1714263733
   }
 }
 entity {
@@ -1027,15 +1017,14 @@ entity {
       label: "604"
     }
     position {
-      latitude: 29.4179974
-      longitude: -98.4810867
-      bearing: 179.2
-      speed: 15.587532
+      latitude: 29.4166679
+      longitude: -98.4842072
+      speed: 0.051444
     }
     current_stop_sequence: 55
     stop_id: "12103"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1051,15 +1040,14 @@ entity {
       label: "605"
     }
     position {
-      latitude: 29.4610119
-      longitude: -98.4993591
-      bearing: 179.6
-      speed: 8.17959595
+      latitude: 29.4499912
+      longitude: -98.499382
+      speed: 0
     }
-    current_stop_sequence: 28
-    stop_id: "17347"
-    current_status: STOPPED_AT
-    timestamp: 1714263546
+    current_stop_sequence: 34
+    stop_id: "37747"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1075,15 +1063,14 @@ entity {
       label: "726"
     }
     position {
-      latitude: 29.4340458
-      longitude: -98.4945374
-      bearing: 321.8
-      speed: 8.12815189
+      latitude: 29.4403553
+      longitude: -98.4989166
+      speed: 0.051444
     }
-    current_stop_sequence: 7
-    stop_id: "68776"
+    current_stop_sequence: 10
+    stop_id: "56489"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1094,11 +1081,11 @@ entity {
       label: "968"
     }
     position {
-      latitude: 29.4419727
+      latitude: 29.4419785
       longitude: -98.5014343
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1109,11 +1096,11 @@ entity {
       label: "606"
     }
     position {
-      latitude: 29.4434261
-      longitude: -98.5010376
+      latitude: 29.443428
+      longitude: -98.5010452
       speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1129,14 +1116,14 @@ entity {
       label: "727"
     }
     position {
-      latitude: 29.4407692
-      longitude: -98.499115
-      speed: 0.051444
+      latitude: 29.4330864
+      longitude: -98.4934921
+      speed: 0
     }
     current_stop_sequence: 56
     stop_id: "79877"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    timestamp: 1714263738
   }
 }
 entity {
@@ -1147,11 +1134,11 @@ entity {
       label: "969"
     }
     position {
-      latitude: 29.4441738
+      latitude: 29.4441643
       longitude: -98.5031509
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1167,14 +1154,14 @@ entity {
       label: "607"
     }
     position {
-      latitude: 29.5246429
+      latitude: 29.5246506
       longitude: -98.3920059
       speed: 0
     }
     current_stop_sequence: 1
     stop_id: "59783"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1190,14 +1177,15 @@ entity {
       label: "728"
     }
     position {
-      latitude: 29.3971405
-      longitude: -98.4047241
-      speed: 0
+      latitude: 29.3760242
+      longitude: -98.4046402
+      bearing: 180.7
+      speed: 12.5008917
     }
-    current_stop_sequence: 44
-    stop_id: "56497"
-    current_status: STOPPED_AT
-    timestamp: 1714263547
+    current_stop_sequence: 49
+    stop_id: "36597"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1213,14 +1201,14 @@ entity {
       label: "608"
     }
     position {
-      latitude: 29.4203053
-      longitude: -98.5279846
+      latitude: 29.4091969
+      longitude: -98.5294266
       speed: 0
     }
-    current_stop_sequence: 18
-    stop_id: "21607"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    current_stop_sequence: 21
+    stop_id: "21307"
+    current_status: STOPPED_AT
+    timestamp: 1714263734
   }
 }
 entity {
@@ -1236,15 +1224,14 @@ entity {
       label: "729"
     }
     position {
-      latitude: 29.4745293
-      longitude: -98.6114426
-      bearing: 219.6
-      speed: 13.7869921
+      latitude: 29.4683342
+      longitude: -98.6239395
+      speed: 0
     }
-    current_stop_sequence: 45
-    stop_id: "72887"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    current_stop_sequence: 46
+    stop_id: "88986"
+    current_status: STOPPED_AT
+    timestamp: 1714263733
   }
 }
 entity {
@@ -1255,12 +1242,12 @@ entity {
       label: "609"
     }
     position {
-      latitude: 29.3961086
-      longitude: -98.516861
-      bearing: 94
-      speed: 27.1109886
+      latitude: 29.4226284
+      longitude: -98.5015106
+      bearing: 9.7
+      speed: 6.99638414
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1276,15 +1263,15 @@ entity {
       label: "970"
     }
     position {
-      latitude: 29.4742107
-      longitude: -98.535881
-      bearing: 139.6
-      speed: 13.2211084
+      latitude: 29.4666328
+      longitude: -98.5282745
+      bearing: 138.4
+      speed: 12.1922283
     }
     current_stop_sequence: 8
     stop_id: "10203"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
@@ -1300,15 +1287,14 @@ entity {
       label: "971"
     }
     position {
-      latitude: 29.4220924
-      longitude: -98.4805069
-      bearing: 104.5
-      speed: 5.91606
+      latitude: 29.4220448
+      longitude: -98.4803314
+      speed: 0.051444
     }
     current_stop_sequence: 15
     stop_id: "93296"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1324,15 +1310,15 @@ entity {
       label: "730"
     }
     position {
-      latitude: 29.3546448
-      longitude: -98.5281372
-      bearing: 222.7
-      speed: 16.3591919
+      latitude: 29.349947
+      longitude: -98.5366135
+      bearing: 242.9
+      speed: 14.9187603
     }
-    current_stop_sequence: 3
-    stop_id: "58227"
+    current_stop_sequence: 5
+    stop_id: "73439"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -1343,11 +1329,11 @@ entity {
       label: "972"
     }
     position {
-      latitude: 29.4421749
+      latitude: 29.4421768
       longitude: -98.5007858
       speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -1358,11 +1344,12 @@ entity {
       label: "973"
     }
     position {
-      latitude: 29.4650154
-      longitude: -98.5264359
-      speed: 0
+      latitude: 29.4736538
+      longitude: -98.5350876
+      bearing: 318.4
+      speed: 10.083024
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -1378,14 +1365,14 @@ entity {
       label: "731"
     }
     position {
-      latitude: 29.3929024
-      longitude: -98.6521149
+      latitude: 29.3928967
+      longitude: -98.6521225
       speed: 0
     }
     current_stop_sequence: 1
     stop_id: "69383"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1401,14 +1388,15 @@ entity {
       label: "610"
     }
     position {
-      latitude: 29.5164642
-      longitude: -98.4111862
-      speed: 0
+      latitude: 29.5040474
+      longitude: -98.4162827
+      bearing: 228.6
+      speed: 14.9187603
     }
-    current_stop_sequence: 17
-    stop_id: "74797"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    current_stop_sequence: 23
+    stop_id: "94117"
+    current_status: STOPPED_AT
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1419,11 +1407,11 @@ entity {
       label: "611"
     }
     position {
-      latitude: 29.4434128
+      latitude: 29.4434204
       longitude: -98.5009384
-      speed: 0.051444
+      speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263734
   }
 }
 entity {
@@ -1439,14 +1427,15 @@ entity {
       label: "732"
     }
     position {
-      latitude: 29.4841
-      longitude: -98.5948105
-      speed: 0.102888
+      latitude: 29.4890938
+      longitude: -98.5788803
+      bearing: 81.5
+      speed: 18.8285027
     }
-    current_stop_sequence: 16
-    stop_id: "57573"
-    current_status: STOPPED_AT
-    timestamp: 1714263548
+    current_stop_sequence: 19
+    stop_id: "41813"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
@@ -1462,14 +1451,14 @@ entity {
       label: "974"
     }
     position {
-      latitude: 29.4208851
-      longitude: -98.4909134
-      speed: 0
+      latitude: 29.4219131
+      longitude: -98.4927902
+      speed: 0.051444
     }
     current_stop_sequence: 3
     stop_id: "12109"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    current_status: STOPPED_AT
+    timestamp: 1714263734
   }
 }
 entity {
@@ -1485,15 +1474,15 @@ entity {
       label: "975"
     }
     position {
-      latitude: 29.3583088
-      longitude: -98.558754
-      bearing: 276.3
-      speed: 6.32761192
+      latitude: 29.3657341
+      longitude: -98.5851059
+      bearing: 269.5
+      speed: 22.7382488
     }
-    current_stop_sequence: 18
-    stop_id: "48729"
+    current_stop_sequence: 19
+    stop_id: "26569"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1504,11 +1493,11 @@ entity {
       label: "733"
     }
     position {
-      latitude: 29.4427948
-      longitude: -98.5010223
+      latitude: 29.4427986
+      longitude: -98.50103
       speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1521,9 +1510,9 @@ entity {
     position {
       latitude: 29.4958477
       longitude: -98.5489349
-      speed: 0.051444
+      speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263734
   }
 }
 entity {
@@ -1539,15 +1528,15 @@ entity {
       label: "613"
     }
     position {
-      latitude: 29.4483528
-      longitude: -98.4992905
-      bearing: 0.4
-      speed: 9.87724876
+      latitude: 29.4619808
+      longitude: -98.4992676
+      bearing: 359.9
+      speed: 18.0054
     }
-    current_stop_sequence: 13
-    stop_id: "37746"
+    current_stop_sequence: 20
+    stop_id: "97846"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1558,11 +1547,11 @@ entity {
       label: "614"
     }
     position {
-      latitude: 29.4948
-      longitude: -98.5483
-      speed: 0
+      latitude: 29.4948101
+      longitude: -98.5482788
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -1578,15 +1567,14 @@ entity {
       label: "735"
     }
     position {
-      latitude: 29.4313202
-      longitude: -98.5186768
-      bearing: 94.4
-      speed: 11.7292318
+      latitude: 29.4300346
+      longitude: -98.5048218
+      speed: 0.102888
     }
-    current_stop_sequence: 35
-    stop_id: "72553"
+    current_stop_sequence: 41
+    stop_id: "76753"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1597,11 +1585,11 @@ entity {
       label: "977"
     }
     position {
-      latitude: 29.4421806
-      longitude: -98.5006409
+      latitude: 29.4421864
+      longitude: -98.5006332
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -1612,11 +1600,11 @@ entity {
       label: "615"
     }
     position {
-      latitude: 29.4433136
+      latitude: 29.4433155
       longitude: -98.5009155
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1632,14 +1620,14 @@ entity {
       label: "736"
     }
     position {
-      latitude: 29.5080795
-      longitude: -98.5895538
-      speed: 0
+      latitude: 29.5080681
+      longitude: -98.5895462
+      speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "20017"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1655,15 +1643,14 @@ entity {
       label: "978"
     }
     position {
-      latitude: 29.3553543
-      longitude: -98.5274277
-      bearing: 221.7
-      speed: 13.735548
+      latitude: 29.3560123
+      longitude: -98.5340271
+      speed: 0
     }
     current_stop_sequence: 2
     stop_id: "56186"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
@@ -1674,11 +1661,11 @@ entity {
       label: "616"
     }
     position {
-      latitude: 29.4943714
-      longitude: -98.5489883
-      speed: 0
+      latitude: 29.4943752
+      longitude: -98.5489807
+      speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1694,15 +1681,15 @@ entity {
       label: "737"
     }
     position {
-      latitude: 29.4315643
-      longitude: -98.657608
-      bearing: 288.1
-      speed: 6.07039213
+      latitude: 29.4267044
+      longitude: -98.6640778
+      bearing: 242.3
+      speed: 10.8032398
     }
     current_stop_sequence: 6
     stop_id: "86659"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1718,15 +1705,14 @@ entity {
       label: "979"
     }
     position {
-      latitude: 29.3567657
-      longitude: -98.5444794
-      bearing: 96.5
-      speed: 16.3591919
+      latitude: 29.3565216
+      longitude: -98.533638
+      speed: 0
     }
-    current_stop_sequence: 9
-    stop_id: "54163"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    current_stop_sequence: 10
+    stop_id: "56183"
+    current_status: STOPPED_AT
+    timestamp: 1714263734
   }
 }
 entity {
@@ -1742,14 +1728,15 @@ entity {
       label: "738"
     }
     position {
-      latitude: 29.5192814
-      longitude: -98.4490585
-      speed: 0
+      latitude: 29.5164909
+      longitude: -98.4518051
+      bearing: 218.7
+      speed: 3.13808393
     }
-    current_stop_sequence: 14
-    stop_id: "63937"
-    current_status: STOPPED_AT
-    timestamp: 1714263546
+    current_stop_sequence: 16
+    stop_id: "82127"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1760,11 +1747,11 @@ entity {
       label: "618"
     }
     position {
-      latitude: 29.4434166
-      longitude: -98.5007248
-      speed: 0.051444
+      latitude: 29.4434071
+      longitude: -98.5007324
+      speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1780,15 +1767,15 @@ entity {
       label: "739"
     }
     position {
-      latitude: 29.4651871
-      longitude: -98.5267792
-      bearing: 137.3
-      speed: 5.86461592
+      latitude: 29.4572849
+      longitude: -98.5190048
+      bearing: 139
+      speed: 10.5974646
     }
-    current_stop_sequence: 66
-    stop_id: "10203"
+    current_stop_sequence: 71
+    stop_id: "22563"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
@@ -1804,15 +1791,14 @@ entity {
       label: "619"
     }
     position {
-      latitude: 29.3176384
-      longitude: -98.4720612
-      bearing: 2.1
-      speed: 3.08664
+      latitude: 29.321373
+      longitude: -98.4775772
+      speed: 0
     }
-    current_stop_sequence: 10
-    stop_id: "46126"
+    current_stop_sequence: 14
+    stop_id: "34256"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -1828,21 +1814,22 @@ entity {
       label: "980"
     }
     position {
-      latitude: 29.3568211
-      longitude: -98.4861298
-      speed: 1.18321192
+      latitude: 29.3568134
+      longitude: -98.4937057
+      bearing: 269.4
+      speed: 12.809556
     }
-    current_stop_sequence: 6
-    stop_id: "42929"
-    current_status: STOPPED_AT
-    timestamp: 1714263546
+    current_stop_sequence: 8
+    stop_id: "48949"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263737
   }
 }
 entity {
   id: "981"
   vehicle {
     trip {
-      trip_id: "4698992"
+      trip_id: "4699048"
       route_id: "102"
       start_date: "20240427"
     }
@@ -1851,15 +1838,15 @@ entity {
       label: "981"
     }
     position {
-      latitude: 29.3514824
-      longitude: -98.4606247
-      bearing: 80.4
-      speed: 13.4783287
+      latitude: 29.3459511
+      longitude: -98.4476089
+      bearing: 349.4
+      speed: 7.15071583
     }
-    current_stop_sequence: 22
-    stop_id: "69213"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    current_stop_sequence: 1
+    stop_id: "30043"
+    current_status: STOPPED_AT
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1875,15 +1862,14 @@ entity {
       label: "982"
     }
     position {
-      latitude: 29.4431248
-      longitude: -98.5251
-      bearing: 5.7
-      speed: 13.8898802
+      latitude: 29.4493179
+      longitude: -98.5243912
+      speed: 1.02888
     }
-    current_stop_sequence: 25
-    stop_id: "22206"
+    current_stop_sequence: 27
+    stop_id: "22306"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1894,11 +1880,11 @@ entity {
       label: "620"
     }
     position {
-      latitude: 29.4434261
-      longitude: -98.500679
-      speed: 0.051444
+      latitude: 29.4434204
+      longitude: -98.5006638
+      speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1909,19 +1895,19 @@ entity {
       label: "741"
     }
     position {
-      latitude: 29.4322186
-      longitude: -98.5010681
-      bearing: 130.3
-      speed: 12.9124441
+      latitude: 29.4398365
+      longitude: -98.4863892
+      bearing: 63
+      speed: 20.3718224
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
   id: "983"
   vehicle {
     trip {
-      trip_id: "4699193"
+      trip_id: "4699120"
       route_id: "103"
       start_date: "20240427"
     }
@@ -1930,15 +1916,14 @@ entity {
       label: "983"
     }
     position {
-      latitude: 29.3506374
-      longitude: -98.5343781
-      bearing: 180.3
-      speed: 10.6489086
+      latitude: 29.3500862
+      longitude: -98.5323334
+      speed: 0.051444
     }
-    current_stop_sequence: 35
+    current_stop_sequence: 1
     stop_id: "11356"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    current_status: STOPPED_AT
+    timestamp: 1714263737
   }
 }
 entity {
@@ -1954,14 +1939,15 @@ entity {
       label: "621"
     }
     position {
-      latitude: 29.4851856
-      longitude: -98.6061249
-      speed: 0.051444
+      latitude: 29.4788647
+      longitude: -98.5903702
+      bearing: 112.6
+      speed: 15.7418642
     }
-    current_stop_sequence: 14
-    stop_id: "55413"
+    current_stop_sequence: 18
+    stop_id: "69533"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -1977,14 +1963,15 @@ entity {
       label: "984"
     }
     position {
-      latitude: 29.4453468
-      longitude: -98.525
-      speed: 0
+      latitude: 29.4339924
+      longitude: -98.5263214
+      bearing: 185
+      speed: 8.64259148
     }
-    current_stop_sequence: 10
-    stop_id: "49547"
-    current_status: STOPPED_AT
-    timestamp: 1714263544
+    current_stop_sequence: 14
+    stop_id: "21907"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2000,14 +1987,15 @@ entity {
       label: "742"
     }
     position {
-      latitude: 29.390934
-      longitude: -98.4613953
-      speed: 0
+      latitude: 29.3902855
+      longitude: -98.4450912
+      bearing: 119.1
+      speed: 3.44674802
     }
-    current_stop_sequence: 20
-    stop_id: "69913"
+    current_stop_sequence: 28
+    stop_id: "74173"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2023,14 +2011,15 @@ entity {
       label: "500"
     }
     position {
-      latitude: 29.5076447
-      longitude: -98.5899506
-      speed: 0
+      latitude: 29.5079174
+      longitude: -98.5907593
+      bearing: 41.1
+      speed: 7.7166
     }
-    current_stop_sequence: 1
-    stop_id: "20037"
-    current_status: STOPPED_AT
-    timestamp: 1714263544
+    current_stop_sequence: 2
+    stop_id: "99346"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2041,11 +2030,11 @@ entity {
       label: "501"
     }
     position {
-      latitude: 29.4439
-      longitude: -98.5008926
+      latitude: 29.4438896
+      longitude: -98.5009079
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2061,15 +2050,15 @@ entity {
       label: "622"
     }
     position {
-      latitude: 29.4151592
-      longitude: -98.4989853
-      bearing: 23.4
-      speed: 2.62364388
+      latitude: 29.4161701
+      longitude: -98.4984283
+      bearing: 25.7
+      speed: 1.64620805
     }
-    current_stop_sequence: 50
-    stop_id: "17866"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 51
+    stop_id: "98836"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2080,19 +2069,18 @@ entity {
       label: "743"
     }
     position {
-      latitude: 29.4294853
-      longitude: -98.5047226
-      bearing: 5.8
-      speed: 5.81317186
+      latitude: 29.426981
+      longitude: -98.5041809
+      speed: 0.102888
     }
-    timestamp: 1714263546
+    timestamp: 1714263735
   }
 }
 entity {
   id: "985"
   vehicle {
     trip {
-      trip_id: "4699124"
+      trip_id: "4699189"
       route_id: "103"
       start_date: "20240427"
     }
@@ -2101,15 +2089,14 @@ entity {
       label: "985"
     }
     position {
-      latitude: 29.4929829
-      longitude: -98.5491
-      bearing: 14.1
-      speed: 9.10558796
+      latitude: 29.4934864
+      longitude: -98.5485306
+      speed: 0
     }
-    current_stop_sequence: 35
+    current_stop_sequence: 1
     stop_id: "32169"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    current_status: STOPPED_AT
+    timestamp: 1714263738
   }
 }
 entity {
@@ -2125,14 +2112,15 @@ entity {
       label: "502"
     }
     position {
-      latitude: 29.3318806
-      longitude: -98.6109695
-      speed: 0.051444
+      latitude: 29.3365307
+      longitude: -98.615509
+      bearing: 352.6
+      speed: 13.5297718
     }
-    current_stop_sequence: 1
-    stop_id: "13349"
+    current_stop_sequence: 5
+    stop_id: "92236"
     current_status: STOPPED_AT
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2143,11 +2131,11 @@ entity {
       label: "623"
     }
     position {
-      latitude: 29.4434032
-      longitude: -98.5005951
+      latitude: 29.4434147
+      longitude: -98.5006256
       speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -2158,12 +2146,11 @@ entity {
       label: "744"
     }
     position {
-      latitude: 29.4355221
-      longitude: -98.4295731
-      bearing: 89.5
-      speed: 14.4043198
+      latitude: 29.4355984
+      longitude: -98.416214
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -2174,11 +2161,11 @@ entity {
       label: "986"
     }
     position {
-      latitude: 29.4422798
-      longitude: -98.5004959
+      latitude: 29.4422817
+      longitude: -98.5005
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2189,11 +2176,11 @@ entity {
       label: "503"
     }
     position {
-      latitude: 29.443924
-      longitude: -98.5009918
+      latitude: 29.4439392
+      longitude: -98.5010071
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2209,15 +2196,14 @@ entity {
       label: "987"
     }
     position {
-      latitude: 29.4094238
-      longitude: -98.5293
-      bearing: 6.8
-      speed: 3.13808393
+      latitude: 29.4138908
+      longitude: -98.5287094
+      speed: 0
     }
-    current_stop_sequence: 15
-    stop_id: "21306"
+    current_stop_sequence: 16
+    stop_id: "21406"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2228,12 +2214,12 @@ entity {
       label: "745"
     }
     position {
-      latitude: 29.3985786
-      longitude: -98.4735489
-      bearing: 179.3
-      speed: 2.05776
+      latitude: 29.390934
+      longitude: -98.4573746
+      bearing: 90.6
+      speed: 10.2888
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -2244,11 +2230,11 @@ entity {
       label: "625"
     }
     position {
-      latitude: 29.4947281
+      latitude: 29.4947166
       longitude: -98.5483627
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2259,11 +2245,12 @@ entity {
       label: "988"
     }
     position {
-      latitude: 29.4437981
-      longitude: -98.5023117
-      speed: 0.051444
+      latitude: 29.4433
+      longitude: -98.5031052
+      bearing: 171.9
+      speed: 5.55595207
     }
-    timestamp: 1714263547
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2274,11 +2261,11 @@ entity {
       label: "504"
     }
     position {
-      latitude: 29.4439278
+      latitude: 29.4439392
       longitude: -98.5010452
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263733
   }
 }
 entity {
@@ -2294,15 +2281,15 @@ entity {
       label: "505"
     }
     position {
-      latitude: 29.5933437
-      longitude: -98.5769882
-      bearing: 76.9
-      speed: 9.41425133
+      latitude: 29.58815
+      longitude: -98.5563812
+      bearing: 141.7
+      speed: 16.9765205
     }
-    current_stop_sequence: 4
-    stop_id: "11193"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    current_stop_sequence: 7
+    stop_id: "19747"
+    current_status: STOPPED_AT
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2318,15 +2305,15 @@ entity {
       label: "626"
     }
     position {
-      latitude: 29.4195709
-      longitude: -98.5412369
-      bearing: 254.5
-      speed: 4.26985216
+      latitude: 29.4173508
+      longitude: -98.5537796
+      bearing: 253.1
+      speed: 3.2924161
     }
-    current_stop_sequence: 21
-    stop_id: "94979"
+    current_stop_sequence: 27
+    stop_id: "11527"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263539
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2342,22 +2329,22 @@ entity {
       label: "747"
     }
     position {
-      latitude: 29.399231
-      longitude: -98.6431732
-      bearing: 254.3
-      speed: 25.8248882
+      latitude: 29.4224472
+      longitude: -98.6491928
+      bearing: 0
+      speed: 22.4295826
     }
-    current_stop_sequence: 2
-    stop_id: "11896"
+    current_stop_sequence: 3
+    stop_id: "72176"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    timestamp: 1714263733
   }
 }
 entity {
   id: "506"
   vehicle {
     trip {
-      trip_id: "4693226"
+      trip_id: "4693255"
       route_id: "617"
       start_date: "20240427"
     }
@@ -2366,15 +2353,15 @@ entity {
       label: "506"
     }
     position {
-      latitude: 29.39995
-      longitude: -98.6521
-      bearing: 293.9
-      speed: 2.82942
+      latitude: 29.4006863
+      longitude: -98.6565247
+      bearing: 356.9
+      speed: 14.4043198
     }
-    current_stop_sequence: 34
-    stop_id: "58409"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 3
+    stop_id: "48986"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2385,11 +2372,11 @@ entity {
       label: "748"
     }
     position {
-      latitude: 29.4342194
-      longitude: -98.4962845
-      speed: 0.874548
+      latitude: 29.4288139
+      longitude: -98.491333
+      speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2405,15 +2392,15 @@ entity {
       label: "507"
     }
     position {
-      latitude: 29.5645275
-      longitude: -98.5868149
-      bearing: 68.3
-      speed: 13.4268847
+      latitude: 29.5560169
+      longitude: -98.5742264
+      bearing: 174.7
+      speed: 18.0054
     }
-    current_stop_sequence: 10
-    stop_id: "61623"
+    current_stop_sequence: 16
+    stop_id: "84867"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2424,11 +2411,11 @@ entity {
       label: "628"
     }
     position {
-      latitude: 29.4430504
-      longitude: -98.5022659
-      speed: 0.051444
+      latitude: 29.4430408
+      longitude: -98.5022507
+      speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -2444,14 +2431,14 @@ entity {
       label: "749"
     }
     position {
-      latitude: 29.6475487
-      longitude: -98.4521408
-      speed: 0
+      latitude: 29.6475544
+      longitude: -98.4521332
+      speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "28603"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263734
   }
 }
 entity {
@@ -2462,11 +2449,11 @@ entity {
       label: "508"
     }
     position {
-      latitude: 29.4439201
-      longitude: -98.5012512
+      latitude: 29.4439068
+      longitude: -98.5012436
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
@@ -2477,11 +2464,11 @@ entity {
       label: "629"
     }
     position {
-      latitude: 29.4431419
-      longitude: -98.5021667
+      latitude: 29.4431267
+      longitude: -98.5021591
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2492,11 +2479,11 @@ entity {
       label: "509"
     }
     position {
-      latitude: 29.4439049
-      longitude: -98.5012589
+      latitude: 29.4439144
+      longitude: -98.5012665
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2507,19 +2494,19 @@ entity {
       label: "750"
     }
     position {
-      latitude: 29.442709
+      latitude: 29.4427147
       longitude: -98.5005
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263733
   }
 }
 entity {
   id: "630"
   vehicle {
     trip {
-      trip_id: "4694228"
-      route_id: "95"
+      trip_id: "4694160"
+      route_id: "82"
       start_date: "20240427"
     }
     vehicle {
@@ -2527,15 +2514,14 @@ entity {
       label: "630"
     }
     position {
-      latitude: 29.4318275
-      longitude: -98.4912262
-      bearing: 147.2
-      speed: 8.89981174
+      latitude: 29.4292908
+      longitude: -98.4932938
+      speed: 0.051444
     }
-    current_stop_sequence: 55
-    stop_id: "79257"
+    current_stop_sequence: 2
+    stop_id: "79739"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2551,14 +2537,15 @@ entity {
       label: "751"
     }
     position {
-      latitude: 29.4666977
-      longitude: -98.3909607
-      speed: 0.051444
+      latitude: 29.4591789
+      longitude: -98.4050751
+      bearing: 233.6
+      speed: 16.3591919
     }
-    current_stop_sequence: 55
-    stop_id: "81969"
-    current_status: STOPPED_AT
-    timestamp: 1714263547
+    current_stop_sequence: 59
+    stop_id: "16929"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
@@ -2574,14 +2561,14 @@ entity {
       label: "510"
     }
     position {
-      latitude: 29.5191822
-      longitude: -98.498558
+      latitude: 29.5191727
+      longitude: -98.4985657
       speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "10049"
     current_status: STOPPED_AT
-    timestamp: 1714263548
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2592,11 +2579,11 @@ entity {
       label: "752"
     }
     position {
-      latitude: 29.4427967
-      longitude: -98.500473
-      speed: 0
+      latitude: 29.4427948
+      longitude: -98.5004807
+      speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2612,14 +2599,15 @@ entity {
       label: "511"
     }
     position {
-      latitude: 29.4174519
-      longitude: -98.4612503
-      speed: 0.051444
+      latitude: 29.4224892
+      longitude: -98.4610748
+      bearing: 0.6
+      speed: 4.11552
     }
-    current_stop_sequence: 33
-    stop_id: "19436"
+    current_stop_sequence: 35
+    stop_id: "99436"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2630,11 +2618,11 @@ entity {
       label: "632"
     }
     position {
-      latitude: 29.4430656
-      longitude: -98.5021591
+      latitude: 29.4430523
+      longitude: -98.5021515
       speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2645,11 +2633,11 @@ entity {
       label: "753"
     }
     position {
-      latitude: 29.4425354
-      longitude: -98.5017624
+      latitude: 29.4425392
+      longitude: -98.5017548
       speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -2665,15 +2653,15 @@ entity {
       label: "512"
     }
     position {
-      latitude: 29.481617
-      longitude: -98.6460342
-      bearing: 3.4
-      speed: 8.59114838
+      latitude: 29.4908447
+      longitude: -98.6552353
+      bearing: 211.3
+      speed: 12.6037798
     }
-    current_stop_sequence: 13
-    stop_id: "62186"
+    current_stop_sequence: 20
+    stop_id: "49127"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2689,15 +2677,15 @@ entity {
       label: "633"
     }
     position {
-      latitude: 29.5204277
-      longitude: -98.5066833
-      bearing: 14.5
-      speed: 8.59114838
+      latitude: 29.532486
+      longitude: -98.522316
+      bearing: 325.9
+      speed: 5.45306396
     }
-    current_stop_sequence: 7
-    stop_id: "39696"
+    current_stop_sequence: 9
+    stop_id: "39746"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -2713,15 +2701,15 @@ entity {
       label: "754"
     }
     position {
-      latitude: 29.431448
-      longitude: -98.5196228
-      bearing: 275.4
-      speed: 14.7644281
+      latitude: 29.433773
+      longitude: -98.5420532
+      bearing: 10.6
+      speed: 6.22472429
     }
-    current_stop_sequence: 8
-    stop_id: "71499"
+    current_stop_sequence: 18
+    stop_id: "64969"
     current_status: STOPPED_AT
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2737,15 +2725,15 @@ entity {
       label: "513"
     }
     position {
-      latitude: 29.3984661
-      longitude: -98.4589081
-      bearing: 269.7
-      speed: 13.2725515
+      latitude: 29.3989887
+      longitude: -98.4733887
+      bearing: 5.1
+      speed: 9.46569538
     }
-    current_stop_sequence: 20
-    stop_id: "59329"
+    current_stop_sequence: 24
+    stop_id: "45976"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2756,18 +2744,18 @@ entity {
       label: "634"
     }
     position {
-      latitude: 29.4430599
-      longitude: -98.5021133
+      latitude: 29.443058
+      longitude: -98.5021
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263734
   }
 }
 entity {
   id: "755"
   vehicle {
     trip {
-      trip_id: "4692773"
+      trip_id: "4692727"
       route_id: "552"
       start_date: "20240427"
     }
@@ -2776,15 +2764,14 @@ entity {
       label: "755"
     }
     position {
-      latitude: 29.402298
-      longitude: -98.6310196
-      bearing: 250.4
-      speed: 9.41425133
+      latitude: 29.4021053
+      longitude: -98.6322708
+      speed: 0.051444
     }
-    current_stop_sequence: 54
+    current_stop_sequence: 1
     stop_id: "46569"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    current_status: STOPPED_AT
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2795,11 +2782,12 @@ entity {
       label: "514"
     }
     position {
-      latitude: 29.4434776
-      longitude: -98.5023117
-      speed: 0.051444
+      latitude: 29.4437656
+      longitude: -98.5004807
+      bearing: 321.9
+      speed: 2.4178679
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2810,11 +2798,11 @@ entity {
       label: "756"
     }
     position {
-      latitude: 29.4424362
+      latitude: 29.4424496
       longitude: -98.5015945
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -2825,11 +2813,11 @@ entity {
       label: "635"
     }
     position {
-      latitude: 29.4431324
-      longitude: -98.501915
-      speed: 0
+      latitude: 29.4431362
+      longitude: -98.5019073
+      speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2840,11 +2828,11 @@ entity {
       label: "515"
     }
     position {
-      latitude: 29.3461552
-      longitude: -98.4469757
-      speed: 0
+      latitude: 29.3515148
+      longitude: -98.4484
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -2867,31 +2855,23 @@ entity {
     current_stop_sequence: 1
     stop_id: "46463"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263734
   }
 }
 entity {
   id: "516"
   vehicle {
-    trip {
-      trip_id: "4692733"
-      route_id: "552"
-      start_date: "20240427"
-    }
     vehicle {
       id: "516"
       label: "516"
     }
     position {
-      latitude: 29.3474197
-      longitude: -98.4464264
-      bearing: 129.2
-      speed: 15.0216484
+      latitude: 29.3485718
+      longitude: -98.4476089
+      bearing: 313.1
+      speed: 14.4557638
     }
-    current_stop_sequence: 57
-    stop_id: "30043"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2902,11 +2882,11 @@ entity {
       label: "637"
     }
     position {
-      latitude: 29.4430542
-      longitude: -98.5020599
+      latitude: 29.443058
+      longitude: -98.5020447
       speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -2922,15 +2902,14 @@ entity {
       label: "638"
     }
     position {
-      latitude: 29.3767776
-      longitude: -98.4461136
-      bearing: 248.6
-      speed: 13.3754396
+      latitude: 29.3760681
+      longitude: -98.4611893
+      speed: 0.051444
     }
-    current_stop_sequence: 21
-    stop_id: "94829"
+    current_stop_sequence: 28
+    stop_id: "99167"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -2941,11 +2920,11 @@ entity {
       label: "759"
     }
     position {
-      latitude: 29.4165363
-      longitude: -98.4962845
+      latitude: 29.4168148
+      longitude: -98.4968948
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263736
   }
 }
 entity {
@@ -2961,21 +2940,22 @@ entity {
       label: "517"
     }
     position {
-      latitude: 29.434639
-      longitude: -98.6903687
-      speed: 0
+      latitude: 29.4245949
+      longitude: -98.6893463
+      bearing: 178.3
+      speed: 6.12183571
     }
-    current_stop_sequence: 1
-    stop_id: "88277"
+    current_stop_sequence: 4
+    stop_id: "98177"
     current_status: STOPPED_AT
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
   id: "518"
   vehicle {
     trip {
-      trip_id: "4693308"
+      trip_id: "4693325"
       route_id: "619"
       start_date: "20240427"
     }
@@ -2984,15 +2964,15 @@ entity {
       label: "518"
     }
     position {
-      latitude: 29.3456879
-      longitude: -98.6104202
-      bearing: 102.8
-      speed: 9.36280823
+      latitude: 29.3409538
+      longitude: -98.6030273
+      bearing: 192.8
+      speed: 9.05414391
     }
-    current_stop_sequence: 30
-    stop_id: "73493"
+    current_stop_sequence: 3
+    stop_id: "85349"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3003,11 +2983,11 @@ entity {
       label: "639"
     }
     position {
-      latitude: 29.4431477
-      longitude: -98.5016937
-      speed: 0.051444
+      latitude: 29.4431419
+      longitude: -98.5016861
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3018,11 +2998,11 @@ entity {
       label: "519"
     }
     position {
-      latitude: 29.4439449
-      longitude: -98.5018311
-      speed: 0
+      latitude: 29.443943
+      longitude: -98.5018387
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3033,12 +3013,12 @@ entity {
       label: "760"
     }
     position {
-      latitude: 29.4840527
-      longitude: -98.4993362
-      bearing: 180.1
-      speed: 19.8059406
+      latitude: 29.4588757
+      longitude: -98.4993286
+      bearing: 180.2
+      speed: 17.8510685
     }
-    timestamp: 1714263544
+    timestamp: 1714263733
   }
 }
 entity {
@@ -3049,11 +3029,11 @@ entity {
       label: "640"
     }
     position {
-      latitude: 29.4430618
+      latitude: 29.4430637
       longitude: -98.5019531
-      speed: 0.051444
+      speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3064,11 +3044,12 @@ entity {
       label: "761"
     }
     position {
-      latitude: 29.4389973
-      longitude: -98.5060425
-      speed: 0.051444
+      latitude: 29.4449158
+      longitude: -98.5029831
+      bearing: 90.4
+      speed: 6.58483219
     }
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3079,11 +3060,11 @@ entity {
       label: "762"
     }
     position {
-      latitude: 29.4342289
-      longitude: -98.4966125
-      speed: 1.44043195
+      latitude: 29.4403458
+      longitude: -98.4988632
+      speed: 1.18321192
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3099,15 +3080,14 @@ entity {
       label: "641"
     }
     position {
-      latitude: 29.481636
-      longitude: -98.6087646
-      bearing: 42.1
-      speed: 15.1245356
+      latitude: 29.4867954
+      longitude: -98.6025314
+      speed: 0.051444
     }
-    current_stop_sequence: 8
-    stop_id: "63376"
+    current_stop_sequence: 12
+    stop_id: "45966"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3118,11 +3098,11 @@ entity {
       label: "520"
     }
     position {
-      latitude: 29.443943
+      latitude: 29.4439259
       longitude: -98.5018768
       speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3133,11 +3113,11 @@ entity {
       label: "642"
     }
     position {
-      latitude: 29.4295635
-      longitude: -98.4972
+      latitude: 29.4295769
+      longitude: -98.4972076
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -3153,14 +3133,14 @@ entity {
       label: "522"
     }
     position {
-      latitude: 29.4225349
-      longitude: -98.5021667
+      latitude: 29.422224
+      longitude: -98.5006714
       speed: 0
     }
     current_stop_sequence: 3
     stop_id: "97773"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3176,15 +3156,14 @@ entity {
       label: "643"
     }
     position {
-      latitude: 29.5085907
-      longitude: -98.3473892
-      bearing: 15.1
-      speed: 13.8898802
+      latitude: 29.5109978
+      longitude: -98.3567886
+      speed: 0.051444
     }
-    current_stop_sequence: 15
-    stop_id: "84876"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    current_stop_sequence: 18
+    stop_id: "81699"
+    current_status: STOPPED_AT
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3195,12 +3174,11 @@ entity {
       label: "764"
     }
     position {
-      latitude: 29.4831696
-      longitude: -98.5285339
-      bearing: 125.1
-      speed: 27.3167629
+      latitude: 29.4541
+      longitude: -98.5157547
+      speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3216,22 +3194,21 @@ entity {
       label: "523"
     }
     position {
-      latitude: 29.4590492
-      longitude: -98.4804764
-      bearing: 39.2
-      speed: 14.5072088
+      latitude: 29.4654446
+      longitude: -98.474472
+      speed: 0.051444
     }
-    current_stop_sequence: 8
-    stop_id: "93856"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    current_stop_sequence: 10
+    stop_id: "95353"
+    current_status: STOPPED_AT
+    timestamp: 1714263738
   }
 }
 entity {
   id: "644"
   vehicle {
     trip {
-      trip_id: "4692580"
+      trip_id: "4692597"
       route_id: "522"
       start_date: "20240427"
     }
@@ -3240,14 +3217,14 @@ entity {
       label: "644"
     }
     position {
-      latitude: 29.5339985
-      longitude: -98.5895081
+      latitude: 29.5462399
+      longitude: -98.5863876
       speed: 0.051444
     }
-    current_stop_sequence: 69
-    stop_id: "39606"
+    current_stop_sequence: 1
+    stop_id: "11419"
     current_status: STOPPED_AT
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3258,12 +3235,12 @@ entity {
       label: "765"
     }
     position {
-      latitude: 29.4208126
-      longitude: -98.4800568
-      bearing: 342.2
-      speed: 12.9638882
+      latitude: 29.4538212
+      longitude: -98.4817734
+      bearing: 29.1
+      speed: 1.59476399
     }
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3274,11 +3251,11 @@ entity {
       label: "524"
     }
     position {
-      latitude: 29.4436913
-      longitude: -98.501709
-      speed: 0
+      latitude: 29.4436951
+      longitude: -98.5017
+      speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3289,12 +3266,12 @@ entity {
       label: "645"
     }
     position {
-      latitude: 29.5120945
-      longitude: -98.534317
-      bearing: 241
-      speed: 24.693119
+      latitude: 29.4955788
+      longitude: -98.5518646
+      bearing: 39.6
+      speed: 12.1407843
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3305,11 +3282,11 @@ entity {
       label: "766"
     }
     position {
-      latitude: 29.4425278
-      longitude: -98.5005
-      speed: 0.051444
+      latitude: 29.4435196
+      longitude: -98.5022049
+      speed: 0.25722
     }
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3325,15 +3302,14 @@ entity {
       label: "403"
     }
     position {
-      latitude: 29.3968391
-      longitude: -98.6497726
-      bearing: 180
-      speed: 13.4112
+      latitude: 29.4025803
+      longitude: -98.6317902
+      bearing: 90
     }
     current_stop_sequence: 18
     stop_id: "46473"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263457
+    current_status: STOPPED_AT
+    timestamp: 1714263663
   }
 }
 entity {
@@ -3344,11 +3320,11 @@ entity {
       label: "525"
     }
     position {
-      latitude: 29.4435844
-      longitude: -98.5018158
+      latitude: 29.443573
+      longitude: -98.5018
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3364,14 +3340,14 @@ entity {
       label: "646"
     }
     position {
-      latitude: 29.5176716
+      latitude: 29.5176697
       longitude: -98.6323471
       speed: 0
     }
     current_stop_sequence: 1
     stop_id: "76569"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3382,12 +3358,12 @@ entity {
       label: "767"
     }
     position {
-      latitude: 29.4223766
-      longitude: -98.4855728
-      bearing: 99.6
-      speed: 1.64620805
+      latitude: 29.4354496
+      longitude: -98.4774933
+      bearing: 21.1
+      speed: 25.2075596
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3398,12 +3374,11 @@ entity {
       label: "768"
     }
     position {
-      latitude: 29.4821644
-      longitude: -98.5271683
-      bearing: 131.7
-      speed: 26.8537693
+      latitude: 29.4445457
+      longitude: -98.515358
+      speed: 0.925991952
     }
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3414,11 +3389,11 @@ entity {
       label: "526"
     }
     position {
-      latitude: 29.4436474
-      longitude: -98.5016403
+      latitude: 29.4436436
+      longitude: -98.5016479
       speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -3434,15 +3409,14 @@ entity {
       label: "647"
     }
     position {
-      latitude: 29.4183197
-      longitude: -98.4902039
-      bearing: 255
-      speed: 1.95487201
+      latitude: 29.4193897
+      longitude: -98.49086
+      speed: 0.25722
     }
-    current_stop_sequence: 38
-    stop_id: "11219"
-    current_status: STOPPED_AT
-    timestamp: 1714263547
+    current_stop_sequence: 39
+    stop_id: "12109"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
@@ -3453,10 +3427,11 @@ entity {
       label: "405"
     }
     position {
-      latitude: 29.4222298
-      longitude: -98.4905472
+      latitude: 29.4224701
+      longitude: -98.4903793
+      bearing: 45
     }
-    timestamp: 1714263480
+    timestamp: 1714263630
   }
 }
 entity {
@@ -3467,11 +3442,11 @@ entity {
       label: "406"
     }
     position {
-      latitude: 29.444521
-      longitude: -98.501091
-      speed: 0.051444
+      latitude: 29.4445343
+      longitude: -98.5011
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3487,15 +3462,15 @@ entity {
       label: "527"
     }
     position {
-      latitude: 29.5207882
-      longitude: -98.5798569
-      bearing: 1.1
-      speed: 5.65884
+      latitude: 29.5311241
+      longitude: -98.5822678
+      bearing: 36.7
+      speed: 13.1696644
     }
-    current_stop_sequence: 14
-    stop_id: "63716"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 20
+    stop_id: "43443"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3506,11 +3481,11 @@ entity {
       label: "648"
     }
     position {
-      latitude: 29.4431343
+      latitude: 29.4431362
       longitude: -98.5016403
       speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3521,11 +3496,11 @@ entity {
       label: "769"
     }
     position {
-      latitude: 29.4430637
-      longitude: -98.5022
-      speed: 0
+      latitude: 29.443058
+      longitude: -98.5022049
+      speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3536,11 +3511,11 @@ entity {
       label: "407"
     }
     position {
-      latitude: 29.4445171
+      latitude: 29.4445267
       longitude: -98.5010605
       speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3556,14 +3531,14 @@ entity {
       label: "528"
     }
     position {
-      latitude: 29.4451103
-      longitude: -98.4994202
-      speed: 0.360108
+      latitude: 29.4421577
+      longitude: -98.5039139
+      speed: 0
     }
-    current_stop_sequence: 12
-    stop_id: "47647"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 14
+    stop_id: "60017"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3579,15 +3554,15 @@ entity {
       label: "649"
     }
     position {
-      latitude: 29.4120159
-      longitude: -98.4745
-      bearing: 90.3
-      speed: 8.28248405
+      latitude: 29.3987427
+      longitude: -98.4734192
+      bearing: 174.4
+      speed: 10.8546839
     }
-    current_stop_sequence: 9
-    stop_id: "25473"
+    current_stop_sequence: 14
+    stop_id: "56333"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3598,12 +3573,12 @@ entity {
       label: "529"
     }
     position {
-      latitude: 29.4238205
-      longitude: -98.5012665
-      bearing: 8.9
-      speed: 12.5523357
+      latitude: 29.4437027
+      longitude: -98.510582
+      bearing: 96.4
+      speed: 18.1082878
     }
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
@@ -3614,11 +3589,11 @@ entity {
       label: "770"
     }
     position {
-      latitude: 29.4398155
-      longitude: -98.4874802
-      speed: 0.411552
+      latitude: 29.4385967
+      longitude: -98.4894104
+      speed: 1.2346561
     }
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3629,12 +3604,12 @@ entity {
       label: "771"
     }
     position {
-      latitude: 29.4845943
-      longitude: -98.5348892
-      bearing: 88.4
-      speed: 26.1849976
+      latitude: 29.4462013
+      longitude: -98.5149078
+      bearing: 178.6
+      speed: 24.9503403
     }
-    timestamp: 1714263547
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3645,11 +3620,11 @@ entity {
       label: "530"
     }
     position {
-      latitude: 29.4436378
-      longitude: -98.5015411
-      speed: 0
+      latitude: 29.4436455
+      longitude: -98.5015488
+      speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3660,11 +3635,11 @@ entity {
       label: "651"
     }
     position {
-      latitude: 29.4430275
-      longitude: -98.5017166
+      latitude: 29.4430332
+      longitude: -98.501709
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3675,12 +3650,12 @@ entity {
       label: "772"
     }
     position {
-      latitude: 29.4859047
-      longitude: -98.4993744
-      bearing: 179.8
-      speed: 14.2499886
+      latitude: 29.4671421
+      longitude: -98.4993362
+      bearing: 180.5
+      speed: 11.1119041
     }
-    timestamp: 1714263543
+    timestamp: 1714263738
   }
 }
 entity {
@@ -3691,11 +3666,11 @@ entity {
       label: "410"
     }
     position {
-      latitude: 29.4445419
-      longitude: -98.500885
+      latitude: 29.4445305
+      longitude: -98.5008926
       speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3711,15 +3686,14 @@ entity {
       label: "531"
     }
     position {
-      latitude: 29.4925442
-      longitude: -98.5485229
-      bearing: 256.6
-      speed: 10.8546839
+      latitude: 29.4876919
+      longitude: -98.5492172
+      speed: 0.051444
     }
-    current_stop_sequence: 22
-    stop_id: "42237"
+    current_stop_sequence: 23
+    stop_id: "42993"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3730,11 +3704,11 @@ entity {
       label: "652"
     }
     position {
-      latitude: 29.4431057
+      latitude: 29.4431019
       longitude: -98.5015488
       speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3745,12 +3719,12 @@ entity {
       label: "773"
     }
     position {
-      latitude: 29.4851398
-      longitude: -98.5414352
-      bearing: 115.5
-      speed: 19.3943882
+      latitude: 29.4533386
+      longitude: -98.5155945
+      bearing: 185.3
+      speed: 27.0595436
     }
-    timestamp: 1714263544
+    timestamp: 1714263738
   }
 }
 entity {
@@ -3761,11 +3735,11 @@ entity {
       label: "411"
     }
     position {
-      latitude: 29.42202
-      longitude: -98.5002823
-      speed: 0.411552
+      latitude: 29.4212742
+      longitude: -98.4994659
+      speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3776,11 +3750,11 @@ entity {
       label: "532"
     }
     position {
-      latitude: 29.4435787
-      longitude: -98.5015945
-      speed: 0
+      latitude: 29.4435692
+      longitude: -98.5015793
+      speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263738
   }
 }
 entity {
@@ -3796,14 +3770,15 @@ entity {
       label: "653"
     }
     position {
-      latitude: 29.4446545
-      longitude: -98.4774475
-      speed: 0
+      latitude: 29.4440289
+      longitude: -98.4741
+      bearing: 101.1
+      speed: 4.11552
     }
-    current_stop_sequence: 21
-    stop_id: "44683"
+    current_stop_sequence: 23
+    stop_id: "45947"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3814,11 +3789,11 @@ entity {
       label: "774"
     }
     position {
-      latitude: 29.442482
-      longitude: -98.5014648
-      speed: 0
+      latitude: 29.4424801
+      longitude: -98.5014572
+      speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -3829,12 +3804,11 @@ entity {
       label: "412"
     }
     position {
-      latitude: 29.4211788
-      longitude: -98.499115
-      bearing: 299.7
-      speed: 8.79692459
+      latitude: 29.4227352
+      longitude: -98.5030289
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -3850,14 +3824,15 @@ entity {
       label: "533"
     }
     position {
-      latitude: 29.3462124
-      longitude: -98.4466858
-      speed: 0
+      latitude: 29.3456783
+      longitude: -98.445816
+      bearing: 66.8
+      speed: 10.1344681
     }
-    current_stop_sequence: 1
-    stop_id: "30019"
-    current_status: STOPPED_AT
-    timestamp: 1714263544
+    current_stop_sequence: 2
+    stop_id: "62106"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3868,11 +3843,12 @@ entity {
       label: "654"
     }
     position {
-      latitude: 29.4224701
-      longitude: -98.4857559
-      speed: 0.051444
+      latitude: 29.4283962
+      longitude: -98.4815292
+      bearing: 7.5
+      speed: 25.8248882
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -3883,11 +3859,11 @@ entity {
       label: "775"
     }
     position {
-      latitude: 29.4124527
-      longitude: -98.4977417
+      latitude: 29.4150066
+      longitude: -98.4967957
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3898,18 +3874,18 @@ entity {
       label: "413"
     }
     position {
-      latitude: 29.4427891
-      longitude: -98.5017471
+      latitude: 29.4427967
+      longitude: -98.5017624
       speed: 0.051444
     }
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
   id: "534"
   vehicle {
     trip {
-      trip_id: "4696765"
+      trip_id: "4696792"
       route_id: "51"
       start_date: "20240427"
     }
@@ -3918,15 +3894,14 @@ entity {
       label: "534"
     }
     position {
-      latitude: 29.3451958
-      longitude: -98.5456619
-      bearing: 51.3
-      speed: 21.2978172
+      latitude: 29.3497753
+      longitude: -98.5319
+      speed: 0
     }
-    current_stop_sequence: 48
-    stop_id: "73453"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    current_stop_sequence: 1
+    stop_id: "11397"
+    current_status: STOPPED_AT
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3937,12 +3912,11 @@ entity {
       label: "655"
     }
     position {
-      latitude: 29.4201469
-      longitude: -98.5020599
-      bearing: 185.7
-      speed: 2.4178679
+      latitude: 29.4150181
+      longitude: -98.5046616
+      speed: 0.462995976
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3953,11 +3927,11 @@ entity {
       label: "776"
     }
     position {
-      latitude: 29.4424896
-      longitude: -98.5005264
-      speed: 0.051444
+      latitude: 29.4424839
+      longitude: -98.5005188
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3968,12 +3942,11 @@ entity {
       label: "414"
     }
     position {
-      latitude: 29.4927197
-      longitude: -98.5476837
-      bearing: 245.2
-      speed: 5.55595207
+      latitude: 29.4959335
+      longitude: -98.5490189
+      speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -3984,11 +3957,11 @@ entity {
       label: "535"
     }
     position {
-      latitude: 29.4436817
+      latitude: 29.4436779
       longitude: -98.5014267
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4003,7 +3976,7 @@ entity {
       longitude: -98.5014725
       speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4014,12 +3987,12 @@ entity {
       label: "777"
     }
     position {
-      latitude: 29.4211388
-      longitude: -98.4801559
-      bearing: 343.7
-      speed: 13.4783287
+      latitude: 29.4405098
+      longitude: -98.4856644
+      bearing: 261
+      speed: 2.67508793
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -4030,11 +4003,12 @@ entity {
       label: "415"
     }
     position {
-      latitude: 29.606535
-      longitude: -98.6000748
-      speed: 0
+      latitude: 29.6059055
+      longitude: -98.6016312
+      bearing: 247.5
+      speed: 11.2147913
     }
-    timestamp: 1714263543
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4045,12 +4019,11 @@ entity {
       label: "536"
     }
     position {
-      latitude: 29.4437847
-      longitude: -98.500473
-      bearing: 333
-      speed: 1.8519839
+      latitude: 29.443882
+      longitude: -98.5022202
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263733
   }
 }
 entity {
@@ -4061,11 +4034,11 @@ entity {
       label: "657"
     }
     position {
-      latitude: 29.4437065
-      longitude: -98.5032425
-      speed: 0.051444
+      latitude: 29.443697
+      longitude: -98.5032349
+      speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4076,11 +4049,11 @@ entity {
       label: "416"
     }
     position {
-      latitude: 29.4445171
+      latitude: 29.444519
       longitude: -98.5005951
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4091,11 +4064,11 @@ entity {
       label: "537"
     }
     position {
-      latitude: 29.4436741
-      longitude: -98.5013275
+      latitude: 29.4436779
+      longitude: -98.5013199
       speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4111,15 +4084,15 @@ entity {
       label: "658"
     }
     position {
-      latitude: 29.5195217
-      longitude: -98.4980927
-      bearing: 225
-      speed: 7.97382
+      latitude: 29.5280685
+      longitude: -98.4979477
+      bearing: 20.4
+      speed: 7.66515589
     }
-    current_stop_sequence: 1
-    stop_id: "10023"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 4
+    stop_id: "57176"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4130,11 +4103,11 @@ entity {
       label: "779"
     }
     position {
-      latitude: 29.4199314
-      longitude: -98.4909363
-      speed: 0.205776
+      latitude: 29.4204388
+      longitude: -98.4909134
+      speed: 0.25722
     }
-    timestamp: 1714263545
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4145,11 +4118,12 @@ entity {
       label: "417"
     }
     position {
-      latitude: 29.4937744
-      longitude: -98.5483627
-      speed: 0.051444
+      latitude: 29.4845295
+      longitude: -98.5384903
+      bearing: 96.5
+      speed: 23.3555775
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -4166,13 +4140,13 @@ entity {
     }
     position {
       latitude: 29.4177
-      longitude: -98.5524521
-      speed: 0
+      longitude: -98.5524597
+      speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "11449"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4183,11 +4157,11 @@ entity {
       label: "418"
     }
     position {
-      latitude: 29.4433727
-      longitude: -98.5005188
+      latitude: 29.4433594
+      longitude: -98.5005112
       speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4203,21 +4177,21 @@ entity {
       label: "539"
     }
     position {
-      latitude: 29.413641
-      longitude: -98.4792862
+      latitude: 29.416502
+      longitude: -98.4841156
       speed: 0
     }
     current_stop_sequence: 13
     stop_id: "12103"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
   id: "419"
   vehicle {
     trip {
-      trip_id: "4690635"
+      trip_id: "4690589"
       route_id: "100"
       start_date: "20240427"
     }
@@ -4226,14 +4200,14 @@ entity {
       label: "419"
     }
     position {
-      latitude: 29.4222851
-      longitude: -98.4801483
-      speed: 0.102888
+      latitude: 29.4234066
+      longitude: -98.4797897
+      speed: 0.051444
     }
-    current_stop_sequence: 15
+    current_stop_sequence: 1
     stop_id: "93296"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    current_status: STOPPED_AT
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4244,11 +4218,11 @@ entity {
       label: "780"
     }
     position {
-      latitude: 29.4424706
-      longitude: -98.5015
-      speed: 0
+      latitude: 29.4424648
+      longitude: -98.5014954
+      speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4260,10 +4234,10 @@ entity {
     }
     position {
       latitude: 29.442564
-      longitude: -98.5015717
+      longitude: -98.5015869
       speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -4279,15 +4253,15 @@ entity {
       label: "660"
     }
     position {
-      latitude: 29.5242977
-      longitude: -98.4990311
-      bearing: 7.2
-      speed: 17.0794086
+      latitude: 29.5340424
+      longitude: -98.4952316
+      bearing: 28.1
+      speed: 12.861
     }
-    current_stop_sequence: 2
-    stop_id: "67156"
-    current_status: STOPPED_AT
-    timestamp: 1714263544
+    current_stop_sequence: 7
+    stop_id: "38866"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4303,15 +4277,15 @@ entity {
       label: "540"
     }
     position {
-      latitude: 29.4104977
-      longitude: -98.4233551
-      bearing: 274.6
-      speed: 10.3916883
+      latitude: 29.4034958
+      longitude: -98.4328537
+      bearing: 259
+      speed: 3.80685616
     }
-    current_stop_sequence: 17
-    stop_id: "21739"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    current_stop_sequence: 24
+    stop_id: "48217"
+    current_status: STOPPED_AT
+    timestamp: 1714263732
   }
 }
 entity {
@@ -4322,11 +4296,11 @@ entity {
       label: "661"
     }
     position {
-      latitude: 29.4430466
-      longitude: -98.5014572
-      speed: 0
+      latitude: 29.4430599
+      longitude: -98.5014496
+      speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -4337,12 +4311,12 @@ entity {
       label: "782"
     }
     position {
-      latitude: 29.5160465
-      longitude: -98.5290375
-      bearing: 235.7
-      speed: 23.4584637
+      latitude: 29.4855251
+      longitude: -98.5415421
+      bearing: 116.9
+      speed: 27.9340916
     }
-    timestamp: 1714263545
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4353,11 +4327,11 @@ entity {
       label: "662"
     }
     position {
-      latitude: 29.4218254
-      longitude: -98.5043182
-      speed: 0.051444
+      latitude: 29.4223099
+      longitude: -98.5042725
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -4368,11 +4342,11 @@ entity {
       label: "783"
     }
     position {
-      latitude: 29.4439373
+      latitude: 29.4439392
       longitude: -98.5033
-      speed: 0
+      speed: 0.205776
     }
-    timestamp: 1714263545
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4383,11 +4357,11 @@ entity {
       label: "421"
     }
     position {
-      latitude: 29.4442959
-      longitude: -98.5018158
-      speed: 0.051444
+      latitude: 29.4442863
+      longitude: -98.5018082
+      speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -4398,11 +4372,11 @@ entity {
       label: "542"
     }
     position {
-      latitude: 29.4436703
-      longitude: -98.5012436
+      latitude: 29.4436741
+      longitude: -98.5012283
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -4418,14 +4392,14 @@ entity {
       label: "663"
     }
     position {
-      latitude: 29.4307709
-      longitude: -98.5545502
+      latitude: 29.4295464
+      longitude: -98.5428772
       speed: 0
     }
-    current_stop_sequence: 27
-    stop_id: "71613"
+    current_stop_sequence: 29
+    stop_id: "74853"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -4436,11 +4410,11 @@ entity {
       label: "784"
     }
     position {
-      latitude: 29.4424553
+      latitude: 29.4424591
       longitude: -98.5013199
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4456,14 +4430,14 @@ entity {
       label: "664"
     }
     position {
-      latitude: 29.5243778
+      latitude: 29.5243759
       longitude: -98.3925552
       speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "59796"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -4474,11 +4448,11 @@ entity {
       label: "785"
     }
     position {
-      latitude: 29.4123592
-      longitude: -98.4978
+      latitude: 29.4148502
+      longitude: -98.4968796
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -4491,9 +4465,9 @@ entity {
     position {
       latitude: 29.4442062
       longitude: -98.5018387
-      speed: 0.051444
+      speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4504,11 +4478,11 @@ entity {
       label: "544"
     }
     position {
-      latitude: 29.4436741
-      longitude: -98.5011826
+      latitude: 29.4436817
+      longitude: -98.5012
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4524,15 +4498,15 @@ entity {
       label: "665"
     }
     position {
-      latitude: 29.4444122
-      longitude: -98.4759598
-      bearing: 285.2
-      speed: 5.24728775
+      latitude: 29.4447784
+      longitude: -98.4778
+      bearing: 279.4
+      speed: 5.76172781
     }
-    current_stop_sequence: 50
-    stop_id: "44679"
+    current_stop_sequence: 51
+    stop_id: "43589"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4548,15 +4522,14 @@ entity {
       label: "545"
     }
     position {
-      latitude: 29.4199486
-      longitude: -98.4964
-      bearing: 118.7
-      speed: 7.40793562
+      latitude: 29.4212208
+      longitude: -98.4911804
+      speed: 0.874548
     }
-    current_stop_sequence: 4
-    stop_id: "98833"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 7
+    stop_id: "11223"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4567,34 +4540,42 @@ entity {
       label: "546"
     }
     position {
-      latitude: 29.4442749
+      latitude: 29.4442768
       longitude: -98.5032196
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263733
   }
 }
 entity {
   id: "667"
   vehicle {
+    trip {
+      trip_id: "4696522"
+      route_id: "20"
+      start_date: "20240427"
+    }
     vehicle {
       id: "667"
       label: "667"
     }
     position {
-      latitude: 29.4568176
-      longitude: -98.4851837
-      bearing: 90.5
-      speed: 14.5586519
+      latitude: 29.4470234
+      longitude: -98.4865799
+      bearing: 103.6
+      speed: 5.55595207
     }
-    timestamp: 1714263544
+    current_stop_sequence: 18
+    stop_id: "42253"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263735
   }
 }
 entity {
   id: "425"
   vehicle {
     trip {
-      trip_id: "4694879"
+      trip_id: "4694925"
       route_id: "4"
       start_date: "20240427"
     }
@@ -4603,14 +4584,14 @@ entity {
       label: "425"
     }
     position {
-      latitude: 29.5193367
-      longitude: -98.4983826
-      speed: 0
+      latitude: 29.5190697
+      longitude: -98.4987183
+      speed: 0.051444
     }
-    current_stop_sequence: 45
+    current_stop_sequence: 1
     stop_id: "10039"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    current_status: STOPPED_AT
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4621,11 +4602,11 @@ entity {
       label: "547"
     }
     position {
-      latitude: 29.4443359
-      longitude: -98.5034332
-      speed: 0.051444
+      latitude: 29.4443302
+      longitude: -98.5034485
+      speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263733
   }
 }
 entity {
@@ -4641,15 +4622,14 @@ entity {
       label: "668"
     }
     position {
-      latitude: 29.4780788
-      longitude: -98.6455383
-      bearing: 167.8
-      speed: 9.36280823
+      latitude: 29.475872
+      longitude: -98.6580582
+      speed: 0.051444
     }
-    current_stop_sequence: 43
-    stop_id: "80019"
+    current_stop_sequence: 45
+    stop_id: "79997"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    timestamp: 1714263733
   }
 }
 entity {
@@ -4665,14 +4645,15 @@ entity {
       label: "548"
     }
     position {
-      latitude: 29.5194759
-      longitude: -98.4982681
-      speed: 0
+      latitude: 29.520195
+      longitude: -98.4983063
+      bearing: 89.3
+      speed: 11.3176804
     }
-    current_stop_sequence: 1
-    stop_id: "10029"
-    current_status: STOPPED_AT
-    timestamp: 1714263546
+    current_stop_sequence: 2
+    stop_id: "79253"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4683,12 +4664,11 @@ entity {
       label: "428"
     }
     position {
-      latitude: 29.4428711
-      longitude: -98.5026627
-      bearing: 90.1
-      speed: 3.03519607
+      latitude: 29.4443226
+      longitude: -98.5015793
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263733
   }
 }
 entity {
@@ -4699,11 +4679,11 @@ entity {
       label: "549"
     }
     position {
-      latitude: 29.4430046
-      longitude: -98.5036163
+      latitude: 29.4430141
+      longitude: -98.5036087
       speed: 0.102888
     }
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4719,15 +4699,15 @@ entity {
       label: "429"
     }
     position {
-      latitude: 29.3691158
-      longitude: -98.4713898
-      bearing: 151.8
-      speed: 10.3916883
+      latitude: 29.3517933
+      longitude: -98.4584885
+      bearing: 82.7
+      speed: 8.59114838
     }
-    current_stop_sequence: 26
-    stop_id: "26557"
+    current_stop_sequence: 30
+    stop_id: "69213"
     current_status: STOPPED_AT
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4743,15 +4723,14 @@ entity {
       label: "670"
     }
     position {
-      latitude: 29.515728
-      longitude: -98.4525223
-      bearing: 90.1
-      speed: 8.07670784
+      latitude: 29.5155449
+      longitude: -98.4210892
+      speed: 0.051444
     }
     current_stop_sequence: 33
     stop_id: "71243"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    current_status: STOPPED_AT
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4762,11 +4741,11 @@ entity {
       label: "550"
     }
     position {
-      latitude: 29.4436817
-      longitude: -98.5010529
+      latitude: 29.4436722
+      longitude: -98.50103
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4777,11 +4756,11 @@ entity {
       label: "671"
     }
     position {
-      latitude: 29.4431114
-      longitude: -98.501091
+      latitude: 29.443119
+      longitude: -98.5011063
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -4792,11 +4771,11 @@ entity {
       label: "672"
     }
     position {
-      latitude: 29.4430351
+      latitude: 29.4430408
       longitude: -98.5011826
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4812,14 +4791,14 @@ entity {
       label: "430"
     }
     position {
-      latitude: 29.462059
-      longitude: -98.5775833
-      speed: 0.051444
+      latitude: 29.4581699
+      longitude: -98.5680771
+      speed: 0
     }
-    current_stop_sequence: 15
-    stop_id: "13163"
-    current_status: STOPPED_AT
-    timestamp: 1714263547
+    current_stop_sequence: 20
+    stop_id: "17933"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263737
   }
 }
 entity {
@@ -4830,12 +4809,11 @@ entity {
       label: "552"
     }
     position {
-      latitude: 29.4429798
-      longitude: -98.5024109
-      bearing: 14.3
-      speed: 4.11552
+      latitude: 29.4436684
+      longitude: -98.5009842
+      speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4851,15 +4829,15 @@ entity {
       label: "673"
     }
     position {
-      latitude: 29.3968773
-      longitude: -98.6939621
-      bearing: 180.9
-      speed: 12.758112
+      latitude: 29.3833504
+      longitude: -98.6980667
+      bearing: 270.2
+      speed: 14.8158712
     }
-    current_stop_sequence: 4
-    stop_id: "47327"
+    current_stop_sequence: 6
+    stop_id: "47406"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    timestamp: 1714263733
   }
 }
 entity {
@@ -4875,14 +4853,14 @@ entity {
       label: "432"
     }
     position {
-      latitude: 29.5242844
-      longitude: -98.3924103
-      speed: 0.051444
+      latitude: 29.5242863
+      longitude: -98.3924
+      speed: 0
     }
     current_stop_sequence: 1
     stop_id: "59889"
     current_status: STOPPED_AT
-    timestamp: 1714263543
+    timestamp: 1714263733
   }
 }
 entity {
@@ -4898,14 +4876,14 @@ entity {
       label: "553"
     }
     position {
-      latitude: 29.4173737
-      longitude: -98.4851761
-      speed: 0.051444
+      latitude: 29.4178925
+      longitude: -98.4859848
+      speed: 0.720216
     }
     current_stop_sequence: 33
     stop_id: "12109"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4916,11 +4894,11 @@ entity {
       label: "674"
     }
     position {
-      latitude: 29.44314
-      longitude: -98.5010147
-      speed: 0
+      latitude: 29.4431419
+      longitude: -98.5010223
+      speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -4931,11 +4909,11 @@ entity {
       label: "554"
     }
     position {
-      latitude: 29.4436646
-      longitude: -98.5009308
-      speed: 0
+      latitude: 29.4436607
+      longitude: -98.5009384
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4951,14 +4929,15 @@ entity {
       label: "675"
     }
     position {
-      latitude: 29.4898262
-      longitude: -98.5504379
-      speed: 0.51444
+      latitude: 29.4886303
+      longitude: -98.5501175
+      bearing: 137.7
+      speed: 8.02526379
     }
     current_stop_sequence: 2
     stop_id: "10503"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    current_status: STOPPED_AT
+    timestamp: 1714263734
   }
 }
 entity {
@@ -4974,15 +4953,15 @@ entity {
       label: "434"
     }
     position {
-      latitude: 29.3841629
-      longitude: -98.4614258
-      bearing: 277
-      speed: 7.09927225
+      latitude: 29.3841057
+      longitude: -98.4762115
+      bearing: 269.2
+      speed: 16.5135231
     }
-    current_stop_sequence: 26
-    stop_id: "89316"
+    current_stop_sequence: 31
+    stop_id: "85379"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -4998,15 +4977,15 @@ entity {
       label: "555"
     }
     position {
-      latitude: 29.4512119
-      longitude: -98.4737701
-      bearing: 21.1
-      speed: 7.97382
+      latitude: 29.4674149
+      longitude: -98.4635696
+      bearing: 0.5
+      speed: 12.7066689
     }
-    current_stop_sequence: 5
-    stop_id: "26626"
+    current_stop_sequence: 8
+    stop_id: "88166"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -5017,11 +4996,11 @@ entity {
       label: "676"
     }
     position {
-      latitude: 29.443037
-      longitude: -98.5010452
-      speed: 0
+      latitude: 29.4430332
+      longitude: -98.50103
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5032,11 +5011,11 @@ entity {
       label: "435"
     }
     position {
-      latitude: 29.4181709
-      longitude: -98.4865265
-      speed: 0.051444
+      latitude: 29.4183769
+      longitude: -98.4878464
+      speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5052,15 +5031,14 @@ entity {
       label: "556"
     }
     position {
-      latitude: 29.4461842
-      longitude: -98.4994431
-      bearing: 180.3
-      speed: 8.69403553
+      latitude: 29.4420261
+      longitude: -98.4993286
+      speed: 0
     }
-    current_stop_sequence: 36
-    stop_id: "47947"
+    current_stop_sequence: 37
+    stop_id: "79877"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5076,14 +5054,15 @@ entity {
       label: "677"
     }
     position {
-      latitude: 29.4218464
-      longitude: -98.4792404
-      speed: 0.051444
+      latitude: 29.4152889
+      longitude: -98.4821701
+      bearing: 301.1
+      speed: 11.0604601
     }
-    current_stop_sequence: 62
-    stop_id: "94429"
-    current_status: STOPPED_AT
-    timestamp: 1714263543
+    current_stop_sequence: 63
+    stop_id: "12103"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
@@ -5094,12 +5073,12 @@ entity {
       label: "436"
     }
     position {
-      latitude: 29.4249649
-      longitude: -98.5014267
-      bearing: 185.9
-      speed: 20.0117168
+      latitude: 29.3957844
+      longitude: -98.5078125
+      bearing: 71.1
+      speed: 18.1082878
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5115,14 +5094,15 @@ entity {
       label: "557"
     }
     position {
-      latitude: 29.4683971
-      longitude: -98.569
-      speed: 0.051444
+      latitude: 29.4752159
+      longitude: -98.5819321
+      bearing: 307.8
+      speed: 7.92237568
     }
-    current_stop_sequence: 44
-    stop_id: "85599"
-    current_status: STOPPED_AT
-    timestamp: 1714263548
+    current_stop_sequence: 50
+    stop_id: "11156"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263734
   }
 }
 entity {
@@ -5133,11 +5113,11 @@ entity {
       label: "678"
     }
     position {
-      latitude: 29.4439602
-      longitude: -98.5037918
+      latitude: 29.4439545
+      longitude: -98.5038
       speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5153,15 +5133,15 @@ entity {
       label: "437"
     }
     position {
-      latitude: 29.3843784
-      longitude: -98.5564499
-      bearing: 64
-      speed: 13.9413242
+      latitude: 29.3682823
+      longitude: -98.5587387
+      bearing: 96.5
+      speed: 6.22472429
     }
-    current_stop_sequence: 56
-    stop_id: "72833"
+    current_stop_sequence: 62
+    stop_id: "48727"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5177,14 +5157,15 @@ entity {
       label: "558"
     }
     position {
-      latitude: 29.5190315
-      longitude: -98.4987
-      speed: 0.051444
+      latitude: 29.5175552
+      longitude: -98.499382
+      bearing: 180.4
+      speed: 5.86461592
     }
-    current_stop_sequence: 1
-    stop_id: "10039"
-    current_status: STOPPED_AT
-    timestamp: 1714263548
+    current_stop_sequence: 2
+    stop_id: "77557"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263734
   }
 }
 entity {
@@ -5200,15 +5181,15 @@ entity {
       label: "559"
     }
     position {
-      latitude: 29.4492378
-      longitude: -98.5668716
-      bearing: 275.3
-      speed: 13.5297718
+      latitude: 29.4485683
+      longitude: -98.5868454
+      bearing: 270.5
+      speed: 12.5523357
     }
-    current_stop_sequence: 36
-    stop_id: "36779"
-    current_status: STOPPED_AT
-    timestamp: 1714263544
+    current_stop_sequence: 45
+    stop_id: "39999"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263734
   }
 }
 entity {
@@ -5224,15 +5205,15 @@ entity {
       label: "439"
     }
     position {
-      latitude: 29.4570293
-      longitude: -98.5575485
-      bearing: 275.5
-      speed: 15.2788687
+      latitude: 29.4597416
+      longitude: -98.5699768
+      bearing: 290.4
+      speed: 11.3176804
     }
-    current_stop_sequence: 30
-    stop_id: "28169"
+    current_stop_sequence: 33
+    stop_id: "15579"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5243,11 +5224,11 @@ entity {
       label: "680"
     }
     position {
-      latitude: 29.4427528
+      latitude: 29.4427509
       longitude: -98.5005264
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5263,14 +5244,14 @@ entity {
       label: "560"
     }
     position {
-      latitude: 29.5080318
+      latitude: 29.5080452
       longitude: -98.5894928
       speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "20056"
     current_status: STOPPED_AT
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5286,14 +5267,15 @@ entity {
       label: "440"
     }
     position {
-      latitude: 29.5123844
-      longitude: -98.5067902
-      speed: 0.925991952
+      latitude: 29.5214081
+      longitude: -98.506218
+      bearing: 33.1
+      speed: 6.68772
     }
-    current_stop_sequence: 44
-    stop_id: "85536"
+    current_stop_sequence: 48
+    stop_id: "65646"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5304,11 +5286,11 @@ entity {
       label: "682"
     }
     position {
-      latitude: 29.4431438
+      latitude: 29.4431458
       longitude: -98.5008163
-      speed: 0.051444
+      speed: 0
     }
-    timestamp: 1714263542
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5319,11 +5301,11 @@ entity {
       label: "683"
     }
     position {
-      latitude: 29.4292774
-      longitude: -98.5047836
+      latitude: 29.4291115
+      longitude: -98.5048218
       speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263738
   }
 }
 entity {
@@ -5339,15 +5321,14 @@ entity {
       label: "562"
     }
     position {
-      latitude: 29.4209328
-      longitude: -98.4986343
-      bearing: 295.6
-      speed: 8.64259148
+      latitude: 29.4240742
+      longitude: -98.5040817
+      speed: 0.051444
     }
     current_stop_sequence: 36
     stop_id: "60027"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5363,15 +5344,15 @@ entity {
       label: "441"
     }
     position {
-      latitude: 29.3680611
-      longitude: -98.535614
-      bearing: 89.7
-      speed: 6.01894808
+      latitude: 29.368248
+      longitude: -98.5172
+      bearing: 89.4
+      speed: 7.81948805
     }
-    current_stop_sequence: 10
-    stop_id: "26783"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    current_stop_sequence: 16
+    stop_id: "22773"
+    current_status: STOPPED_AT
+    timestamp: 1714263738
   }
 }
 entity {
@@ -5382,11 +5363,11 @@ entity {
       label: "563"
     }
     position {
-      latitude: 29.4436588
+      latitude: 29.4436684
       longitude: -98.5007248
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5397,11 +5378,11 @@ entity {
       label: "684"
     }
     position {
-      latitude: 29.4430485
-      longitude: -98.5008774
+      latitude: 29.4430428
+      longitude: -98.5008698
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5412,11 +5393,11 @@ entity {
       label: "564"
     }
     position {
-      latitude: 29.4436569
+      latitude: 29.4436531
       longitude: -98.5006561
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
@@ -5427,11 +5408,11 @@ entity {
       label: "444"
     }
     position {
-      latitude: 29.4442768
-      longitude: -98.5011902
-      speed: 0
+      latitude: 29.4442787
+      longitude: -98.5011749
+      speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5447,14 +5428,15 @@ entity {
       label: "565"
     }
     position {
-      latitude: 29.4896507
-      longitude: -98.5504913
-      speed: 0
+      latitude: 29.4981194
+      longitude: -98.5564194
+      bearing: 333.7
+      speed: 9.6714716
     }
-    current_stop_sequence: 41
-    stop_id: "42237"
-    current_status: STOPPED_AT
-    timestamp: 1714263544
+    current_stop_sequence: 45
+    stop_id: "29569"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263733
   }
 }
 entity {
@@ -5465,11 +5447,11 @@ entity {
       label: "686"
     }
     position {
-      latitude: 29.4431591
-      longitude: -98.5007324
+      latitude: 29.4431629
+      longitude: -98.5007401
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5485,15 +5467,15 @@ entity {
       label: "445"
     }
     position {
-      latitude: 29.4834919
-      longitude: -98.4593353
-      bearing: 179.1
-      speed: 6.01894808
+      latitude: 29.4660835
+      longitude: -98.460907
+      bearing: 178.6
+      speed: 3.65252399
     }
-    current_stop_sequence: 37
-    stop_id: "59757"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    current_stop_sequence: 45
+    stop_id: "99217"
+    current_status: STOPPED_AT
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5504,11 +5486,11 @@ entity {
       label: "566"
     }
     position {
-      latitude: 29.4435463
+      latitude: 29.4435425
       longitude: -98.5007248
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5519,11 +5501,11 @@ entity {
       label: "687"
     }
     position {
-      latitude: 29.4435272
-      longitude: -98.503273
-      speed: 0.051444
+      latitude: 29.4435349
+      longitude: -98.5032501
+      speed: 0.102888
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5539,15 +5521,15 @@ entity {
       label: "446"
     }
     position {
-      latitude: 29.4300575
-      longitude: -98.5044
-      bearing: 99.2
-      speed: 6.32761192
+      latitude: 29.435442
+      longitude: -98.5063553
+      bearing: 4.9
+      speed: 12.0378962
     }
-    current_stop_sequence: 2
-    stop_id: "76646"
+    current_stop_sequence: 5
+    stop_id: "65466"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5558,11 +5540,11 @@ entity {
       label: "567"
     }
     position {
-      latitude: 29.4436398
-      longitude: -98.5006
-      speed: 0
+      latitude: 29.4436493
+      longitude: -98.5005875
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263733
   }
 }
 entity {
@@ -5573,11 +5555,11 @@ entity {
       label: "688"
     }
     position {
-      latitude: 29.4431534
-      longitude: -98.5006866
+      latitude: 29.443161
+      longitude: -98.5006714
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5588,11 +5570,11 @@ entity {
       label: "689"
     }
     position {
-      latitude: 29.4430866
-      longitude: -98.5005569
+      latitude: 29.443079
+      longitude: -98.5005417
       speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5608,14 +5590,15 @@ entity {
       label: "448"
     }
     position {
-      latitude: 29.4527931
-      longitude: -98.4993
-      speed: 0.051444
+      latitude: 29.4607353
+      longitude: -98.4993057
+      bearing: 0
+      speed: 20.2689362
     }
-    current_stop_sequence: 5
-    stop_id: "27946"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 6
+    stop_id: "87956"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5631,15 +5614,14 @@ entity {
       label: "569"
     }
     position {
-      latitude: 29.420208
-      longitude: -98.4909744
-      bearing: 183.2
-      speed: 11.2147913
+      latitude: 29.4148579
+      longitude: -98.4816513
+      speed: 0.051444
     }
     current_stop_sequence: 3
     stop_id: "85773"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5655,15 +5637,14 @@ entity {
       label: "449"
     }
     position {
-      latitude: 29.3636932
-      longitude: -98.4394684
-      bearing: 142.3
-      speed: 4.52707195
+      latitude: 29.3527622
+      longitude: -98.431694
+      speed: 0.051444
     }
-    current_stop_sequence: 44
-    stop_id: "36967"
+    current_stop_sequence: 48
+    stop_id: "58957"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5679,15 +5660,15 @@ entity {
       label: "450"
     }
     position {
-      latitude: 29.4104595
-      longitude: -98.4985123
+      latitude: 29.4155
+      longitude: -98.4971771
       bearing: 315
-      speed: 4.4704
+      speed: 8.9408
     }
-    current_stop_sequence: 52
-    stop_id: "27786"
+    current_stop_sequence: 55
+    stop_id: "18539"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263518
+    timestamp: 1714263699
   }
 }
 entity {
@@ -5698,11 +5679,11 @@ entity {
       label: "571"
     }
     position {
-      latitude: 29.4436398
-      longitude: -98.5005264
+      latitude: 29.4436321
+      longitude: -98.5005188
       speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263734
   }
 }
 entity {
@@ -5714,10 +5695,10 @@ entity {
     }
     position {
       latitude: 29.4434586
-      longitude: -98.5033112
-      speed: 0.154332012
+      longitude: -98.503334
+      speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5733,15 +5714,14 @@ entity {
       label: "693"
     }
     position {
-      latitude: 29.4339581
-      longitude: -98.4944534
-      bearing: 307.6
-      speed: 7.40793562
+      latitude: 29.4404755
+      longitude: -98.4989471
+      speed: 0.051444
     }
-    current_stop_sequence: 7
-    stop_id: "68776"
+    current_stop_sequence: 10
+    stop_id: "56489"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5757,38 +5737,29 @@ entity {
       label: "452"
     }
     position {
-      latitude: 29.3250275
-      longitude: -98.5039139
-      speed: 0.051444
+      latitude: 29.3250332
+      longitude: -98.5039062
+      speed: 0
     }
     current_stop_sequence: 1
     stop_id: "16717"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
   id: "573"
   vehicle {
-    trip {
-      trip_id: "4694130"
-      route_id: "82"
-      start_date: "20240427"
-    }
     vehicle {
       id: "573"
       label: "573"
     }
     position {
-      latitude: 29.428606
-      longitude: -98.4932327
-      bearing: 88.6
-      speed: 6.37905598
+      latitude: 29.429121
+      longitude: -98.4898376
+      speed: 0.051444
     }
-    current_stop_sequence: 62
-    stop_id: "79973"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5799,11 +5770,11 @@ entity {
       label: "694"
     }
     position {
-      latitude: 29.4431534
-      longitude: -98.5021057
-      speed: 0.051444
+      latitude: 29.4431515
+      longitude: -98.5021133
+      speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263735
   }
 }
 entity {
@@ -5819,15 +5790,14 @@ entity {
       label: "574"
     }
     position {
-      latitude: 29.4148483
-      longitude: -98.6008148
-      bearing: 243.8
-      speed: 15.9476404
+      latitude: 29.4040852
+      longitude: -98.6219635
+      speed: 1.08032393
     }
-    current_stop_sequence: 28
-    stop_id: "25189_merged_4734068"
+    current_stop_sequence: 32
+    stop_id: "48379"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -5838,11 +5808,11 @@ entity {
       label: "695"
     }
     position {
-      latitude: 29.4196739
-      longitude: -98.4909515
-      speed: 0
+      latitude: 29.420557
+      longitude: -98.4909363
+      speed: 0.565884
     }
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
@@ -5853,11 +5823,11 @@ entity {
       label: "454"
     }
     position {
-      latitude: 29.4443016
+      latitude: 29.4443054
       longitude: -98.5008698
       speed: 0.051444
     }
-    timestamp: 1714263548
+    timestamp: 1714263734
   }
 }
 entity {
@@ -5873,14 +5843,14 @@ entity {
       label: "575"
     }
     position {
-      latitude: 29.4664803
-      longitude: -98.525383
-      speed: 0
+      latitude: 29.4664783
+      longitude: -98.5254
+      speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "99213"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -5896,14 +5866,14 @@ entity {
       label: "696"
     }
     position {
-      latitude: 29.4224758
-      longitude: -98.4780807
-      speed: 0.051444
+      latitude: 29.4224453
+      longitude: -98.4762802
+      speed: 0.25722
     }
     current_stop_sequence: 6
     stop_id: "94697"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -5914,11 +5884,11 @@ entity {
       label: "455"
     }
     position {
-      latitude: 29.4442329
+      latitude: 29.4442272
       longitude: -98.50103
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263737
   }
 }
 entity {
@@ -5934,15 +5904,14 @@ entity {
       label: "576"
     }
     position {
-      latitude: 29.4576874
-      longitude: -98.5801544
-      bearing: 90.5
-      speed: 12.5008917
+      latitude: 29.4580345
+      longitude: -98.5681915
+      speed: 1.44043195
     }
-    current_stop_sequence: 22
-    stop_id: "23173"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    current_stop_sequence: 26
+    stop_id: "16943"
+    current_status: STOPPED_AT
+    timestamp: 1714263733
   }
 }
 entity {
@@ -5953,11 +5922,11 @@ entity {
       label: "697"
     }
     position {
-      latitude: 29.4427986
+      latitude: 29.4428062
       longitude: -98.501976
       speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -5973,15 +5942,15 @@ entity {
       label: "456"
     }
     position {
-      latitude: 29.3840885
-      longitude: -98.4841385
-      bearing: 145.3
-      speed: 5.65884
+      latitude: 29.3687401
+      longitude: -98.4813156
+      bearing: 184.2
+      speed: 11.7292318
     }
-    current_stop_sequence: 20
-    stop_id: "82387"
-    current_status: STOPPED_AT
-    timestamp: 1714263546
+    current_stop_sequence: 27
+    stop_id: "23757"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
@@ -5996,7 +5965,7 @@ entity {
       longitude: -98.5018158
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6007,12 +5976,12 @@ entity {
       label: "698"
     }
     position {
-      latitude: 29.4730263
-      longitude: -98.516716
-      bearing: 157.7
-      speed: 24.4359
+      latitude: 29.4364491
+      longitude: -98.5043182
+      bearing: 159.4
+      speed: 23.5099087
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6028,15 +5997,15 @@ entity {
       label: "457"
     }
     position {
-      latitude: 29.4647617
-      longitude: -98.5268097
-      bearing: 99.9
-      speed: 6.94494
+      latitude: 29.463726
+      longitude: -98.5370636
+      bearing: 277.8
+      speed: 10.1859112
     }
-    current_stop_sequence: 57
-    stop_id: "98573"
+    current_stop_sequence: 62
+    stop_id: "96729"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -6047,11 +6016,12 @@ entity {
       label: "578"
     }
     position {
-      latitude: 29.443325
-      longitude: -98.5008774
-      speed: 0
+      latitude: 29.4434433
+      longitude: -98.5020447
+      bearing: 200.7
+      speed: 4.57851601
     }
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -6062,11 +6032,11 @@ entity {
       label: "699"
     }
     position {
-      latitude: 29.4428
-      longitude: -98.5019
+      latitude: 29.442812
+      longitude: -98.501915
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -6082,15 +6052,15 @@ entity {
       label: "458"
     }
     position {
-      latitude: 29.5210571
-      longitude: -98.3185196
-      bearing: 322.4
-      speed: 13.1696644
+      latitude: 29.5307331
+      longitude: -98.3322601
+      bearing: 18.2
+      speed: 9.36280823
     }
-    current_stop_sequence: 50
-    stop_id: "63346"
+    current_stop_sequence: 55
+    stop_id: "48586"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263545
+    timestamp: 1714263734
   }
 }
 entity {
@@ -6102,10 +6072,10 @@ entity {
     }
     position {
       latitude: 29.4434242
-      longitude: -98.5017471
-      speed: 0.051444
+      longitude: -98.5017548
+      speed: 0
     }
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -6121,14 +6091,14 @@ entity {
       label: "459"
     }
     position {
-      latitude: 29.5079365
-      longitude: -98.5897
-      speed: 0.051444
+      latitude: 29.5079498
+      longitude: -98.5897064
+      speed: 0
     }
     current_stop_sequence: 1
     stop_id: "20027"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263737
   }
 }
 entity {
@@ -6144,15 +6114,14 @@ entity {
       label: "580"
     }
     position {
-      latitude: 29.4921932
-      longitude: -98.4012375
-      bearing: 14.7
-      speed: 23.9729023
+      latitude: 29.5240688
+      longitude: -98.3926926
+      speed: 0
     }
     current_stop_sequence: 24
     stop_id: "59799"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    current_status: STOPPED_AT
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6163,11 +6132,11 @@ entity {
       label: "460"
     }
     position {
-      latitude: 29.4441
+      latitude: 29.4440918
       longitude: -98.503418
       speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6178,11 +6147,11 @@ entity {
       label: "581"
     }
     position {
-      latitude: 29.4433975
+      latitude: 29.443409
       longitude: -98.5016785
       speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263734
   }
 }
 entity {
@@ -6198,39 +6167,30 @@ entity {
       label: "461"
     }
     position {
-      latitude: 29.5711079
-      longitude: -98.5174713
-      bearing: 221.9
-      speed: 8.84836864
+      latitude: 29.5589104
+      longitude: -98.5175171
+      bearing: 152.5
+      speed: 9.46569538
     }
-    current_stop_sequence: 16
-    stop_id: "52417"
-    current_status: STOPPED_AT
-    timestamp: 1714263546
+    current_stop_sequence: 19
+    stop_id: "82487"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
   id: "582"
   vehicle {
-    trip {
-      trip_id: "4693011"
-      route_id: "611"
-      start_date: "20240427"
-    }
     vehicle {
       id: "582"
       label: "582"
     }
     position {
-      latitude: 29.4027309
-      longitude: -98.6286392
-      bearing: 315
-      speed: 6.7056
+      latitude: 29.4023304
+      longitude: -98.6320572
+      bearing: 270
     }
-    current_stop_sequence: 34
-    stop_id: "46566"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263475
+    timestamp: 1714263685
   }
 }
 entity {
@@ -6241,11 +6201,11 @@ entity {
       label: "462"
     }
     position {
-      latitude: 29.4443245
-      longitude: -98.5007248
-      speed: 0.051444
+      latitude: 29.4443302
+      longitude: -98.5007172
+      speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263733
   }
 }
 entity {
@@ -6256,11 +6216,11 @@ entity {
       label: "583"
     }
     position {
-      latitude: 29.4433937
+      latitude: 29.4433918
       longitude: -98.5016403
-      speed: 0.051444
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263734
   }
 }
 entity {
@@ -6271,11 +6231,11 @@ entity {
       label: "463"
     }
     position {
-      latitude: 29.4207878
-      longitude: -98.5027161
-      speed: 1.44043195
+      latitude: 29.4207706
+      longitude: -98.5041885
+      speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -6286,11 +6246,11 @@ entity {
       label: "584"
     }
     position {
-      latitude: 29.4434
+      latitude: 29.4434052
       longitude: -98.5016
       speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263734
   }
 }
 entity {
@@ -6301,11 +6261,11 @@ entity {
       label: "464"
     }
     position {
-      latitude: 29.4716072
-      longitude: -98.4372101
+      latitude: 29.4846
+      longitude: -98.4303436
       speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263735
   }
 }
 entity {
@@ -6321,15 +6281,15 @@ entity {
       label: "585"
     }
     position {
-      latitude: 29.4139328
+      latitude: 29.427393
       longitude: -98.4762039
-      bearing: 0.2
-      speed: 3.39530396
+      bearing: 358.4
+      speed: 3.60108
     }
     current_stop_sequence: 2
     stop_id: "84293"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    timestamp: 1714263735
   }
 }
 entity {
@@ -6345,15 +6305,15 @@ entity {
       label: "586"
     }
     position {
-      latitude: 29.4359722
-      longitude: -98.5211792
-      bearing: 94.7
-      speed: 12.6037798
+      latitude: 29.4348202
+      longitude: -98.508812
+      bearing: 96.7
+      speed: 11.3691244
     }
-    current_stop_sequence: 18
-    stop_id: "61543"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 24
+    stop_id: "65733"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6369,14 +6329,14 @@ entity {
       label: "587"
     }
     position {
-      latitude: 29.5165958
-      longitude: -98.5968399
-      speed: 0.051444
+      latitude: 29.5089893
+      longitude: -98.5900269
+      speed: 0.462995976
     }
-    current_stop_sequence: 14
-    stop_id: "77633"
-    current_status: STOPPED_AT
-    timestamp: 1714263545
+    current_stop_sequence: 18
+    stop_id: "20087"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6392,15 +6352,15 @@ entity {
       label: "466"
     }
     position {
-      latitude: 29.4702873
-      longitude: -98.5078354
-      bearing: 0.3
-      speed: 12.5523357
+      latitude: 29.4880581
+      longitude: -98.5078
+      bearing: 1.6
+      speed: 2.8808639
     }
-    current_stop_sequence: 26
-    stop_id: "85126"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    current_stop_sequence: 33
+    stop_id: "45506"
+    current_status: STOPPED_AT
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6411,11 +6371,11 @@ entity {
       label: "467"
     }
     position {
-      latitude: 29.4442329
+      latitude: 29.4442196
       longitude: -98.5007172
-      speed: 0
+      speed: 0.051444
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -6431,14 +6391,15 @@ entity {
       label: "468"
     }
     position {
-      latitude: 29.4366779
-      longitude: -98.6846924
-      speed: 0
+      latitude: 29.4353
+      longitude: -98.6921616
+      bearing: 280.5
+      speed: 20.4747124
     }
-    current_stop_sequence: 17
-    stop_id: "81159"
+    current_stop_sequence: 19
+    stop_id: "96389"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6454,14 +6415,14 @@ entity {
       label: "589"
     }
     position {
-      latitude: 29.527771
+      latitude: 29.5277767
       longitude: -98.4735565
       speed: 0
     }
     current_stop_sequence: 1
     stop_id: "55229"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6477,15 +6438,14 @@ entity {
       label: "469"
     }
     position {
-      latitude: 29.4261932
-      longitude: -98.5038757
-      bearing: 201.7
-      speed: 4.26985216
+      latitude: 29.4203281
+      longitude: -98.5142059
+      speed: 0
     }
-    current_stop_sequence: 2
-    stop_id: "84569"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    current_stop_sequence: 5
+    stop_id: "93747"
+    current_status: STOPPED_AT
+    timestamp: 1714263735
   }
 }
 entity {
@@ -6501,15 +6461,15 @@ entity {
       label: "590"
     }
     position {
-      latitude: 29.4485874
-      longitude: -98.6028442
-      bearing: 106.3
-      speed: 6.32761192
+      latitude: 29.4487
+      longitude: -98.5828629
+      bearing: 72.6
+      speed: 14.610096
     }
-    current_stop_sequence: 15
-    stop_id: "36913"
+    current_stop_sequence: 22
+    stop_id: "32853"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -6520,12 +6480,12 @@ entity {
       label: "470"
     }
     position {
-      latitude: 29.5205116
-      longitude: -98.5551605
-      bearing: 165.8
-      speed: 28.2427559
+      latitude: 29.4933872
+      longitude: -98.5487671
+      bearing: 69.8
+      speed: 4.11552
     }
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -6536,11 +6496,11 @@ entity {
       label: "591"
     }
     position {
-      latitude: 29.4434223
-      longitude: -98.5014725
+      latitude: 29.4434242
+      longitude: -98.5014572
       speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263737
   }
 }
 entity {
@@ -6551,11 +6511,11 @@ entity {
       label: "471"
     }
     position {
-      latitude: 29.4442081
-      longitude: -98.5005188
+      latitude: 29.444212
+      longitude: -98.5005112
       speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6566,11 +6526,11 @@ entity {
       label: "592"
     }
     position {
-      latitude: 29.4434223
-      longitude: -98.5013809
-      speed: 0
+      latitude: 29.4434204
+      longitude: -98.5013733
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -6581,11 +6541,11 @@ entity {
       label: "472"
     }
     position {
-      latitude: 29.4285393
+      latitude: 29.4285526
       longitude: -98.5049
       speed: 0.051444
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6596,12 +6556,11 @@ entity {
       label: "593"
     }
     position {
-      latitude: 29.4670467
-      longitude: -98.516
-      bearing: 180.2
-      speed: 27.419651
+      latitude: 29.4391308
+      longitude: -98.5060654
+      speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263737
   }
 }
 entity {
@@ -6612,11 +6571,11 @@ entity {
       label: "594"
     }
     position {
-      latitude: 29.4434128
+      latitude: 29.443409
       longitude: -98.5013351
       speed: 0
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
 entity {
@@ -6632,14 +6591,14 @@ entity {
       label: "473"
     }
     position {
-      latitude: 29.4941959
-      longitude: -98.5482559
+      latitude: 29.4941769
+      longitude: -98.5482407
       speed: 0
     }
     current_stop_sequence: 1
     stop_id: "32256"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -6650,35 +6609,27 @@ entity {
       label: "474"
     }
     position {
-      latitude: 29.4439926
-      longitude: -98.5016098
-      speed: 0
+      latitude: 29.4435577
+      longitude: -98.5022202
+      speed: 0.051444
     }
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
   id: "595"
   vehicle {
-    trip {
-      trip_id: "4698034"
-      route_id: "25"
-      start_date: "20240427"
-    }
     vehicle {
       id: "595"
       label: "595"
     }
     position {
-      latitude: 29.4241562
-      longitude: -98.476265
-      bearing: 358.9
-      speed: 3.96118784
+      latitude: 29.4266415
+      longitude: -98.4792404
+      bearing: 180.7
+      speed: 8.89981174
     }
-    current_stop_sequence: 4
-    stop_id: "84747"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263548
+    timestamp: 1714263738
   }
 }
 entity {
@@ -6689,11 +6640,11 @@ entity {
       label: "596"
     }
     position {
-      latitude: 29.4434013
-      longitude: -98.5012894
-      speed: 0.051444
+      latitude: 29.4433975
+      longitude: -98.5012817
+      speed: 0
     }
-    timestamp: 1714263544
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6709,14 +6660,15 @@ entity {
       label: "475"
     }
     position {
-      latitude: 29.4049816
-      longitude: -98.5027542
-      speed: 0.102888
+      latitude: 29.385973
+      longitude: -98.503273
+      bearing: 160.2
+      speed: 18.7770596
     }
-    current_stop_sequence: 10
-    stop_id: "46157"
-    current_status: STOPPED_AT
-    timestamp: 1714263547
+    current_stop_sequence: 21
+    stop_id: "86157"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263733
   }
 }
 entity {
@@ -6732,21 +6684,21 @@ entity {
       label: "597"
     }
     position {
-      latitude: 29.5862255
-      longitude: -98.6183395
-      speed: 0
+      latitude: 29.5885525
+      longitude: -98.6232
+      speed: 0.051444
     }
-    current_stop_sequence: 1
-    stop_id: "11907"
-    current_status: STOPPED_AT
-    timestamp: 1714263547
+    current_stop_sequence: 2
+    stop_id: "14423"
+    current_status: IN_TRANSIT_TO
+    timestamp: 1714263738
   }
 }
 entity {
   id: "476"
   vehicle {
     trip {
-      trip_id: "4697769"
+      trip_id: "4697782"
       route_id: "97"
       start_date: "20240427"
     }
@@ -6755,15 +6707,14 @@ entity {
       label: "476"
     }
     position {
-      latitude: 29.5683937
-      longitude: -98.5958252
-      bearing: 271.4
-      speed: 11.7292318
+      latitude: 29.5644569
+      longitude: -98.5936127
+      speed: 0
     }
-    current_stop_sequence: 89
-    stop_id: "67787"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    current_stop_sequence: 1
+    stop_id: "67687"
+    current_status: STOPPED_AT
+    timestamp: 1714263737
   }
 }
 entity {
@@ -6779,14 +6730,14 @@ entity {
       label: "477"
     }
     position {
-      latitude: 29.4179077
-      longitude: -98.6485138
-      speed: 0.977436
+      latitude: 29.4206142
+      longitude: -98.657196
+      speed: 0
     }
-    current_stop_sequence: 31
-    stop_id: "12449"
+    current_stop_sequence: 35
+    stop_id: "98853"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -6802,14 +6753,14 @@ entity {
       label: "478"
     }
     position {
-      latitude: 29.5654716
+      latitude: 29.5654736
       longitude: -98.5939484
-      speed: 0.051444
+      speed: 0
     }
     current_stop_sequence: 1
     stop_id: "67677"
     current_status: STOPPED_AT
-    timestamp: 1714263548
+    timestamp: 1714263733
   }
 }
 entity {
@@ -6825,15 +6776,15 @@ entity {
       label: "599"
     }
     position {
-      latitude: 29.4250107
-      longitude: -98.4417114
-      bearing: 88.2
-      speed: 16.8221893
+      latitude: 29.4393902
+      longitude: -98.4279938
+      bearing: 91.7
+      speed: 15.8961954
     }
-    current_stop_sequence: 16
-    stop_id: "86713"
+    current_stop_sequence: 24
+    stop_id: "59653"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -6849,14 +6800,15 @@ entity {
       label: "479"
     }
     position {
-      latitude: 29.4986019
-      longitude: -98.5909653
-      speed: 0.051444
+      latitude: 29.4919338
+      longitude: -98.5847
+      bearing: 315
+      speed: 5.19584417
     }
-    current_stop_sequence: 15
-    stop_id: "28593"
+    current_stop_sequence: 18
+    stop_id: "31887"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263735
   }
 }
 entity {
@@ -6872,14 +6824,14 @@ entity {
       label: "480"
     }
     position {
-      latitude: 29.4177437
-      longitude: -98.5523
-      speed: 0
+      latitude: 29.4177418
+      longitude: -98.5523071
+      speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "11449"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -6891,10 +6843,10 @@ entity {
     }
     position {
       latitude: 29.4439468
-      longitude: -98.501236
-      speed: 0.051444
+      longitude: -98.5012436
+      speed: 0
     }
-    timestamp: 1714263547
+    timestamp: 1714263734
   }
 }
 entity {
@@ -6905,11 +6857,11 @@ entity {
       label: "482"
     }
     position {
-      latitude: 29.4439754
+      latitude: 29.4439945
       longitude: -98.5012054
       speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263734
   }
 }
 entity {
@@ -6925,14 +6877,14 @@ entity {
       label: "483"
     }
     position {
-      latitude: 29.4941139
-      longitude: -98.5481
+      latitude: 29.494112
+      longitude: -98.548111
       speed: 0
     }
     current_stop_sequence: 1
     stop_id: "32253"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263738
   }
 }
 entity {
@@ -6948,15 +6900,14 @@ entity {
       label: "485"
     }
     position {
-      latitude: 29.4252663
-      longitude: -98.5876389
-      bearing: 3
-      speed: 15.1245356
+      latitude: 29.4338226
+      longitude: -98.5875626
+      speed: 0.051444
     }
-    current_stop_sequence: 13
-    stop_id: "81616"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263543
+    current_stop_sequence: 18
+    stop_id: "61926"
+    current_status: STOPPED_AT
+    timestamp: 1714263733
   }
 }
 entity {
@@ -6972,15 +6923,15 @@ entity {
       label: "486"
     }
     position {
-      latitude: 29.4567909
-      longitude: -98.4924088
-      bearing: 270
-      speed: 11.176
+      latitude: 29.4519291
+      longitude: -98.4993515
+      bearing: 180
+      speed: 13.4112
     }
     current_stop_sequence: 48
     stop_id: "47947"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263498
+    timestamp: 1714263700
   }
 }
 entity {
@@ -6996,14 +6947,14 @@ entity {
       label: "487"
     }
     position {
-      latitude: 29.6212902
-      longitude: -98.4914474
-      speed: 0
+      latitude: 29.6212826
+      longitude: -98.4914551
+      speed: 0.051444
     }
     current_stop_sequence: 1
     stop_id: "67199"
     current_status: STOPPED_AT
-    timestamp: 1714263545
+    timestamp: 1714263737
   }
 }
 entity {
@@ -7019,15 +6970,15 @@ entity {
       label: "488"
     }
     position {
-      latitude: 29.3881931
-      longitude: -98.5003738
-      bearing: 180.2
-      speed: 7.7166
+      latitude: 29.3876247
+      longitude: -98.5156403
+      bearing: 180.5
+      speed: 5.96750402
     }
-    current_stop_sequence: 20
-    stop_id: "77537"
+    current_stop_sequence: 26
+    stop_id: "73617"
     current_status: STOPPED_AT
-    timestamp: 1714263547
+    timestamp: 1714263738
   }
 }
 entity {
@@ -7043,14 +6994,15 @@ entity {
       label: "489"
     }
     position {
-      latitude: 29.5202408
-      longitude: -98.5074844
-      speed: 1.02888
+      latitude: 29.5209236
+      longitude: -98.499382
+      bearing: 179.9
+      speed: 8.28248405
     }
-    current_stop_sequence: 28
-    stop_id: "65646"
+    current_stop_sequence: 30
+    stop_id: "10019"
     current_status: IN_TRANSIT_TO
-    timestamp: 1714263546
+    timestamp: 1714263736
   }
 }
 entity {
@@ -7061,11 +7013,11 @@ entity {
       label: "491"
     }
     position {
-      latitude: 29.4439697
-      longitude: -98.5007172
+      latitude: 29.4439716
+      longitude: -98.5007248
       speed: 0
     }
-    timestamp: 1714263548
+    timestamp: 1714263733
   }
 }
 entity {
@@ -7081,14 +7033,14 @@ entity {
       label: "492"
     }
     position {
-      latitude: 29.4736671
-      longitude: -98.5261612
-      speed: 0
+      latitude: 29.4824295
+      longitude: -98.5259705
+      speed: 0.051444
     }
-    current_stop_sequence: 31
-    stop_id: "79316"
-    current_status: IN_TRANSIT_TO
-    timestamp: 1714263544
+    current_stop_sequence: 34
+    stop_id: "59716"
+    current_status: STOPPED_AT
+    timestamp: 1714263735
   }
 }
 entity {
@@ -7099,12 +7051,12 @@ entity {
       label: "493"
     }
     position {
-      latitude: 29.4766254
-      longitude: -98.5798492
-      bearing: 66.9
-      speed: 7.8709321
+      latitude: 29.4730473
+      longitude: -98.5781708
+      bearing: 116.6
+      speed: 11.935008
     }
-    timestamp: 1714263547
+    timestamp: 1714263737
   }
 }
 entity {
@@ -7120,14 +7072,14 @@ entity {
       label: "494"
     }
     position {
-      latitude: 29.5242538
-      longitude: -98.3926239
-      speed: 0.051444
+      latitude: 29.5242577
+      longitude: -98.3926163
+      speed: 0
     }
     current_stop_sequence: 1
     stop_id: "59789"
     current_status: STOPPED_AT
-    timestamp: 1714263546
+    timestamp: 1714263737
   }
 }
 entity {
@@ -7138,11 +7090,11 @@ entity {
       label: "495"
     }
     position {
-      latitude: 29.4439888
+      latitude: 29.4439945
       longitude: -98.5005264
       speed: 0
     }
-    timestamp: 1714263545
+    timestamp: 1714263736
   }
 }
 entity {
@@ -7153,11 +7105,11 @@ entity {
       label: "499"
     }
     position {
-      latitude: 29.4439278
-      longitude: -98.5007782
-      speed: 0
+      latitude: 29.4439201
+      longitude: -98.5007706
+      speed: 0.051444
     }
-    timestamp: 1714263545
+    timestamp: 1714263737
   }
 }
 entity {
@@ -7168,11 +7120,11 @@ entity {
       label: "VIALink043R"
     }
     position {
-      latitude: 29.4930897
-      longitude: -98.4015045
-      bearing: 190
-      speed: 27.0595436
+      latitude: 29.4565639
+      longitude: -98.4067383
+      bearing: 309.6
+      speed: 11.9864511
     }
-    timestamp: 1714263543
+    timestamp: 1714263734
   }
 }
