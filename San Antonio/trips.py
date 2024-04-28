@@ -16,9 +16,9 @@ class Trips:
         self.bikes = bikes
         
     def __repr__(self):
-        return(f'''{self.route_id}, {self.service_id}, {self.trip_id}, 
-               {self.headsign}, {self.direction_id}, {self.block_id},
-               {self.shape_id}, {self.wheelchair}, {self.bikes}''') 
+        return(f'''{self.route_id}, {self.service_id}, {self.trip_id},\n 
+               {self.headsign}, {self.direction_id}, {self.block_id},\n
+               {self.shape_id}, {self.wheelchair}, {self.bikes}\n''') 
     
 trips = {}
 
@@ -42,6 +42,3 @@ for line in textdata.splitlines():
     obj = Trips(route_id, service_id, trip_id, headsign, short_name, 
                 direction_id, block_id, shape_id, wheelchair, bikes)
     trips[trip_id] = obj
-                
-
-print(trips)

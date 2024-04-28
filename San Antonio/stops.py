@@ -17,7 +17,8 @@ class Stops:
         self.wheelchair = wheelchair
 
     def __repr__(self):
-        return f"{self.name}, {self.lat}, {self.lon}"
+        return f"ID {self.id} NAME {self.name} LAT {self.lat} LON {self.lon}\n"
+
     
 stops = {}
 

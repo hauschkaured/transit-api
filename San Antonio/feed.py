@@ -10,7 +10,8 @@ class Feed:
         self.version = version
 
     def __repr__(self):
-        return f"{self.id}"
+        return f'''PUB {self.publisher} URL {self.url} LANG {self.lang} \n
+        ST {self.start} END {self.end} VER {self.version}'''
     
 feed = {}
 
