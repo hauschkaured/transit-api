@@ -1,12 +1,14 @@
 import gtfsrt_pb2
 import requests
-import json
 from google.protobuf import json_format
 import pprint as PP
 
+import numpy
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
-
 
 rt1_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/vehicles"  # GTFS-RT Endpoint
 rt2_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/trips"  # GTFS-RT Endpoint
@@ -36,6 +38,17 @@ def write_to_file(path: str, content: str) -> None:
     """
     with open(path, 'w') as f:
         f.write(content)
+
+def vehicle_processing(data):
+    vid_list = []
+    for bus in data["entity"]:
+        vehicle = bus["vehicle"]["vehicle"]["id"]
+        vid_list.append(vehicle)
+    vid_list.sort()
+    pprint(vid_list)
+    
+
+    
 
 def main() -> None:
     # REST GET request to get protobuf data from endpoint
@@ -85,28 +98,12 @@ def main() -> None:
     fm_str3 = str(feedmsg3)
     fm_str4 = str(feedmsg4)
 
-
-
-    data = json_format.MessageToDict(feedmsg1)
-
-    print(type(data))
-    vid_list = []
-    pprint(data)
-    bus = data["entity"]
-    for i in bus:
-        
-        possibleKeys = ["trip", "position", "timestamp", "vehicle"]
-        possiblePos = ["bearing", "latitude", "longitude", "speed"]
-
-        list = [0,0,0,0,0,0,0,0]
-        keys = i["vehicle"].keys()
-        for i in range(len(possibleKeys)):
-            if possibleKeys[i] in keys:
-                list[i] = 1
-
-
-
+    data1 = json_format.MessageToDict(feedmsg1)
+    data2 = json_format.MessageToDict(feedmsg2)
+    data3 = json_format.MessageToDict(feedmsg3)
+    data4 = json_format.MessageToDict(feedmsg4)
    
+    vehicle_processing(data1)
 
 
     # Write output to output_path and additional pretty prints :3 

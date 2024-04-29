@@ -165,8 +165,12 @@ def vehicle_processing(data):
                 posobj = Position(lat, lon)
             obj = Nonvehicle(posobj, time, vid)
             nonroute[vid] = obj
-    pprint(buses)
     
+def trip_feed_processing(data):
+    for trip in data["entity"]:
+        id = trip["id"]
+        content = trip["tripupdate"]
+        timestamp = trip["timestamp"] 
 
 def main() -> None:
     # REST GET request to get protobuf data from endpoint
@@ -199,7 +203,7 @@ def main() -> None:
     fm_str2 = str(feedmsg2)
 
     data1 = json_format.MessageToDict(feedmsg1)
-    # data2 = json_format.MessageToDict(feedmsg2)
+    data2 = json_format.MessageToDict(feedmsg2)
 
     ## Data Processing 
     vehicle_processing(data1)
@@ -221,11 +225,17 @@ def buses_on_route(rt):
     route = str(rt)
     for bus in buses.keys():
         main = buses[bus]
+        if main.stopid in stops.keys():
+            sec = stops[main.stopid]
+        name = sec.name
         if main.indicator:
             if main.trip.route_id == route:
-                print(f"\x1b[33mRoute \x1b[34m{route} #{main.vehicle} \x1b[0mis {main.status}")
+                print(f"\x1b[33mRoute \x1b[34m{route} #{main.vehicle} \x1b[0mis {main.status} {name}")
         
+buses_on_route('93')
 buses_on_route('17')
+buses_on_route('64')
+buses_on_route('7')
 
 
 # def data_process(data):

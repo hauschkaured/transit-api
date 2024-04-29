@@ -3,11 +3,18 @@ For doing stuff with transit GTFS-RT data.
 
 Disclaimer: This project is not currently in a working state. 
 
+# Dependencies
+
+This project was written in Python 3.12. It makes use of the `requests` module to 
+fetch data from URLs. It makes use of the `protobuf` package to parse the protobuf
+binary encodings that are fetched from the URLs. 
+
 # Version List
 
 v0.4 (Currently WIP).
 Reworking the app to stay away from API use and migrate to agency-provided GTFS-RT 
-feeds. Current cities planned to have support: Pittsburgh, San Antonio.
+feeds. Current cities planned to have support: Pittsburgh, San Antonio. Converted 
+all GTFS static feed files to python files with associated classes and methods. 
 
 v0.3.2 (April 25, 2024)
 - Changed name of project from transit-api to TransitFoamer.

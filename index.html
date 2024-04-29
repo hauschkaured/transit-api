@@ -1,0 +1,79 @@
+<h1> Classes </h1>
+
+The files agency.py, calendar_dates.py, gtfs_calendar.py, routes.py, shapes.py,
+stop_times.py, stops.py, transfers.py, and trips.py have special classes that 
+take the data from the respective .txt files and make them easier to work with.
+
+<h2> <code> Agency(agency_id, agency_name, agency_url, agency_timezone, 
+    agency_lang, agency_phone, agency_fare_url) </code> </h2>
+
+<p> The class <code> Agency</code> contains information about the transit 
+    agency in question. 
+
+    <ul>
+        <li> <code> Agency.id </code> </li>
+        <li> <code> Agency.name </code> </li>
+        <li> <code> Agency.url </code> </li>
+        <li> <code> Agency.timezone </code> </li>
+        <li> <code> Agency.lang </code> </li>
+        <li> <code> Agency.phone </code> </li>
+        <li> <code> Agency.fare_url </code> </li>
+    </ul>
+</p>
+
+<h2> <code> Dates(service_id, date, exception_type) </code> </h2>
+
+<p> The class <code> Dates</code> contains information about the dates through
+which the feed provides valid information.
+
+    <ul>
+        <li> <code> Dates.id </code> </li>
+        <li> <code> Dates.date </code> </li>
+        <li> <code> Dates.type </code> </li>
+    </ul>
+</p>
+
+<h2> <code> Calendar(service_id, monday, tuesday, wednesday, thursday, friday, 
+    saturday, sunday, start_date, end_date)</code></h2>
+
+<h2> <code> Feed(feed_publisher_name, feed_publisher_url, feed_lang, 
+    feed_start_date, feed_end_date,feed_version)</code></h2>
+
+<h2> <code> Routes(route_id, agency_id, route_short_name, route_long_name, 
+    route_desc, route_type, route_url, route_color, route_text_color)</code> 
+</h2>
+
+<p> The class <code> Routes</code> contains information about the routes that 
+    the transit agency runs.
+    <ul>
+        <li> <code> Routes.id</code> returns the ID of the route. </li>
+        <li> <code> Routes.agency</code> returns the agency ID. </li>
+        <li> <code> Routes.short_name</code> returns the short name of the
+        route, usually the route number or identifier. </li>
+        <li> <code> Routes.long_name</code> returns the long name of the route, 
+        usually what is seen on the transit agency's paper schedules. </li>
+        <li> <code> Routes.desc</code> returns a description of the route. </li>
+        <li> <code> Routes.type</code> returns the type of service the route
+        runs. </li>
+        <li> <code> Routes.url</code> returns the route's unique URL, if 
+        provided.</li>
+        <li> <code> Routes.color</code> returns the route's color. </li>
+        <li> <code> Routes.text</code> returns the desired color of the text,
+        if provided.</li>  
+    </ul>
+</p>
+
+<h2> <code> Shapes(shape_id, shape_pt_lat, shape_pt_lon, shape_pt_sequence, 
+    shape_dist_traveled)</code></h2>
+
+<h2> <code> Stoptimes(trip_id, arrival_time, departure_time, stop_id, 
+    stop_sequence, stop_headsign, pickup_type, drop_off_type, 
+    shape_dist_traveled, timepoint)
+</code></h2> 
+
+<h2> <code> Transfer(from_stop_id, to_stop_id, transfer_type, min_transfer_time)
+</code></h2>
+
+<h2> <code> Trips(route_id, service_id, trip_id, trip_headsign, trip_short_name,
+    direction_id, block_id, shape_id, wheelchair_accessible, bikes_allowed)
+</code></h2>

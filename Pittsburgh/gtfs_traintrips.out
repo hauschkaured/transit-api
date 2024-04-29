@@ -1,70 +1,196 @@
 header {
   gtfs_realtime_version: "2.0"
   incrementality: FULL_DATASET
-  timestamp: 1714166576
+  timestamp: 1714407436
 }
 entity {
   id: "1"
   trip_update {
     trip {
-      trip_id: "1074058020"
-      route_id: "BLUE"
+      trip_id: "1074309020"
+      route_id: "SLVR"
       schedule_relationship: SCHEDULED
     }
     vehicle {
-      id: "4250"
+      id: "4234"
+    }
+    stop_time_update {
+      stop_sequence: 18
+      stop_id: "96"
+      arrival {
+        time: 1714407522
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      stop_id: "94"
+      arrival {
+        time: 1714407574
+      }
+      schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 20
-      stop_id: "30"
+      stop_id: "92"
       arrival {
-        time: 1714166659
+        time: 1714407780
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 21
-      stop_id: "42"
+      stop_id: "90"
       arrival {
-        time: 1714166725
+        time: 1714407882
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 22
-      stop_id: "28"
+      stop_id: "102"
       arrival {
-        time: 1714166825
+        time: 1714407985
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 23
-      stop_id: "36"
+      stop_id: "88"
       arrival {
-        time: 1714166877
+        time: 1714408088
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1714166524
+    stop_time_update {
+      stop_sequence: 24
+      stop_id: "71"
+      arrival {
+        time: 1714408140
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      stop_id: "77"
+      arrival {
+        time: 1714408380
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      stop_id: "7"
+      arrival {
+        time: 1714408530
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      stop_id: "9"
+      arrival {
+        time: 1714408605
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      stop_id: "12"
+      arrival {
+        time: 1714408680
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      stop_id: "13"
+      arrival {
+        time: 1714408815
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      stop_id: "5"
+      arrival {
+        time: 1714409085
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407418
   }
 }
 entity {
   id: "2"
   trip_update {
     trip {
-      trip_id: "1074142020"
-      route_id: "RED"
+      trip_id: "1073998020"
+      route_id: "SLVR"
       schedule_relationship: SCHEDULED
     }
     vehicle {
-      id: "4237"
+      id: "4324"
+    }
+    stop_time_update {
+      stop_sequence: 26
+      stop_id: "7"
+      arrival {
+        time: 1714407501
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      stop_id: "9"
+      arrival {
+        time: 1714407576
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      stop_id: "12"
+      arrival {
+        time: 1714407651
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      stop_id: "13"
+      arrival {
+        time: 1714407786
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      stop_id: "5"
+      arrival {
+        time: 1714408056
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407365
+  }
+}
+entity {
+  id: "3"
+  trip_update {
+    trip {
+      trip_id: "1074122020"
+      route_id: "SLVR"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "4324"
     }
     stop_time_update {
       stop_sequence: 1
       stop_id: "6"
       departure {
-        time: 1714167600
+        time: 1714408200
       }
       schedule_relationship: SCHEDULED
     }
@@ -72,7 +198,7 @@ entity {
       stop_sequence: 2
       stop_id: "110"
       arrival {
-        time: 1714167768
+        time: 1714408390
       }
       schedule_relationship: SCHEDULED
     }
@@ -80,7 +206,7 @@ entity {
       stop_sequence: 3
       stop_id: "111"
       arrival {
-        time: 1714167992
+        time: 1714408557
       }
       schedule_relationship: SCHEDULED
     }
@@ -88,7 +214,7 @@ entity {
       stop_sequence: 4
       stop_id: "11"
       arrival {
-        time: 1714168080
+        time: 1714408680
       }
       schedule_relationship: SCHEDULED
     }
@@ -96,7 +222,7 @@ entity {
       stop_sequence: 5
       stop_id: "10"
       arrival {
-        time: 1714168152
+        time: 1714408738
       }
       schedule_relationship: SCHEDULED
     }
@@ -104,395 +230,45 @@ entity {
       stop_sequence: 6
       stop_id: "8"
       arrival {
-        time: 1714168236
+        time: 1714408834
       }
       schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166568
-  }
-}
-entity {
-  id: "3"
-  trip_update {
-    trip {
-      trip_id: "1073745020"
-      route_id: "SLVR"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4247"
     }
     stop_time_update {
-      stop_sequence: 30
-      stop_id: "5"
+      stop_sequence: 7
+      stop_id: "78"
       arrival {
-        time: 1714166820
+        time: 1714408980
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1714166550
+    stop_time_update {
+      stop_sequence: 8
+      stop_id: "72"
+      arrival {
+        time: 1714409160
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407365
   }
 }
 entity {
   id: "4"
   trip_update {
     trip {
-      trip_id: "1074469020"
+      trip_id: "1074612020"
       route_id: "SLVR"
       schedule_relationship: SCHEDULED
     }
     vehicle {
-      id: "4214"
-    }
-    stop_time_update {
-      stop_sequence: 1
-      stop_id: "6"
-      departure {
-        time: 1714168200
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166565
-  }
-}
-entity {
-  id: "5"
-  trip_update {
-    trip {
-      trip_id: "1074505020"
-      route_id: "RED"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4314"
-    }
-    stop_time_update {
-      stop_sequence: 24
-      stop_id: "76"
-      arrival {
-        time: 1714166618
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 25
-      stop_id: "68"
-      arrival {
-        time: 1714166669
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 26
-      stop_id: "82"
-      arrival {
-        time: 1714166724
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 27
-      stop_id: "30"
-      arrival {
-        time: 1714166812
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 28
-      stop_id: "42"
-      arrival {
-        time: 1714166870
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 29
-      stop_id: "28"
-      arrival {
-        time: 1714166966
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 30
-      stop_id: "36"
-      arrival {
-        time: 1714167025
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166571
-  }
-}
-entity {
-  id: "6"
-  trip_update {
-    trip {
-      trip_id: "1073944020"
-      route_id: "SLVR"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4255"
-    }
-    stop_time_update {
-      stop_sequence: 27
-      stop_id: "9"
-      arrival {
-        time: 1714166607
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 28
-      stop_id: "12"
-      arrival {
-        time: 1714166682
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 29
-      stop_id: "13"
-      arrival {
-        time: 1714166817
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 30
-      stop_id: "5"
-      arrival {
-        time: 1714167087
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166576
-  }
-}
-entity {
-  id: "7"
-  trip_update {
-    trip {
-      trip_id: "1074707020"
-      route_id: "RED"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4306"
-    }
-    stop_time_update {
-      stop_sequence: 4
-      stop_id: "41"
-      arrival {
-        time: 1714166622
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 5
-      stop_id: "29"
-      arrival {
-        time: 1714166678
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 6
-      stop_id: "81"
-      arrival {
-        time: 1714166780
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 7
-      stop_id: "67"
-      arrival {
-        time: 1714166823
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 8
-      stop_id: "75"
-      arrival {
-        time: 1714166884
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 9
-      stop_id: "104"
-      arrival {
-        time: 1714166960
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 10
-      stop_id: "31"
-      arrival {
-        time: 1714167020
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 11
-      stop_id: "23"
-      arrival {
-        time: 1714167057
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 12
-      stop_id: "59"
-      arrival {
-        time: 1714167140
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 13
-      stop_id: "53"
-      arrival {
-        time: 1714167260
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 14
-      stop_id: "37"
-      arrival {
-        time: 1714167380
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 15
-      stop_id: "61"
-      arrival {
-        time: 1714167560
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 16
-      stop_id: "79"
-      arrival {
-        time: 1714167620
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 17
-      stop_id: "21"
-      arrival {
-        time: 1714167720
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 18
-      stop_id: "17"
-      arrival {
-        time: 1714167800
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 19
-      stop_id: "19"
-      arrival {
-        time: 1714167880
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 20
-      stop_id: "39"
-      arrival {
-        time: 1714167920
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 21
-      stop_id: "83"
-      arrival {
-        time: 1714167954
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 22
-      stop_id: "33"
-      arrival {
-        time: 1714168076
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 23
-      stop_id: "112"
-      arrival {
-        time: 1714168136
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 24
-      stop_id: "71"
-      arrival {
-        time: 1714168220
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166552
-  }
-}
-entity {
-  id: "8"
-  trip_update {
-    trip {
-      trip_id: "1074182020"
-      route_id: "BLUE"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4205"
-    }
-    stop_time_update {
-      stop_sequence: 13
-      stop_id: "95"
-      arrival {
-        time: 1714166734
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 14
-      stop_id: "97"
-      arrival {
-        time: 1714166784
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 15
-      stop_id: "99"
-      arrival {
-        time: 1714166883
-      }
-      schedule_relationship: SCHEDULED
+      id: "4239"
     }
     stop_time_update {
       stop_sequence: 16
       stop_id: "101"
       arrival {
-        time: 1714167063
+        time: 1714407478
       }
       schedule_relationship: SCHEDULED
     }
@@ -500,7 +276,7 @@ entity {
       stop_sequence: 17
       stop_id: "76"
       arrival {
-        time: 1714167164
+        time: 1714407554
       }
       schedule_relationship: SCHEDULED
     }
@@ -508,7 +284,7 @@ entity {
       stop_sequence: 18
       stop_id: "68"
       arrival {
-        time: 1714167243
+        time: 1714407604
       }
       schedule_relationship: SCHEDULED
     }
@@ -516,241 +292,7 @@ entity {
       stop_sequence: 19
       stop_id: "82"
       arrival {
-        time: 1714167303
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 20
-      stop_id: "30"
-      arrival {
-        time: 1714167388
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 21
-      stop_id: "42"
-      arrival {
-        time: 1714167454
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 22
-      stop_id: "28"
-      arrival {
-        time: 1714167554
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 23
-      stop_id: "36"
-      arrival {
-        time: 1714167606
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166551
-  }
-}
-entity {
-  id: "9"
-  trip_update {
-    trip {
-      trip_id: "1073774020"
-      route_id: "BLUE"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4234"
-    }
-    stop_time_update {
-      stop_sequence: 1
-      stop_id: "6"
-      departure {
-        time: 1714167900
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 2
-      stop_id: "110"
-      arrival {
-        time: 1714168090
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 3
-      stop_id: "111"
-      arrival {
-        time: 1714168257
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166550
-  }
-}
-entity {
-  id: "10"
-  trip_update {
-    trip {
-      trip_id: "1074405020"
-      route_id: "BLUE"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4230"
-    }
-    stop_time_update {
-      stop_sequence: 9
-      stop_id: "100"
-      arrival {
-        time: 1714166621
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 10
-      stop_id: "98"
-      arrival {
-        time: 1714166741
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 11
-      stop_id: "96"
-      arrival {
-        time: 1714166851
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 12
-      stop_id: "94"
-      arrival {
-        time: 1714166904
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 13
-      stop_id: "92"
-      arrival {
-        time: 1714167101
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 14
-      stop_id: "90"
-      arrival {
-        time: 1714167184
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 15
-      stop_id: "102"
-      arrival {
-        time: 1714167285
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 16
-      stop_id: "88"
-      arrival {
-        time: 1714167405
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 17
-      stop_id: "71"
-      arrival {
-        time: 1714167461
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 18
-      stop_id: "77"
-      arrival {
-        time: 1714167701
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 19
-      stop_id: "7"
-      arrival {
-        time: 1714167838
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 20
-      stop_id: "9"
-      arrival {
-        time: 1714167939
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 21
-      stop_id: "12"
-      arrival {
-        time: 1714168001
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 22
-      stop_id: "13"
-      arrival {
-        time: 1714168170
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166551
-  }
-}
-entity {
-  id: "11"
-  trip_update {
-    trip {
-      trip_id: "1074671020"
-      route_id: "SLVR"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4326"
-    }
-    stop_time_update {
-      stop_sequence: 17
-      stop_id: "76"
-      arrival {
-        time: 1714166599
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 18
-      stop_id: "68"
-      arrival {
-        time: 1714166665
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 19
-      stop_id: "82"
-      arrival {
-        time: 1714166737
+        time: 1714407658
       }
       schedule_relationship: SCHEDULED
     }
@@ -758,7 +300,7 @@ entity {
       stop_sequence: 20
       stop_id: "44"
       arrival {
-        time: 1714166860
+        time: 1714407756
       }
       schedule_relationship: SCHEDULED
     }
@@ -766,7 +308,7 @@ entity {
       stop_sequence: 21
       stop_id: "50"
       arrival {
-        time: 1714167037
+        time: 1714407898
       }
       schedule_relationship: SCHEDULED
     }
@@ -774,7 +316,7 @@ entity {
       stop_sequence: 22
       stop_id: "52"
       arrival {
-        time: 1714167092
+        time: 1714407938
       }
       schedule_relationship: SCHEDULED
     }
@@ -782,7 +324,7 @@ entity {
       stop_sequence: 23
       stop_id: "74"
       arrival {
-        time: 1714167133
+        time: 1714407969
       }
       schedule_relationship: SCHEDULED
     }
@@ -790,7 +332,7 @@ entity {
       stop_sequence: 24
       stop_id: "56"
       arrival {
-        time: 1714167226
+        time: 1714408036
       }
       schedule_relationship: SCHEDULED
     }
@@ -798,7 +340,7 @@ entity {
       stop_sequence: 25
       stop_id: "65"
       arrival {
-        time: 1714167383
+        time: 1714408151
       }
       schedule_relationship: SCHEDULED
     }
@@ -806,7 +348,7 @@ entity {
       stop_sequence: 26
       stop_id: "48"
       arrival {
-        time: 1714167475
+        time: 1714408219
       }
       schedule_relationship: SCHEDULED
     }
@@ -814,7 +356,7 @@ entity {
       stop_sequence: 27
       stop_id: "46"
       arrival {
-        time: 1714167530
+        time: 1714408260
       }
       schedule_relationship: SCHEDULED
     }
@@ -822,7 +364,7 @@ entity {
       stop_sequence: 28
       stop_id: "26"
       arrival {
-        time: 1714167660
+        time: 1714408354
       }
       schedule_relationship: SCHEDULED
     }
@@ -830,7 +372,7 @@ entity {
       stop_sequence: 29
       stop_id: "87"
       arrival {
-        time: 1714167733
+        time: 1714408409
       }
       schedule_relationship: SCHEDULED
     }
@@ -838,1038 +380,18 @@ entity {
       stop_sequence: 30
       stop_id: "86"
       arrival {
-        time: 1714167770
+        time: 1714408436
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1714166493
+    timestamp: 1714407410
   }
 }
 entity {
-  id: "12"
+  id: "5"
   trip_update {
     trip {
-      trip_id: "1073756020"
-      route_id: "RED"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4231"
-    }
-    stop_time_update {
-      stop_sequence: 29
-      stop_id: "13"
-      arrival {
-        time: 1714166579
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 30
-      stop_id: "5"
-      arrival {
-        time: 1714166804
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166567
-  }
-}
-entity {
-  id: "13"
-  trip_update {
-    trip {
-      trip_id: "1074667020"
-      route_id: "RED"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4207"
-    }
-    stop_time_update {
-      stop_sequence: 7
-      stop_id: "78"
-      arrival {
-        time: 1714166569
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 8
-      stop_id: "72"
-      arrival {
-        time: 1714166750
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 9
-      stop_id: "113"
-      arrival {
-        time: 1714166822
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 10
-      stop_id: "34"
-      arrival {
-        time: 1714166880
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 11
-      stop_id: "84"
-      arrival {
-        time: 1714167013
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 12
-      stop_id: "40"
-      arrival {
-        time: 1714167050
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 13
-      stop_id: "20"
-      arrival {
-        time: 1714167068
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 14
-      stop_id: "18"
-      arrival {
-        time: 1714167177
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 15
-      stop_id: "22"
-      arrival {
-        time: 1714167281
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 16
-      stop_id: "80"
-      arrival {
-        time: 1714167403
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 17
-      stop_id: "62"
-      arrival {
-        time: 1714167470
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 18
-      stop_id: "38"
-      arrival {
-        time: 1714167650
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 19
-      stop_id: "54"
-      arrival {
-        time: 1714167770
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 20
-      stop_id: "60"
-      arrival {
-        time: 1714167922
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 21
-      stop_id: "24"
-      arrival {
-        time: 1714168027
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 22
-      stop_id: "32"
-      arrival {
-        time: 1714168070
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 23
-      stop_id: "105"
-      arrival {
-        time: 1714168130
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 24
-      stop_id: "76"
-      arrival {
-        time: 1714168204
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 25
-      stop_id: "68"
-      arrival {
-        time: 1714168255
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 26
-      stop_id: "82"
-      arrival {
-        time: 1714168310
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166565
-  }
-}
-entity {
-  id: "14"
-  trip_update {
-    trip {
-      trip_id: "1074209020"
-      route_id: "SLVR"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4214"
-    }
-    stop_time_update {
-      stop_sequence: 21
-      stop_id: "90"
-      arrival {
-        time: 1714166603
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 22
-      stop_id: "102"
-      arrival {
-        time: 1714166706
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 23
-      stop_id: "88"
-      arrival {
-        time: 1714166809
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 24
-      stop_id: "71"
-      arrival {
-        time: 1714166861
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 25
-      stop_id: "77"
-      arrival {
-        time: 1714167101
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 26
-      stop_id: "7"
-      arrival {
-        time: 1714167251
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 27
-      stop_id: "9"
-      arrival {
-        time: 1714167326
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 28
-      stop_id: "12"
-      arrival {
-        time: 1714167401
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 29
-      stop_id: "13"
-      arrival {
-        time: 1714167536
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 30
-      stop_id: "5"
-      arrival {
-        time: 1714167806
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166565
-  }
-}
-entity {
-  id: "15"
-  trip_update {
-    trip {
-      trip_id: "1074566020"
-      route_id: "RED"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4239"
-    }
-    stop_time_update {
-      stop_sequence: 1
-      stop_id: "69"
-      departure {
-        time: 1714167480
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 2
-      stop_id: "35"
-      arrival {
-        time: 1714167543
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 3
-      stop_id: "27"
-      arrival {
-        time: 1714167588
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 4
-      stop_id: "41"
-      arrival {
-        time: 1714167682
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 5
-      stop_id: "29"
-      arrival {
-        time: 1714167738
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 6
-      stop_id: "81"
-      arrival {
-        time: 1714167840
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 7
-      stop_id: "67"
-      arrival {
-        time: 1714167883
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 8
-      stop_id: "75"
-      arrival {
-        time: 1714167944
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 9
-      stop_id: "104"
-      arrival {
-        time: 1714168020
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 10
-      stop_id: "31"
-      arrival {
-        time: 1714168080
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 11
-      stop_id: "23"
-      arrival {
-        time: 1714168117
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 12
-      stop_id: "59"
-      arrival {
-        time: 1714168200
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 13
-      stop_id: "53"
-      arrival {
-        time: 1714168320
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166545
-  }
-}
-entity {
-  id: "16"
-  trip_update {
-    trip {
-      trip_id: "1073956020"
-      route_id: "RED"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4231"
-    }
-    stop_time_update {
-      stop_sequence: 1
-      stop_id: "6"
-      departure {
-        time: 1714166969
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 2
-      stop_id: "110"
-      arrival {
-        time: 1714167137
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 3
-      stop_id: "111"
-      arrival {
-        time: 1714167361
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 4
-      stop_id: "11"
-      arrival {
-        time: 1714167449
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 5
-      stop_id: "10"
-      arrival {
-        time: 1714167521
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 6
-      stop_id: "8"
-      arrival {
-        time: 1714167605
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 7
-      stop_id: "78"
-      arrival {
-        time: 1714167749
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 8
-      stop_id: "72"
-      arrival {
-        time: 1714167929
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 9
-      stop_id: "113"
-      arrival {
-        time: 1714168001
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 10
-      stop_id: "34"
-      arrival {
-        time: 1714168059
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 11
-      stop_id: "84"
-      arrival {
-        time: 1714168192
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 12
-      stop_id: "40"
-      arrival {
-        time: 1714168229
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 13
-      stop_id: "20"
-      arrival {
-        time: 1714168247
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 14
-      stop_id: "18"
-      arrival {
-        time: 1714168356
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166567
-  }
-}
-entity {
-  id: "17"
-  trip_update {
-    trip {
-      trip_id: "1073853020"
-      route_id: "SLVR"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4247"
-    }
-    stop_time_update {
-      stop_sequence: 1
-      stop_id: "6"
-      departure {
-        time: 1714166955
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 2
-      stop_id: "110"
-      arrival {
-        time: 1714167145
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 3
-      stop_id: "111"
-      arrival {
-        time: 1714167312
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 4
-      stop_id: "11"
-      arrival {
-        time: 1714167435
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 5
-      stop_id: "10"
-      arrival {
-        time: 1714167493
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 6
-      stop_id: "8"
-      arrival {
-        time: 1714167589
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 7
-      stop_id: "78"
-      arrival {
-        time: 1714167735
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 8
-      stop_id: "72"
-      arrival {
-        time: 1714167915
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 9
-      stop_id: "89"
-      arrival {
-        time: 1714167968
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 10
-      stop_id: "103"
-      arrival {
-        time: 1714168087
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 11
-      stop_id: "91"
-      arrival {
-        time: 1714168193
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 12
-      stop_id: "93"
-      arrival {
-        time: 1714168275
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166550
-  }
-}
-entity {
-  id: "18"
-  trip_update {
-    trip {
-      trip_id: "1073750020"
-      route_id: "SLVR"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4243"
-    }
-    stop_time_update {
-      stop_sequence: 2
-      stop_id: "85"
-      arrival {
-        time: 1714166663
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 3
-      stop_id: "63"
-      arrival {
-        time: 1714166691
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 4
-      stop_id: "25"
-      arrival {
-        time: 1714166747
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 5
-      stop_id: "45"
-      arrival {
-        time: 1714166858
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 6
-      stop_id: "47"
-      arrival {
-        time: 1714166904
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 7
-      stop_id: "64"
-      arrival {
-        time: 1714166967
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 8
-      stop_id: "55"
-      arrival {
-        time: 1714167054
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 9
-      stop_id: "73"
-      arrival {
-        time: 1714167117
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 10
-      stop_id: "51"
-      arrival {
-        time: 1714167152
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 11
-      stop_id: "49"
-      arrival {
-        time: 1714167194
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 12
-      stop_id: "43"
-      arrival {
-        time: 1714167354
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166568
-  }
-}
-entity {
-  id: "19"
-  trip_update {
-    trip {
-      trip_id: "1074422020"
-      route_id: "RED"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4237"
-    }
-    stop_time_update {
-      stop_sequence: 26
-      stop_id: "7"
-      arrival {
-        time: 1714166701
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 27
-      stop_id: "9"
-      arrival {
-        time: 1714166805
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 28
-      stop_id: "12"
-      arrival {
-        time: 1714166868
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 29
-      stop_id: "13"
-      arrival {
-        time: 1714167018
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 30
-      stop_id: "5"
-      arrival {
-        time: 1714167243
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166568
-  }
-}
-entity {
-  id: "20"
-  trip_update {
-    trip {
-      trip_id: "1073796020"
-      route_id: "BLUE"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4234"
-    }
-    stop_time_update {
-      stop_sequence: 17
-      stop_id: "71"
-      arrival {
-        time: 1714166580
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 18
-      stop_id: "77"
-      arrival {
-        time: 1714166820
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 19
-      stop_id: "7"
-      arrival {
-        time: 1714166957
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 20
-      stop_id: "9"
-      arrival {
-        time: 1714167058
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 21
-      stop_id: "12"
-      arrival {
-        time: 1714167120
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 22
-      stop_id: "13"
-      arrival {
-        time: 1714167289
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 23
-      stop_id: "5"
-      arrival {
-        time: 1714167536
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166550
-  }
-}
-entity {
-  id: "21"
-  trip_update {
-    trip {
-      trip_id: "1074187020"
-      route_id: "RED"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4245"
-    }
-    stop_time_update {
-      stop_sequence: 15
-      stop_id: "22"
-      arrival {
-        time: 1714166586
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 16
-      stop_id: "80"
-      arrival {
-        time: 1714166708
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 17
-      stop_id: "62"
-      arrival {
-        time: 1714166775
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 18
-      stop_id: "38"
-      arrival {
-        time: 1714166955
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 19
-      stop_id: "54"
-      arrival {
-        time: 1714167075
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 20
-      stop_id: "60"
-      arrival {
-        time: 1714167227
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 21
-      stop_id: "24"
-      arrival {
-        time: 1714167332
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 22
-      stop_id: "32"
-      arrival {
-        time: 1714167375
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 23
-      stop_id: "105"
-      arrival {
-        time: 1714167435
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 24
-      stop_id: "76"
-      arrival {
-        time: 1714167509
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 25
-      stop_id: "68"
-      arrival {
-        time: 1714167560
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 26
-      stop_id: "82"
-      arrival {
-        time: 1714167615
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 27
-      stop_id: "30"
-      arrival {
-        time: 1714167703
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 28
-      stop_id: "42"
-      arrival {
-        time: 1714167761
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 29
-      stop_id: "28"
-      arrival {
-        time: 1714167857
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 30
-      stop_id: "36"
-      arrival {
-        time: 1714167916
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166574
-  }
-}
-entity {
-  id: "22"
-  trip_update {
-    trip {
-      trip_id: "1074156020"
+      trip_id: "1074066020"
       route_id: "RED"
       schedule_relationship: SCHEDULED
     }
@@ -1877,238 +399,302 @@ entity {
       id: "4224"
     }
     stop_time_update {
-      stop_sequence: 14
-      stop_id: "37"
+      stop_sequence: 9
+      stop_id: "113"
       arrival {
-        time: 1714166643
+        time: 1714407465
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      stop_id: "34"
+      arrival {
+        time: 1714407512
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      stop_id: "84"
+      arrival {
+        time: 1714407619
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      stop_id: "40"
+      arrival {
+        time: 1714407648
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      stop_id: "20"
+      arrival {
+        time: 1714407663
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      stop_id: "18"
+      arrival {
+        time: 1714407757
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 15
-      stop_id: "61"
+      stop_id: "22"
       arrival {
-        time: 1714166823
+        time: 1714407846
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 16
-      stop_id: "79"
+      stop_id: "80"
       arrival {
-        time: 1714166883
+        time: 1714407950
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 17
-      stop_id: "21"
+      stop_id: "62"
       arrival {
-        time: 1714166983
+        time: 1714408008
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 18
-      stop_id: "17"
+      stop_id: "38"
       arrival {
-        time: 1714167063
+        time: 1714408188
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 19
-      stop_id: "19"
+      stop_id: "54"
       arrival {
-        time: 1714167143
+        time: 1714408308
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 20
-      stop_id: "39"
+      stop_id: "60"
       arrival {
-        time: 1714167183
+        time: 1714408430
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 21
-      stop_id: "83"
+      stop_id: "24"
       arrival {
-        time: 1714167217
+        time: 1714408514
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 22
-      stop_id: "33"
+      stop_id: "32"
       arrival {
-        time: 1714167339
+        time: 1714408548
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 23
-      stop_id: "112"
+      stop_id: "105"
       arrival {
-        time: 1714167399
+        time: 1714408608
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 24
-      stop_id: "71"
+      stop_id: "76"
       arrival {
-        time: 1714167483
+        time: 1714408682
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 25
-      stop_id: "77"
+      stop_id: "68"
       arrival {
-        time: 1714167723
+        time: 1714408733
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 26
-      stop_id: "7"
+      stop_id: "82"
       arrival {
-        time: 1714167856
+        time: 1714408788
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 27
-      stop_id: "9"
+      stop_id: "30"
       arrival {
-        time: 1714167960
+        time: 1714408876
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 28
-      stop_id: "12"
+      stop_id: "42"
       arrival {
-        time: 1714168023
+        time: 1714408934
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 29
-      stop_id: "13"
+      stop_id: "28"
       arrival {
-        time: 1714168173
+        time: 1714409030
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1714166534
+    stop_time_update {
+      stop_sequence: 30
+      stop_id: "36"
+      arrival {
+        time: 1714409089
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407436
   }
 }
 entity {
-  id: "23"
+  id: "6"
   trip_update {
     trip {
-      trip_id: "1074005020"
-      route_id: "SLVR"
+      trip_id: "1074089020"
+      route_id: "RED"
       schedule_relationship: SCHEDULED
     }
     vehicle {
-      id: "4318"
+      id: "4309"
     }
     stop_time_update {
-      stop_sequence: 1
-      stop_id: "66"
-      departure {
-        time: 1714167720
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 2
-      stop_id: "85"
+      stop_sequence: 20
+      stop_id: "60"
       arrival {
-        time: 1714167849
+        time: 1714407484
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
-      stop_sequence: 3
-      stop_id: "63"
+      stop_sequence: 21
+      stop_id: "24"
       arrival {
-        time: 1714167877
+        time: 1714407568
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
-      stop_sequence: 4
-      stop_id: "25"
+      stop_sequence: 22
+      stop_id: "32"
       arrival {
-        time: 1714167933
+        time: 1714407602
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
-      stop_sequence: 5
-      stop_id: "45"
+      stop_sequence: 23
+      stop_id: "105"
       arrival {
-        time: 1714168044
+        time: 1714407662
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
-      stop_sequence: 6
-      stop_id: "47"
+      stop_sequence: 24
+      stop_id: "76"
       arrival {
-        time: 1714168090
+        time: 1714407736
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
-      stop_sequence: 7
-      stop_id: "64"
+      stop_sequence: 25
+      stop_id: "68"
       arrival {
-        time: 1714168153
+        time: 1714407787
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
-      stop_sequence: 8
-      stop_id: "55"
+      stop_sequence: 26
+      stop_id: "82"
       arrival {
-        time: 1714168240
+        time: 1714407842
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
-      stop_sequence: 9
-      stop_id: "73"
+      stop_sequence: 27
+      stop_id: "30"
       arrival {
-        time: 1714168303
+        time: 1714407930
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1714166561
+    stop_time_update {
+      stop_sequence: 28
+      stop_id: "42"
+      arrival {
+        time: 1714407988
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      stop_id: "28"
+      arrival {
+        time: 1714408084
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      stop_id: "36"
+      arrival {
+        time: 1714408143
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407414
   }
 }
 entity {
-  id: "24"
+  id: "7"
   trip_update {
     trip {
-      trip_id: "1074198020"
-      route_id: "BLUE"
+      trip_id: "1074674020"
+      route_id: "RED"
       schedule_relationship: SCHEDULED
     }
     vehicle {
-      id: "4227"
+      id: "4326"
     }
     stop_time_update {
       stop_sequence: 1
       stop_id: "69"
       departure {
-        time: 1714167300
+        time: 1714408080
       }
       schedule_relationship: SCHEDULED
     }
@@ -2116,7 +702,7 @@ entity {
       stop_sequence: 2
       stop_id: "35"
       arrival {
-        time: 1714167357
+        time: 1714408143
       }
       schedule_relationship: SCHEDULED
     }
@@ -2124,7 +710,7 @@ entity {
       stop_sequence: 3
       stop_id: "27"
       arrival {
-        time: 1714167414
+        time: 1714408188
       }
       schedule_relationship: SCHEDULED
     }
@@ -2132,7 +718,7 @@ entity {
       stop_sequence: 4
       stop_id: "41"
       arrival {
-        time: 1714167499
+        time: 1714408282
       }
       schedule_relationship: SCHEDULED
     }
@@ -2140,7 +726,7 @@ entity {
       stop_sequence: 5
       stop_id: "29"
       arrival {
-        time: 1714167563
+        time: 1714408338
       }
       schedule_relationship: SCHEDULED
     }
@@ -2148,7 +734,7 @@ entity {
       stop_sequence: 6
       stop_id: "81"
       arrival {
-        time: 1714167660
+        time: 1714408440
       }
       schedule_relationship: SCHEDULED
     }
@@ -2156,7 +742,7 @@ entity {
       stop_sequence: 7
       stop_id: "67"
       arrival {
-        time: 1714167703
+        time: 1714408483
       }
       schedule_relationship: SCHEDULED
     }
@@ -2164,185 +750,85 @@ entity {
       stop_sequence: 8
       stop_id: "75"
       arrival {
-        time: 1714167764
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166036
-  }
-}
-entity {
-  id: "25"
-  trip_update {
-    trip {
-      trip_id: "1074529020"
-      route_id: "SLVR"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4318"
-    }
-    stop_time_update {
-      stop_sequence: 27
-      stop_id: "46"
-      arrival {
-        time: 1714166616
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 28
-      stop_id: "26"
-      arrival {
-        time: 1714166746
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 29
-      stop_id: "87"
-      arrival {
-        time: 1714166819
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 30
-      stop_id: "86"
-      arrival {
-        time: 1714166856
-      }
-      schedule_relationship: SCHEDULED
-    }
-    timestamp: 1714166561
-  }
-}
-entity {
-  id: "26"
-  trip_update {
-    trip {
-      trip_id: "1073914020"
-      route_id: "BLUE"
-      schedule_relationship: SCHEDULED
-    }
-    vehicle {
-      id: "4202"
-    }
-    stop_time_update {
-      stop_sequence: 1
-      stop_id: "6"
-      departure {
-        time: 1714167035
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 2
-      stop_id: "110"
-      arrival {
-        time: 1714167225
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 3
-      stop_id: "111"
-      arrival {
-        time: 1714167392
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 4
-      stop_id: "11"
-      arrival {
-        time: 1714167515
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 5
-      stop_id: "10"
-      arrival {
-        time: 1714167571
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 6
-      stop_id: "8"
-      arrival {
-        time: 1714167665
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 7
-      stop_id: "78"
-      arrival {
-        time: 1714167815
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
-      stop_sequence: 8
-      stop_id: "72"
-      arrival {
-        time: 1714167995
+        time: 1714408544
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 9
-      stop_id: "89"
+      stop_id: "104"
       arrival {
-        time: 1714168047
+        time: 1714408620
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 10
-      stop_id: "103"
+      stop_id: "31"
       arrival {
-        time: 1714168161
+        time: 1714408680
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 11
-      stop_id: "91"
+      stop_id: "23"
       arrival {
-        time: 1714168266
+        time: 1714408717
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 12
-      stop_id: "93"
+      stop_id: "59"
       arrival {
-        time: 1714168355
+        time: 1714408800
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1714166574
+    stop_time_update {
+      stop_sequence: 13
+      stop_id: "53"
+      arrival {
+        time: 1714408920
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      stop_id: "37"
+      arrival {
+        time: 1714409040
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      stop_id: "61"
+      arrival {
+        time: 1714409220
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407420
   }
 }
 entity {
-  id: "27"
+  id: "8"
   trip_update {
     trip {
-      trip_id: "1073933020"
-      route_id: "SLVR"
+      trip_id: "1074178020"
+      route_id: "RED"
       schedule_relationship: SCHEDULED
     }
     vehicle {
-      id: "4255"
+      id: "4227"
     }
     stop_time_update {
       stop_sequence: 1
       stop_id: "6"
       departure {
-        time: 1714167300
+        time: 1714407600
       }
       schedule_relationship: SCHEDULED
     }
@@ -2350,7 +836,7 @@ entity {
       stop_sequence: 2
       stop_id: "110"
       arrival {
-        time: 1714167490
+        time: 1714407768
       }
       schedule_relationship: SCHEDULED
     }
@@ -2358,7 +844,7 @@ entity {
       stop_sequence: 3
       stop_id: "111"
       arrival {
-        time: 1714167657
+        time: 1714407992
       }
       schedule_relationship: SCHEDULED
     }
@@ -2366,7 +852,7 @@ entity {
       stop_sequence: 4
       stop_id: "11"
       arrival {
-        time: 1714167780
+        time: 1714408080
       }
       schedule_relationship: SCHEDULED
     }
@@ -2374,7 +860,7 @@ entity {
       stop_sequence: 5
       stop_id: "10"
       arrival {
-        time: 1714167838
+        time: 1714408152
       }
       schedule_relationship: SCHEDULED
     }
@@ -2382,7 +868,7 @@ entity {
       stop_sequence: 6
       stop_id: "8"
       arrival {
-        time: 1714167934
+        time: 1714408236
       }
       schedule_relationship: SCHEDULED
     }
@@ -2390,7 +876,7 @@ entity {
       stop_sequence: 7
       stop_id: "78"
       arrival {
-        time: 1714168080
+        time: 1714408380
       }
       schedule_relationship: SCHEDULED
     }
@@ -2398,48 +884,382 @@ entity {
       stop_sequence: 8
       stop_id: "72"
       arrival {
-        time: 1714168260
+        time: 1714408560
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 9
-      stop_id: "89"
+      stop_id: "113"
       arrival {
-        time: 1714168313
+        time: 1714408617
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1714166576
+    stop_time_update {
+      stop_sequence: 10
+      stop_id: "34"
+      arrival {
+        time: 1714408664
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      stop_id: "84"
+      arrival {
+        time: 1714408771
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      stop_id: "40"
+      arrival {
+        time: 1714408800
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      stop_id: "20"
+      arrival {
+        time: 1714408815
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407068
   }
 }
 entity {
-  id: "28"
+  id: "9"
   trip_update {
     trip {
-      trip_id: "1074062020"
-      route_id: "BLUE"
+      trip_id: "1073792020"
+      route_id: "RED"
       schedule_relationship: SCHEDULED
     }
     vehicle {
-      id: "4202"
+      id: "4219"
+    }
+    stop_time_update {
+      stop_sequence: 9
+      stop_id: "104"
+      arrival {
+        time: 1714407450
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      stop_id: "31"
+      arrival {
+        time: 1714407510
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      stop_id: "23"
+      arrival {
+        time: 1714407547
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      stop_id: "59"
+      arrival {
+        time: 1714407630
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      stop_id: "53"
+      arrival {
+        time: 1714407750
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      stop_id: "37"
+      arrival {
+        time: 1714407870
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      stop_id: "61"
+      arrival {
+        time: 1714408050
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      stop_id: "79"
+      arrival {
+        time: 1714408110
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      stop_id: "21"
+      arrival {
+        time: 1714408210
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      stop_id: "17"
+      arrival {
+        time: 1714408290
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      stop_id: "19"
+      arrival {
+        time: 1714408370
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      stop_id: "39"
+      arrival {
+        time: 1714408410
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      stop_id: "83"
+      arrival {
+        time: 1714408444
+      }
+      schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 22
-      stop_id: "13"
+      stop_id: "33"
       arrival {
-        time: 1714166664
+        time: 1714408566
       }
       schedule_relationship: SCHEDULED
     }
     stop_time_update {
       stop_sequence: 23
-      stop_id: "5"
+      stop_id: "112"
       arrival {
-        time: 1714166911
+        time: 1714408626
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1714166574
+    stop_time_update {
+      stop_sequence: 24
+      stop_id: "71"
+      arrival {
+        time: 1714408710
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      stop_id: "77"
+      arrival {
+        time: 1714408950
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      stop_id: "7"
+      arrival {
+        time: 1714409083
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      stop_id: "9"
+      arrival {
+        time: 1714409187
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407427
+  }
+}
+entity {
+  id: "10"
+  trip_update {
+    trip {
+      trip_id: "1073769020"
+      route_id: "SLVR"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "4316"
+    }
+    stop_time_update {
+      stop_sequence: 3
+      stop_id: "63"
+      arrival {
+        time: 1714407435
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 4
+      stop_id: "25"
+      arrival {
+        time: 1714407490
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 5
+      stop_id: "45"
+      arrival {
+        time: 1714407600
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 6
+      stop_id: "47"
+      arrival {
+        time: 1714407655
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 7
+      stop_id: "64"
+      arrival {
+        time: 1714407710
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 8
+      stop_id: "55"
+      arrival {
+        time: 1714407820
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      stop_id: "73"
+      arrival {
+        time: 1714407875
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      stop_id: "51"
+      arrival {
+        time: 1714407903
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      stop_id: "49"
+      arrival {
+        time: 1714407958
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      stop_id: "43"
+      arrival {
+        time: 1714408108
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      stop_id: "81"
+      arrival {
+        time: 1714408258
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      stop_id: "67"
+      arrival {
+        time: 1714408294
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      stop_id: "75"
+      arrival {
+        time: 1714408366
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      stop_id: "100"
+      arrival {
+        time: 1714408438
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      stop_id: "98"
+      arrival {
+        time: 1714408558
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      stop_id: "96"
+      arrival {
+        time: 1714408660
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      stop_id: "94"
+      arrival {
+        time: 1714408712
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      stop_id: "92"
+      arrival {
+        time: 1714408918
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      stop_id: "90"
+      arrival {
+        time: 1714409020
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1714407317
   }
 }
