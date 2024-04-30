@@ -3,94 +3,6 @@ import requests
 from google.protobuf import json_format
 import pprint as PP
 
-## GTFS Static Feed Datasets
-
-from agency import agency
-from calendar_dates import calendar_dates
-from feed import feed
-from gtfs_calendar import gtfscalendar 
-from routes import routes 
-from shapes import shapes
-from stops import stops
-from transfers import transfers
-from trips import trips 
-
-## GTFS Static Feed Classes
-
-from agency import Agency
-from calendar_dates import Dates
-from feed import Feed 
-from gtfs_calendar import Calendar 
-from routes import Routes 
-from shapes import Shapes 
-from stops import Stops
-from transfers import Transfer
-from trips import Trips 
-
-## Classes
-
-class Nonvehicle:
-    def __init__(self, pos, time, vehicle):
-        self.pos = pos
-        self.time = time
-        self.vehicle = vehicle
-    
-    def __repr__(self):
-        return f"{self.pos} {self.time} {self.vehicle}\n"
-
-class Vehicle:
-    def __init__(self, pos, time, vehicle, stopseq=None, status=None, 
-                 stopid=None, trip=None):
-        self.pos = pos
-        self.time = time
-        self.vehicle = vehicle
-        self.stopseq = stopseq
-        self.status = status
-        self.stopid = stopid
-        self.trip = trip
-    
-    def __repr__(self):
-        return f"{self.pos} {self.time} {self.vehicle} {self.stopseq} {self.status} {self.stopid} {self.trip}\n"
-    
-    def stopName(self, stopid):
-        return stops[stopid].name
-    
-    def indicator(self):
-        if self.trip == None:
-            return False
-        else: return True 
-
-    def statusClean(self):
-        if self.status == "STOPPED_AT":
-            return "stopped at"
-        elif self.status == "IN_TRANSIT_TO":
-            return "in transit to"
-
-class Trip(Vehicle):
-    def __init__(self, tripid, start_date, route_id):
-        self.tripid = tripid
-        self.start_date = start_date
-        self.route_id = route_id
-
-    def __repr__(self):
-        return f"{self.tripid} {self.start_date} {self.route_id}"
-
-class Position(Vehicle):
-    def __init__(self, lat, lon, hdg=None, spd=None):
-        self.lat = lat
-        self.lon = lon
-        self.hdg = hdg
-        self.spd = spd
-
-    def __repr__(self):
-        return f"{self.lat} {self.lon} {self.hdg} {self.spd}"
-
-## Data by bus
-
-buses = {}
-nonroute = {}
-
-
 ## Configured Pretty Printing
 
 pp = PP.PrettyPrinter(indent=2)
@@ -121,92 +33,60 @@ def write_to_file(path: str, content: str) -> None:
     with open(path, 'w') as f:
         f.write(content)
 
-def vehicle_processing(data):
-    for bus in data["entity"]:
-        id = bus["id"]
-        data = bus["vehicle"]
-        
-        ## Position data
-        posdata = data["position"]
-        lat = posdata["latitude"]
-        lon = posdata["longitude"]
-
-        ## Time data
-        time = data["timestamp"]
-
-        ## Vehicle data
-        vid = data["vehicle"]["id"]
-
-        if (('trip' in data) and ('timestamp' in data) and ('stopId' in data)
-            and ('position' in data) and ('currentStopSequence' in data) and 
-            ('currentStatus' in data) and len(vid) == 3):
-            stopseq = data["currentStopSequence"]
-            status = data["currentStatus"]
-            currentStop = data["stopId"]
-            if (('bearing' in posdata) and ('speed' in posdata)):
-                hdg = posdata["bearing"]
-                spd = posdata["speed"]
-                posobj = Position(lat, lon, hdg, spd)
-            else:
-                posobj = Position(lat, lon)
-            tripthing = data["trip"]
-            tripid = tripthing["tripId"]
-            startdate = tripthing["startDate"]
-            triproute = tripthing["routeId"]
-            tripobj = Trip(tripid, startdate, triproute)
-            obj = Vehicle(posobj, time, vid, stopseq, status, currentStop, tripobj)
-            buses[vid] = obj
-        else:
-            if (('bearing' in posdata) and ('speed' in posdata)):
-                hdg = posdata["bearing"]
-                spd = posdata["speed"]
-                posobj = Position(lat, lon, hdg, spd)
-            else:
-                posobj = Position(lat, lon)
-            obj = Nonvehicle(posobj, time, vid)
-            nonroute[vid] = obj
-    
-def trip_feed_processing(data):
-    for trip in data["entity"]:
-        id = trip["id"]
-        content = trip["tripupdate"]
-        timestamp = trip["timestamp"] 
-
-def main() -> None:
+def main_1() -> None:
     # REST GET request to get protobuf data from endpoint
-    response1: requests.Response = requests.get(rt_endpoint)
-    response2: requests.Response = requests.get(rt2_endpoint)
+    response: requests.Response = requests.get(rt_endpoint)
 
-    bytestream1, rest_status1 = response1.content, response1.status_code  # NOTE: always decode protobuf response as byte stream
-    bytestream2, rest_status2 = response2.content, response2.status_code  # NOTE: always decode protobuf response as byte stream
+    bytestream, rest_status = response.content, response.status_code  # NOTE: always decode protobuf response as byte stream
 
     # Debug print statements, odd escape sequences are to add colors, dwai it
-    print(f"\x1b[33mGET \x1b[34m{rt_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status1)}")
-    print(f"\x1b[33mGET \x1b[34m{rt2_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status2)}")
-
-    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream1) / 1000} KB\x1b[0m")
-    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream1) / 1000} KB\x1b[0m")
-
+    print(f"\x1b[33mGET \x1b[34m{rt_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status)}")
+    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream) / 1000} KB\x1b[0m")
     # Create an empty instance of a FeedMessage (the class that holds all GTFS-RT data)
     # We will populate this later
-    feedmsg1 = gtfsrt_pb2.FeedMessage() 
-    feedmsg2 = gtfsrt_pb2.FeedMessage() 
+    feedmsg = gtfsrt_pb2.FeedMessage() 
 
     # Use byte stream from response to Parse into object
     # NOTE: The function returns a status code. The data is populated in place
-    proto_status1 = feedmsg1.ParseFromString(bytestream1)
-    # proto_status2 = feedmsg2.ParseFromString(bytestream2)
 
+    proto_status1 = feedmsg.ParseFromString(bytestream)
 
     # All protobuf classes can be converted to a debug string by using the string constructor
-    fm_str1 = str(feedmsg1)
-    fm_str2 = str(feedmsg2)
 
-    data1 = json_format.MessageToDict(feedmsg1)
-    data2 = json_format.MessageToDict(feedmsg2)
+    fm_str1 = str(feedmsg)
+    data = json_format.MessageToDict(feedmsg)
+    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")
+    write_to_file(output_path1, fm_str1)
 
-    ## Data Processing 
-    vehicle_processing(data1)
+    return data
+    
+
+def main_2() -> None:
+    # REST GET request to get protobuf data from endpoint
+    response: requests.Response = requests.get(rt2_endpoint)
+
+    bytestream, rest_status = response.content, response.status_code  # NOTE: always decode protobuf response as byte stream
+
+    # Debug print statements, odd escape sequences are to add colors, dwai it
+    print(f"\x1b[33mGET \x1b[34m{rt_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status)}")
+    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream) / 1000} KB\x1b[0m")
+    # Create an empty instance of a FeedMessage (the class that holds all GTFS-RT data)
+    # We will populate this later
+    feedmsg = gtfsrt_pb2.FeedMessage() 
+
+    # Use byte stream from response to Parse into object
+    # NOTE: The function returns a status code. The data is populated in place
+
+    proto_status1 = feedmsg.ParseFromString(bytestream)
+
+    # All protobuf classes can be converted to a debug string by using the string constructor
+    
+    fm_str1 = str(feedmsg)
+    data = json_format.MessageToDict(feedmsg)
+    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")
+    write_to_file(output_path1, fm_str1)
+
+    return data
     
     # Write output to output_path and additional pretty prints :3 
     print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")
@@ -218,25 +98,9 @@ def main() -> None:
     print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path1}\x1b[0m")
     # print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path2}\x1b[0m")
 
+
 if __name__ == "__main__":
-    main()
-
-def buses_on_route(rt):
-    route = str(rt)
-    for bus in buses.keys():
-        main = buses[bus]
-        if main.stopid in stops.keys():
-            sec = stops[main.stopid]
-        name = sec.name
-        if main.indicator:
-            if main.trip.route_id == route:
-                print(f"\x1b[33mRoute \x1b[34m{route} #{main.vehicle} \x1b[0mis {main.status} {name}")
-        
-buses_on_route('93')
-buses_on_route('17')
-buses_on_route('64')
-buses_on_route('7')
-
+    main_1()
 
 # def data_process(data):
 #     busRoute = {}

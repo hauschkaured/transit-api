@@ -35,7 +35,7 @@ for line in textdata.splitlines():
     pickup_type = line[indexList[5]+1:indexList[6]]
     dropoff_type = line[indexList[6]+1:indexList[7]]
     shape_dist_traveled = line[indexList[7]+1:indexList[8]]
-    timepoint = line[indexList[8]+1:indexList[9]]
+    timepoint = line[indexList[8]+1:]
 
     obj = Stoptimes(id, arrival, departure, stop_id, stopseq, headsign, 
                 pickup_type, dropoff_type, shape_dist_traveled, timepoint)

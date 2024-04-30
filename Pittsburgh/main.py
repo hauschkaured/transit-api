@@ -15,10 +15,10 @@ rt2_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/trips"  # GTF
 rt3_endpoint: str = "https://truetime.portauthority.org/gtfsrt-train/vehicles"  # GTFS-RT Endpoint
 rt4_endpoint: str = "https://truetime.portauthority.org/gtfsrt-train/trips"  # GTFS-RT Endpoint
 
-output_path1: str = "./gtfs_rt.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
-output_path2: str = "./gtfs_trips.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
-output_path3: str = "./gtfs_trainrt.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
-output_path4: str = "./gtfs_traintrips.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path1: str = "./vehiclepositions_bus.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path2: str = "./tripupdates_bus.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path3: str = "./vehiclepositions_train.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+output_path4: str = "./tripupdates_train.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
 
 
 def rest_status_color_helper(code: int) -> str:
@@ -38,18 +38,7 @@ def write_to_file(path: str, content: str) -> None:
     """
     with open(path, 'w') as f:
         f.write(content)
-
-def vehicle_processing(data):
-    vid_list = []
-    for bus in data["entity"]:
-        vehicle = bus["vehicle"]["vehicle"]["id"]
-        vid_list.append(vehicle)
-    vid_list.sort()
-    pprint(vid_list)
     
-
-    
-
 def main() -> None:
     # REST GET request to get protobuf data from endpoint
     response1: requests.Response = requests.get(rt1_endpoint)
@@ -103,8 +92,7 @@ def main() -> None:
     data3 = json_format.MessageToDict(feedmsg3)
     data4 = json_format.MessageToDict(feedmsg4)
    
-    vehicle_processing(data1)
-
+    return data1
 
     # Write output to output_path and additional pretty prints :3 
     print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")

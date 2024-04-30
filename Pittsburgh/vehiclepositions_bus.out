@@ -1,0 +1,6805 @@
+header {
+  gtfs_realtime_version: "2.0"
+  incrementality: FULL_DATASET
+  timestamp: 1714413898
+}
+entity {
+  id: "1"
+  vehicle {
+    trip {
+      trip_id: "9380020"
+      route_id: "81"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5932"
+    }
+    position {
+      latitude: 40.4407539
+      longitude: -79.9640961
+      bearing: 40
+      speed: 6.7056
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "2"
+  vehicle {
+    trip {
+      trip_id: "8400020"
+      route_id: "86"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5933"
+    }
+    position {
+      latitude: 40.4573708
+      longitude: -79.8961334
+      bearing: 183
+      speed: 0
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "3"
+  vehicle {
+    trip {
+      trip_id: "8165020"
+      route_id: "71B"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5936"
+    }
+    position {
+      latitude: 40.4388885
+      longitude: -79.9925156
+      bearing: 195
+      speed: 0
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "4"
+  vehicle {
+    vehicle {
+      id: "5940"
+    }
+    position {
+      latitude: 40.4570808
+      longitude: -79.9137
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "5"
+  vehicle {
+    vehicle {
+      id: "5941"
+    }
+    position {
+      latitude: 40.4575424
+      longitude: -79.9131851
+      bearing: 214
+      speed: 0
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "6"
+  vehicle {
+    vehicle {
+      id: "5944"
+    }
+    position {
+      latitude: 40.461544
+      longitude: -79.9488144
+      bearing: 306
+      speed: 6.2585597
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "7"
+  vehicle {
+    vehicle {
+      id: "3415"
+    }
+    position {
+      latitude: 40.4576874
+      longitude: -79.9127426
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413829
+  }
+}
+entity {
+  id: "8"
+  vehicle {
+    vehicle {
+      id: "3410"
+    }
+    position {
+      latitude: 40.443943
+      longitude: -79.9555817
+      bearing: 231
+      speed: 0
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "9"
+  vehicle {
+    vehicle {
+      id: "3418"
+    }
+    position {
+      latitude: 40.457428
+      longitude: -79.9128
+      bearing: 254
+      speed: 0
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "10"
+  vehicle {
+    vehicle {
+      id: "3425"
+    }
+    position {
+      latitude: 40.4712334
+      longitude: -79.9203262
+      bearing: 198
+      speed: 9.83488
+    }
+    timestamp: 1714413856
+  }
+}
+entity {
+  id: "11"
+  vehicle {
+    vehicle {
+      id: "3304"
+    }
+    position {
+      latitude: 40.3626022
+      longitude: -79.9313812
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413804
+  }
+}
+entity {
+  id: "12"
+  vehicle {
+    vehicle {
+      id: "3423"
+    }
+    position {
+      latitude: 40.4568748
+      longitude: -79.9135132
+      bearing: 120
+      speed: 0
+    }
+    timestamp: 1714413855
+  }
+}
+entity {
+  id: "13"
+  vehicle {
+    vehicle {
+      id: "3308"
+    }
+    position {
+      latitude: 40.3522606
+      longitude: -79.860939
+      bearing: 261
+      speed: 0
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "14"
+  vehicle {
+    trip {
+      trip_id: "14123020"
+      route_id: "71B"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3320"
+    }
+    position {
+      latitude: 40.450573
+      longitude: -79.9273453
+      bearing: 242
+      speed: 0
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "15"
+  vehicle {
+    trip {
+      trip_id: "8300020"
+      route_id: "12"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6708"
+    }
+    position {
+      latitude: 40.4527702
+      longitude: -80.0036469
+      bearing: 87
+      speed: 2.68224
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "16"
+  vehicle {
+    vehicle {
+      id: "6707"
+    }
+    position {
+      latitude: 40.4460754
+      longitude: -79.9888535
+      bearing: 102
+      speed: 0
+    }
+    timestamp: 1714413855
+  }
+}
+entity {
+  id: "17"
+  vehicle {
+    vehicle {
+      id: "3315"
+    }
+    position {
+      latitude: 40.4111
+      longitude: -79.9061
+      bearing: 252
+      speed: 0
+    }
+    timestamp: 1714413862
+  }
+}
+entity {
+  id: "18"
+  vehicle {
+    vehicle {
+      id: "6709"
+    }
+    position {
+      latitude: 40.5017
+      longitude: -80.0228271
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "19"
+  vehicle {
+    trip {
+      trip_id: "3558020"
+      route_id: "61A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3312"
+    }
+    position {
+      latitude: 40.4405098
+      longitude: -79.8876343
+      bearing: 254
+      speed: 4.91744
+    }
+    timestamp: 1714413576
+  }
+}
+entity {
+  id: "20"
+  vehicle {
+    trip {
+      trip_id: "1156020"
+      route_id: "16"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6702"
+    }
+    position {
+      latitude: 40.4549484
+      longitude: -80.0064545
+      bearing: 165
+      speed: 6.7056
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "21"
+  vehicle {
+    vehicle {
+      id: "6701"
+    }
+    position {
+      latitude: 40.4425201
+      longitude: -79.9946442
+      bearing: 28
+      speed: 9.38784
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "22"
+  vehicle {
+    trip {
+      trip_id: "4620020"
+      route_id: "8"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6704"
+    }
+    position {
+      latitude: 40.4505196
+      longitude: -80.0028687
+      bearing: 349
+      speed: 7.15264
+    }
+    timestamp: 1714413863
+  }
+}
+entity {
+  id: "23"
+  vehicle {
+    trip {
+      trip_id: "4282020"
+      route_id: "20"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6720"
+    }
+    position {
+      latitude: 40.4779396
+      longitude: -80.1029
+      bearing: 147
+      speed: 0
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "24"
+  vehicle {
+    trip {
+      trip_id: "3709020"
+      route_id: "71A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3211"
+    }
+    position {
+      latitude: 40.4493
+      longitude: -79.9504242
+      bearing: 154
+      speed: 6.7056
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "25"
+  vehicle {
+    trip {
+      trip_id: "11386020"
+      route_id: "P1"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3331"
+    }
+    position {
+      latitude: 40.4412346
+      longitude: -79.9971771
+      bearing: 117
+      speed: 7.15264
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "26"
+  vehicle {
+    trip {
+      trip_id: "10175020"
+      route_id: "31"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6719"
+    }
+    position {
+      latitude: 40.3904
+      longitude: -80.088028
+      bearing: 329
+      speed: 14.7523193
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "27"
+  vehicle {
+    vehicle {
+      id: "3208"
+    }
+    position {
+      latitude: 40.4567223
+      longitude: -79.9123459
+      bearing: 83
+      speed: 3.57632
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "28"
+  vehicle {
+    vehicle {
+      id: "3329"
+    }
+    position {
+      latitude: 40.4568596
+      longitude: -79.9120865
+      bearing: 118
+      speed: 0
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "29"
+  vehicle {
+    trip {
+      trip_id: "918020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3207"
+    }
+    position {
+      latitude: 40.3496552
+      longitude: -79.8928299
+      bearing: 293
+      speed: 13.4112
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "30"
+  vehicle {
+    trip {
+      trip_id: "7421020"
+      route_id: "61B"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3206"
+    }
+    position {
+      latitude: 40.4440727
+      longitude: -79.9554
+      bearing: 226
+      speed: 7.59968
+    }
+    timestamp: 1714413840
+  }
+}
+entity {
+  id: "31"
+  vehicle {
+    trip {
+      trip_id: "3243020"
+      route_id: "P1"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3326"
+    }
+    position {
+      latitude: 40.4152527
+      longitude: -79.8790207
+      bearing: 286
+      speed: 0
+    }
+    timestamp: 1714413870
+  }
+}
+entity {
+  id: "32"
+  vehicle {
+    trip {
+      trip_id: "2637020"
+      route_id: "61D"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3203"
+    }
+    position {
+      latitude: 40.4045792
+      longitude: -79.9205551
+      bearing: 180
+      speed: 8.04672
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "33"
+  vehicle {
+    trip {
+      trip_id: "7116020"
+      route_id: "71C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3324"
+    }
+    position {
+      latitude: 40.4411697
+      longitude: -79.9594269
+      bearing: 225
+      speed: 7.59968
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "34"
+  vehicle {
+    trip {
+      trip_id: "9424020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3202"
+    }
+    position {
+      latitude: 40.4345627
+      longitude: -79.9228439
+      bearing: 5
+      speed: 0
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "35"
+  vehicle {
+    vehicle {
+      id: "3322"
+    }
+    position {
+      latitude: 40.4451675
+      longitude: -79.9907532
+      bearing: 220
+      speed: 0
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "36"
+  vehicle {
+    vehicle {
+      id: "3201"
+    }
+    position {
+      latitude: 40.3618355
+      longitude: -79.9304504
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "37"
+  vehicle {
+    trip {
+      trip_id: "1604020"
+      route_id: "16"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6711"
+    }
+    position {
+      latitude: 40.5038795
+      longitude: -80.0748444
+      bearing: 277
+      speed: 0
+    }
+    timestamp: 1714413854
+  }
+}
+entity {
+  id: "38"
+  vehicle {
+    trip {
+      trip_id: "1114020"
+      route_id: "17"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6710"
+    }
+    position {
+      latitude: 40.4542389
+      longitude: -80.0130386
+      bearing: 76
+      speed: 6.7056
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "39"
+  vehicle {
+    vehicle {
+      id: "6716"
+    }
+    position {
+      latitude: 40.3662186
+      longitude: -80.1039047
+      bearing: 209
+      speed: 0
+    }
+    timestamp: 1714413329
+  }
+}
+entity {
+  id: "40"
+  vehicle {
+    vehicle {
+      id: "3209"
+    }
+    position {
+      latitude: 40.4577026
+      longitude: -79.9128876
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "41"
+  vehicle {
+    vehicle {
+      id: "6610"
+    }
+    position {
+      latitude: 40.4466
+      longitude: -79.9884186
+      bearing: 225
+      speed: 0
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "42"
+  vehicle {
+    vehicle {
+      id: "6731"
+    }
+    position {
+      latitude: 40.3622665
+      longitude: -79.930191
+      bearing: 117
+      speed: 0
+    }
+    timestamp: 1714413858
+  }
+}
+entity {
+  id: "43"
+  vehicle {
+    trip {
+      trip_id: "703020"
+      route_id: "24"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6609"
+    }
+    position {
+      latitude: 40.4549408
+      longitude: -80.1361313
+      bearing: 330
+      speed: 10.2819195
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "44"
+  vehicle {
+    vehicle {
+      id: "3219"
+    }
+    position {
+      latitude: 40.4571
+      longitude: -79.9140701
+      bearing: 119
+      speed: 0
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "45"
+  vehicle {
+    vehicle {
+      id: "6729"
+    }
+    position {
+      latitude: 40.4087372
+      longitude: -79.9074326
+      bearing: 73
+      speed: 4.4704
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "46"
+  vehicle {
+    vehicle {
+      id: "6608"
+    }
+    position {
+      latitude: 40.5012894
+      longitude: -80.0221329
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "47"
+  vehicle {
+    vehicle {
+      id: "3338"
+    }
+    position {
+      latitude: 40.4789886
+      longitude: -79.9188766
+      bearing: 201
+      speed: 0
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "48"
+  vehicle {
+    vehicle {
+      id: "3217"
+    }
+    position {
+      latitude: 40.4570122
+      longitude: -79.9137955
+      bearing: 130
+      speed: 6.7056
+    }
+    timestamp: 1714413870
+  }
+}
+entity {
+  id: "49"
+  vehicle {
+    trip {
+      trip_id: "12867020"
+      route_id: "71D"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3216"
+    }
+    position {
+      latitude: 40.4473343
+      longitude: -79.9430466
+      bearing: 84
+      speed: 7.59968
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "50"
+  vehicle {
+    trip {
+      trip_id: "14012020"
+      route_id: "P1"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3337"
+    }
+    position {
+      latitude: 40.4551735
+      longitude: -79.9345627
+      bearing: 221
+      speed: 16.0934391
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "51"
+  vehicle {
+    vehicle {
+      id: "3336"
+    }
+    position {
+      latitude: 40.4790764
+      longitude: -79.9189758
+      bearing: 204
+      speed: 0
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "52"
+  vehicle {
+    vehicle {
+      id: "3335"
+    }
+    position {
+      latitude: 40.4461937
+      longitude: -79.9889603
+      bearing: 224
+      speed: 0
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "53"
+  vehicle {
+    vehicle {
+      id: "3334"
+    }
+    position {
+      latitude: 40.4360924
+      longitude: -79.9728928
+      bearing: 9
+      speed: 16.0934391
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "54"
+  vehicle {
+    trip {
+      trip_id: "8069020"
+      route_id: "61D"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3333"
+    }
+    position {
+      latitude: 40.4380341
+      longitude: -79.9277725
+      bearing: 265
+      speed: 5.81152
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "55"
+  vehicle {
+    vehicle {
+      id: "6601"
+    }
+    position {
+      latitude: 40.4437141
+      longitude: -79.9935913
+      bearing: 304
+      speed: 0
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "56"
+  vehicle {
+    vehicle {
+      id: "6721"
+    }
+    position {
+      latitude: 40.3667831
+      longitude: -80.102478
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "57"
+  vehicle {
+    vehicle {
+      id: "6724"
+    }
+    position {
+      latitude: 40.4259682
+      longitude: -80.1877213
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413795
+  }
+}
+entity {
+  id: "58"
+  vehicle {
+    vehicle {
+      id: "6602"
+    }
+    position {
+      latitude: 40.4475784
+      longitude: -80.0199585
+      bearing: 177
+      speed: 0
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "59"
+  vehicle {
+    trip {
+      trip_id: "12266020"
+      route_id: "1"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6604"
+    }
+    position {
+      latitude: 40.6025772
+      longitude: -79.7542496
+      bearing: 245
+      speed: 0.89408
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "60"
+  vehicle {
+    trip {
+      trip_id: "2859020"
+      route_id: "64"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6728"
+    }
+    position {
+      latitude: 40.457058
+      longitude: -79.9339294
+      bearing: 335
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "61"
+  vehicle {
+    trip {
+      trip_id: "7499020"
+      route_id: "91"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6607"
+    }
+    position {
+      latitude: 40.4946213
+      longitude: -79.9343796
+      bearing: 359
+      speed: 7.15264
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "62"
+  vehicle {
+    trip {
+      trip_id: "11481020"
+      route_id: "15"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6606"
+    }
+    position {
+      latitude: 40.4862022
+      longitude: -80.005043
+      bearing: 342
+      speed: 2.2352
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "63"
+  vehicle {
+    vehicle {
+      id: "6727"
+    }
+    position {
+      latitude: 40.3625
+      longitude: -79.9291153
+      bearing: 123
+      speed: 0
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "64"
+  vehicle {
+    trip {
+      trip_id: "12868020"
+      route_id: "83"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6621"
+    }
+    position {
+      latitude: 40.4422188
+      longitude: -80.0002899
+      bearing: 351
+      speed: 0
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "65"
+  vehicle {
+    vehicle {
+      id: "6620"
+    }
+    position {
+      latitude: 40.3620758
+      longitude: -79.9314499
+      bearing: 0
+      speed: 2.2352
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "66"
+  vehicle {
+    vehicle {
+      id: "3233"
+    }
+    position {
+      latitude: 40.4
+      longitude: -80.09935
+      bearing: 71
+      speed: 8.49376
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "67"
+  vehicle {
+    trip {
+      trip_id: "13967020"
+      route_id: "59"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6619"
+    }
+    position {
+      latitude: 40.3505745
+      longitude: -79.9249496
+      bearing: 77
+      speed: 14.7523193
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "68"
+  vehicle {
+    vehicle {
+      id: "3225"
+    }
+    position {
+      latitude: 40.4415588
+      longitude: -80.0046616
+      bearing: 281
+      speed: 0
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "69"
+  vehicle {
+    trip {
+      trip_id: "10271020"
+      route_id: "P3"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3223"
+    }
+    position {
+      latitude: 40.4150162
+      longitude: -79.8794403
+      bearing: 189
+      speed: 4.91744
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "70"
+  vehicle {
+    trip {
+      trip_id: "6473020"
+      route_id: "Y49"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6733"
+    }
+    position {
+      latitude: 40.4416924
+      longitude: -79.9997101
+      bearing: 26
+      speed: 0
+    }
+    timestamp: 1714413857
+  }
+}
+entity {
+  id: "71"
+  vehicle {
+    vehicle {
+      id: "6732"
+    }
+    position {
+      latitude: 40.3689079
+      longitude: -79.8308
+      bearing: 197
+      speed: 8.04672
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "72"
+  vehicle {
+    trip {
+      trip_id: "5795020"
+      route_id: "55"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6735"
+    }
+    position {
+      latitude: 40.331398
+      longitude: -79.9456787
+      bearing: 166
+      speed: 0
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "73"
+  vehicle {
+    vehicle {
+      id: "6734"
+    }
+    position {
+      latitude: 40.4110527
+      longitude: -79.9065857
+      bearing: 249
+      speed: 0
+    }
+    timestamp: 1714413855
+  }
+}
+entity {
+  id: "74"
+  vehicle {
+    trip {
+      trip_id: "13052020"
+      route_id: "38"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6615"
+    }
+    position {
+      latitude: 40.4137306
+      longitude: -80.0451508
+      bearing: 11
+      speed: 0
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "75"
+  vehicle {
+    trip {
+      trip_id: "3108020"
+      route_id: "Y46"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6736"
+    }
+    position {
+      latitude: 40.3105927
+      longitude: -79.937561
+      bearing: 161
+      speed: 16.5404797
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "76"
+  vehicle {
+    trip {
+      trip_id: "13087020"
+      route_id: "51"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6617"
+    }
+    position {
+      latitude: 40.3954468
+      longitude: -79.9869308
+      bearing: 155
+      speed: 10.72896
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "77"
+  vehicle {
+    vehicle {
+      id: "6630"
+    }
+    position {
+      latitude: 40.3620682
+      longitude: -79.9297562
+      bearing: 25
+      speed: 0
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "78"
+  vehicle {
+    trip {
+      trip_id: "37020"
+      route_id: "93"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6632"
+    }
+    position {
+      latitude: 40.4537048
+      longitude: -79.9530792
+      bearing: 334
+      speed: 0.44704
+    }
+    timestamp: 1714413870
+  }
+}
+entity {
+  id: "79"
+  vehicle {
+    vehicle {
+      id: "6510"
+    }
+    position {
+      latitude: 40.5013046
+      longitude: -80.0220718
+      bearing: 177
+      speed: 0
+    }
+    timestamp: 1714413745
+  }
+}
+entity {
+  id: "80"
+  vehicle {
+    trip {
+      trip_id: "11163020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3243"
+    }
+    position {
+      latitude: 40.4417877
+      longitude: -79.9585953
+      bearing: 225
+      speed: 4.91744
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "81"
+  vehicle {
+    vehicle {
+      id: "3238"
+    }
+    position {
+      latitude: 40.3666649
+      longitude: -80.1034317
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "82"
+  vehicle {
+    vehicle {
+      id: "3235"
+    }
+    position {
+      latitude: 40.3666
+      longitude: -80.1039734
+      bearing: 55
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "83"
+  vehicle {
+    trip {
+      trip_id: "12355020"
+      route_id: "12"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6502"
+    }
+    position {
+      latitude: 40.5740814
+      longitude: -80.0168076
+      bearing: 17
+      speed: 10.2819195
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "84"
+  vehicle {
+    vehicle {
+      id: "6501"
+    }
+    position {
+      latitude: 40.4419785
+      longitude: -79.9946899
+      bearing: 118
+      speed: 5.36448
+    }
+    timestamp: 1714413862
+  }
+}
+entity {
+  id: "85"
+  vehicle {
+    trip {
+      trip_id: "512020"
+      route_id: "91"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6504"
+    }
+    position {
+      latitude: 40.5004501
+      longitude: -79.8609695
+      bearing: 47
+      speed: 0
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "86"
+  vehicle {
+    vehicle {
+      id: "6625"
+    }
+    position {
+      latitude: 40.3523
+      longitude: -79.8606186
+      bearing: 258
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "87"
+  vehicle {
+    trip {
+      trip_id: "6808020"
+      route_id: "61A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6624"
+    }
+    position {
+      latitude: 40.439724
+      longitude: -79.9970398
+      bearing: 110
+      speed: 0
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "88"
+  vehicle {
+    vehicle {
+      id: "6503"
+    }
+    position {
+      latitude: 40.5174179
+      longitude: -80.0370331
+      bearing: 112
+      speed: 0
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "89"
+  vehicle {
+    trip {
+      trip_id: "13846020"
+      route_id: "61B"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6627"
+    }
+    position {
+      latitude: 40.4386749
+      longitude: -79.8972321
+      bearing: 162
+      speed: 12.5171194
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "90"
+  vehicle {
+    vehicle {
+      id: "6506"
+    }
+    position {
+      latitude: 40.5011902
+      longitude: -80.022583
+      bearing: 233
+      speed: 0
+    }
+    timestamp: 1714413365
+  }
+}
+entity {
+  id: "91"
+  vehicle {
+    trip {
+      trip_id: "9708020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6626"
+    }
+    position {
+      latitude: 40.4396515
+      longitude: -79.9973679
+      bearing: 117
+      speed: 0
+    }
+    timestamp: 1714413863
+  }
+}
+entity {
+  id: "92"
+  vehicle {
+    trip {
+      trip_id: "7283020"
+      route_id: "16"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6508"
+    }
+    position {
+      latitude: 40.4966469
+      longitude: -80.0577774
+      bearing: 302
+      speed: 4.91744
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "93"
+  vehicle {
+    trip {
+      trip_id: "7788020"
+      route_id: "60"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6628"
+    }
+    position {
+      latitude: 40.3395195
+      longitude: -79.8594818
+      bearing: 146
+      speed: 15.6463995
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "94"
+  vehicle {
+    trip {
+      trip_id: "3778020"
+      route_id: "P68"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6641"
+    }
+    position {
+      latitude: 40.4147911
+      longitude: -79.8549
+      bearing: 212
+      speed: 0
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "95"
+  vehicle {
+    vehicle {
+      id: "6520"
+    }
+    position {
+      latitude: 40.4179802
+      longitude: -80.0552673
+      bearing: 237
+      speed: 23.693119
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "96"
+  vehicle {
+    vehicle {
+      id: "6640"
+    }
+    position {
+      latitude: 40.5407143
+      longitude: -79.8327713
+      bearing: 255
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "97"
+  vehicle {
+    trip {
+      trip_id: "12209020"
+      route_id: "54"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6401"
+    }
+    position {
+      latitude: 40.4557381
+      longitude: -79.9757614
+      bearing: 47
+      speed: 10.72896
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "98"
+  vehicle {
+    vehicle {
+      id: "6643"
+    }
+    position {
+      latitude: 40.4561119
+      longitude: -79.9111252
+      bearing: 131
+      speed: 6.7056
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "99"
+  vehicle {
+    trip {
+      trip_id: "11235020"
+      route_id: "48"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6521"
+    }
+    position {
+      latitude: 40.4173737
+      longitude: -79.9654083
+      bearing: 163
+      speed: 4.02336
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "100"
+  vehicle {
+    trip {
+      trip_id: "237020"
+      route_id: "75"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6642"
+    }
+    position {
+      latitude: 40.4556351
+      longitude: -79.931282
+      bearing: 219
+      speed: 8.9408
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "101"
+  vehicle {
+    vehicle {
+      id: "3252"
+    }
+    position {
+      latitude: 40.3617706
+      longitude: -79.9297943
+      bearing: 111
+      speed: 0
+    }
+    timestamp: 1714413706
+  }
+}
+entity {
+  id: "102"
+  vehicle {
+    vehicle {
+      id: "3250"
+    }
+    position {
+      latitude: 40.3913956
+      longitude: -79.9341507
+      bearing: 322
+      speed: 9.38784
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "103"
+  vehicle {
+    trip {
+      trip_id: "13047020"
+      route_id: "61B"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3249"
+    }
+    position {
+      latitude: 40.4053307
+      longitude: -79.8644638
+      bearing: 244
+      speed: 8.49376
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "104"
+  vehicle {
+    vehicle {
+      id: "3248"
+    }
+    position {
+      latitude: 40.3622437
+      longitude: -79.931015
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413855
+  }
+}
+entity {
+  id: "105"
+  vehicle {
+    trip {
+      trip_id: "10985020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3247"
+    }
+    position {
+      latitude: 40.4066887
+      longitude: -79.8881912
+      bearing: 294
+      speed: 11.6230402
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "106"
+  vehicle {
+    trip {
+      trip_id: "6369020"
+      route_id: "61A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "3245"
+    }
+    position {
+      latitude: 40.4093628
+      longitude: -79.8564224
+      bearing: 215
+      speed: 12.5171194
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "107"
+  vehicle {
+    trip {
+      trip_id: "4300020"
+      route_id: "83"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6634"
+    }
+    position {
+      latitude: 40.4399834
+      longitude: -79.9678955
+      bearing: 274
+      speed: 4.91744
+    }
+    timestamp: 1714413840
+  }
+}
+entity {
+  id: "108"
+  vehicle {
+    vehicle {
+      id: "6513"
+    }
+    position {
+      latitude: 40.4538651
+      longitude: -80.1556396
+      bearing: 206
+      speed: 0
+    }
+    timestamp: 1714413870
+  }
+}
+entity {
+  id: "109"
+  vehicle {
+    trip {
+      trip_id: "7484020"
+      route_id: "1"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6512"
+    }
+    position {
+      latitude: 40.544426
+      longitude: -79.7709808
+      bearing: 199
+      speed: 17.8816
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "110"
+  vehicle {
+    trip {
+      trip_id: "7197020"
+      route_id: "64"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6633"
+    }
+    position {
+      latitude: 40.4623756
+      longitude: -79.9457932
+      bearing: 96
+      speed: 4.4704
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "111"
+  vehicle {
+    trip {
+      trip_id: "3661020"
+      route_id: "26"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6515"
+    }
+    position {
+      latitude: 40.4396744
+      longitude: -80.016922
+      bearing: 303
+      speed: 8.9408
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "112"
+  vehicle {
+    vehicle {
+      id: "6514"
+    }
+    position {
+      latitude: 40.3661652
+      longitude: -80.1032715
+      bearing: 240
+      speed: 0
+    }
+    timestamp: 1714413652
+  }
+}
+entity {
+  id: "113"
+  vehicle {
+    vehicle {
+      id: "6517"
+    }
+    position {
+      latitude: 40.3571777
+      longitude: -80.1096649
+      bearing: 30
+      speed: 5.36448
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "114"
+  vehicle {
+    vehicle {
+      id: "6638"
+    }
+    position {
+      latitude: 40.4570885
+      longitude: -79.9142456
+      bearing: 119
+      speed: 0
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "115"
+  vehicle {
+    trip {
+      trip_id: "7074020"
+      route_id: "27"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6516"
+    }
+    position {
+      latitude: 40.4580956
+      longitude: -80.071167
+      bearing: 73
+      speed: 6.7056
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "116"
+  vehicle {
+    trip {
+      trip_id: "7142020"
+      route_id: "69"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6637"
+    }
+    position {
+      latitude: 40.4363022
+      longitude: -79.9772339
+      bearing: 261
+      speed: 16.0934391
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "117"
+  vehicle {
+    trip {
+      trip_id: "12848020"
+      route_id: "G2"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6519"
+    }
+    position {
+      latitude: 40.4360771
+      longitude: -80.0675354
+      bearing: 4
+      speed: 7.15264
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "118"
+  vehicle {
+    trip {
+      trip_id: "13760020"
+      route_id: "21"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6518"
+    }
+    position {
+      latitude: 40.5137367
+      longitude: -80.1379
+      bearing: 110
+      speed: 0
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "119"
+  vehicle {
+    vehicle {
+      id: "6650"
+    }
+    position {
+      latitude: 40.4426842
+      longitude: -79.9986801
+      bearing: 249
+      speed: 0
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "120"
+  vehicle {
+    trip {
+      trip_id: "13381020"
+      route_id: "53L"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6531"
+    }
+    position {
+      latitude: 40.4289932
+      longitude: -79.9567413
+      bearing: 143
+      speed: 13.4112
+    }
+    timestamp: 1714413857
+  }
+}
+entity {
+  id: "121"
+  vehicle {
+    vehicle {
+      id: "6652"
+    }
+    position {
+      latitude: 40.4497452
+      longitude: -79.8916168
+      bearing: 284
+      speed: 2.2352
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "122"
+  vehicle {
+    vehicle {
+      id: "6410"
+    }
+    position {
+      latitude: 40.4142075
+      longitude: -79.9904556
+      bearing: 179
+      speed: 1.78816
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "123"
+  vehicle {
+    vehicle {
+      id: "6530"
+    }
+    position {
+      latitude: 40.4136887
+      longitude: -79.8533859
+      bearing: 81
+      speed: 0
+    }
+    timestamp: 1714413855
+  }
+}
+entity {
+  id: "124"
+  vehicle {
+    trip {
+      trip_id: "13504020"
+      route_id: "16"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6412"
+    }
+    position {
+      latitude: 40.4877396
+      longitude: -80.0414
+      bearing: 103
+      speed: 0
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "125"
+  vehicle {
+    trip {
+      trip_id: "4509020"
+      route_id: "51"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6533"
+    }
+    position {
+      latitude: 40.3465805
+      longitude: -79.9392
+      bearing: 356
+      speed: 15.1993599
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "126"
+  vehicle {
+    trip {
+      trip_id: "2337020"
+      route_id: "69"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6653"
+    }
+    position {
+      latitude: 40.3889847
+      longitude: -79.7501068
+      bearing: 277
+      speed: 13.8582401
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "127"
+  vehicle {
+    vehicle {
+      id: "6411"
+    }
+    position {
+      latitude: 40.4460144
+      longitude: -79.9891129
+      bearing: 48
+      speed: 0
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "128"
+  vehicle {
+    vehicle {
+      id: "3260"
+    }
+    position {
+      latitude: 40.4146194
+      longitude: -79.8787613
+      bearing: 113
+      speed: 0
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "129"
+  vehicle {
+    vehicle {
+      id: "6403"
+    }
+    position {
+      latitude: 40.490593
+      longitude: -80.0096893
+      bearing: 350
+      speed: 27.2694397
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "130"
+  vehicle {
+    vehicle {
+      id: "6645"
+    }
+    position {
+      latitude: 40.45681
+      longitude: -79.9113617
+      bearing: 9
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "131"
+  vehicle {
+    vehicle {
+      id: "6644"
+    }
+    position {
+      latitude: 40.4471169
+      longitude: -79.8889313
+      bearing: 148
+      speed: 5.36448
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "132"
+  vehicle {
+    vehicle {
+      id: "6523"
+    }
+    position {
+      latitude: 40.3667793
+      longitude: -80.1025391
+      bearing: 241
+      speed: 0
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "133"
+  vehicle {
+    trip {
+      trip_id: "9237020"
+      route_id: "55"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6526"
+    }
+    position {
+      latitude: 40.3563919
+      longitude: -79.8380051
+      bearing: 234
+      speed: 0
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "134"
+  vehicle {
+    trip {
+      trip_id: "3482020"
+      route_id: "71B"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6647"
+    }
+    position {
+      latitude: 40.4479141
+      longitude: -79.9357529
+      bearing: 84
+      speed: 11.6230402
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "135"
+  vehicle {
+    vehicle {
+      id: "6405"
+    }
+    position {
+      latitude: 40.5061226
+      longitude: -80.0316467
+      bearing: 294
+      speed: 21.4579201
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "136"
+  vehicle {
+    trip {
+      trip_id: "633020"
+      route_id: "79"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6646"
+    }
+    position {
+      latitude: 40.4747581
+      longitude: -79.8715515
+      bearing: 307
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "137"
+  vehicle {
+    vehicle {
+      id: "6404"
+    }
+    position {
+      latitude: 40.5174332
+      longitude: -80.0368
+      bearing: 294
+      speed: 0
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "138"
+  vehicle {
+    trip {
+      trip_id: "11667020"
+      route_id: "61D"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6528"
+    }
+    position {
+      latitude: 40.4282074
+      longitude: -79.9248657
+      bearing: 232
+      speed: 5.36448
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "139"
+  vehicle {
+    trip {
+      trip_id: "643020"
+      route_id: "8"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6407"
+    }
+    position {
+      latitude: 40.5042725
+      longitude: -80.0263824
+      bearing: 308
+      speed: 11.6230402
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "140"
+  vehicle {
+    vehicle {
+      id: "6648"
+    }
+    position {
+      latitude: 40.457325
+      longitude: -79.9130707
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413856
+  }
+}
+entity {
+  id: "141"
+  vehicle {
+    vehicle {
+      id: "6409"
+    }
+    position {
+      latitude: 40.4475708
+      longitude: -80.019928
+      bearing: 175
+      speed: 0
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "142"
+  vehicle {
+    trip {
+      trip_id: "6268020"
+      route_id: "8"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6408"
+    }
+    position {
+      latitude: 40.46035
+      longitude: -80.0131683
+      bearing: 200
+      speed: 7.59968
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "143"
+  vehicle {
+    vehicle {
+      id: "6421"
+    }
+    position {
+      latitude: 40.3663826
+      longitude: -80.1042
+      bearing: 291
+      speed: 0
+    }
+    timestamp: 1714413846
+  }
+}
+entity {
+  id: "144"
+  vehicle {
+    vehicle {
+      id: "6542"
+    }
+    position {
+      latitude: 40.540432
+      longitude: -79.8327484
+      bearing: 72
+      speed: 0
+    }
+    timestamp: 1714413673
+  }
+}
+entity {
+  id: "145"
+  vehicle {
+    trip {
+      trip_id: "6559020"
+      route_id: "59"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6541"
+    }
+    position {
+      latitude: 40.4020576
+      longitude: -79.8887634
+      bearing: 140
+      speed: 10.2819195
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "146"
+  vehicle {
+    trip {
+      trip_id: "3652020"
+      route_id: "54"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6302"
+    }
+    position {
+      latitude: 40.4380493
+      longitude: -79.9634857
+      bearing: 225
+      speed: 4.91744
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "147"
+  vehicle {
+    trip {
+      trip_id: "12778020"
+      route_id: "77"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6544"
+    }
+    position {
+      latitude: 40.4547348
+      longitude: -79.9692535
+      bearing: 242
+      speed: 18.32864
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "148"
+  vehicle {
+    vehicle {
+      id: "6423"
+    }
+    position {
+      latitude: 40.4999161
+      longitude: -80.2191544
+      bearing: 91
+      speed: 12.0700798
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "149"
+  vehicle {
+    vehicle {
+      id: "6301"
+    }
+    position {
+      latitude: 40.5010529
+      longitude: -80.0217285
+      bearing: 231
+      speed: 0
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "150"
+  vehicle {
+    trip {
+      trip_id: "7343020"
+      route_id: "81"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6535"
+    }
+    position {
+      latitude: 40.442173
+      longitude: -79.9884949
+      bearing: 241
+      speed: 8.04672
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "151"
+  vehicle {
+    vehicle {
+      id: "6414"
+    }
+    position {
+      latitude: 40.5003548
+      longitude: -80.0238647
+      bearing: 137
+      speed: 19.2227192
+    }
+    timestamp: 1714413855
+  }
+}
+entity {
+  id: "152"
+  vehicle {
+    vehicle {
+      id: "6413"
+    }
+    position {
+      latitude: 40.5019875
+      longitude: -80.0225906
+      bearing: 31
+      speed: 2.68224
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "153"
+  vehicle {
+    trip {
+      trip_id: "9249020"
+      route_id: "Y47"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6534"
+    }
+    position {
+      latitude: 40.3395576
+      longitude: -79.9802704
+      bearing: 315
+      speed: 10.72896
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "154"
+  vehicle {
+    vehicle {
+      id: "6416"
+    }
+    position {
+      latitude: 40.371212
+      longitude: -80.1001
+      bearing: 207
+      speed: 11.176
+    }
+    timestamp: 1714413863
+  }
+}
+entity {
+  id: "155"
+  vehicle {
+    trip {
+      trip_id: "2582020"
+      route_id: "20"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6415"
+    }
+    position {
+      latitude: 40.4753189
+      longitude: -80.0968628
+      bearing: 20
+      speed: 2.2352
+    }
+    timestamp: 1714413857
+  }
+}
+entity {
+  id: "156"
+  vehicle {
+    trip {
+      trip_id: "9658020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6536"
+    }
+    position {
+      latitude: 40.3523216
+      longitude: -79.8603363
+      bearing: 262
+      speed: 0
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "157"
+  vehicle {
+    trip {
+      trip_id: "10754020"
+      route_id: "41"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6418"
+    }
+    position {
+      latitude: 40.4416428
+      longitude: -79.9997482
+      bearing: 26
+      speed: 0
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "158"
+  vehicle {
+    trip {
+      trip_id: "12999020"
+      route_id: "31"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6417"
+    }
+    position {
+      latitude: 40.3865929
+      longitude: -80.0928116
+      bearing: 107
+      speed: 0
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "159"
+  vehicle {
+    vehicle {
+      id: "6419"
+    }
+    position {
+      latitude: 40.3658218
+      longitude: -80.1043472
+      bearing: 335
+      speed: 0
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "160"
+  vehicle {
+    trip {
+      trip_id: "2569020"
+      route_id: "71C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6551"
+    }
+    position {
+      latitude: 40.4613495
+      longitude: -79.9246292
+      bearing: 294
+      speed: 0
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "161"
+  vehicle {
+    vehicle {
+      id: "6430"
+    }
+    position {
+      latitude: 40.3619881
+      longitude: -79.9305
+      bearing: 130
+      speed: 0
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "162"
+  vehicle {
+    trip {
+      trip_id: "1448020"
+      route_id: "82"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6550"
+    }
+    position {
+      latitude: 40.4445419
+      longitude: -79.9784
+      bearing: 240
+      speed: 8.9408
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "163"
+  vehicle {
+    vehicle {
+      id: "6553"
+    }
+    position {
+      latitude: 40.5405846
+      longitude: -79.8321609
+      bearing: 253
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "164"
+  vehicle {
+    vehicle {
+      id: "6432"
+    }
+    position {
+      latitude: 40.3622169
+      longitude: -79.931488
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "165"
+  vehicle {
+    trip {
+      trip_id: "9148020"
+      route_id: "74"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6552"
+    }
+    position {
+      latitude: 40.4682388
+      longitude: -79.9040146
+      bearing: 126
+      speed: 8.04672
+    }
+    timestamp: 1714413863
+  }
+}
+entity {
+  id: "166"
+  vehicle {
+    vehicle {
+      id: "6313"
+    }
+    position {
+      latitude: 40.4416542
+      longitude: -79.9938354
+      bearing: 127
+      speed: 10.72896
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "167"
+  vehicle {
+    vehicle {
+      id: "6555"
+    }
+    position {
+      latitude: 40.4571686
+      longitude: -79.9133148
+      bearing: 250
+      speed: 0
+    }
+    timestamp: 1714413432
+  }
+}
+entity {
+  id: "168"
+  vehicle {
+    trip {
+      trip_id: "2393020"
+      route_id: "83"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6433"
+    }
+    position {
+      latitude: 40.4370613
+      longitude: -79.9706879
+      bearing: 293
+      speed: 16.5404797
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "169"
+  vehicle {
+    trip {
+      trip_id: "13015020"
+      route_id: "91"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6312"
+    }
+    position {
+      latitude: 40.4878807
+      longitude: -79.8938
+      bearing: 199
+      speed: 2.2352
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "170"
+  vehicle {
+    vehicle {
+      id: "6554"
+    }
+    position {
+      latitude: 40.5403824
+      longitude: -79.8332443
+      bearing: 82
+      speed: 0
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "171"
+  vehicle {
+    trip {
+      trip_id: "3010020"
+      route_id: "2"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6304"
+    }
+    position {
+      latitude: 40.5433273
+      longitude: -80.0052719
+      bearing: 49
+      speed: 10.2819195
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "172"
+  vehicle {
+    vehicle {
+      id: "6425"
+    }
+    position {
+      latitude: 40.4456558
+      longitude: -79.9897461
+      bearing: 226
+      speed: 0
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "173"
+  vehicle {
+    vehicle {
+      id: "6546"
+    }
+    position {
+      latitude: 40.5403976
+      longitude: -79.8329773
+      bearing: 75
+      speed: 0
+    }
+    timestamp: 1714413854
+  }
+}
+entity {
+  id: "174"
+  vehicle {
+    vehicle {
+      id: "6545"
+    }
+    position {
+      latitude: 40.4570198
+      longitude: -79.9140854
+      bearing: 119
+      speed: 0
+    }
+    timestamp: 1714413858
+  }
+}
+entity {
+  id: "175"
+  vehicle {
+    vehicle {
+      id: "6424"
+    }
+    position {
+      latitude: 40.3700371
+      longitude: -80.100914
+      bearing: 23
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "176"
+  vehicle {
+    vehicle {
+      id: "6303"
+    }
+    position {
+      latitude: 40.5014
+      longitude: -80.0220413
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "177"
+  vehicle {
+    vehicle {
+      id: "6548"
+    }
+    position {
+      latitude: 40.5400467
+      longitude: -79.8309402
+      bearing: 170
+      speed: 0
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "178"
+  vehicle {
+    vehicle {
+      id: "6427"
+    }
+    position {
+      latitude: 40.3666344
+      longitude: -80.103569
+      bearing: 285
+      speed: 0
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "179"
+  vehicle {
+    trip {
+      trip_id: "930020"
+      route_id: "29"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6426"
+    }
+    position {
+      latitude: 40.4430733
+      longitude: -80.0581
+      bearing: 247
+      speed: 7.59968
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "180"
+  vehicle {
+    trip {
+      trip_id: "6238020"
+      route_id: "13"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6308"
+    }
+    position {
+      latitude: 40.4594231
+      longitude: -80.016655
+      bearing: 307
+      speed: 2.68224
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "181"
+  vehicle {
+    trip {
+      trip_id: "9256020"
+      route_id: "56"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6429"
+    }
+    position {
+      latitude: 40.3521881
+      longitude: -79.8581772
+      bearing: 264
+      speed: 12.5171194
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "182"
+  vehicle {
+    vehicle {
+      id: "6428"
+    }
+    position {
+      latitude: 40.3624573
+      longitude: -79.9313431
+      bearing: 32
+      speed: 0
+    }
+    timestamp: 1714413851
+  }
+}
+entity {
+  id: "183"
+  vehicle {
+    trip {
+      trip_id: "10357020"
+      route_id: "39"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6320"
+    }
+    position {
+      latitude: 40.4309464
+      longitude: -80.0016937
+      bearing: 15
+      speed: 1.34112
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "184"
+  vehicle {
+    vehicle {
+      id: "6441"
+    }
+    position {
+      latitude: 40.3642731
+      longitude: -79.9309921
+      bearing: 15
+      speed: 14.3052797
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "185"
+  vehicle {
+    trip {
+      trip_id: "11726020"
+      route_id: "39"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6322"
+    }
+    position {
+      latitude: 40.395977
+      longitude: -80.0230942
+      bearing: 122
+      speed: 4.02336
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "186"
+  vehicle {
+    trip {
+      trip_id: "3642020"
+      route_id: "91"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6201"
+    }
+    position {
+      latitude: 40.4916649
+      longitude: -79.8660126
+      bearing: 334
+      speed: 7.15264
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "187"
+  vehicle {
+    trip {
+      trip_id: "12315020"
+      route_id: "51"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6442"
+    }
+    position {
+      latitude: 40.435421
+      longitude: -80.0018311
+      bearing: 207
+      speed: 9.83488
+    }
+    timestamp: 1714413857
+  }
+}
+entity {
+  id: "188"
+  vehicle {
+    trip {
+      trip_id: "7348020"
+      route_id: "24"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6324"
+    }
+    position {
+      latitude: 40.4735603
+      longitude: -80.0765305
+      bearing: 294
+      speed: 5.81152
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "189"
+  vehicle {
+    vehicle {
+      id: "6203"
+    }
+    position {
+      latitude: 40.4886475
+      longitude: -79.954422
+      bearing: 54
+      speed: 13.4112
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "190"
+  vehicle {
+    trip {
+      trip_id: "13130020"
+      route_id: "24"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6323"
+    }
+    position {
+      latitude: 40.4614182
+      longitude: -80.0502472
+      bearing: 128
+      speed: 15.1993599
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "191"
+  vehicle {
+    trip {
+      trip_id: "873020"
+      route_id: "54"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6202"
+    }
+    position {
+      latitude: 40.4088287
+      longitude: -79.9915085
+      bearing: 126
+      speed: 0
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "192"
+  vehicle {
+    vehicle {
+      id: "6557"
+    }
+    position {
+      latitude: 40.45681
+      longitude: -79.9135361
+      bearing: 121
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "193"
+  vehicle {
+    trip {
+      trip_id: "10141020"
+      route_id: "71C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6556"
+    }
+    position {
+      latitude: 40.4630508
+      longitude: -79.9295578
+      bearing: 114
+      speed: 4.4704
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "194"
+  vehicle {
+    vehicle {
+      id: "6559"
+    }
+    position {
+      latitude: 40.4570084
+      longitude: -79.913681
+      bearing: 124
+      speed: 0
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "195"
+  vehicle {
+    vehicle {
+      id: "6438"
+    }
+    position {
+      latitude: 40.3623352
+      longitude: -79.9307632
+      bearing: 126
+      speed: 0
+    }
+    timestamp: 1714413668
+  }
+}
+entity {
+  id: "196"
+  vehicle {
+    vehicle {
+      id: "6317"
+    }
+    position {
+      latitude: 40.3660736
+      longitude: -80.103981
+      bearing: 215
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "197"
+  vehicle {
+    trip {
+      trip_id: "835020"
+      route_id: "61D"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6437"
+    }
+    position {
+      latitude: 40.437294
+      longitude: -79.9633179
+      bearing: 135
+      speed: 0
+    }
+    timestamp: 1714413862
+  }
+}
+entity {
+  id: "198"
+  vehicle {
+    trip {
+      trip_id: "4401020"
+      route_id: "P78"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6558"
+    }
+    position {
+      latitude: 40.4416962
+      longitude: -79.8816528
+      bearing: 114
+      speed: 7.15264
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "199"
+  vehicle {
+    trip {
+      trip_id: "1968020"
+      route_id: "29"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6318"
+    }
+    position {
+      latitude: 40.4417381
+      longitude: -80.060936
+      bearing: 10
+      speed: 8.9408
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "200"
+  vehicle {
+    trip {
+      trip_id: "7046020"
+      route_id: "P78"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6450"
+    }
+    position {
+      latitude: 40.4859123
+      longitude: -79.8374329
+      bearing: 187
+      speed: 9.38784
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "201"
+  vehicle {
+    trip {
+      trip_id: "14047020"
+      route_id: "67"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6451"
+    }
+    position {
+      latitude: 40.4453087
+      longitude: -79.9351807
+      bearing: 263
+      speed: 6.7056
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "202"
+  vehicle {
+    vehicle {
+      id: "6330"
+    }
+    position {
+      latitude: 40.3258286
+      longitude: -79.9393082
+      bearing: 198
+      speed: 9.83488
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "203"
+  vehicle {
+    trip {
+      trip_id: "327020"
+      route_id: "14"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6212"
+    }
+    position {
+      latitude: 40.5648232
+      longitude: -80.2068
+      bearing: 313
+      speed: 5.36448
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "204"
+  vehicle {
+    trip {
+      trip_id: "6212020"
+      route_id: "86"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6454"
+    }
+    position {
+      latitude: 40.455555
+      longitude: -79.8882599
+      bearing: 106
+      speed: 0
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "205"
+  vehicle {
+    trip {
+      trip_id: "6797020"
+      route_id: "1"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6211"
+    }
+    position {
+      latitude: 40.4789696
+      longitude: -79.9667358
+      bearing: 44
+      speed: 8.9408
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "206"
+  vehicle {
+    vehicle {
+      id: "6453"
+    }
+    position {
+      latitude: 40.456955
+      longitude: -79.9137039
+      bearing: 123
+      speed: 0
+    }
+    timestamp: 1714413870
+  }
+}
+entity {
+  id: "207"
+  vehicle {
+    vehicle {
+      id: "6335"
+    }
+    position {
+      latitude: 40.3621063
+      longitude: -79.9298096
+      bearing: 24
+      speed: 0
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "208"
+  vehicle {
+    vehicle {
+      id: "6456"
+    }
+    position {
+      latitude: 40.4566765
+      longitude: -79.9123611
+      bearing: 89
+      speed: 0
+    }
+    timestamp: 1714413813
+  }
+}
+entity {
+  id: "209"
+  vehicle {
+    trip {
+      trip_id: "1554020"
+      route_id: "15"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6213"
+    }
+    position {
+      latitude: 40.4444389
+      longitude: -80.0007629
+      bearing: 73
+      speed: 9.83488
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "210"
+  vehicle {
+    trip {
+      trip_id: "8539020"
+      route_id: "82"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6455"
+    }
+    position {
+      latitude: 40.4414902
+      longitude: -79.992424
+      bearing: 76
+      speed: 5.81152
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "211"
+  vehicle {
+    trip {
+      trip_id: "12183020"
+      route_id: "54"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6205"
+    }
+    position {
+      latitude: 40.4526787
+      longitude: -79.9492645
+      bearing: 67
+      speed: 8.9408
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "212"
+  vehicle {
+    vehicle {
+      id: "6204"
+    }
+    position {
+      latitude: 40.5171967
+      longitude: -80.0363541
+      bearing: 353
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "213"
+  vehicle {
+    vehicle {
+      id: "6449"
+    }
+    position {
+      latitude: 40.4571
+      longitude: -79.9141235
+      bearing: 113
+      speed: 0
+    }
+    timestamp: 1714413857
+  }
+}
+entity {
+  id: "214"
+  vehicle {
+    vehicle {
+      id: "6206"
+    }
+    position {
+      latitude: 40.5008926
+      longitude: -80.0219498
+      bearing: 228
+      speed: 0
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "215"
+  vehicle {
+    trip {
+      trip_id: "5319020"
+      route_id: "1"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6209"
+    }
+    position {
+      latitude: 40.4946404
+      longitude: -79.9334717
+      bearing: 178
+      speed: 7.15264
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "216"
+  vehicle {
+    trip {
+      trip_id: "9185020"
+      route_id: "59"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6340"
+    }
+    position {
+      latitude: 40.4047585
+      longitude: -79.862442
+      bearing: 137
+      speed: 8.9408
+    }
+    timestamp: 1714413863
+  }
+}
+entity {
+  id: "217"
+  vehicle {
+    trip {
+      trip_id: "7129020"
+      route_id: "77"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6461"
+    }
+    position {
+      latitude: 40.476429
+      longitude: -79.781044
+      bearing: 278
+      speed: 9.83488
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "218"
+  vehicle {
+    trip {
+      trip_id: "12522020"
+      route_id: "71"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6460"
+    }
+    position {
+      latitude: 40.428894
+      longitude: -79.8918076
+      bearing: 162
+      speed: 10.72896
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "219"
+  vehicle {
+    vehicle {
+      id: "6342"
+    }
+    position {
+      latitude: 40.3896332
+      longitude: -79.9340744
+      bearing: 163
+      speed: 17.4345589
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "220"
+  vehicle {
+    vehicle {
+      id: "6463"
+    }
+    position {
+      latitude: 40.4567032
+      longitude: -79.9117889
+      bearing: 93
+      speed: 1.34112
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "221"
+  vehicle {
+    vehicle {
+      id: "6221"
+    }
+    position {
+      latitude: 40.3671036
+      longitude: -80.1030731
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "222"
+  vehicle {
+    vehicle {
+      id: "6462"
+    }
+    position {
+      latitude: 40.4825935
+      longitude: -79.9080429
+      bearing: 181
+      speed: 15.6463995
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "223"
+  vehicle {
+    vehicle {
+      id: "6341"
+    }
+    position {
+      latitude: 40.4303703
+      longitude: -79.9770508
+      bearing: 293
+      speed: 0
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "224"
+  vehicle {
+    vehicle {
+      id: "6220"
+    }
+    position {
+      latitude: 40.3660278
+      longitude: -80.1045
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "225"
+  vehicle {
+    trip {
+      trip_id: "6893020"
+      route_id: "P3"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6465"
+    }
+    position {
+      latitude: 40.4529839
+      longitude: -79.8992157
+      bearing: 117
+      speed: 5.36448
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "226"
+  vehicle {
+    trip {
+      trip_id: "3742020"
+      route_id: "Y46"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6344"
+    }
+    position {
+      latitude: 40.3351097
+      longitude: -79.9469528
+      bearing: 338
+      speed: 0
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "227"
+  vehicle {
+    trip {
+      trip_id: "6969020"
+      route_id: "6"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6101"
+    }
+    position {
+      latitude: 40.4746056
+      longitude: -80.0021667
+      bearing: 219
+      speed: 7.59968
+    }
+    timestamp: 1714413863
+  }
+}
+entity {
+  id: "228"
+  vehicle {
+    vehicle {
+      id: "6343"
+    }
+    position {
+      latitude: 40.3614502
+      longitude: -79.9290695
+      bearing: 14
+      speed: 7.15264
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "229"
+  vehicle {
+    trip {
+      trip_id: "10081020"
+      route_id: "51"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6346"
+    }
+    position {
+      latitude: 40.3717308
+      longitude: -79.975296
+      bearing: 355
+      speed: 13.4112
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "230"
+  vehicle {
+    trip {
+      trip_id: "10954020"
+      route_id: "75"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6467"
+    }
+    position {
+      latitude: 40.4279518
+      longitude: -79.9702148
+      bearing: 109
+      speed: 2.2352
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "231"
+  vehicle {
+    vehicle {
+      id: "6104"
+    }
+    position {
+      latitude: 40.5173759
+      longitude: -80.0366364
+      bearing: 294
+      speed: 0
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "232"
+  vehicle {
+    vehicle {
+      id: "6225"
+    }
+    position {
+      latitude: 40.3890152
+      longitude: -80.0990219
+      bearing: 161
+      speed: 19.2227192
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "233"
+  vehicle {
+    trip {
+      trip_id: "12242020"
+      route_id: "P68"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6466"
+    }
+    position {
+      latitude: 40.4146652
+      longitude: -79.855
+      bearing: 212
+      speed: 0
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "234"
+  vehicle {
+    vehicle {
+      id: "6224"
+    }
+    position {
+      latitude: 40.3668938
+      longitude: -80.1031189
+      bearing: 80
+      speed: 0
+    }
+    timestamp: 1714413862
+  }
+}
+entity {
+  id: "235"
+  vehicle {
+    vehicle {
+      id: "6337"
+    }
+    position {
+      latitude: 40.3620148
+      longitude: -79.9297562
+      bearing: 337
+      speed: 0
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "236"
+  vehicle {
+    vehicle {
+      id: "6458"
+    }
+    position {
+      latitude: 40.4567604
+      longitude: -79.91259
+      bearing: 166
+      speed: 0
+    }
+    timestamp: 1714413429
+  }
+}
+entity {
+  id: "237"
+  vehicle {
+    trip {
+      trip_id: "12041020"
+      route_id: "17"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6215"
+    }
+    position {
+      latitude: 40.4644165
+      longitude: -80.0277252
+      bearing: 40
+      speed: 7.15264
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "238"
+  vehicle {
+    vehicle {
+      id: "6336"
+    }
+    position {
+      latitude: 40.3620262
+      longitude: -79.9317856
+      bearing: 70
+      speed: 0
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "239"
+  vehicle {
+    trip {
+      trip_id: "12876020"
+      route_id: "G2"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6218"
+    }
+    position {
+      latitude: 40.450943
+      longitude: -80.0373611
+      bearing: 315
+      speed: 7.59968
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "240"
+  vehicle {
+    trip {
+      trip_id: "4856020"
+      route_id: "24"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6217"
+    }
+    position {
+      latitude: 40.4559364
+      longitude: -80.1678
+      bearing: 64
+      speed: 1.78816
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "241"
+  vehicle {
+    trip {
+      trip_id: "6377020"
+      route_id: "28X"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6230"
+    }
+    position {
+      latitude: 40.4478645
+      longitude: -80.1638565
+      bearing: 281
+      speed: 10.72896
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "242"
+  vehicle {
+    vehicle {
+      id: "6351"
+    }
+    position {
+      latitude: 40.4110146
+      longitude: -79.9066086
+      bearing: 255
+      speed: 0
+    }
+    timestamp: 1714413858
+  }
+}
+entity {
+  id: "243"
+  vehicle {
+    trip {
+      trip_id: "2475020"
+      route_id: "14"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6353"
+    }
+    position {
+      latitude: 40.5554848
+      longitude: -80.195961
+      bearing: 137
+      speed: 13.4112
+    }
+    timestamp: 1714413857
+  }
+}
+entity {
+  id: "244"
+  vehicle {
+    trip {
+      trip_id: "6555020"
+      route_id: "48"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6231"
+    }
+    position {
+      latitude: 40.428627
+      longitude: -79.9918594
+      bearing: 268
+      speed: 10.72896
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "245"
+  vehicle {
+    trip {
+      trip_id: "9210020"
+      route_id: "91"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6110"
+    }
+    position {
+      latitude: 40.451355
+      longitude: -79.9821396
+      bearing: 228
+      speed: 4.91744
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "246"
+  vehicle {
+    trip {
+      trip_id: "8324020"
+      route_id: "57"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6234"
+    }
+    position {
+      latitude: 40.4153862
+      longitude: -79.9248047
+      bearing: 322
+      speed: 4.02336
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "247"
+  vehicle {
+    vehicle {
+      id: "6355"
+    }
+    position {
+      latitude: 40.4587517
+      longitude: -79.9682159
+      bearing: 239
+      speed: 10.2819195
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "248"
+  vehicle {
+    vehicle {
+      id: "6233"
+    }
+    position {
+      latitude: 40.3621292
+      longitude: -79.9303513
+      bearing: 128
+      speed: 0
+    }
+    timestamp: 1714413449
+  }
+}
+entity {
+  id: "249"
+  vehicle {
+    trip {
+      trip_id: "2256020"
+      route_id: "56"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6236"
+    }
+    position {
+      latitude: 40.4383812
+      longitude: -80.0017548
+      bearing: 296
+      speed: 0
+    }
+    timestamp: 1714413857
+  }
+}
+entity {
+  id: "250"
+  vehicle {
+    trip {
+      trip_id: "4784020"
+      route_id: "64"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6356"
+    }
+    position {
+      latitude: 40.4056549
+      longitude: -79.9164352
+      bearing: 224
+      speed: 17.4345589
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "251"
+  vehicle {
+    trip {
+      trip_id: "12288020"
+      route_id: "75"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6114"
+    }
+    position {
+      latitude: 40.4470406
+      longitude: -79.9477
+      bearing: 86
+      speed: 0.89408
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "252"
+  vehicle {
+    trip {
+      trip_id: "12343020"
+      route_id: "61A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6348"
+    }
+    position {
+      latitude: 40.4158287
+      longitude: -79.8787308
+      bearing: 127
+      speed: 0
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "253"
+  vehicle {
+    trip {
+      trip_id: "8728020"
+      route_id: "69"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6469"
+    }
+    position {
+      latitude: 40.4050903
+      longitude: -79.8295288
+      bearing: 255
+      speed: 8.9408
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "254"
+  vehicle {
+    vehicle {
+      id: "6106"
+    }
+    position {
+      latitude: 40.6004715
+      longitude: -79.757225
+      bearing: 165
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "255"
+  vehicle {
+    vehicle {
+      id: "6227"
+    }
+    position {
+      latitude: 40.4174156
+      longitude: -80.0562
+      bearing: 58
+      speed: 23.2460804
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "256"
+  vehicle {
+    trip {
+      trip_id: "340020"
+      route_id: "54"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6105"
+    }
+    position {
+      latitude: 40.4492378
+      longitude: -79.985321
+      bearing: 141
+      speed: 4.4704
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "257"
+  vehicle {
+    trip {
+      trip_id: "419020"
+      route_id: "59"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6347"
+    }
+    position {
+      latitude: 40.3588791
+      longitude: -79.844696
+      bearing: 159
+      speed: 14.7523193
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "258"
+  vehicle {
+    vehicle {
+      id: "6468"
+    }
+    position {
+      latitude: 40.4729424
+      longitude: -79.8889313
+      bearing: 89
+      speed: 1.34112
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "259"
+  vehicle {
+    trip {
+      trip_id: "9572020"
+      route_id: "67"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6228"
+    }
+    position {
+      latitude: 40.4462471
+      longitude: -79.7487259
+      bearing: 302
+      speed: 13.8582401
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "260"
+  vehicle {
+    vehicle {
+      id: "6107"
+    }
+    position {
+      latitude: 40.5012856
+      longitude: -80.0220337
+      bearing: 160
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "261"
+  vehicle {
+    trip {
+      trip_id: "6392020"
+      route_id: "28X"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6362"
+    }
+    position {
+      latitude: 40.4950676
+      longitude: -80.2556763
+      bearing: 181
+      speed: 0.44704
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "262"
+  vehicle {
+    trip {
+      trip_id: "9108020"
+      route_id: "61B"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6240"
+    }
+    position {
+      latitude: 40.4040794
+      longitude: -79.8697662
+      bearing: 126
+      speed: 6.7056
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "263"
+  vehicle {
+    trip {
+      trip_id: "1378020"
+      route_id: "87"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6361"
+    }
+    position {
+      latitude: 40.4891396
+      longitude: -79.9338684
+      bearing: 90
+      speed: 9.83488
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "264"
+  vehicle {
+    trip {
+      trip_id: "9866020"
+      route_id: "93"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6122"
+    }
+    position {
+      latitude: 40.4834061
+      longitude: -79.9475
+      bearing: 320
+      speed: 0
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "265"
+  vehicle {
+    trip {
+      trip_id: "-1896697822"
+      route_id: "P68"
+      schedule_relationship: ADDED
+    }
+    vehicle {
+      id: "6363"
+    }
+    position {
+      latitude: 40.4285545
+      longitude: -79.7459793
+      bearing: 181
+      speed: 8.49376
+    }
+    timestamp: 1714413858
+  }
+}
+entity {
+  id: "266"
+  vehicle {
+    trip {
+      trip_id: "8688020"
+      route_id: "1"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6003"
+    }
+    position {
+      latitude: 40.5377388
+      longitude: -79.8348465
+      bearing: 248
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "267"
+  vehicle {
+    trip {
+      trip_id: "11748020"
+      route_id: "61A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6124"
+    }
+    position {
+      latitude: 40.4409027
+      longitude: -79.9359741
+      bearing: 145
+      speed: 11.6230402
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "268"
+  vehicle {
+    trip {
+      trip_id: "4766020"
+      route_id: "58"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6365"
+    }
+    position {
+      latitude: 40.4394836
+      longitude: -80.0016708
+      bearing: 38
+      speed: 6.7056
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "269"
+  vehicle {
+    vehicle {
+      id: "6244"
+    }
+    position {
+      latitude: 40.4054298
+      longitude: -79.9130554
+      bearing: 223
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "270"
+  vehicle {
+    vehicle {
+      id: "6123"
+    }
+    position {
+      latitude: 40.3318558
+      longitude: -79.9296265
+      bearing: 64
+      speed: 7.59968
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "271"
+  vehicle {
+    trip {
+      trip_id: "5711020"
+      route_id: "12"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6126"
+    }
+    position {
+      latitude: 40.5050735
+      longitude: -80.0090408
+      bearing: 135
+      speed: 0
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "272"
+  vehicle {
+    trip {
+      trip_id: "9239020"
+      route_id: "51"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6247"
+    }
+    position {
+      latitude: 40.4215317
+      longitude: -79.9827881
+      bearing: 114
+      speed: 10.72896
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "273"
+  vehicle {
+    vehicle {
+      id: "6005"
+    }
+    position {
+      latitude: 40.5012054
+      longitude: -80.0223083
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413862
+  }
+}
+entity {
+  id: "274"
+  vehicle {
+    trip {
+      trip_id: "13532020"
+      route_id: "13"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6004"
+    }
+    position {
+      latitude: 40.4542389
+      longitude: -80.013031
+      bearing: 76
+      speed: 1.34112
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "275"
+  vehicle {
+    trip {
+      trip_id: "2528020"
+      route_id: "64"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6246"
+    }
+    position {
+      latitude: 40.4114647
+      longitude: -79.9083786
+      bearing: 74
+      speed: 1.34112
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "276"
+  vehicle {
+    trip {
+      trip_id: "3552020"
+      route_id: "28X"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6360"
+    }
+    position {
+      latitude: 40.4418602
+      longitude: -80.0020676
+      bearing: 188
+      speed: 0.89408
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "277"
+  vehicle {
+    trip {
+      trip_id: "12232020"
+      route_id: "16"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6238"
+    }
+    position {
+      latitude: 40.4419861
+      longitude: -80.001564
+      bearing: 251
+      speed: 0
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "278"
+  vehicle {
+    trip {
+      trip_id: "9040020"
+      route_id: "28X"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6359"
+    }
+    position {
+      latitude: 40.442112
+      longitude: -80.001152
+      bearing: 250
+      speed: 0.44704
+    }
+    timestamp: 1714413856
+  }
+}
+entity {
+  id: "279"
+  vehicle {
+    trip {
+      trip_id: "6429020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6117"
+    }
+    position {
+      latitude: 40.4414101
+      longitude: -79.9975739
+      bearing: 31
+      speed: 0
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "280"
+  vehicle {
+    trip {
+      trip_id: "-1148482007"
+      route_id: "51"
+      schedule_relationship: ADDED
+    }
+    vehicle {
+      id: "6237"
+    }
+    position {
+      latitude: 40.3412514
+      longitude: -79.9448929
+      bearing: 258
+      speed: 0
+    }
+    timestamp: 1714413870
+  }
+}
+entity {
+  id: "281"
+  vehicle {
+    vehicle {
+      id: "6358"
+    }
+    position {
+      latitude: 40.3620834
+      longitude: -79.9302521
+      bearing: 125
+      speed: 0
+    }
+    timestamp: 1714413290
+  }
+}
+entity {
+  id: "282"
+  vehicle {
+    trip {
+      trip_id: "12252020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6119"
+    }
+    position {
+      latitude: 40.3525
+      longitude: -79.8506775
+      bearing: 85
+      speed: 8.9408
+    }
+    timestamp: 1714413858
+  }
+}
+entity {
+  id: "283"
+  vehicle {
+    trip {
+      trip_id: "4347020"
+      route_id: "53L"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6239"
+    }
+    position {
+      latitude: 40.3736153
+      longitude: -79.9120255
+      bearing: 10
+      speed: 9.83488
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "284"
+  vehicle {
+    vehicle {
+      id: "6252"
+    }
+    position {
+      latitude: 40.361908
+      longitude: -79.9297714
+      bearing: 205
+      speed: 6.2585597
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "285"
+  vehicle {
+    vehicle {
+      id: "6010"
+    }
+    position {
+      latitude: 40.4965477
+      longitude: -79.89048
+      bearing: 119
+      speed: 5.36448
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "286"
+  vehicle {
+    vehicle {
+      id: "6251"
+    }
+    position {
+      latitude: 40.4083977
+      longitude: -79.9264221
+      bearing: 163
+      speed: 0
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "287"
+  vehicle {
+    trip {
+      trip_id: "1625020"
+      route_id: "2"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6012"
+    }
+    position {
+      latitude: 40.5573196
+      longitude: -79.9737167
+      bearing: 138
+      speed: 13.4112
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "288"
+  vehicle {
+    trip {
+      trip_id: "761020"
+      route_id: "67"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "7101"
+    }
+    position {
+      latitude: 40.4395485
+      longitude: -79.8753815
+      bearing: 94
+      speed: 9.38784
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "289"
+  vehicle {
+    vehicle {
+      id: "6133"
+    }
+    position {
+      latitude: 40.4390335
+      longitude: -79.9954071
+      bearing: 276
+      speed: 1.78816
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "290"
+  vehicle {
+    trip {
+      trip_id: "11776020"
+      route_id: "61C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6132"
+    }
+    position {
+      latitude: 40.4275742
+      longitude: -79.9261551
+      bearing: 219
+      speed: 12.0700798
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "291"
+  vehicle {
+    trip {
+      trip_id: "7059020"
+      route_id: "91"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6011"
+    }
+    position {
+      latitude: 40.4604301
+      longitude: -79.969574
+      bearing: 318
+      speed: 5.36448
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "292"
+  vehicle {
+    trip {
+      trip_id: "6084020"
+      route_id: "93"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6135"
+    }
+    position {
+      latitude: 40.4375954
+      longitude: -79.9637299
+      bearing: 47
+      speed: 0
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "293"
+  vehicle {
+    trip {
+      trip_id: "12692020"
+      route_id: "17"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6013"
+    }
+    position {
+      latitude: 40.5010223
+      longitude: -80.0424042
+      bearing: 271
+      speed: 3.12927985
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "294"
+  vehicle {
+    vehicle {
+      id: "6134"
+    }
+    position {
+      latitude: 40.3792458
+      longitude: -79.9257
+      bearing: 202
+      speed: 9.38784
+    }
+    timestamp: 1714413855
+  }
+}
+entity {
+  id: "295"
+  vehicle {
+    vehicle {
+      id: "7102"
+    }
+    position {
+      latitude: 40.4578133
+      longitude: -79.9130173
+      bearing: 298
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "296"
+  vehicle {
+    vehicle {
+      id: "6255"
+    }
+    position {
+      latitude: 40.4567871
+      longitude: -79.9137726
+      bearing: 118
+      speed: 0
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "297"
+  vehicle {
+    trip {
+      trip_id: "3343020"
+      route_id: "59"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6137"
+    }
+    position {
+      latitude: 40.38797
+      longitude: -79.8241425
+      bearing: 125
+      speed: 0
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "298"
+  vehicle {
+    trip {
+      trip_id: "11073020"
+      route_id: "67"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6258"
+    }
+    position {
+      latitude: 40.4266
+      longitude: -79.794426
+      bearing: 286
+      speed: 4.02336
+    }
+    timestamp: 1714413862
+  }
+}
+entity {
+  id: "299"
+  vehicle {
+    vehicle {
+      id: "7105"
+    }
+    position {
+      latitude: 40.4577065
+      longitude: -79.9138336
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "300"
+  vehicle {
+    trip {
+      trip_id: "12370020"
+      route_id: "22"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6015"
+    }
+    position {
+      latitude: 40.4736824
+      longitude: -80.0620499
+      bearing: 237
+      speed: 10.72896
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "301"
+  vehicle {
+    trip {
+      trip_id: "1564020"
+      route_id: "88"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6136"
+    }
+    position {
+      latitude: 40.4650078
+      longitude: -79.9431458
+      bearing: 280
+      speed: 8.04672
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "302"
+  vehicle {
+    vehicle {
+      id: "6250"
+    }
+    position {
+      latitude: 40.3624306
+      longitude: -79.9307
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "303"
+  vehicle {
+    vehicle {
+      id: "6249"
+    }
+    position {
+      latitude: 40.3623352
+      longitude: -79.9305496
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413874
+  }
+}
+entity {
+  id: "304"
+  vehicle {
+    trip {
+      trip_id: "7940020"
+      route_id: "51"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6127"
+    }
+    position {
+      latitude: 40.4317513
+      longitude: -80.0031281
+      bearing: 303
+      speed: 8.04672
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "305"
+  vehicle {
+    trip {
+      trip_id: "5736020"
+      route_id: "54"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6006"
+    }
+    position {
+      latitude: 40.4500198
+      longitude: -80.0165253
+      bearing: 256
+      speed: 5.81152
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "306"
+  vehicle {
+    trip {
+      trip_id: "5858020"
+      route_id: "56"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6248"
+    }
+    position {
+      latitude: 40.3504753
+      longitude: -79.8699799
+      bearing: 64
+      speed: 17.4345589
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "307"
+  vehicle {
+    trip {
+      trip_id: "1478020"
+      route_id: "8"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6009"
+    }
+    position {
+      latitude: 40.5054321
+      longitude: -80.0287247
+      bearing: 132
+      speed: 12.5171194
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "308"
+  vehicle {
+    trip {
+      trip_id: "2602020"
+      route_id: "26"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6142"
+    }
+    position {
+      latitude: 40.4414406
+      longitude: -80.0686493
+      bearing: 14
+      speed: 0
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "309"
+  vehicle {
+    vehicle {
+      id: "6263"
+    }
+    position {
+      latitude: 40.4570847
+      longitude: -79.9135
+      bearing: 261
+      speed: 0.89408
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "310"
+  vehicle {
+    vehicle {
+      id: "6021"
+    }
+    position {
+      latitude: 40.3595352
+      longitude: -80.0731125
+      bearing: 224
+      speed: 4.4704
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "311"
+  vehicle {
+    vehicle {
+      id: "6141"
+    }
+    position {
+      latitude: 40.457016
+      longitude: -79.9142227
+      bearing: 118
+      speed: 0
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "312"
+  vehicle {
+    trip {
+      trip_id: "13576020"
+      route_id: "71A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6265"
+    }
+    position {
+      latitude: 40.4454613
+      longitude: -79.9532318
+      bearing: 46
+      speed: 4.02336
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "313"
+  vehicle {
+    trip {
+      trip_id: "462020"
+      route_id: "77"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6144"
+    }
+    position {
+      latitude: 40.441349
+      longitude: -80.0049896
+      bearing: 89
+      speed: 0
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "314"
+  vehicle {
+    trip {
+      trip_id: "7719020"
+      route_id: "88"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6264"
+    }
+    position {
+      latitude: 40.455246
+      longitude: -79.9764786
+      bearing: 47
+      speed: 9.83488
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "315"
+  vehicle {
+    trip {
+      trip_id: "6489020"
+      route_id: "36"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6025"
+    }
+    position {
+      latitude: 40.4001122
+      longitude: -80.0439911
+      bearing: 216
+      speed: 0
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "316"
+  vehicle {
+    trip {
+      trip_id: "3918020"
+      route_id: "74"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6267"
+    }
+    position {
+      latitude: 40.4286079
+      longitude: -79.9184341
+      bearing: 16
+      speed: 6.7056
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "317"
+  vehicle {
+    trip {
+      trip_id: "8366020"
+      route_id: "87"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6146"
+    }
+    position {
+      latitude: 40.4456482
+      longitude: -79.9922791
+      bearing: 322
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "318"
+  vehicle {
+    trip {
+      trip_id: "2046020"
+      route_id: "71D"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6145"
+    }
+    position {
+      latitude: 40.4543762
+      longitude: -79.8964
+      bearing: 287
+      speed: 11.176
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "319"
+  vehicle {
+    vehicle {
+      id: "6026"
+    }
+    position {
+      latitude: 40.4282379
+      longitude: -80.1907959
+      bearing: 359
+      speed: 19.2227192
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "320"
+  vehicle {
+    vehicle {
+      id: "6147"
+    }
+    position {
+      latitude: 40.4573936
+      longitude: -79.913353
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "321"
+  vehicle {
+    trip {
+      trip_id: "3326020"
+      route_id: "86"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6261"
+    }
+    position {
+      latitude: 40.4572296
+      longitude: -79.9735947
+      bearing: 47
+      speed: 11.6230402
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "322"
+  vehicle {
+    vehicle {
+      id: "6140"
+    }
+    position {
+      latitude: 40.454258
+      longitude: -79.9127808
+      bearing: 132
+      speed: 0.44704
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "323"
+  vehicle {
+    trip {
+      trip_id: "188020"
+      route_id: "27"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6260"
+    }
+    position {
+      latitude: 40.4480324
+      longitude: -80.0821304
+      bearing: 132
+      speed: 8.04672
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "324"
+  vehicle {
+    trip {
+      trip_id: "171020"
+      route_id: "28X"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6139"
+    }
+    position {
+      latitude: 40.4518738
+      longitude: -79.9241409
+      bearing: 61
+      speed: 0
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "325"
+  vehicle {
+    trip {
+      trip_id: "2203020"
+      route_id: "82"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6259"
+    }
+    position {
+      latitude: 40.458889
+      longitude: -79.9285812
+      bearing: 68
+      speed: 10.2819195
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "326"
+  vehicle {
+    vehicle {
+      id: "7106"
+    }
+    position {
+      latitude: 40.4692841
+      longitude: -79.8952637
+      bearing: 227
+      speed: 11.6230402
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "327"
+  vehicle {
+    trip {
+      trip_id: "4968020"
+      route_id: "48"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6019"
+    }
+    position {
+      latitude: 40.4210281
+      longitude: -80.0011139
+      bearing: 91
+      speed: 6.7056
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "328"
+  vehicle {
+    vehicle {
+      id: "6032"
+    }
+    position {
+      latitude: 40.4092178
+      longitude: -79.8992844
+      bearing: 87
+      speed: 0.89408
+    }
+    timestamp: 1714413858
+  }
+}
+entity {
+  id: "329"
+  vehicle {
+    trip {
+      trip_id: "4363020"
+      route_id: "69"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6273"
+    }
+    position {
+      latitude: 40.4275742
+      longitude: -79.8633499
+      bearing: 167
+      speed: 13.4112
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "330"
+  vehicle {
+    vehicle {
+      id: "6152"
+    }
+    position {
+      latitude: 40.4572258
+      longitude: -79.9138565
+      bearing: 250
+      speed: 0
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "331"
+  vehicle {
+    trip {
+      trip_id: "5661020"
+      route_id: "57"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6034"
+    }
+    position {
+      latitude: 40.4072
+      longitude: -79.9433594
+      bearing: 80
+      speed: 0
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "332"
+  vehicle {
+    vehicle {
+      id: "6155"
+    }
+    position {
+      latitude: 40.4571419
+      longitude: -79.9143829
+      bearing: 122
+      speed: 0
+    }
+    timestamp: 1714413872
+  }
+}
+entity {
+  id: "333"
+  vehicle {
+    vehicle {
+      id: "6275"
+    }
+    position {
+      latitude: 40.4568787
+      longitude: -79.9140167
+      bearing: 116
+      speed: 0
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "334"
+  vehicle {
+    vehicle {
+      id: "6157"
+    }
+    position {
+      latitude: 40.4422836
+      longitude: -80.0013428
+      bearing: 252
+      speed: 0
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "335"
+  vehicle {
+    trip {
+      trip_id: "13124020"
+      route_id: "Y47"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6035"
+    }
+    position {
+      latitude: 40.3416023
+      longitude: -79.9849
+      bearing: 80
+      speed: 7.15264
+    }
+    timestamp: 1714413869
+  }
+}
+entity {
+  id: "336"
+  vehicle {
+    vehicle {
+      id: "6159"
+    }
+    position {
+      latitude: 40.4564514
+      longitude: -79.9329453
+      bearing: 232
+      speed: 13.8582401
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "337"
+  vehicle {
+    vehicle {
+      id: "6158"
+    }
+    position {
+      latitude: 40.4566536
+      longitude: -79.9115753
+      bearing: 77
+      speed: 0.44704
+    }
+    timestamp: 1714413884
+  }
+}
+entity {
+  id: "338"
+  vehicle {
+    vehicle {
+      id: "6270"
+    }
+    position {
+      latitude: 40.4496498
+      longitude: -79.8917465
+      bearing: 129
+      speed: 8.49376
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "339"
+  vehicle {
+    vehicle {
+      id: "6151"
+    }
+    position {
+      latitude: 40.45
+      longitude: -79.8917694
+      bearing: 301
+      speed: 0
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "340"
+  vehicle {
+    vehicle {
+      id: "6030"
+    }
+    position {
+      latitude: 40.4138145
+      longitude: -79.8530807
+      bearing: 33
+      speed: 0
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "341"
+  vehicle {
+    trip {
+      trip_id: "12310020"
+      route_id: "61A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6150"
+    }
+    position {
+      latitude: 40.4381218
+      longitude: -79.9755859
+      bearing: 276
+      speed: 9.38784
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "342"
+  vehicle {
+    trip {
+      trip_id: "3847020"
+      route_id: "89"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6149"
+    }
+    position {
+      latitude: 40.4690857
+      longitude: -79.938942
+      bearing: 280
+      speed: 2.2352
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "343"
+  vehicle {
+    vehicle {
+      id: "6043"
+    }
+    position {
+      latitude: 40.380722
+      longitude: -79.9762726
+      bearing: 12
+      speed: 0
+    }
+    timestamp: 1714413879
+  }
+}
+entity {
+  id: "344"
+  vehicle {
+    vehicle {
+      id: "6045"
+    }
+    position {
+      latitude: 40.3659134
+      longitude: -80.104393
+      bearing: 240
+      speed: 0
+    }
+    timestamp: 1714413401
+  }
+}
+entity {
+  id: "345"
+  vehicle {
+    trip {
+      trip_id: "402020"
+      route_id: "61A"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6044"
+    }
+    position {
+      latitude: 40.4205742
+      longitude: -79.8853149
+      bearing: 302
+      speed: 4.91744
+    }
+    timestamp: 1714413868
+  }
+}
+entity {
+  id: "346"
+  vehicle {
+    trip {
+      trip_id: "12626020"
+      route_id: "71C"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6047"
+    }
+    position {
+      latitude: 40.4528809
+      longitude: -79.9107361
+      bearing: 132
+      speed: 12.0700798
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "347"
+  vehicle {
+    vehicle {
+      id: "6049"
+    }
+    position {
+      latitude: 40.3724785
+      longitude: -80.0994568
+      bearing: 197
+      speed: 6.7056
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "348"
+  vehicle {
+    trip {
+      trip_id: "6586020"
+      route_id: "51"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6040"
+    }
+    position {
+      latitude: 40.3754044
+      longitude: -79.9755096
+      bearing: 181
+      speed: 3.12927985
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "349"
+  vehicle {
+    vehicle {
+      id: "1709"
+    }
+    position {
+      latitude: 40.5022583
+      longitude: -80.026741
+      bearing: 121
+      speed: 2.2352
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "350"
+  vehicle {
+    trip {
+      trip_id: "6537020"
+      route_id: "40"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1708"
+    }
+    position {
+      latitude: 40.432251
+      longitude: -80.0164795
+      bearing: 188
+      speed: 1.78816
+    }
+    timestamp: 1714413873
+  }
+}
+entity {
+  id: "351"
+  vehicle {
+    vehicle {
+      id: "6039"
+    }
+    position {
+      latitude: 40.3358536
+      longitude: -79.9366684
+      bearing: 333
+      speed: 16.5404797
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "352"
+  vehicle {
+    vehicle {
+      id: "1705"
+    }
+    position {
+      latitude: 40.4457207
+      longitude: -79.9896
+      bearing: 228
+      speed: 0
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "353"
+  vehicle {
+    vehicle {
+      id: "1704"
+    }
+    position {
+      latitude: 40.5004463
+      longitude: -80.0223694
+      bearing: 311
+      speed: 0
+    }
+    timestamp: 1714413837
+  }
+}
+entity {
+  id: "354"
+  vehicle {
+    trip {
+      trip_id: "11507020"
+      route_id: "87"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6054"
+    }
+    position {
+      latitude: 40.4812889
+      longitude: -79.9374542
+      bearing: 289
+      speed: 8.04672
+    }
+    timestamp: 1714413881
+  }
+}
+entity {
+  id: "355"
+  vehicle {
+    trip {
+      trip_id: "4360020"
+      route_id: "71B"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6056"
+    }
+    position {
+      latitude: 40.4390182
+      longitude: -79.9958191
+      bearing: 108
+      speed: 1.34112
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "356"
+  vehicle {
+    trip {
+      trip_id: "3429020"
+      route_id: "75"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6057"
+    }
+    position {
+      latitude: 40.4876404
+      longitude: -79.9191589
+      bearing: 105
+      speed: 6.7056
+    }
+    timestamp: 1714413876
+  }
+}
+entity {
+  id: "357"
+  vehicle {
+    trip {
+      trip_id: "11866020"
+      route_id: "77"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6059"
+    }
+    position {
+      latitude: 40.4549217
+      longitude: -79.8808594
+      bearing: 174
+      speed: 1.34112
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "358"
+  vehicle {
+    trip {
+      trip_id: "6143020"
+      route_id: "4"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1712"
+    }
+    position {
+      latitude: 40.4444313
+      longitude: -80.0008
+      bearing: 73
+      speed: 8.9408
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "359"
+  vehicle {
+    vehicle {
+      id: "1711"
+    }
+    position {
+      latitude: 40.4944
+      longitude: -80.0115128
+      bearing: 311
+      speed: 28.1635189
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "360"
+  vehicle {
+    vehicle {
+      id: "1710"
+    }
+    position {
+      latitude: 40.5015945
+      longitude: -80.023
+      bearing: 138
+      speed: 0
+    }
+    timestamp: 1714413880
+  }
+}
+entity {
+  id: "361"
+  vehicle {
+    vehicle {
+      id: "1716"
+    }
+    position {
+      latitude: 40.445488
+      longitude: -79.9900665
+      bearing: 227
+      speed: 0
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "362"
+  vehicle {
+    vehicle {
+      id: "1714"
+    }
+    position {
+      latitude: 40.4461365
+      longitude: -79.9884872
+      bearing: 56
+      speed: 3.12927985
+    }
+    timestamp: 1714413866
+  }
+}
+entity {
+  id: "363"
+  vehicle {
+    vehicle {
+      id: "1713"
+    }
+    position {
+      latitude: 40.4145088
+      longitude: -80.0825043
+      bearing: 311
+      speed: 11.176
+    }
+    timestamp: 1714413878
+  }
+}
+entity {
+  id: "364"
+  vehicle {
+    trip {
+      trip_id: "3938020"
+      route_id: "53L"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "6060"
+    }
+    position {
+      latitude: 40.3699684
+      longitude: -79.9129
+      bearing: 191
+      speed: 1.78816
+    }
+    timestamp: 1714413871
+  }
+}
+entity {
+  id: "365"
+  vehicle {
+    trip {
+      trip_id: "2540020"
+      route_id: "44"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1721"
+    }
+    position {
+      latitude: 40.3855057
+      longitude: -79.9772568
+      bearing: 16
+      speed: 4.02336
+    }
+    timestamp: 1714413867
+  }
+}
+entity {
+  id: "366"
+  vehicle {
+    trip {
+      trip_id: "6510020"
+      route_id: "43"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1720"
+    }
+    position {
+      latitude: 40.4372025
+      longitude: -80.0020599
+      bearing: 294
+      speed: 7.15264
+    }
+    timestamp: 1714413870
+  }
+}
+entity {
+  id: "367"
+  vehicle {
+    vehicle {
+      id: "1728"
+    }
+    position {
+      latitude: 40.5017052
+      longitude: -80.0222702
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413550
+  }
+}
+entity {
+  id: "368"
+  vehicle {
+    vehicle {
+      id: "1725"
+    }
+    position {
+      latitude: 40.3664436
+      longitude: -80.1040955
+      bearing: 314
+      speed: 0
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "369"
+  vehicle {
+    trip {
+      trip_id: "12023020"
+      route_id: "54"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5904"
+    }
+    position {
+      latitude: 40.4176941
+      longitude: -79.9972534
+      bearing: 358
+      speed: 8.9408
+    }
+    timestamp: 1714413885
+  }
+}
+entity {
+  id: "370"
+  vehicle {
+    trip {
+      trip_id: "2205020"
+      route_id: "12"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5905"
+    }
+    position {
+      latitude: 40.5721512
+      longitude: -80.0226669
+      bearing: 88
+      speed: 10.72896
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "371"
+  vehicle {
+    vehicle {
+      id: "5906"
+    }
+    position {
+      latitude: 40.5008392
+      longitude: -80.0221634
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "372"
+  vehicle {
+    vehicle {
+      id: "5907"
+    }
+    position {
+      latitude: 40.5011711
+      longitude: -80.0222397
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "373"
+  vehicle {
+    trip {
+      trip_id: "-663381236"
+      route_id: "91"
+      schedule_relationship: ADDED
+    }
+    vehicle {
+      id: "5902"
+    }
+    position {
+      latitude: 40.4936752
+      longitude: -79.9159241
+      bearing: 103
+      speed: 13.4112
+    }
+    timestamp: 1714413882
+  }
+}
+entity {
+  id: "374"
+  vehicle {
+    trip {
+      trip_id: "8535020"
+      route_id: "22"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5915"
+    }
+    position {
+      latitude: 40.4806747
+      longitude: -80.0816803
+      bearing: 63
+      speed: 12.5171194
+    }
+    timestamp: 1714413883
+  }
+}
+entity {
+  id: "375"
+  vehicle {
+    trip {
+      trip_id: "9067020"
+      route_id: "75"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5916"
+    }
+    position {
+      latitude: 40.4879074
+      longitude: -79.8976898
+      bearing: 289
+      speed: 8.9408
+    }
+    timestamp: 1714413877
+  }
+}
+entity {
+  id: "376"
+  vehicle {
+    vehicle {
+      id: "5917"
+    }
+    position {
+      latitude: 40.3663292
+      longitude: -80.1041336
+      bearing: 359
+      speed: 0
+    }
+    timestamp: 1714413864
+  }
+}
+entity {
+  id: "377"
+  vehicle {
+    vehicle {
+      id: "5918"
+    }
+    position {
+      latitude: 40.3661575
+      longitude: -80.1042709
+      bearing: 284
+      speed: 0
+    }
+    timestamp: 1714413860
+  }
+}
+entity {
+  id: "378"
+  vehicle {
+    trip {
+      trip_id: "1287020"
+      route_id: "36"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5911"
+    }
+    position {
+      latitude: 40.3407745
+      longitude: -80.0523376
+      bearing: 345
+      speed: 3.57632
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "379"
+  vehicle {
+    vehicle {
+      id: "5913"
+    }
+    position {
+      latitude: 40.5421219
+      longitude: -80.1782913
+      bearing: 321
+      speed: 0
+    }
+    timestamp: 1714413863
+  }
+}
+entity {
+  id: "380"
+  vehicle {
+    trip {
+      trip_id: "13386020"
+      route_id: "51"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5926"
+    }
+    position {
+      latitude: 40.4349289
+      longitude: -80.0021667
+      bearing: 207
+      speed: 9.83488
+    }
+    timestamp: 1714413859
+  }
+}
+entity {
+  id: "381"
+  vehicle {
+    trip {
+      trip_id: "1054020"
+      route_id: "59"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5929"
+    }
+    position {
+      latitude: 40.382988
+      longitude: -79.8761063
+      bearing: 267
+      speed: 12.5171194
+    }
+    timestamp: 1714413863
+  }
+}
+entity {
+  id: "382"
+  vehicle {
+    vehicle {
+      id: "3501"
+    }
+    position {
+      latitude: 40.4371529
+      longitude: -79.9629211
+      bearing: 48
+      speed: 3.57632
+    }
+    timestamp: 1714413861
+  }
+}
+entity {
+  id: "383"
+  vehicle {
+    vehicle {
+      id: "5921"
+    }
+    position {
+      latitude: 40.3630066
+      longitude: -79.9305191
+      bearing: 81
+      speed: 0
+    }
+    timestamp: 1714413875
+  }
+}
+entity {
+  id: "384"
+  vehicle {
+    vehicle {
+      id: "5922"
+    }
+    position {
+      latitude: 40.362175
+      longitude: -79.9298706
+      bearing: 175
+      speed: 0.44704
+    }
+    timestamp: 1714413865
+  }
+}
+entity {
+  id: "385"
+  vehicle {
+    trip {
+      trip_id: "3597020"
+      route_id: "59"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "5925"
+    }
+    position {
+      latitude: 40.4043083
+      longitude: -79.8824539
+      bearing: 40
+      speed: 11.6230402
+    }
+    timestamp: 1714413858
+  }
+}
