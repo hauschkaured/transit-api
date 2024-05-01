@@ -24,7 +24,6 @@ for i in range(15):
     j = i + 406
     vehicle = Models("2016 New Flyer XN40")
     models[j] = vehicle
-print(models)
 
 for i in range(271):
     j = i + 421
@@ -51,4 +50,3 @@ for i in range(6):
     j = i + 800
     vehicle = Models("2020 Novabus LFS CNG 40 LFX")
     models[j] = vehicle
-print(models)

@@ -127,14 +127,22 @@ def buses_on_route(rt):
         if main.stopid in stops.keys():
             sec = stops[main.stopid]
         name = sec.name
+        routeInfo = routes[route]
         if main.indicator:
             if main.trip.route_id == route:
-                print(f"\x1b[33mRoute \x1b[34m{route} #{main.vehicle} \x1b[0mis {main.status} {name}")
-        
-    
+                trip_id = main.trip.tripid
+                headsign = headsigns(trip_id)
+                print(f"\x1b[33m #{main.vehicle} Route {route} \x1b[34m {routeInfo.long_name} to {headsign}")
+                print(f"    \x1b[0mis {main.status} {name}")
+
+def headsigns(trip_id):
+    headsign = trips[trip_id].headsign
+    return headsign
+
 vehicle_processing(data)
 buses_on_route('93')
 buses_on_route('17')
 buses_on_route('64')
 buses_on_route('7')
+buses_on_route('82')
 buses_running()
