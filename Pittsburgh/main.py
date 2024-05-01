@@ -3,10 +3,6 @@ import requests
 from google.protobuf import json_format
 import pprint as PP
 
-import numpy
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 

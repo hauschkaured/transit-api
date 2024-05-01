@@ -28,6 +28,12 @@ The class `Dates` contains information about the dates through which the feed pr
 `Calendar(service_id, monday, tuesday, wednesday, thursday, friday, saturday, sunday, start_date, end_date)`
 ------------------------------------------------------------------------------------------------------------
 
+The class `Calendar` contains information about the calendar days for the schedule 
+being run.
+
+*   ``
+
+
 `Feed(feed_publisher_name, feed_publisher_url, feed_lang, feed_start_date, feed_end_date,feed_version)`
 -------------------------------------------------------------------------------------------------------
 

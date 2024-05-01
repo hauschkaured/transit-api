@@ -12,6 +12,9 @@ from gtfs_stops import stops
 from gtfs_transfers import transfers
 from gtfs_trips import trips 
 
+from via_busfleet import models 
+from via_busfleet import model_list 
+
 data = main_1()
 tripdata = main_2()
 
@@ -109,12 +112,13 @@ def vehicle_processing(data):
                 posobj = Position(lat, lon)
             obj = Vehicle(posobj, time, vid)
             nonroute[vid] = obj
-    
-def trip_feed_processing(data):
-    for trip in data["entity"]:
-        id = trip["id"]
-        content = trip["tripupdate"]
-        timestamp = trip["timestamp"] 
+
+def buses_running():
+    vid_list = []
+    for bus in buses.keys():
+        vid_list.append(bus)
+    vid_list.sort()
+    return vid_list 
 
 def buses_on_route(rt):
     route = str(rt)
@@ -127,8 +131,10 @@ def buses_on_route(rt):
             if main.trip.route_id == route:
                 print(f"\x1b[33mRoute \x1b[34m{route} #{main.vehicle} \x1b[0mis {main.status} {name}")
         
+    
 vehicle_processing(data)
 buses_on_route('93')
 buses_on_route('17')
 buses_on_route('64')
 buses_on_route('7')
+buses_running()
