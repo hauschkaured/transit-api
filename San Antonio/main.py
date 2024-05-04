@@ -131,13 +131,10 @@ def buses_on_route(rt):
         if main.indicator:
             if main.trip.route_id == route:
                 trip_id = main.trip.tripid
-                headsign = headsigns(trip_id)
+                headsign = trips[trip_id].headsign
                 print(f"\x1b[33m #{main.vehicle} Route {route} \x1b[34m {routeInfo.long_name} to {headsign}")
                 print(f"    \x1b[0mis {main.status} {name}")
 
-def headsigns(trip_id):
-    headsign = trips[trip_id].headsign
-    return headsign
 
 vehicle_processing(data)
 buses_on_route('93')
