@@ -73,6 +73,7 @@ def vehicle_processing(data):
         id = bus["id"]
         data = bus["vehicle"]
         
+        
         ## Position data
         posdata = data["position"]
         lat = posdata["latitude"]
@@ -131,10 +132,10 @@ def buses_on_route(rt):
         if main.indicator:
             if main.trip.route_id == route:
                 trip_id = main.trip.tripid
-                headsign = trips[trip_id].headsign
-                print(f"\x1b[33m #{main.vehicle} Route {route} \x1b[34m {routeInfo.long_name} to {headsign}")
-                print(f"    \x1b[0mis {main.status} {name}")
-
+                if trip_id in trips:
+                    headsign = trips[trip_id].headsign
+                    print(f"\x1b[33m #{main.vehicle} Route {route} \x1b[34m {routeInfo.long_name} to {headsign}")
+                    print(f"    \x1b[0mis {main.status} {name}")
 
 vehicle_processing(data)
 buses_on_route('93')
