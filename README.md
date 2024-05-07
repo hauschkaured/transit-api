@@ -9,6 +9,8 @@ This project was written in Python 3.12. It makes use of the `requests` module t
 fetch data from URLs. It makes use of the `protobuf` package to parse the protobuf
 binary encodings that are fetched from the URLs. 
 
+To install all dependencies for this project, run the `./setup_project.sh` shell script with your desired environment activated.
+
 # Documentation
 
 Go to [Documentation.md](Documentation).
