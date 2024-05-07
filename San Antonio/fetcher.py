@@ -81,22 +81,13 @@ def main_2() -> None:
 
     # All protobuf classes can be converted to a debug string by using the string constructor
     
-    fm_str1 = str(feedmsg)
+    fm_str2 = str(feedmsg)
     data = json_format.MessageToDict(feedmsg)
     print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")
-    write_to_file(output_path1, fm_str1)
+    write_to_file(output_path2, fm_str2)
 
     return data
-    
-    # Write output to output_path and additional pretty prints :3 
-    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")
-    # print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status2}\x1b[0m]")
-    print(f"\x1b[33m    debug str1 has size \x1b[34m{len(fm_str1) / 1000} KB\x1b[0m")
-    # print(f"\x1b[33m    debug str2 has size \x1b[34m{len(fm_str2) / 1000} KB\x1b[0m")
-    write_to_file(output_path1, fm_str1)
-    # write_to_file(output_path2, fm_str2)
-    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path1}\x1b[0m")
-    # print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path2}\x1b[0m")
+
 
 
 if __name__ == "__main__":
