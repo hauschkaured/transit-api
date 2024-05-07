@@ -8,7 +8,7 @@ from via_busfleet import model_list
 import os, sys 
 
 agency, dates, calendar, feed, routes, shapes, times, stops, transfers, trips = \
-    utils.gen_static_structs(os.path.join(defs.SRC_ROOT, defs.SAN_ANTONIO_DIR, "gtfs_static_feed"))
+    utils.gen_static_structs(defs.SAN_ANTONIO_GTFS)
 
 data = fetch_vehicles()
 tripdata = fetch_tripupdate()

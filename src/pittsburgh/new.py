@@ -4,7 +4,7 @@ import os
 
 
 agency, dates, calendar, feed, routes, shapes, times, stops, transfers, trips = \
-    utils.gen_static_structs(os.path.join(defs.SRC_ROOT, defs.PITTSBURGH_DIR, "gtfs_static_feed"))
+    utils.gen_static_structs(defs.PITTSBURGH_GTFS)
 
 busloc, bustrip, trainloc, traintrip = fetcher.fetch()
 
