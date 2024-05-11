@@ -29,7 +29,6 @@ bustripdata = main_2()
 def vehicle_processing(busdata):
     vid_dict = {}
     for bus in busdata["entity"]:
-        pprint(bus)
         ## make dictionary with name of bus model. 
         busId = bus["vehicle"]["vehicle"]["id"]
         id = {}
@@ -82,6 +81,7 @@ def vehicle_processing(busdata):
             id["status"] = status
 
         vid_dict[busId] = id
+    pprint(vid_dict)
     return vid_dict       
 
 busDict = vehicle_processing(busdata)
@@ -109,38 +109,39 @@ def trip_processing(bustripdata):
         trip_dict[id] = trip
 
         # Stop time update data
-        timeUpdate = update["stopTimeUpdate"]
-        
-        timeUpdateList = []
+        if "stopTimeUpdate" in update:
+            timeUpdate = update["stopTimeUpdate"]
+            
+            timeUpdateList = []
 
-        for i in timeUpdate:
-            timeUpd = {}
-            stopSequence = i["stopSequence"]
-            timeUpd["stopSequence"] = stopSequence
-            stopId = i["stopId"]
-            timeUpd["stopId"] = stopId
-            relationship = i["scheduleRelationship"]
-            timeUpd["relationship"] = relationship
+            for i in timeUpdate:
+                timeUpd = {}
+                stopSequence = i["stopSequence"]
+                timeUpd["stopSequence"] = stopSequence
+                stopId = i["stopId"]
+                timeUpd["stopId"] = stopId
+                relationship = i["scheduleRelationship"]
+                timeUpd["relationship"] = relationship
 
-            if "departure" in i:
-                departure = i["departure"]
-                if "time" in departure:
-                    time = departure["time"]
-                    timeUpd["depTime"] = time
-                if "uncertainty" in departure:
-                    uncertainty = departure["uncertainty"]
-                    timeUpd["depUncertainty"] = uncertainty
-            if "arrival" in i:
-                arrival = i["arrival"]
-                if "time" in arrival:
-                    time = arrival["time"]
-                    timeUpd["arrTime"] = time
-                if "uncertainty" in arrival:
-                    uncertainty = arrival["uncertainty"]
-                    timeUpd["arrUncertainty"] = uncertainty
-            timeUpdateList.append(timeUpd)
+                if "departure" in i:
+                    departure = i["departure"]
+                    if "time" in departure:
+                        time = departure["time"]
+                        timeUpd["depTime"] = time
+                    if "uncertainty" in departure:
+                        uncertainty = departure["uncertainty"]
+                        timeUpd["depUncertainty"] = uncertainty
+                if "arrival" in i:
+                    arrival = i["arrival"]
+                    if "time" in arrival:
+                        time = arrival["time"]
+                        timeUpd["arrTime"] = time
+                    if "uncertainty" in arrival:
+                        uncertainty = arrival["uncertainty"]
+                        timeUpd["arrUncertainty"] = uncertainty
+                timeUpdateList.append(timeUpd)
+            trip["timeUpdateList"] = timeUpdateList
 
-        trip["timeUpdateList"] = timeUpdateList
     return trip_dict
 
 tripDict = trip_processing(bustripdata)
