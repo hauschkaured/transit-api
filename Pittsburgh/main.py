@@ -23,8 +23,8 @@ pprint = pp.pprint
 ## Importing data from fetcher.py 
 busdata = main_1()
 bustripdata = main_2()
-traindata = main_3()
-traintripdata = main_4()
+# traindata = main_3()
+# traintripdata = main_4()
 
 def vehicle_processing(busdata):
     vid_dict = {}

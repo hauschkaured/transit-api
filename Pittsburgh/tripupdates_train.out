@@ -1,7 +1,7 @@
 header {
   gtfs_realtime_version: "2.0"
   incrementality: FULL_DATASET
-  timestamp: 1715445923
+  timestamp: 1715445984
 }
 entity {
   id: "1"
@@ -15,18 +15,10 @@ entity {
       id: "4215"
     }
     stop_time_update {
-      stop_sequence: 28
-      stop_id: "42"
-      arrival {
-        time: 1715445890
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
       stop_sequence: 29
       stop_id: "28"
       arrival {
-        time: 1715445977
+        time: 1715445966
       }
       schedule_relationship: SCHEDULED
     }
@@ -34,11 +26,11 @@ entity {
       stop_sequence: 30
       stop_id: "36"
       arrival {
-        time: 1715446036
+        time: 1715446009
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445919
+    timestamp: 1715445982
   }
 }
 entity {
@@ -147,18 +139,10 @@ entity {
       id: "4231"
     }
     stop_time_update {
-      stop_sequence: 1
-      stop_id: "69"
-      departure {
-        time: 1715445960
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
       stop_sequence: 2
       stop_id: "35"
       arrival {
-        time: 1715446023
+        time: 1715446017
       }
       schedule_relationship: SCHEDULED
     }
@@ -166,7 +150,7 @@ entity {
       stop_sequence: 3
       stop_id: "27"
       arrival {
-        time: 1715446068
+        time: 1715446062
       }
       schedule_relationship: SCHEDULED
     }
@@ -174,7 +158,7 @@ entity {
       stop_sequence: 4
       stop_id: "41"
       arrival {
-        time: 1715446162
+        time: 1715446156
       }
       schedule_relationship: SCHEDULED
     }
@@ -182,7 +166,7 @@ entity {
       stop_sequence: 5
       stop_id: "29"
       arrival {
-        time: 1715446218
+        time: 1715446212
       }
       schedule_relationship: SCHEDULED
     }
@@ -190,7 +174,7 @@ entity {
       stop_sequence: 6
       stop_id: "81"
       arrival {
-        time: 1715446320
+        time: 1715446314
       }
       schedule_relationship: SCHEDULED
     }
@@ -198,7 +182,7 @@ entity {
       stop_sequence: 7
       stop_id: "67"
       arrival {
-        time: 1715446363
+        time: 1715446357
       }
       schedule_relationship: SCHEDULED
     }
@@ -206,7 +190,7 @@ entity {
       stop_sequence: 8
       stop_id: "75"
       arrival {
-        time: 1715446424
+        time: 1715446418
       }
       schedule_relationship: SCHEDULED
     }
@@ -214,7 +198,7 @@ entity {
       stop_sequence: 9
       stop_id: "104"
       arrival {
-        time: 1715446500
+        time: 1715446494
       }
       schedule_relationship: SCHEDULED
     }
@@ -222,7 +206,7 @@ entity {
       stop_sequence: 10
       stop_id: "31"
       arrival {
-        time: 1715446560
+        time: 1715446554
       }
       schedule_relationship: SCHEDULED
     }
@@ -230,7 +214,7 @@ entity {
       stop_sequence: 11
       stop_id: "23"
       arrival {
-        time: 1715446607
+        time: 1715446601
       }
       schedule_relationship: SCHEDULED
     }
@@ -238,7 +222,7 @@ entity {
       stop_sequence: 12
       stop_id: "59"
       arrival {
-        time: 1715446711
+        time: 1715446705
       }
       schedule_relationship: SCHEDULED
     }
@@ -246,7 +230,7 @@ entity {
       stop_sequence: 13
       stop_id: "53"
       arrival {
-        time: 1715446860
+        time: 1715446854
       }
       schedule_relationship: SCHEDULED
     }
@@ -254,7 +238,7 @@ entity {
       stop_sequence: 14
       stop_id: "37"
       arrival {
-        time: 1715446980
+        time: 1715446974
       }
       schedule_relationship: SCHEDULED
     }
@@ -262,7 +246,7 @@ entity {
       stop_sequence: 15
       stop_id: "61"
       arrival {
-        time: 1715447160
+        time: 1715447154
       }
       schedule_relationship: SCHEDULED
     }
@@ -270,7 +254,7 @@ entity {
       stop_sequence: 16
       stop_id: "79"
       arrival {
-        time: 1715447220
+        time: 1715447214
       }
       schedule_relationship: SCHEDULED
     }
@@ -278,7 +262,7 @@ entity {
       stop_sequence: 17
       stop_id: "21"
       arrival {
-        time: 1715447320
+        time: 1715447314
       }
       schedule_relationship: SCHEDULED
     }
@@ -286,7 +270,7 @@ entity {
       stop_sequence: 18
       stop_id: "17"
       arrival {
-        time: 1715447400
+        time: 1715447394
       }
       schedule_relationship: SCHEDULED
     }
@@ -294,7 +278,7 @@ entity {
       stop_sequence: 19
       stop_id: "19"
       arrival {
-        time: 1715447480
+        time: 1715447474
       }
       schedule_relationship: SCHEDULED
     }
@@ -302,7 +286,7 @@ entity {
       stop_sequence: 20
       stop_id: "39"
       arrival {
-        time: 1715447520
+        time: 1715447514
       }
       schedule_relationship: SCHEDULED
     }
@@ -310,11 +294,19 @@ entity {
       stop_sequence: 21
       stop_id: "83"
       arrival {
-        time: 1715447561
+        time: 1715447555
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445919
+    stop_time_update {
+      stop_sequence: 22
+      stop_id: "33"
+      arrival {
+        time: 1715447702
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1715445981
   }
 }
 entity {
@@ -332,7 +324,7 @@ entity {
       stop_sequence: 10
       stop_id: "51"
       arrival {
-        time: 1715445950
+        time: 1715446011
       }
       schedule_relationship: SCHEDULED
     }
@@ -340,7 +332,7 @@ entity {
       stop_sequence: 11
       stop_id: "49"
       arrival {
-        time: 1715446005
+        time: 1715446066
       }
       schedule_relationship: SCHEDULED
     }
@@ -348,7 +340,7 @@ entity {
       stop_sequence: 12
       stop_id: "43"
       arrival {
-        time: 1715446155
+        time: 1715446216
       }
       schedule_relationship: SCHEDULED
     }
@@ -356,7 +348,7 @@ entity {
       stop_sequence: 13
       stop_id: "81"
       arrival {
-        time: 1715446305
+        time: 1715446366
       }
       schedule_relationship: SCHEDULED
     }
@@ -364,7 +356,7 @@ entity {
       stop_sequence: 14
       stop_id: "67"
       arrival {
-        time: 1715446341
+        time: 1715446402
       }
       schedule_relationship: SCHEDULED
     }
@@ -372,7 +364,7 @@ entity {
       stop_sequence: 15
       stop_id: "75"
       arrival {
-        time: 1715446413
+        time: 1715446474
       }
       schedule_relationship: SCHEDULED
     }
@@ -380,7 +372,7 @@ entity {
       stop_sequence: 16
       stop_id: "100"
       arrival {
-        time: 1715446485
+        time: 1715446546
       }
       schedule_relationship: SCHEDULED
     }
@@ -388,7 +380,7 @@ entity {
       stop_sequence: 17
       stop_id: "98"
       arrival {
-        time: 1715446605
+        time: 1715446666
       }
       schedule_relationship: SCHEDULED
     }
@@ -396,7 +388,7 @@ entity {
       stop_sequence: 18
       stop_id: "96"
       arrival {
-        time: 1715446707
+        time: 1715446768
       }
       schedule_relationship: SCHEDULED
     }
@@ -404,7 +396,7 @@ entity {
       stop_sequence: 19
       stop_id: "94"
       arrival {
-        time: 1715446759
+        time: 1715446820
       }
       schedule_relationship: SCHEDULED
     }
@@ -412,7 +404,7 @@ entity {
       stop_sequence: 20
       stop_id: "92"
       arrival {
-        time: 1715446965
+        time: 1715447026
       }
       schedule_relationship: SCHEDULED
     }
@@ -420,7 +412,7 @@ entity {
       stop_sequence: 21
       stop_id: "90"
       arrival {
-        time: 1715447067
+        time: 1715447128
       }
       schedule_relationship: SCHEDULED
     }
@@ -428,7 +420,7 @@ entity {
       stop_sequence: 22
       stop_id: "102"
       arrival {
-        time: 1715447170
+        time: 1715447231
       }
       schedule_relationship: SCHEDULED
     }
@@ -436,7 +428,7 @@ entity {
       stop_sequence: 23
       stop_id: "88"
       arrival {
-        time: 1715447273
+        time: 1715447334
       }
       schedule_relationship: SCHEDULED
     }
@@ -444,7 +436,7 @@ entity {
       stop_sequence: 24
       stop_id: "71"
       arrival {
-        time: 1715447325
+        time: 1715447386
       }
       schedule_relationship: SCHEDULED
     }
@@ -452,7 +444,7 @@ entity {
       stop_sequence: 25
       stop_id: "77"
       arrival {
-        time: 1715447565
+        time: 1715447626
       }
       schedule_relationship: SCHEDULED
     }
@@ -460,11 +452,11 @@ entity {
       stop_sequence: 26
       stop_id: "7"
       arrival {
-        time: 1715447715
+        time: 1715447776
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445922
+    timestamp: 1715445983
   }
 }
 entity {
@@ -482,7 +474,7 @@ entity {
       stop_sequence: 8
       stop_id: "72"
       arrival {
-        time: 1715446075
+        time: 1715446072
       }
       schedule_relationship: SCHEDULED
     }
@@ -490,7 +482,7 @@ entity {
       stop_sequence: 9
       stop_id: "89"
       arrival {
-        time: 1715446127
+        time: 1715446124
       }
       schedule_relationship: SCHEDULED
     }
@@ -498,7 +490,7 @@ entity {
       stop_sequence: 10
       stop_id: "103"
       arrival {
-        time: 1715446241
+        time: 1715446238
       }
       schedule_relationship: SCHEDULED
     }
@@ -506,7 +498,7 @@ entity {
       stop_sequence: 11
       stop_id: "91"
       arrival {
-        time: 1715446346
+        time: 1715446343
       }
       schedule_relationship: SCHEDULED
     }
@@ -514,7 +506,7 @@ entity {
       stop_sequence: 12
       stop_id: "93"
       arrival {
-        time: 1715446435
+        time: 1715446432
       }
       schedule_relationship: SCHEDULED
     }
@@ -522,7 +514,7 @@ entity {
       stop_sequence: 13
       stop_id: "95"
       arrival {
-        time: 1715446611
+        time: 1715446608
       }
       schedule_relationship: SCHEDULED
     }
@@ -530,7 +522,7 @@ entity {
       stop_sequence: 14
       stop_id: "97"
       arrival {
-        time: 1715446652
+        time: 1715446649
       }
       schedule_relationship: SCHEDULED
     }
@@ -538,7 +530,7 @@ entity {
       stop_sequence: 15
       stop_id: "99"
       arrival {
-        time: 1715446735
+        time: 1715446732
       }
       schedule_relationship: SCHEDULED
     }
@@ -546,7 +538,7 @@ entity {
       stop_sequence: 16
       stop_id: "101"
       arrival {
-        time: 1715446915
+        time: 1715446912
       }
       schedule_relationship: SCHEDULED
     }
@@ -554,7 +546,7 @@ entity {
       stop_sequence: 17
       stop_id: "76"
       arrival {
-        time: 1715446991
+        time: 1715446988
       }
       schedule_relationship: SCHEDULED
     }
@@ -562,7 +554,7 @@ entity {
       stop_sequence: 18
       stop_id: "68"
       arrival {
-        time: 1715447050
+        time: 1715447047
       }
       schedule_relationship: SCHEDULED
     }
@@ -570,7 +562,7 @@ entity {
       stop_sequence: 19
       stop_id: "82"
       arrival {
-        time: 1715447095
+        time: 1715447092
       }
       schedule_relationship: SCHEDULED
     }
@@ -578,7 +570,7 @@ entity {
       stop_sequence: 20
       stop_id: "30"
       arrival {
-        time: 1715447180
+        time: 1715447177
       }
       schedule_relationship: SCHEDULED
     }
@@ -586,7 +578,7 @@ entity {
       stop_sequence: 21
       stop_id: "42"
       arrival {
-        time: 1715447246
+        time: 1715447243
       }
       schedule_relationship: SCHEDULED
     }
@@ -594,7 +586,7 @@ entity {
       stop_sequence: 22
       stop_id: "28"
       arrival {
-        time: 1715447346
+        time: 1715447343
       }
       schedule_relationship: SCHEDULED
     }
@@ -602,11 +594,11 @@ entity {
       stop_sequence: 23
       stop_id: "36"
       arrival {
-        time: 1715447398
+        time: 1715447395
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445910
+    timestamp: 1715445972
   }
 }
 entity {
@@ -621,18 +613,10 @@ entity {
       id: "4250"
     }
     stop_time_update {
-      stop_sequence: 15
-      stop_id: "22"
-      arrival {
-        time: 1715445967
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
       stop_sequence: 16
       stop_id: "80"
       arrival {
-        time: 1715446089
+        time: 1715446071
       }
       schedule_relationship: SCHEDULED
     }
@@ -640,7 +624,7 @@ entity {
       stop_sequence: 17
       stop_id: "62"
       arrival {
-        time: 1715446156
+        time: 1715446138
       }
       schedule_relationship: SCHEDULED
     }
@@ -648,7 +632,7 @@ entity {
       stop_sequence: 18
       stop_id: "38"
       arrival {
-        time: 1715446336
+        time: 1715446318
       }
       schedule_relationship: SCHEDULED
     }
@@ -656,7 +640,7 @@ entity {
       stop_sequence: 19
       stop_id: "54"
       arrival {
-        time: 1715446456
+        time: 1715446438
       }
       schedule_relationship: SCHEDULED
     }
@@ -664,7 +648,7 @@ entity {
       stop_sequence: 20
       stop_id: "60"
       arrival {
-        time: 1715446608
+        time: 1715446590
       }
       schedule_relationship: SCHEDULED
     }
@@ -672,7 +656,7 @@ entity {
       stop_sequence: 21
       stop_id: "24"
       arrival {
-        time: 1715446713
+        time: 1715446695
       }
       schedule_relationship: SCHEDULED
     }
@@ -680,7 +664,7 @@ entity {
       stop_sequence: 22
       stop_id: "32"
       arrival {
-        time: 1715446756
+        time: 1715446738
       }
       schedule_relationship: SCHEDULED
     }
@@ -688,7 +672,7 @@ entity {
       stop_sequence: 23
       stop_id: "105"
       arrival {
-        time: 1715446816
+        time: 1715446798
       }
       schedule_relationship: SCHEDULED
     }
@@ -696,7 +680,7 @@ entity {
       stop_sequence: 24
       stop_id: "76"
       arrival {
-        time: 1715446915
+        time: 1715446897
       }
       schedule_relationship: SCHEDULED
     }
@@ -704,7 +688,7 @@ entity {
       stop_sequence: 25
       stop_id: "68"
       arrival {
-        time: 1715446983
+        time: 1715446965
       }
       schedule_relationship: SCHEDULED
     }
@@ -712,7 +696,7 @@ entity {
       stop_sequence: 26
       stop_id: "82"
       arrival {
-        time: 1715447056
+        time: 1715447038
       }
       schedule_relationship: SCHEDULED
     }
@@ -720,7 +704,7 @@ entity {
       stop_sequence: 27
       stop_id: "30"
       arrival {
-        time: 1715447144
+        time: 1715447126
       }
       schedule_relationship: SCHEDULED
     }
@@ -728,7 +712,7 @@ entity {
       stop_sequence: 28
       stop_id: "42"
       arrival {
-        time: 1715447202
+        time: 1715447184
       }
       schedule_relationship: SCHEDULED
     }
@@ -736,7 +720,7 @@ entity {
       stop_sequence: 29
       stop_id: "28"
       arrival {
-        time: 1715447298
+        time: 1715447280
       }
       schedule_relationship: SCHEDULED
     }
@@ -744,11 +728,11 @@ entity {
       stop_sequence: 30
       stop_id: "36"
       arrival {
-        time: 1715447357
+        time: 1715447339
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445867
+    timestamp: 1715445982
   }
 }
 entity {
@@ -774,7 +758,7 @@ entity {
       stop_sequence: 17
       stop_id: "71"
       arrival {
-        time: 1715445975
+        time: 1715446011
       }
       schedule_relationship: SCHEDULED
     }
@@ -782,7 +766,7 @@ entity {
       stop_sequence: 18
       stop_id: "77"
       arrival {
-        time: 1715446215
+        time: 1715446251
       }
       schedule_relationship: SCHEDULED
     }
@@ -790,7 +774,7 @@ entity {
       stop_sequence: 19
       stop_id: "7"
       arrival {
-        time: 1715446352
+        time: 1715446388
       }
       schedule_relationship: SCHEDULED
     }
@@ -798,7 +782,7 @@ entity {
       stop_sequence: 20
       stop_id: "9"
       arrival {
-        time: 1715446453
+        time: 1715446489
       }
       schedule_relationship: SCHEDULED
     }
@@ -806,7 +790,7 @@ entity {
       stop_sequence: 21
       stop_id: "12"
       arrival {
-        time: 1715446515
+        time: 1715446551
       }
       schedule_relationship: SCHEDULED
     }
@@ -814,7 +798,7 @@ entity {
       stop_sequence: 22
       stop_id: "13"
       arrival {
-        time: 1715446684
+        time: 1715446720
       }
       schedule_relationship: SCHEDULED
     }
@@ -822,11 +806,11 @@ entity {
       stop_sequence: 23
       stop_id: "5"
       arrival {
-        time: 1715446931
+        time: 1715446967
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445919
+    timestamp: 1715445982
   }
 }
 entity {
@@ -930,7 +914,7 @@ entity {
       stop_sequence: 27
       stop_id: "9"
       arrival {
-        time: 1715446013
+        time: 1715445989
       }
       schedule_relationship: SCHEDULED
     }
@@ -938,7 +922,7 @@ entity {
       stop_sequence: 28
       stop_id: "12"
       arrival {
-        time: 1715446076
+        time: 1715446052
       }
       schedule_relationship: SCHEDULED
     }
@@ -946,7 +930,7 @@ entity {
       stop_sequence: 29
       stop_id: "13"
       arrival {
-        time: 1715446226
+        time: 1715446202
       }
       schedule_relationship: SCHEDULED
     }
@@ -954,11 +938,11 @@ entity {
       stop_sequence: 30
       stop_id: "5"
       arrival {
-        time: 1715446451
+        time: 1715446427
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445920
+    timestamp: 1715445976
   }
 }
 entity {
@@ -988,7 +972,15 @@ entity {
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445919
+    stop_time_update {
+      stop_sequence: 3
+      stop_id: "111"
+      arrival {
+        time: 1715447757
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1715445982
   }
 }
 entity {
@@ -1003,18 +995,10 @@ entity {
       id: "4328"
     }
     stop_time_update {
-      stop_sequence: 15
-      stop_id: "61"
-      arrival {
-        time: 1715445966
-      }
-      schedule_relationship: SCHEDULED
-    }
-    stop_time_update {
       stop_sequence: 16
       stop_id: "79"
       arrival {
-        time: 1715446026
+        time: 1715446029
       }
       schedule_relationship: SCHEDULED
     }
@@ -1022,7 +1006,7 @@ entity {
       stop_sequence: 17
       stop_id: "21"
       arrival {
-        time: 1715446126
+        time: 1715446129
       }
       schedule_relationship: SCHEDULED
     }
@@ -1030,7 +1014,7 @@ entity {
       stop_sequence: 18
       stop_id: "17"
       arrival {
-        time: 1715446206
+        time: 1715446209
       }
       schedule_relationship: SCHEDULED
     }
@@ -1038,7 +1022,7 @@ entity {
       stop_sequence: 19
       stop_id: "19"
       arrival {
-        time: 1715446286
+        time: 1715446289
       }
       schedule_relationship: SCHEDULED
     }
@@ -1046,7 +1030,7 @@ entity {
       stop_sequence: 20
       stop_id: "39"
       arrival {
-        time: 1715446326
+        time: 1715446329
       }
       schedule_relationship: SCHEDULED
     }
@@ -1054,7 +1038,7 @@ entity {
       stop_sequence: 21
       stop_id: "83"
       arrival {
-        time: 1715446367
+        time: 1715446370
       }
       schedule_relationship: SCHEDULED
     }
@@ -1062,7 +1046,7 @@ entity {
       stop_sequence: 22
       stop_id: "33"
       arrival {
-        time: 1715446514
+        time: 1715446517
       }
       schedule_relationship: SCHEDULED
     }
@@ -1070,7 +1054,7 @@ entity {
       stop_sequence: 23
       stop_id: "112"
       arrival {
-        time: 1715446585
+        time: 1715446588
       }
       schedule_relationship: SCHEDULED
     }
@@ -1078,7 +1062,7 @@ entity {
       stop_sequence: 24
       stop_id: "71"
       arrival {
-        time: 1715446686
+        time: 1715446689
       }
       schedule_relationship: SCHEDULED
     }
@@ -1086,7 +1070,7 @@ entity {
       stop_sequence: 25
       stop_id: "77"
       arrival {
-        time: 1715446926
+        time: 1715446929
       }
       schedule_relationship: SCHEDULED
     }
@@ -1094,7 +1078,7 @@ entity {
       stop_sequence: 26
       stop_id: "7"
       arrival {
-        time: 1715447059
+        time: 1715447062
       }
       schedule_relationship: SCHEDULED
     }
@@ -1102,7 +1086,7 @@ entity {
       stop_sequence: 27
       stop_id: "9"
       arrival {
-        time: 1715447163
+        time: 1715447166
       }
       schedule_relationship: SCHEDULED
     }
@@ -1110,7 +1094,7 @@ entity {
       stop_sequence: 28
       stop_id: "12"
       arrival {
-        time: 1715447226
+        time: 1715447229
       }
       schedule_relationship: SCHEDULED
     }
@@ -1118,7 +1102,7 @@ entity {
       stop_sequence: 29
       stop_id: "13"
       arrival {
-        time: 1715447376
+        time: 1715447379
       }
       schedule_relationship: SCHEDULED
     }
@@ -1126,11 +1110,11 @@ entity {
       stop_sequence: 30
       stop_id: "5"
       arrival {
-        time: 1715447601
+        time: 1715447604
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445918
+    timestamp: 1715445980
   }
 }
 entity {
@@ -1145,10 +1129,18 @@ entity {
       id: "4303"
     }
     stop_time_update {
+      stop_sequence: 2
+      stop_id: "35"
+      arrival {
+        time: 1715446029
+      }
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
       stop_sequence: 3
       stop_id: "27"
       arrival {
-        time: 1715445951
+        time: 1715446074
       }
       schedule_relationship: SCHEDULED
     }
@@ -1156,7 +1148,7 @@ entity {
       stop_sequence: 4
       stop_id: "41"
       arrival {
-        time: 1715446045
+        time: 1715446168
       }
       schedule_relationship: SCHEDULED
     }
@@ -1164,7 +1156,7 @@ entity {
       stop_sequence: 5
       stop_id: "29"
       arrival {
-        time: 1715446101
+        time: 1715446224
       }
       schedule_relationship: SCHEDULED
     }
@@ -1172,7 +1164,7 @@ entity {
       stop_sequence: 6
       stop_id: "81"
       arrival {
-        time: 1715446203
+        time: 1715446326
       }
       schedule_relationship: SCHEDULED
     }
@@ -1180,7 +1172,7 @@ entity {
       stop_sequence: 7
       stop_id: "67"
       arrival {
-        time: 1715446246
+        time: 1715446369
       }
       schedule_relationship: SCHEDULED
     }
@@ -1188,7 +1180,7 @@ entity {
       stop_sequence: 8
       stop_id: "75"
       arrival {
-        time: 1715446307
+        time: 1715446430
       }
       schedule_relationship: SCHEDULED
     }
@@ -1196,7 +1188,7 @@ entity {
       stop_sequence: 9
       stop_id: "104"
       arrival {
-        time: 1715446383
+        time: 1715446506
       }
       schedule_relationship: SCHEDULED
     }
@@ -1204,7 +1196,7 @@ entity {
       stop_sequence: 10
       stop_id: "31"
       arrival {
-        time: 1715446443
+        time: 1715446566
       }
       schedule_relationship: SCHEDULED
     }
@@ -1212,7 +1204,7 @@ entity {
       stop_sequence: 11
       stop_id: "23"
       arrival {
-        time: 1715446490
+        time: 1715446613
       }
       schedule_relationship: SCHEDULED
     }
@@ -1220,7 +1212,7 @@ entity {
       stop_sequence: 12
       stop_id: "59"
       arrival {
-        time: 1715446594
+        time: 1715446717
       }
       schedule_relationship: SCHEDULED
     }
@@ -1228,7 +1220,7 @@ entity {
       stop_sequence: 13
       stop_id: "53"
       arrival {
-        time: 1715446743
+        time: 1715446866
       }
       schedule_relationship: SCHEDULED
     }
@@ -1236,7 +1228,7 @@ entity {
       stop_sequence: 14
       stop_id: "37"
       arrival {
-        time: 1715446863
+        time: 1715446986
       }
       schedule_relationship: SCHEDULED
     }
@@ -1244,7 +1236,7 @@ entity {
       stop_sequence: 15
       stop_id: "61"
       arrival {
-        time: 1715447043
+        time: 1715447166
       }
       schedule_relationship: SCHEDULED
     }
@@ -1252,7 +1244,7 @@ entity {
       stop_sequence: 16
       stop_id: "79"
       arrival {
-        time: 1715447103
+        time: 1715447226
       }
       schedule_relationship: SCHEDULED
     }
@@ -1260,7 +1252,7 @@ entity {
       stop_sequence: 17
       stop_id: "21"
       arrival {
-        time: 1715447203
+        time: 1715447326
       }
       schedule_relationship: SCHEDULED
     }
@@ -1268,7 +1260,7 @@ entity {
       stop_sequence: 18
       stop_id: "17"
       arrival {
-        time: 1715447283
+        time: 1715447406
       }
       schedule_relationship: SCHEDULED
     }
@@ -1276,7 +1268,7 @@ entity {
       stop_sequence: 19
       stop_id: "19"
       arrival {
-        time: 1715447363
+        time: 1715447486
       }
       schedule_relationship: SCHEDULED
     }
@@ -1284,7 +1276,7 @@ entity {
       stop_sequence: 20
       stop_id: "39"
       arrival {
-        time: 1715447403
+        time: 1715447526
       }
       schedule_relationship: SCHEDULED
     }
@@ -1292,7 +1284,7 @@ entity {
       stop_sequence: 21
       stop_id: "83"
       arrival {
-        time: 1715447444
+        time: 1715447567
       }
       schedule_relationship: SCHEDULED
     }
@@ -1300,11 +1292,11 @@ entity {
       stop_sequence: 22
       stop_id: "33"
       arrival {
-        time: 1715447591
+        time: 1715447714
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445843
+    timestamp: 1715445966
   }
 }
 entity {
@@ -1374,7 +1366,15 @@ entity {
       }
       schedule_relationship: SCHEDULED
     }
-    timestamp: 1715445920
+    stop_time_update {
+      stop_sequence: 8
+      stop_id: "72"
+      arrival {
+        time: 1715447760
+      }
+      schedule_relationship: SCHEDULED
+    }
+    timestamp: 1715445976
   }
 }
 entity {
