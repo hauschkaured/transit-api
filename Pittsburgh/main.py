@@ -87,7 +87,8 @@ def main() -> None:
     data2 = json_format.MessageToDict(feedmsg2)
     data3 = json_format.MessageToDict(feedmsg3)
     data4 = json_format.MessageToDict(feedmsg4)
-   
+    write_to_file(output_path1, fm_str1)
+
     return data1
 
     # Write output to output_path and additional pretty prints :3 
