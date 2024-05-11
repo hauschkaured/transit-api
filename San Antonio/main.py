@@ -12,9 +12,6 @@ from gtfs_stops import stops
 from gtfs_transfers import transfers
 from gtfs_trips import trips 
 
-from via_busfleet import models 
-from via_busfleet import model_list 
-
 import pprint as PP
 from datetime import datetime
 
