@@ -19,6 +19,7 @@ v0.4 (Currently WIP).
 Reworking the app to stay away from API use and migrate to agency-provided GTFS-RT 
 feeds. Current cities planned to have support: Pittsburgh, San Antonio. Converted 
 all GTFS static feed files to python files with associated classes and methods. 
+Currently have basic functions such as "find route" working. 
 
 v0.3.2 (April 25, 2024)
 - Changed name of project from transit-api to TransitFoamer.
