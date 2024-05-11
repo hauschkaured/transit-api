@@ -1,105 +1,195 @@
-import gtfsrt_pb2
-import requests
-from google.protobuf import json_format
+import datetime
+from fetcher import *
+from datetime import datetime
+
+from gtfs_agency import agency
+from gtfs_calendar_dates import calendar_dates
+from gtfs_calendar import gtfscalendar
+from gtfs_feed import feed
+from gtfs_routes import routes 
+from gtfs_shapes import shapes
+from gtfs_stop_times import stoptimes
+from gtfs_stops import stops
+from gtfs_transfers import transfers
+from gtfs_trips import trips 
+
 import pprint as PP
 
+
+## Configured Pretty Printing
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
-rt1_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/vehicles"  # GTFS-RT Endpoint
-rt2_endpoint: str = "https://truetime.portauthority.org/gtfsrt-bus/trips"  # GTFS-RT Endpoint
-rt3_endpoint: str = "https://truetime.portauthority.org/gtfsrt-train/vehicles"  # GTFS-RT Endpoint
-rt4_endpoint: str = "https://truetime.portauthority.org/gtfsrt-train/trips"  # GTFS-RT Endpoint
+## Importing data from fetcher.py 
+busdata = main_1()
+bustripdata = main_2()
+traindata = main_3()
+traintripdata = main_4()
 
-output_path1: str = "./vehiclepositions_bus.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
-output_path2: str = "./tripupdates_bus.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
-output_path3: str = "./vehiclepositions_train.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
-output_path4: str = "./tripupdates_train.out"  # Path for final written output, WARNING: WILL OVERWRITE EXISTING FILES
+def vehicle_processing(busdata):
+    vid_dict = {}
+    for bus in busdata["entity"]:
+        pprint(bus)
+        ## make dictionary with name of bus model. 
+        busId = bus["vehicle"]["vehicle"]["id"]
+        id = {}
 
+        ## Searching through data to populate the bus dictionary.
+        data = bus["vehicle"]
 
-def rest_status_color_helper(code: int) -> str:
-    """
-    Changes text color in supported terminals based on status code.
-    
-    200-299: Success, green
-    300-399: Unsure,  yellow
-    400+   : Failed,  red
-    """
-    ansi_esc: int = 32 if code < 300 else 33 if code < 400 else 31
-    return f'\x1b[{ansi_esc}m{code}\x1b[0m'
+        ## Position data
+        posdata = data["position"] ## Heading field
 
-def write_to_file(path: str, content: str) -> None:
-    """
-    Writes the content string to the specified path
-    """
-    with open(path, 'w') as f:
-        f.write(content)
-    
-def main() -> None:
-    # REST GET request to get protobuf data from endpoint
-    response1: requests.Response = requests.get(rt1_endpoint)
-    response2: requests.Response = requests.get(rt2_endpoint)
-    response3: requests.Response = requests.get(rt3_endpoint)
-    response4: requests.Response = requests.get(rt4_endpoint)
+        ## ID
+        vid = data["vehicle"]["id"]
+        id["vid"] = vid
 
-    bytestream1, rest_status1 = response1.content, response1.status_code  # NOTE: always decode protobuf response as byte stream
-    bytestream2, rest_status2 = response2.content, response2.status_code  # NOTE: always decode protobuf response as byte stream
-    bytestream3, rest_status3 = response3.content, response3.status_code  # NOTE: always decode protobuf response as byte stream
-    bytestream4, rest_status4 = response4.content, response4.status_code  # NOTE: always decode protobuf response as byte stream
+        ## Subfields 
+        lat = posdata["latitude"]
+        id["lat"] = lat
+        lon = posdata["longitude"]
+        id["lon"] = lon
+        if "bearing" in posdata:
+            hdg = posdata["bearing"]
+            id["hdg"] = hdg
+        if "speed" in posdata:
+            speed = posdata["speed"]
+            id["speed"] = speed
 
+        ## Time data
+        time = data["timestamp"]
+        id["time"] = time
 
-    # Debug print statements, odd escape sequences are to add colors, dwai it
-    print(f"\x1b[33mGET \x1b[34m{rt1_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status1)}")
-    print(f"\x1b[33mGET \x1b[34m{rt2_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status2)}")
-    print(f"\x1b[33mGET \x1b[34m{rt3_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status3)}")
-    print(f"\x1b[33mGET \x1b[34m{rt4_endpoint} \x1b[33m: returned status {rest_status_color_helper(rest_status4)}")
-    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream1) / 1000} KB\x1b[0m")
-    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream2) / 1000} KB\x1b[0m")
-    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream3) / 1000} KB\x1b[0m")
-    print(f"\x1b[33m    Reponse has length \x1b[34m{len(bytestream4) / 1000} KB\x1b[0m")
+        ## Stop data     
+        if "stopId" in data:
+            stopId = data["stopId"]
+            id["stopId"] = stopId
 
+        if "currentStopSequence" in data:
+            currStop = data["currentStopSequence"]
+            id["currStop"] = currStop
 
-    # Create an empty instance of a FeedMessage (the class that holds all GTFS-RT data)
-    # We will populate this later
-    feedmsg1 = gtfsrt_pb2.FeedMessage() 
-    feedmsg2 = gtfsrt_pb2.FeedMessage() 
-    feedmsg3 = gtfsrt_pb2.FeedMessage() 
-    feedmsg4 = gtfsrt_pb2.FeedMessage() 
+        if "trip" in data:
+            # header
+            tripdata = data["trip"]
+            tripid = tripdata["tripId"]
+            triproute = tripdata["routeId"]
+            id["tripId"] = tripid
+            id["tripRoute"] = triproute
 
+        if "currentStatus" in data:
+            status = data["currentStatus"]
+            id["status"] = status
 
+        vid_dict[busId] = id
+    return vid_dict       
 
+busDict = vehicle_processing(busdata)
 
-    # Use byte stream from response to Parse into object
-    # NOTE: The function returns a status code. The data is populated in place
-    proto_status1 = feedmsg1.ParseFromString(bytestream1)
-    proto_status2 = feedmsg2.ParseFromString(bytestream2)
-    proto_status3 = feedmsg3.ParseFromString(bytestream3)
-    proto_status4 = feedmsg4.ParseFromString(bytestream4)
+def trip_processing(bustripdata):
+    trip_dict = {}
+    for i in bustripdata["entity"]:
+        update = i["tripUpdate"]    
+        ## Populating data
+        id = update["trip"]["tripId"]
+        trip = {}
+        trip["id"] = id
 
+        # Header
+        tripdata = update["trip"]
+        # Subfields       
+        relationship = tripdata["scheduleRelationship"]
+        trip["relationship"] = relationship
+        route = tripdata["routeId"]
+        trip["route"] = route
 
-    # All protobuf classes can be converted to a debug string by using the string constructor
-    fm_str1 = str(feedmsg1)
-    fm_str2 = str(feedmsg2)
-    fm_str3 = str(feedmsg3)
-    fm_str4 = str(feedmsg4)
+        timedata = update["timestamp"]
+        trip["timedata"] = timedata
 
-    data1 = json_format.MessageToDict(feedmsg1)
-    data2 = json_format.MessageToDict(feedmsg2)
-    data3 = json_format.MessageToDict(feedmsg3)
-    data4 = json_format.MessageToDict(feedmsg4)
-    write_to_file(output_path1, fm_str1)
+        trip_dict[id] = trip
 
-    return data1
+        # Stop time update data
+        timeUpdate = update["stopTimeUpdate"]
+        
+        timeUpdateList = []
 
-    # Write output to output_path and additional pretty prints :3 
-    print(f"\n\x1b[33mStatusCode from \x1b[36mfeedmsg.ParseFromString(...) \x1b[0m: \x1b[34m{proto_status1}\x1b[0m]")
-    print(f"\x1b[33m    debug str has size \x1b[34m{len(fm_str1) / 1000} KB\x1b[0m")
-    write_to_file(output_path1, fm_str1)
-    write_to_file(output_path2, fm_str2)
-    write_to_file(output_path3, fm_str3)
-    write_to_file(output_path4, fm_str4)
+        for i in timeUpdate:
+            timeUpd = {}
+            stopSequence = i["stopSequence"]
+            timeUpd["stopSequence"] = stopSequence
+            stopId = i["stopId"]
+            timeUpd["stopId"] = stopId
+            relationship = i["scheduleRelationship"]
+            timeUpd["relationship"] = relationship
 
-    print(f"\n\x1b[32mSuccessfully wrote output to \x1b[34m{output_path1}\x1b[0m")
+            if "departure" in i:
+                departure = i["departure"]
+                if "time" in departure:
+                    time = departure["time"]
+                    timeUpd["depTime"] = time
+                if "uncertainty" in departure:
+                    uncertainty = departure["uncertainty"]
+                    timeUpd["depUncertainty"] = uncertainty
+            if "arrival" in i:
+                arrival = i["arrival"]
+                if "time" in arrival:
+                    time = arrival["time"]
+                    timeUpd["arrTime"] = time
+                if "uncertainty" in arrival:
+                    uncertainty = arrival["uncertainty"]
+                    timeUpd["arrUncertainty"] = uncertainty
+            timeUpdateList.append(timeUpd)
 
-if __name__ == "__main__":
-    main()
+        trip["timeUpdateList"] = timeUpdateList
+    return trip_dict
+
+tripDict = trip_processing(bustripdata)
+
+## MAIN FUNCTIONS
+
+def buses_on_route(input):
+    for bus in busDict:
+        busInfo = busDict[bus]
+        if "tripRoute" in busInfo:
+            busRoute = busInfo["tripRoute"]
+            if busRoute == input:
+                print(f"\x1b[33mRoute \x1b[34m{busRoute} #{busInfo["vid"]} \x1b[0mis at {busInfo["stopId"]}")
+
+def buses_in_range(low, high):
+    print(f"The following buses are in the range {low}-{high}")
+    for i in range(low, high+1):
+        if i in busDict:
+            busInfo = busDict[i]
+            if "status" in busInfo:
+                stopId = busInfo["stopId"]
+                stop = stops[stopId].name
+                trip = busInfo["tripId"]
+                print(f"\x1b[33mRoute \x1b[34m{busInfo["tripRoute"]} #{busInfo["vid"]} \x1b[0mis at {stop}")
+                time1 = soonest_departure(trip)
+                time2 = soonest_arrival(trip)
+                if ((time1 != None) and (time2 != None)):
+                    print(f"Arriving at {time2}, departing at {time1}")
+                elif time2 != None:
+                    print(f"Arriving at {time2}")
+                elif time1 != None:
+                    print(f"Departing at {time1}")
+
+## HELPERS
+
+def soonest_departure(trip):
+    for i in tripDict:
+        if i == trip:
+            stop = tripDict[i]["timeUpdateList"][0]
+            if "depTime" in stop:
+                stopTime = int(stop["depTime"])
+                time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')           
+                return time
+        
+def soonest_arrival(trip):
+    for i in tripDict:
+        if i == trip:
+            stop = tripDict[i]["timeUpdateList"][0]
+            if "arrTime" in stop:
+                stopTime = int(stop["arrTime"])
+                time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')           
+                return time
