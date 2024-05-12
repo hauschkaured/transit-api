@@ -81,7 +81,6 @@ def vehicle_processing(busdata):
             id["status"] = status
 
         vid_dict[busId] = id
-    pprint(vid_dict)
     return vid_dict       
 
 busDict = vehicle_processing(busdata)
