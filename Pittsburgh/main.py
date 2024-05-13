@@ -21,10 +21,11 @@ pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
 ## Importing data from fetcher.py 
+
 busdata = main_1()
 bustripdata = main_2()
-# traindata = main_3()
-# traintripdata = main_4()
+traindata = main_3()
+traintripdata = main_4()
 
 def vehicle_processing(busdata):
     vid_dict = {}
@@ -84,6 +85,7 @@ def vehicle_processing(busdata):
     return vid_dict       
 
 busDict = vehicle_processing(busdata)
+trainDict = vehicle_processing(traindata)
 
 def trip_processing(bustripdata):
     trip_dict = {}
@@ -144,6 +146,7 @@ def trip_processing(bustripdata):
     return trip_dict
 
 tripDict = trip_processing(bustripdata)
+trainTripDict = trip_processing(traintripdata)
 
 ## MAIN FUNCTIONS
 
@@ -157,22 +160,51 @@ def buses_on_route(input):
 
 def buses_in_range(low, high):
     print(f"The following buses are in the range {low}-{high}")
+    pprint(busDict)
     for i in range(low, high+1):
-        if i in busDict:
-            busInfo = busDict[i]
-            if "status" in busInfo:
-                stopId = busInfo["stopId"]
-                stop = stops[stopId].name
-                trip = busInfo["tripId"]
-                print(f"\x1b[33mRoute \x1b[34m{busInfo["tripRoute"]} #{busInfo["vid"]} \x1b[0mis at {stop}")
-                time1 = soonest_departure(trip)
-                time2 = soonest_arrival(trip)
-                if ((time1 != None) and (time2 != None)):
-                    print(f"Arriving at {time2}, departing at {time1}")
-                elif time2 != None:
-                    print(f"Arriving at {time2}")
-                elif time1 != None:
-                    print(f"Departing at {time1}")
+        if str(i) in busDict:
+            busInfo = busDict[str(i)]
+            if "tripId" in busInfo:
+                tripId = busInfo["tripId"]
+                if tripId in tripDict:
+                    trip_information = tripDict[tripId]
+                    trip = trip_information
+                    nearestStop = trip_information["timeUpdateList"][0]
+                    nearestStopID = nearestStop["stopId"]
+                    name = stops[nearestStopID].name
+                    headsign = trips[tripId].headsign
+                    print(f"\x1b[33mRoute \x1b[34m{busInfo["tripRoute"]} #{busInfo["vid"]} {headsign} \x1b[0mis at {name}")
+                    time1 = soonest_departure(trip)
+                    time2 = soonest_arrival(trip)
+                    if ((time1 != None) and (time2 != None)):
+                        print(f"Arriving at {time2}, departing at {time1}")
+                    elif time2 != None:
+                        print(f"Arriving at {time2}")
+                    elif time1 != None:
+                        print(f"Departing at {time1}")
+
+def print_running_buses():
+    busList = []
+    for i in busDict:
+        busList.append(i)
+    busList.sort()
+    return busList
+
+def show_trip_information(trip):
+    for i in tripDict:
+        if i == trip:
+            stopsList = tripDict[i]["timeUpdateList"]
+            for j in stopsList:
+                if 'depTime' in j:
+                    stopTime = int(j['depTime'])
+                    string = 'departs from'
+                if 'arrTime' in j:
+                    stopTime = int(j['arrTime'])
+                    string = 'arrives at'
+                stopId = j['stopId']
+                stopName = stops[stopId].name
+                Time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')
+                print(f"Bus {string} {stopName} at {Time}")
 
 ## HELPERS
 
@@ -193,3 +225,9 @@ def soonest_arrival(trip):
                 stopTime = int(stop["arrTime"])
                 time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')           
                 return time
+            
+# buses_in_range(6700,6740)
+
+buses_in_range(3501,3510)
+
+buses_in_range(8001, 8003)

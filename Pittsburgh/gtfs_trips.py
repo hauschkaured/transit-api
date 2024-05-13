@@ -1,6 +1,5 @@
 text = open("gtfs_static_feed/trips.txt", "r")
 
-
 class Trips:
     def __init__(self, route_id, service_id, trip_id, headsign, short_name, 
                  direction_id, block_id, shape_id, wheelchair, bikes):
@@ -29,9 +28,9 @@ for line in textdata.splitlines():
     for i in range(len(line)):
         if line[i] == ',':
             indexList.append(i)
-    route_id = line[0:indexList[0]]
-    service_id = line[indexList[0]+1:indexList[1]]
-    trip_id = line[indexList[1]+1:indexList[2]]
+    trip_id = line[0:indexList[0]]
+    route_id = line[indexList[0]+1:indexList[1]]
+    service_id = line[indexList[1]+1:indexList[2]]
     headsign = line[indexList[2]+1:indexList[3]]
     short_name = line[indexList[3]+1:indexList[4]]
     direction_id = line[indexList[4]+1:indexList[5]]
