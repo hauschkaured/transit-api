@@ -1,62 +1,35 @@
-Classes
-=======
+# Pittsburgh
 
-The files agency.py, calendar\_dates.py, gtfs\_calendar.py, routes.py, shapes.py, stop\_times.py, stops.py, transfers.py, and trips.py have special classes that take the data from the respective .txt files and make them easier to work with.
+Transit vehicles have data stored in the dictionaries `busDict` and `trainDict`.
+The keys of the dictionary are the fleet numbers of buses currently running. 
+Each key has a corresponding dictionary which is populated by information about 
+the bus in question. The following terms are used as keys of this sub-dictionary,
+and their return types are listed below:
+- `busId` is the **Fleet Number** of the vehicle. Returns `str`
+- `vid` is the **Vehicle ID** of the vehicle. Returns `str`
+- `lat` is the **Latitude** of the vehicle. Returns `str`
+- `lon` is the **Longitude** of the vehicle. Returns `str`
+- `hdg` is the **Heading** of the vehicle. Returns `str`
+- `speed` is the **Speed** of the vehicle. Returns `str`
+- `time` is the **Timestamp** associated with the vehicle data. Returns `str`
+- `stopId` is the **Current Stop** of the vehicle. Returns `str`
+- `currentStopSequence` is the 
 
-`Agency(agency_id, agency_name, agency_url, agency_timezone, agency_lang, agency_phone, agency_fare_url)`
----------------------------------------------------------------------------------------------------------
+- `tripId` is the **Trip** the vehicle is operating. Returns `str`
+- `tripRoute` is the **Route** the vehicle is operating. Returns `str`
+- `status` is the **Status** of the vehicle. Returns `str`
 
-The class `Agency` contains information about the transit agency in question.
+Vehicle trips have their trip information stored in the dictionaries `tripDict` 
+and `trainTripDict`. The keys of the dictionary are the scheduled trips currently
+in the GTFS-RT feed. Each key has a corresponding dictionary populated by 
+information about the trip in question. The following terms are used as keys of 
+this sub-dictionary, and their return types are listed below:
 
-*   `Agency.id`
-*   `Agency.name`
-*   `Agency.url`
-*   `Agency.timezone`
-*   `Agency.lang`
-*   `Agency.phone`
-*   `Agency.fare_url`
+- `relationship` is the **Schedule Relationship** of the trip. Returns `str`
+- `route` is the **Scheduled Route** of the trip. Returns `str`
+- `timedata` is the **Timestamp** of the trip. Returns `str`
+- `timeUpdateList` is the **List of Scheduled Stops** for the trip. Returns `list`.
 
-`Dates(service_id, date, exception_type)`
------------------------------------------
+## timeUpdateList
 
-The class `Dates` contains information about the dates through which the feed provides valid information.
-
-*   `Dates.id`
-*   `Dates.date`
-*   `Dates.type`
-
-`Calendar(service_id, monday, tuesday, wednesday, thursday, friday, saturday, sunday, start_date, end_date)`
-------------------------------------------------------------------------------------------------------------
-
-The class `Calendar` contains information about the calendar days for the schedule 
-being run.
-
-*   ``
-
-
-`Feed(feed_publisher_name, feed_publisher_url, feed_lang, feed_start_date, feed_end_date,feed_version)`
--------------------------------------------------------------------------------------------------------
-
-`Routes(route_id, agency_id, route_short_name, route_long_name, route_desc, route_type, route_url, route_color, route_text_color)`
-----------------------------------------------------------------------------------------------------------------------------------
-
-The class `Routes` contains information about the routes that the transit agency runs.
-
-*   `Routes.id` returns the ID of the route.
-*   `Routes.agency` returns the agency ID.
-*   `Routes.short_name` returns the short name of the route, usually the route number or identifier.
-*   `Routes.long_name` returns the long name of the route, usually what is seen on the transit agency's paper schedules.
-*   `Routes.desc` returns a description of the route.
-*   `Routes.type` returns the type of service the route runs.
-*   `Routes.url` returns the route's unique URL, if provided.
-*   `Routes.color` returns the route's color.
-*   `Routes.text` returns the desired color of the text, if provided.
-
-`Shapes(shape_id, shape_pt_lat, shape_pt_lon, shape_pt_sequence, shape_dist_traveled)`
---------------------------------------------------------------------------------------
-
-`Stoptimes(trip_id, arrival_time, departure_time, stop_id, stop_sequence, stop_headsign, pickup_type, drop_off_type, shape_dist_traveled, timepoint)`
------------------------------------------------------------------------------------------------------------------------------------------------------
-
-`Transfer(from_stop_id, to_stop_id, transfer_type, min_transfer_time)`
-----------------------------------------------------------------------
+Every entry in 

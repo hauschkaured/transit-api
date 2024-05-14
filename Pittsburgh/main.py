@@ -160,7 +160,6 @@ def buses_on_route(input):
 
 def buses_in_range(low, high):
     print(f"The following buses are in the range {low}-{high}")
-    pprint(busDict)
     for i in range(low, high+1):
         if str(i) in busDict:
             busInfo = busDict[str(i)]
@@ -182,6 +181,10 @@ def buses_in_range(low, high):
                         print(f"Arriving at {time2}")
                     elif time1 != None:
                         print(f"Departing at {time1}")
+            else:
+                latitude = busInfo["lat"]
+                longitude = busInfo["lon"]
+                print(f"{i} is at lat, lon {latitude}, {longitude}")
 
 def print_running_buses():
     busList = []
@@ -226,8 +229,4 @@ def soonest_arrival(trip):
                 time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')           
                 return time
             
-# buses_in_range(6700,6740)
-
-buses_in_range(3501,3510)
-
-buses_in_range(8001, 8003)
+buses_in_range(8001,8010)
