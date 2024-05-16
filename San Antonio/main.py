@@ -207,11 +207,5 @@ def soonest_arrival(trip):
                 time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')           
                 return time        
 
-
-
-buses_on_route('4')
-buses_on_route('93')
-buses_on_route('17')
-buses_on_route('64')
 buses_in_range(387,405) ## NFI DE40LFR
 buses_in_range(406,420) ## NFI XN40

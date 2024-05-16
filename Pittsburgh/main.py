@@ -15,8 +15,8 @@ from gtfs_trips import trips
 
 import pprint as PP
 
-
 ## Configured Pretty Printing
+
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
