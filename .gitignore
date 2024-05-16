@@ -164,3 +164,4 @@ cython_debug/
 
 *.pyc
 *.out
+.DS_Store
