@@ -12,8 +12,7 @@ class Shapes:
         
     def __repr__(self):
         return(f'''{self.id}, {self.lat}, {self.lon}''')
-
-    
+  
 shapes = {}
 
 textdata = text.read()

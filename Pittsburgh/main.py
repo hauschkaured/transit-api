@@ -191,7 +191,7 @@ def print_running_buses():
     for i in busDict:
         busList.append(i)
     busList.sort()
-    return busList
+    print(busList)
 
 def show_trip_information(trip):
     for i in tripDict:
@@ -229,4 +229,3 @@ def soonest_arrival(trip):
                 time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')           
                 return time
             
-buses_in_range(3500, 3510)
