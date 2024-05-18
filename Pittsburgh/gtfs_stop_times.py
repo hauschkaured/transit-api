@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/stop_times.txt", "r")
+text = open("Pittsburgh/gtfs_static_feed/stop_times.txt", "r")
 
 class Stoptimes:
     def __init__(self, id, arrival, departure, stop_id, stopseq, headsign, 
@@ -17,7 +17,7 @@ class Stoptimes:
     def __repr__(self):
         return f"{self.departure}, {self.stopseq}, {self.headsign}"
     
-stoptimes = {}
+prt_stoptimes = {}
 
 textdata = text.read()
 
@@ -39,4 +39,4 @@ for line in textdata.splitlines():
 
     obj = Stoptimes(id, arrival, departure, stop_id, stopseq, headsign, 
                 pickup_type, dropoff_type, shape_dist_traveled, timepoint)
-    stoptimes[stop_id] = obj
+    prt_stoptimes[stop_id] = obj

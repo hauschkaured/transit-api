@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/shapes.txt", "r")
+text = open("Pittsburgh/gtfs_static_feed/shapes.txt", "r")
 
 
 class Shapes:
@@ -14,7 +14,7 @@ class Shapes:
         return(f'''{self.id}, {self.lat}, {self.lon}''')
 
     
-shapes = {}
+prt_shapes = {}
 
 textdata = text.read()
 
@@ -29,4 +29,4 @@ for line in textdata.splitlines():
     sequence = line[indexList[2]+1:indexList[3]]
     dist_traveled = line[indexList[3]+1:]
     obj = Shapes(id, lat, lon, sequence, dist_traveled)
-    shapes[lon] = obj
+    prt_shapes[lon] = obj

@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/calendar.txt", "r")
+text = open("Pittsburgh/gtfs_static_feed/calendar.txt", "r")
 
 class Calendar:
     def __init__(self, id, mon, tue, wed, thu, fri, sat, sun, start, end):
@@ -17,7 +17,7 @@ class Calendar:
         return f"{self.id}"
 
 
-gtfscalendar = {}
+prt_calendar = {}
 
 textdata = text.read()
 
@@ -37,4 +37,4 @@ for line in textdata.splitlines():
     start = line[indexList[7]+1:indexList[8]]
     end = line[indexList[8]+1:]
     obj = Calendar(id, mon, tue, wed, thu, fri, sat, sun, start, end)
-    gtfscalendar[id] = obj
+    prt_calendar[id] = obj

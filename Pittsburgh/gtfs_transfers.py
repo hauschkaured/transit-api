@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/transfers.txt", "r")
+text = open("Pittsburgh/gtfs_static_feed/transfers.txt", "r")
 
 class Transfer:
     def __init__(self, from_id, to_id, transfer_type, min_time):
@@ -10,7 +10,7 @@ class Transfer:
     def __repr__(self):
         return f"{self.from_id}, {self.to_id}"
     
-transfers = {}
+prt_transfers = {}
 
 textdata = text.read()
 
@@ -24,5 +24,5 @@ for line in textdata.splitlines():
     transfer_type = line[indexList[1]+1:indexList[2]]
     min_time = line[indexList[2]+1:]
     obj = Transfer(from_id, to_id, transfer_type, min_time)
-    transfers[from_id] = obj
+    prt_transfers[from_id] = obj
 

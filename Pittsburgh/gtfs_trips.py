@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/trips.txt", "r")
+text = open("Pittsburgh/gtfs_static_feed/trips.txt", "r")
 
 class Trips:
     def __init__(self, route_id, service_id, trip_id, headsign, short_name, 
@@ -19,7 +19,7 @@ class Trips:
                {self.headsign}, {self.direction_id}, {self.block_id},\n
                {self.shape_id}, {self.wheelchair}, {self.bikes}\n''') 
     
-trips = {}
+prt_trips = {}
 
 textdata = text.read()
 
@@ -40,4 +40,4 @@ for line in textdata.splitlines():
     bikes = line[indexList[8]+1:]
     obj = Trips(route_id, service_id, trip_id, headsign, short_name, 
                 direction_id, block_id, shape_id, wheelchair, bikes)
-    trips[trip_id] = obj
+    prt_trips[trip_id] = obj

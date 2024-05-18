@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/routes.txt", "r")
+text = open("Pittsburgh/gtfs_static_feed/routes.txt", "r")
 
 class Routes:
     def __init__(self, id, agency, short_name, long_name, desc, type, url, 
@@ -17,7 +17,7 @@ class Routes:
     def __repr__(self):
         return f"{self.id}, {self.long_name}, {self.type}"
     
-routes = {}
+prt_routes = {}
 
 textdata = text.read()
 
@@ -38,4 +38,4 @@ for line in textdata.splitlines():
     obj = Routes(route_id, agency_id, route_short_name, route_long_name,
                  route_desc, route_type, route_url, route_color, 
                  route_text_color)
-    routes[route_id] = obj
+    prt_routes[route_id] = obj

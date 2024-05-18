@@ -18,10 +18,6 @@ pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
 
-
-
-
-
 def trip_processing(tripdata):
     trip_dict = {}
     for i in tripdata["entity"]:

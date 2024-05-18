@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/feed_info.txt", "r")
+text = open("Pittsburgh/gtfs_static_feed/feed_info.txt", "r")
 
 class Feed:
     def __init__(self, publisher, url, lang, start, end, version):
@@ -13,7 +13,7 @@ class Feed:
         return f'''PUB {self.publisher} URL {self.url} LANG {self.lang} \n
         ST {self.start} END {self.end} VER {self.version}'''
     
-feed = {}
+prt_feed = {}
 
 textdata = text.read()
 
@@ -31,4 +31,4 @@ for line in textdata.splitlines():
 
 
     obj = Feed(publisher, url, lang, start, end, version)
-    feed[id] = obj
+    prt_feed[id] = obj

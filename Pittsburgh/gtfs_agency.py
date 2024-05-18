@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/agency.txt", "r")
+text = open("Pittsburgh/gtfs_static_feed/agency.txt", "r")
 
 class Agency:
     def __init__(self, id, name, url, timezone, lang, phone, fare_url):
@@ -13,7 +13,7 @@ class Agency:
     def __repr__(self):
         return f"{self.name}"
     
-agency = {}
+prt_agency = {}
 
 textdata = text.read()
 
@@ -27,7 +27,3 @@ for line in textdata.splitlines():
     #              agency_phone, 
     #             agency_fare_url)
     # agency[agency_id] = obj
-
-print(agency)
-
-## FIX THIS FILE ##
