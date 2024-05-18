@@ -5,7 +5,7 @@ from datetime import datetime
 # from Pittsburgh.gtfs_agency import prt_agency
 # from Pittsburgh.gtfs_calendar_dates import prt_calendar_dates
 # from Pittsburgh.gtfs_calendar import prt_calendar
-# from Pittsburgh.gtfs_feed import prt_feed
+from Pittsburgh.gtfs_feed import prt_feed
 # from Pittsburgh.gtfs_routes import prt_routes
 # from Pittsburgh.gtfs_shapes import prt_shapes
 # from Pittsburgh.gtfs_stop_times import prt_stoptimes
@@ -17,7 +17,7 @@ from Pittsburgh.gtfs_stops import prt_stops
 # from San_Antonio.gtfs_agency import via_agency
 # from San_Antonio.gtfs_calendar_dates import via_calendar_dates
 # from San_Antonio.gtfs_calendar import via_calendar
-# from San_Antonio.gtfs_feed import via_feed
+from San_Antonio.gtfs_feed import via_feed
 # from San_Antonio.gtfs_routes import via_routes
 # from San_Antonio.gtfs_shapes import via_shapes
 # from San_Antonio.gtfs_stop_times import via_stoptimes
@@ -29,6 +29,11 @@ import pprint as PP
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
+
+
+def static_feed_validity():
+    print(f"PRT: {prt_feed[0].start} to {prt_feed[0].end}")
+    print(f"VIA: {via_feed[0].start} to {via_feed[0].end}")
 
 def vehicle_processing_via(data):
     via_vid_dict = {}
@@ -332,7 +337,7 @@ def buses_in_range_prt(low, high):
 
 
 def status_converter(status):
-    if status == "IN_TRANSIT_TO":
+    if status == "IN_TRANSIT_TO": # This is for VIA only
         return "in transit to"
     if status == "STOPPED_AT":
         return "stopped at"
@@ -428,7 +433,6 @@ if x == "San Antonio":
             string = y[6:]
             buses_on_route_via(string)
 
-
 elif x == "Pittsburgh":
     busData = main(prt_bus_vehicles, "./prt_bus_vehicles.out")
     busTripData = main(prt_bus_trips, "./prt_bus_trips.out")
@@ -463,4 +467,5 @@ elif x == "Pittsburgh":
             string = y[6:]
             buses_on_route_prt(string)
 
-
+elif x == "Debug":
+    static_feed_validity()

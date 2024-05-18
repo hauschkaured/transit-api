@@ -31,4 +31,4 @@ for line in textdata.splitlines():
 
 
     obj = Feed(publisher, url, lang, start, end, version)
-    prt_feed[id] = obj
+    prt_feed[0] = obj
