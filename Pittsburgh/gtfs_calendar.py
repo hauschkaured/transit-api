@@ -15,7 +15,8 @@ class Calendar:
 
     def __repr__(self):
         return f"{self.id}"
-    
+
+
 gtfscalendar = {}
 
 textdata = text.read()

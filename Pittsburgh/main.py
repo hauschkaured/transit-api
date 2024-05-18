@@ -2,15 +2,15 @@ import datetime
 from fetcher import *
 from datetime import datetime
 
-from gtfs_agency import agency
-from gtfs_calendar_dates import calendar_dates
-from gtfs_calendar import gtfscalendar
-from gtfs_feed import feed
-from gtfs_routes import routes 
-from gtfs_shapes import shapes
-from gtfs_stop_times import stoptimes
+# from gtfs_agency import agency
+# from gtfs_calendar_dates import calendar_dates
+# from gtfs_calendar import gtfscalendar
+# from gtfs_feed import feed
+# from gtfs_routes import routes
+# from gtfs_shapes import shapes
+# from gtfs_stop_times import stoptimes
 from gtfs_stops import stops
-from gtfs_transfers import transfers
+# from gtfs_transfers import transfers
 from gtfs_trips import trips 
 
 import pprint as PP
@@ -22,29 +22,29 @@ pprint = pp.pprint
 
 ## Importing data from fetcher.py 
 
-busdata = main_1()
-bustripdata = main_2()
-traindata = main_3()
-traintripdata = main_4()
+busdata = main(rt1_endpoint, output_path1)
+bustripdata = main(rt2_endpoint, output_path2)
+traindata = main(rt3_endpoint, output_path3)
+traintripdata = main(rt4_endpoint, output_path4)
 
 def vehicle_processing(busdata):
     vid_dict = {}
     for bus in busdata["entity"]:
-        ## make dictionary with name of bus model. 
+        # make dictionary with name of bus model.
         busId = bus["vehicle"]["vehicle"]["id"]
         id = {}
 
-        ## Searching through data to populate the bus dictionary.
+        # Searching through data to populate the bus dictionary.
         data = bus["vehicle"]
 
-        ## Position data
-        posdata = data["position"] ## Heading field
+        # Position data
+        posdata = data["position"] # Heading field
 
-        ## ID
+        # ID
         vid = data["vehicle"]["id"]
         id["vid"] = vid
 
-        ## Subfields 
+        # Subfields
         lat = posdata["latitude"]
         id["lat"] = lat
         lon = posdata["longitude"]
@@ -56,11 +56,11 @@ def vehicle_processing(busdata):
             speed = posdata["speed"]
             id["speed"] = speed
 
-        ## Time data
+        # Time data
         time = data["timestamp"]
         id["time"] = time
 
-        ## Stop data     
+        # Stop data
         if "stopId" in data:
             stopId = data["stopId"]
             id["stopId"] = stopId
@@ -91,7 +91,7 @@ def trip_processing(bustripdata):
     trip_dict = {}
     for i in bustripdata["entity"]:
         update = i["tripUpdate"]    
-        ## Populating data
+        # Populating data
         id = update["trip"]["tripId"]
         trip = {}
         trip["id"] = id
@@ -193,6 +193,7 @@ def print_running_buses():
     busList.sort()
     print(busList)
 
+
 def show_trip_information(trip):
     for i in tripDict:
         if i == trip:
@@ -206,11 +207,11 @@ def show_trip_information(trip):
                     string = 'arrives at'
                 stopId = j['stopId']
                 stopName = stops[stopId].name
-                Time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')
-                print(f"Bus {string} {stopName} at {Time}")
+                newtime = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')
+                print(f"Bus {string} {stopName} at {newtime}")
 
-## HELPERS
 
+# HELPERS
 def soonest_departure(trip):
     for i in tripDict:
         if i == trip:
@@ -219,7 +220,8 @@ def soonest_departure(trip):
                 stopTime = int(stop["depTime"])
                 time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')           
                 return time
-        
+
+
 def soonest_arrival(trip):
     for i in tripDict:
         if i == trip:
@@ -228,4 +230,6 @@ def soonest_arrival(trip):
                 stopTime = int(stop["arrTime"])
                 time = datetime.fromtimestamp(stopTime).strftime('%H:%M:%S')           
                 return time
-            
+
+
+buses_in_range(3500,3510)

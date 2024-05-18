@@ -1,5 +1,4 @@
-from fetcher import main_1
-from fetcher import main_2
+from fetcher import main
 
 from gtfs_agency import agency
 from gtfs_calendar_dates import calendar_dates
