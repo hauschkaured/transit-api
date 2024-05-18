@@ -9,7 +9,7 @@ class Dates:
     def __repr__(self):
         return f"{self.id}"
     
-calendar_dates = {}
+via_calendar_dates = {}
 
 textdata = text.read()
 

@@ -20,7 +20,7 @@ class Trips:
                {self.headsign}, {self.direction_id}, {self.block_id},\n
                {self.shape_id}, {self.wheelchair}, {self.bikes}\n''') 
     
-trips = {}
+via_trips = {}
 
 textdata = text.read()
 
@@ -41,4 +41,4 @@ for line in textdata.splitlines():
     bikes = line[indexList[8]+1:]
     obj = Trips(route_id, service_id, trip_id, headsign, short_name, 
                 direction_id, block_id, shape_id, wheelchair, bikes)
-    trips[trip_id] = obj
+    via_trips[trip_id] = obj

@@ -13,7 +13,7 @@ class Feed:
         return f'''PUB {self.publisher} URL {self.url} LANG {self.lang} \n
         ST {self.start} END {self.end} VER {self.version}'''
     
-feed = {}
+via_feed = {}
 
 textdata = text.read()
 
@@ -31,4 +31,4 @@ for line in textdata.splitlines():
 
 
     obj = Feed(publisher, url, lang, start, end, version)
-    feed[id] = obj
+    via_feed[id] = obj

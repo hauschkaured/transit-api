@@ -16,7 +16,7 @@ class Calendar:
     def __repr__(self):
         return f"{self.id}"
     
-gtfscalendar = {}
+via_calendar = {}
 
 textdata = text.read()
 
@@ -36,4 +36,4 @@ for line in textdata.splitlines():
     start = line[indexList[7]+1:indexList[8]]
     end = line[indexList[8]+1:]
     obj = Calendar(id, mon, tue, wed, thu, fri, sat, sun, start, end)
-    gtfscalendar[id] = obj
+    via_calendar[id] = obj

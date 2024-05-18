@@ -13,7 +13,7 @@ class Agency:
     def __repr__(self):
         return f"{self.name}"
     
-agency = {}
+via_agency = {}
 
 textdata = text.read()
 
@@ -32,4 +32,4 @@ for line in textdata.splitlines():
     obj = Agency(agency_id, agency_name, agency_url, agency_timezone, agency_lang,
                  agency_phone, 
                 agency_fare_url)
-    agency[agency_id] = obj
+    via_agency[agency_id] = obj

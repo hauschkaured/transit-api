@@ -13,7 +13,7 @@ class Shapes:
     def __repr__(self):
         return(f'''{self.id}, {self.lat}, {self.lon}''')
   
-shapes = {}
+via_shapes = {}
 
 textdata = text.read()
 
@@ -28,4 +28,4 @@ for line in textdata.splitlines():
     sequence = line[indexList[2]+1:indexList[3]]
     dist_traveled = line[indexList[3]+1:]
     obj = Shapes(id, lat, lon, sequence, dist_traveled)
-    shapes[lon] = obj
+    via_shapes[lon] = obj

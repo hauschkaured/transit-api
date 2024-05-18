@@ -15,7 +15,11 @@ Go to [Documentation.md](Documentation).
 
 # Version List
 
-v0.4 (Currently WIP).
+v0.4.1 
+Refactoring project so main functionalities are centralized and run independent of
+the selected organization.
+
+v0.4
 Reworking the app to stay away from API use and migrate to agency-provided GTFS-RT 
 feeds. Current cities planned to have support: Pittsburgh, San Antonio. Converted 
 all GTFS static feed files to python files with associated classes and methods. 

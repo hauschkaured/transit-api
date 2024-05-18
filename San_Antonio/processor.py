@@ -1,15 +1,13 @@
-from fetcher import main
-
-from gtfs_agency import agency
-from gtfs_calendar_dates import calendar_dates
-from gtfs_calendar import gtfscalendar
-from gtfs_feed import feed
-from gtfs_routes import routes 
-from gtfs_shapes import shapes
-from gtfs_stop_times import stoptimes
-from gtfs_stops import stops
-from gtfs_transfers import transfers
-from gtfs_trips import trips 
+from gtfs_agency import via_agency
+from gtfs_calendar_dates import via_calendar_dates
+from gtfs_calendar import via_calendar
+from gtfs_feed import via_feed
+from gtfs_routes import via_routes
+from gtfs_shapes import via_shapes
+from gtfs_stop_times import via_stoptimes
+from gtfs_stops import via_stops
+from gtfs_transfers import via_transfers
+from gtfs_trips import via_trips
 
 import pprint as PP
 from datetime import datetime
@@ -19,71 +17,10 @@ from datetime import datetime
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
-data = main_1()
-tripdata = main_2()
 
-## PROCESSED GTFS RT FEEDS
 
-def vehicle_processing(data):
-    vid_dict = {}
-    for bus in data["entity"]:
-        ## make dictionary with name of bus model. 
-        busId = bus["id"]
-        id = {}
 
-        ## Searching through data to populate the bus dictionary.
-        data = bus["vehicle"]
 
-        ## Position data
-        posdata = data["position"] ## Heading field
-
-        ## ID
-        vid = data["vehicle"]["id"]
-        id["vid"] = vid
-
-        ## Subfields 
-        lat = posdata["latitude"]
-        id["lat"] = lat
-        lon = posdata["longitude"]
-        id["lon"] = lon
-        if "bearing" in posdata:
-            hdg = posdata["bearing"]
-            id["hdg"] = hdg
-        if "speed" in posdata:
-            speed = posdata["speed"]
-            id["speed"] = speed
-
-        ## Time data
-        time = data["timestamp"]
-        id["time"] = time
-
-        ## Stop data     
-        if "stopId" in data:
-            stopId = data["stopId"]
-            id["stopId"] = stopId
-
-        if "currentStopSequence" in data:
-            currStop = data["currentStopSequence"]
-            id["currStop"] = currStop
-
-        if "trip" in data:
-            # header
-            tripdata = data["trip"]
-            tripid = tripdata["tripId"]
-            startdate = tripdata["startDate"]
-            triproute = tripdata["routeId"]
-            id["tripId"] = tripid
-            id["startDate"] = startdate
-            id["tripRoute"] = triproute
-
-        if "currentStatus" in data:
-            status = data["currentStatus"]
-            id["status"] = status
-
-        vid_dict[busId] = id
-    return vid_dict       
-
-busDict = vehicle_processing(data)
 
 def trip_processing(tripdata):
     trip_dict = {}

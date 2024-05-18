@@ -10,6 +10,7 @@ via_bus_vehicles: str = "http://gtfs.viainfo.net/vehicle/vehiclepositions.pb"
 via_bus_trips: str = "http://gtfs.viainfo.net/tripupdate/tripupdates.pb"
 
 
+
 def rest_status_color_helper(code: int) -> str:
     """
     Changes text color in supported terminals based on status code.
