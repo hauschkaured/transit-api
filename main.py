@@ -25,15 +25,41 @@ from San_Antonio.gtfs_stops import via_stops
 # from San_Antonio.gtfs_transfers import via_transfers
 # from San_Antonio.gtfs_trips import via_trips
 
+from api_key import key
+
 import pprint as PP
 
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
+BASE_PARAMS = {
+    'key': key,
+    'format': 'json',
+    'rtpidatafeed': 'Port Authority Bus',
+}
+
+prediction_params = {
+    **BASE_PARAMS
+    }
+
+
+def routeCall(input):
+    URL = "https://truetime.portauthority.org/bustime/api/v3/"
+    prediction_params["stpid"] = input
+    predictions = requests.get(URL + "getpredictions", params=prediction_params)
+    bustime = predictions.json()
+    busList = bustime["bustime-response"]["prd"]
+    return busList
+
 
 def static_feed_validity():
     print(f"PRT: {prt_feed[0].start} to {prt_feed[0].end}")
     print(f"VIA: {via_feed[0].start} to {via_feed[0].end}")
+
+
+# Main Processing Functions
+def api_stop_processing_prt(data):
+    pass
 
 def vehicle_processing_via(data):
     via_vid_dict = {}
@@ -261,6 +287,7 @@ def trip_processing_prt(bustripdata):
     return trip_dict
 
 
+# Main analysis functions
 def buses_on_route_via(input):
     for bus in busDict:
         busInfo = busDict[bus]
@@ -316,12 +343,11 @@ def buses_in_range_prt(low, high):
     for i in range(low_int, high_int + 1):
         if str(i) in busDict:
             busInfo = busDict[str(i)]
-            if "status" in busInfo:
-                status = status_converter(busInfo["status"])
-                stopId = busInfo["stopId"]
-                stop = prt_stops[stopId].name
+            if "tripId" in busInfo:
                 trip = busInfo["tripId"]
-                print(f"\x1b[33mRoute \x1b[34m{busInfo["tripRoute"]} #{busInfo["vid"]} \x1b[0mis {status} {stop}")
+                stopId = busTripDict[trip]["timeUpdateList"][0]["stopId"]
+                stop = prt_stops[stopId].name
+                print(f"\x1b[33mRoute \x1b[34m{busInfo["tripRoute"]} #{busInfo["vid"]} \x1b[0mis at {stop}")
                 time1 = soonest_departure(trip)
                 time2 = soonest_arrival(trip)
                 if ((time1 != None) and (time2 != None)):
@@ -334,13 +360,6 @@ def buses_in_range_prt(low, high):
                 latitude = busInfo["lat"]
                 longitude = busInfo["lon"]
                 print(f"{i} is at lat, lon {latitude}, {longitude}")
-
-
-def status_converter(status):
-    if status == "IN_TRANSIT_TO": # This is for VIA only
-        return "in transit to"
-    if status == "STOPPED_AT":
-        return "stopped at"
 
 
 def soonest_departure(trip):
@@ -363,16 +382,50 @@ def soonest_arrival(trip):
                 return time
 
 
+def buses_at_stop_prt(routeCall, input):
+    if input.count(',') == 0:
+        stopName = prt_stops[input].name
+        print(f"You selected {stopName}")
+        for bus in routeCall:
+            vehicle = bus["vid"]
+            route = bus["rt"]
+            direction = bus["rtdir"]
+            trip = bus["origtatripno"]
+            time = bus["prdctdn"]
+            passengers = bus["psgld"]
+            print(f"\x1b[33m #{vehicle} \x1b[34m{route} ({passengers}) {direction} arrival: {time}")
+            if trip in busTripDict:
+                currentStop = busTripDict[trip]["timeUpdateList"][0]["stopId"].name
+                print(f"\x1b[34m Bus is currently at {currentStop}")
+
+
+def buses_at_stop_via(input):
+    pass
+    pass
+
+def status_converter(status):
+    if status == "IN_TRANSIT_TO": # This is for VIA only
+        return "in transit to"
+    if status == "STOPPED_AT":
+        return "stopped at"
+
+
 # These functions are for parsing the interactivity.
 def mode_select(input):
-    if len(input) > 3:
+    spaceIndex = input.find(' ')
+    if spaceIndex == 3:
         str = input[:3]
         if str == "bus" or str == "Bus":
             return "bus"
-    if len(input) > 5:
+    elif spaceIndex == 5:
         str = input[:5]
         if str == "route" or str == "Route":
             return "route"
+    elif spaceIndex == 4:
+        str = input[:4]
+        if str == "stop" or str == "Stop":
+            return "stop"
+
 
 
 def range_returner(input):
@@ -406,13 +459,9 @@ if x == "San Antonio":
     busTripData = main(via_bus_trips, "./via_bus_trips.out")
     busDict = vehicle_processing_via(busData)
     busTripDict = trip_processing_via(busTripData)
-    print("There are two options, route and bus")
-    print("For route, enter Route or route followed by a comma separated list of routes.")
-    print(">>> route 61C")
-    print(">>> route 28X, 64")
-    print("For bus, enter bus followed by either the bus in question or a range of buses.")
-    print(">>> bus 387")
-    print(">>> bus 387-405")
+    print('''There are two options, route and bus. For route, enter Route or route followed by a 
+    comma separated list of routes. For bus, enter bus followed by either the bus in question or
+     a range of buses.''')
     y = input("What would you like to do? ")
     mode = mode_select(y)
     if mode == "bus":
@@ -440,13 +489,9 @@ elif x == "Pittsburgh":
     trainTripData = main(prt_train_trips, "./prt_train_trips.out")
     busDict = vehicle_processing_prt(busData)
     busTripDict = trip_processing_prt(busTripData)
-    print("There are two options, route and bus")
-    print("For route, enter Route or route followed by a comma separated list of routes.")
-    print(">>> route 61C")
-    print(">>> route 28X, 64")
-    print("For bus, enter bus followed by either the bus in question or a range of buses.")
-    print(">>> bus 387")
-    print(">>> bus 387-405")
+    print('''There are three options: route, bus, stop. For route, enter route followed by a 
+    comma separated list of routes.For bus, enter bus followed by either the bus in question 
+    or a range of buses. For stop, enter stop followed by a stop or comma separated list of stops.''')
     y = input("What would you like to do? ")
     mode = mode_select(y)
     if mode == "bus":
@@ -466,6 +511,13 @@ elif x == "Pittsburgh":
         else:
             string = y[6:]
             buses_on_route_prt(string)
+    if mode == "stop":
+        input = y[5:]
+        stopInfo = routeCall(input)
+        if y.count(',') > 0:
+            buses_at_stop_prt(stopInfo, input)
+        else:
+            buses_at_stop_prt(stopInfo, input)
 
 elif x == "Debug":
     static_feed_validity()
