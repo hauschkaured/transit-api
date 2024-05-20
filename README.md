@@ -15,6 +15,10 @@ Go to [Documentation.md](Documentation).
 
 # Version List
 
+v0.4.2
+Added PRT API for more detailed information about vehicles and added the ability to 
+track bus stop predicted arrivals. 
+
 v0.4.1 
 Refactoring project so main functionalities are centralized and run independent of
 the selected organization.
