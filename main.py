@@ -5,7 +5,7 @@ from datetime import datetime
 # from Pittsburgh.gtfs_agency import prt_agency
 # from Pittsburgh.gtfs_calendar_dates import prt_calendar_dates
 # from Pittsburgh.gtfs_calendar import prt_calendar
-from Pittsburgh.gtfs_feed import prt_feed
+from Pittsburgh.gtfs_feed_info import prt_feed
 # from Pittsburgh.gtfs_routes import prt_routes
 # from Pittsburgh.gtfs_shapes import prt_shapes
 # from Pittsburgh.gtfs_stop_times import prt_stoptimes
@@ -17,7 +17,7 @@ from Pittsburgh.gtfs_stops import prt_stops
 # from San_Antonio.gtfs_agency import via_agency
 # from San_Antonio.gtfs_calendar_dates import via_calendar_dates
 # from San_Antonio.gtfs_calendar import via_calendar
-from San_Antonio.gtfs_feed import via_feed
+from San_Antonio.gtfs_feed_info import via_feed
 # from San_Antonio.gtfs_routes import via_routes
 # from San_Antonio.gtfs_shapes import via_shapes
 # from San_Antonio.gtfs_stop_times import via_stoptimes
@@ -297,7 +297,7 @@ def buses_on_route_via(input):
                 status = status_converter(busInfo["status"])
                 stopId = busInfo["stopId"]
                 stop = via_stops[stopId]
-                print(f"\x1b[33mRoute \x1b[34m{busRoute} #{busInfo["vid"]} \x1b[0mis {status} {stop.name}")
+                print(f"\x1b[33mRoute \x1b[34m{busRoute} #{busInfo["vid"]} \x1b[0mis {status} {stop.stop_name}")
                 print(f"{stop.lat}, {stop.lon}")
 
 
@@ -323,7 +323,7 @@ def buses_in_range_via(low, high):
             if "status" in busInfo:
                 status = status_converter(busInfo["status"])
                 stopId = busInfo["stopId"]
-                stop = via_stops[stopId].name
+                stop = via_stops[stopId].stop_name
                 trip = busInfo["tripId"]
                 print(f"\x1b[33mRoute \x1b[34m{busInfo["tripRoute"]} #{busInfo["vid"]} \x1b[0mis {status} {stop}")
                 time1 = soonest_departure(trip)
@@ -346,7 +346,7 @@ def buses_in_range_prt(low, high):
             if "tripId" in busInfo:
                 trip = busInfo["tripId"]
                 stopId = busTripDict[trip]["timeUpdateList"][0]["stopId"]
-                stop = prt_stops[stopId].name
+                stop = prt_stops[stopId].stop_name
                 print(f"\x1b[33mRoute \x1b[34m{busInfo["tripRoute"]} #{busInfo["vid"]} \x1b[0mis at {stop}")
                 time1 = soonest_departure(trip)
                 time2 = soonest_arrival(trip)
@@ -384,7 +384,7 @@ def soonest_arrival(trip):
 
 def buses_at_stop_prt(routeCall, input):
     if input.count(',') == 0:
-        stopName = prt_stops[input].name
+        stopName = prt_stops[input].stop_name
         print(f"You selected {stopName}")
         for bus in routeCall:
             vehicle = bus["vid"]
@@ -401,7 +401,7 @@ def buses_at_stop_prt(routeCall, input):
 
 def buses_at_stop_via(input):
     pass
-    pass
+
 
 def status_converter(status):
     if status == "IN_TRANSIT_TO": # This is for VIA only

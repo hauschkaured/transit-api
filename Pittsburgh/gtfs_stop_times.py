@@ -31,7 +31,8 @@ class Stoptimes:
         {self.end_pickup_drop_off_window} {self.pickup_type} {self.drop_off_type} {self.continuous_pickup} 
         {self.continuous_drop_off} {self.shape_dist_traveled} {self.timepoint} {self.pickup_booking_rule_id} 
         {self.drop_off_booking_rule_id}'''
-    
+
+
 prt_stoptimes = {}
 
 textdata = text.read()
@@ -52,6 +53,8 @@ for line in textdata.splitlines():
     shape_dist_traveled = line[indexList[7]+1:indexList[8]]
     timepoint = line[indexList[8]+1:]
 
-    obj = Stoptimes(id, arrival, departure, stop_id, stopseq, headsign, 
-                pickup_type, dropoff_type, shape_dist_traveled, timepoint)
+    obj = Stoptimes(id, arrival, departure, stop_id, None, None, stopseq, headsign,
+                    None, None, pickup_type, dropoff_type,
+                    None, None, shape_dist_traveled, timepoint,
+                    None, None)
     prt_stoptimes[stop_id] = obj

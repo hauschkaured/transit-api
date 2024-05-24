@@ -1,21 +1,23 @@
 text = open("Pittsburgh/gtfs_static_feed/routes.txt", "r")
 
+
 class Routes:
-    def __init__(self, id, agency, short_name, long_name, desc, type, url, 
-                 color, text):
-        self.id = id
-        self.agency = agency
-        self.short_name = short_name
-        self.long_name = long_name
-        self.desc = desc
-        self.type = type
-        self.url = url
-        self.type = type
-        self.color = color
-        self.text = text
+    def __init__(self, route_id, agency_id, route_short_name, route_long_name, route_desc, route_type, route_url,
+                 route_color, route_text_color):
+        self.route_id = route_id
+        self.agency_id = agency_id
+        self.route_short_name = route_short_name
+        self.route_long_name = route_long_name
+        self.route_desc = route_desc
+        self.route_type = route_type
+        self.route_url = route_url
+        self.route_color = route_color
+        self.route_text_color = route_text_color
 
     def __repr__(self):
-        return f"{self.id}, {self.long_name}, {self.type}"
+        return f'''{self.route_id} {self.agency_id} {self.route_short_name} {self.route_long_name}
+        {self.route_desc} {self.route_type} {self.route_url} {self.route_color} {self.route_text_color}'''
+
     
 prt_routes = {}
 

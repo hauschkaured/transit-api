@@ -44,7 +44,7 @@ for line in textdata.splitlines():
     parent_station = line[indexList[8]+1:indexList[9]]
     stop_timezone = line[indexList[9]+1:indexList[10]]
     wheelchair_boarding = line[indexList[10]+1:]
-    obj = Stops(stop_id, stop_code, stop_name, stop_desc, stop_lat, stop_lon, 
+    obj = Stops(stop_id, stop_code, stop_name, None, stop_desc, stop_lat, stop_lon,
                 zone_id, stop_url, location_type, parent_station, stop_timezone, 
                 wheelchair_boarding)
     via_stops[stop_id] = obj

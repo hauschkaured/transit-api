@@ -53,6 +53,8 @@ for line in textdata.splitlines():
     shape_dist_traveled = line[indexList[7]+1:indexList[8]]
     timepoint = line[indexList[8]+1:]
 
-    obj = Stoptimes(id, arrival, departure, stop_id, stopseq, headsign, 
-                pickup_type, dropoff_type, shape_dist_traveled, timepoint)
+    obj = Stoptimes(id, arrival, departure, stop_id, None, None, stopseq, headsign,
+                    None, None, pickup_type, dropoff_type,
+                    None, None, shape_dist_traveled, timepoint,
+                    None, None)
     via_stoptimes[stop_id] = obj
