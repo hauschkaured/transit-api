@@ -1,14 +1,15 @@
 text = open("gtfs_static_feed/calendar_dates.txt", "r")
 
 class Dates:
-    def __init__(self, id, date, type):
-        self.id = id
+    def __init__(self, service_id, date, exception_type):
+        self.service_id = service_id
         self.date = date
-        self.type = type
+        self.exception_type = exception_type
 
     def __repr__(self):
-        return f"{self.id}"
-    
+        return f"{self.service_id} {self.date} {self.exception_type}"
+
+
 via_calendar_dates = {}
 
 textdata = text.read()
@@ -23,4 +24,4 @@ for line in textdata.splitlines():
     type = line[indexList[1]+1:]
 
     obj = Dates(id, date, type)
-    calendar_dates[id] = obj
+    via_calendar_dates[id] = obj

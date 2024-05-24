@@ -1,21 +1,36 @@
 text = open("Pittsburgh/gtfs_static_feed/stop_times.txt", "r")
 
+
 class Stoptimes:
-    def __init__(self, id, arrival, departure, stop_id, stopseq, headsign, 
-                 pickup_type, dropoff_type, shape_dist_traveled, timepoint):
-        self.id = id
-        self.arrival = arrival
-        self.departure = departure
+    def __init__(self, trip_id, arrival_time, departure_time, stop_id, location_group_id, location_id, stop_sequence,
+                 stop_headsign, start_pickup_drop_off_window, end_pickup_drop_off_window, pickup_type, drop_off_type,
+                 continuous_pickup, continuous_drop_off, shape_dist_traveled, timepoint, pickup_booking_rule_id,
+                 drop_off_booking_rule_id):
+        self.trip_id = trip_id
+        self.arrival_time = arrival_time
+        self.departure_time = departure_time
         self.stop_id = stop_id
-        self.stopseq = stopseq
-        self.headsign = headsign
+        self.location_group_id = location_group_id
+        self.location_id = location_id
+        self.stop_sequence = stop_sequence
+        self.stop_headsign = stop_headsign
+        self.start_pickup_drop_off_window = start_pickup_drop_off_window
+        self.end_pickup_drop_off_window = end_pickup_drop_off_window
         self.pickup_type = pickup_type
-        self.dropoff_type = dropoff_type
+        self.drop_off_type = drop_off_type
+        self.continuous_pickup = continuous_pickup
+        self.continuous_drop_off = continuous_drop_off
         self.shape_dist_traveled = shape_dist_traveled
         self.timepoint = timepoint
+        self.pickup_booking_rule_id = pickup_booking_rule_id
+        self.drop_off_booking_rule_id = drop_off_booking_rule_id
 
     def __repr__(self):
-        return f"{self.departure}, {self.stopseq}, {self.headsign}"
+        return f'''{self.trip_id}: {self.arrival_time} {self.departure_time} {self.stop_id} {self.location_group_id} 
+        {self.location_id} {self.stop_sequence} {self.stop_headsign} {self.start_pickup_drop_off_window} 
+        {self.end_pickup_drop_off_window} {self.pickup_type} {self.drop_off_type} {self.continuous_pickup} 
+        {self.continuous_drop_off} {self.shape_dist_traveled} {self.timepoint} {self.pickup_booking_rule_id} 
+        {self.drop_off_booking_rule_id}'''
     
 prt_stoptimes = {}
 

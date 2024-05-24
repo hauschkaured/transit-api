@@ -1,23 +1,25 @@
 text = open("Pittsburgh/gtfs_static_feed/trips.txt", "r")
 
+
 class Trips:
-    def __init__(self, route_id, service_id, trip_id, headsign, short_name, 
-                 direction_id, block_id, shape_id, wheelchair, bikes):
+    def __init__(self, route_id, service_id, trip_id, trip_headsign, trip_short_name,
+                 direction_id, block_id, shape_id, wheelchair_accessible, bikes_allowed):
         self.route_id = route_id
         self.service_id = service_id
         self.trip_id = trip_id
-        self.headsign = headsign
-        self.short_name = short_name
+        self.trip_headsign = trip_headsign
+        self.trip_short_name = trip_short_name
         self.direction_id = direction_id
         self.block_id = block_id
         self.shape_id = shape_id
-        self.wheelchair = wheelchair
-        self.bikes = bikes
+        self.wheelchair_accessible = wheelchair_accessible
+        self.bikes_allowed = bikes_allowed
         
     def __repr__(self):
-        return(f'''{self.route_id}, {self.service_id}, {self.trip_id},\n 
-               {self.headsign}, {self.direction_id}, {self.block_id},\n
-               {self.shape_id}, {self.wheelchair}, {self.bikes}\n''') 
+        return f'''{self.route_id} {self.service_id} {self.trip_id} {self.trip_headsign} 
+        {self.trip_short_name} {self.direction_id} {self.block_id} {self.shape_id} 
+        {self.wheelchair_accessible} {self.bikes_allowed}'''
+
     
 prt_trips = {}
 

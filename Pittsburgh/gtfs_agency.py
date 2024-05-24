@@ -1,18 +1,21 @@
 text = open("Pittsburgh/gtfs_static_feed/agency.txt", "r")
 
+
 class Agency:
-    def __init__(self, id, name, url, timezone, lang, phone, fare_url):
-        self.id = id
-        self.name = name
-        self.url = url
-        self.timezone = timezone
-        self.lang = lang
-        self.phone = phone
-        self.fare_url = fare_url
+    def __init__(self, agency_id, agency_name, agency_url, agency_timezone, agency_lang, agency_phone, agency_fare_url):
+        self.agency_id = agency_id
+        self.agency_name = agency_name
+        self.agency_url = agency_url
+        self.agency_timezone = agency_timezone
+        self.agency_lang = agency_lang
+        self.agency_phone = agency_phone
+        self.agency_fare_url = agency_fare_url
 
     def __repr__(self):
-        return f"{self.name}"
-    
+        return f"""{self.agency_id} {self.agency_name} {self.agency_url}
+        {self.agency_timezone} {self.agency_lang} {self.agency_phone} {self.agency_fare_url}"""
+
+
 prt_agency = {}
 
 textdata = text.read()

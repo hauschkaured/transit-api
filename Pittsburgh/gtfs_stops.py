@@ -1,23 +1,27 @@
 text = open("Pittsburgh/gtfs_static_feed/stops.txt", "r")
 
+
 class Stops:
-    def __init__(self, id, code, name, desc, lat, lon, zone, url, type, parent,
-                 timezone, wheelchair):
-        self.id = id
-        self.code = code
-        self.name = name
-        self.desc = desc
-        self.lat = lat
-        self.lon = lon
-        self.zone = zone
-        self.url = url
-        self.type = type
-        self.parent = parent
-        self.timezone = timezone
-        self.wheelchair = wheelchair
+    def __init__(self, stop_id, stop_code, stop_name, tts_stop_name, stop_desc, stop_lat, stop_lon, zone_id,
+                 stop_url, location_type, parent_station, stop_timezone, wheelchair_boarding):
+        self.stop_id = stop_id
+        self.stop_code = stop_code
+        self.stop_name = stop_name
+        self.tts_stop_name = tts_stop_name
+        self.stop_desc = stop_desc
+        self.stop_lat = stop_lat
+        self.stop_lon = stop_lon
+        self.zone_id = zone_id
+        self.stop_url = stop_url
+        self.location_type = location_type
+        self.parent_station = parent_station
+        self.stop_timezone = stop_timezone
+        self.wheelchair_boarding = wheelchair_boarding
 
     def __repr__(self):
-        return f"ID {self.id} NAME {self.name} LAT {self.lat} LON {self.lon}\n"
+        return f"""{self.stop_id}: {self.stop_code} {self.stop_name} {self.tts_stop_name} {self.stop_desc}
+        {self.stop_lat} {self.stop_lon} {self.zone_id} {self.stop_url} {self.location_type} {self.parent_station} 
+        {self.stop_timezone} {self.wheelchair_boarding}"""
 
     
 prt_stops = {}
@@ -41,7 +45,7 @@ for line in textdata.splitlines():
     parent_station = line[indexList[8]+1:indexList[9]]
     stop_timezone = line[indexList[9]+1:indexList[10]]
     wheelchair_boarding = line[indexList[10]+1:]
-    obj = Stops(stop_id, stop_code, stop_name, stop_desc, stop_lat, stop_lon, 
+    obj = Stops(stop_id, stop_code, stop_name, None, stop_desc, stop_lat, stop_lon,
                 zone_id, stop_url, location_type, parent_station, stop_timezone, 
                 wheelchair_boarding)
     prt_stops[stop_id] = obj

@@ -1,13 +1,14 @@
 text = open("Pittsburgh/gtfs_static_feed/calendar_dates.txt", "r")
 
 class Dates:
-    def __init__(self, id, date, type):
-        self.id = id
+    def __init__(self, service_id, date, exception_type):
+        self.service_id = service_id
         self.date = date
-        self.type = type
+        self.exception_type = exception_type
 
     def __repr__(self):
-        return f"ID={self.id} DATE={self.date} TYPE={self.type}\n"
+        return f"{self.service_id} {self.date} {self.exception_type}"
+
     
 prt_calendar_dates = {}
 

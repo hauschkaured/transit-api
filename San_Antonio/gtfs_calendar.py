@@ -1,20 +1,22 @@
 text = open("gtfs_static_feed/calendar.txt", "r")
 
 class Calendar:
-    def __init__(self, id, mon, tue, wed, thu, fri, sat, sun, start, end):
-        self.id = id
-        self.mon = mon
-        self.tue = tue
-        self.wed = wed
-        self.thu = thu
-        self.fri = fri
-        self.sat = sat
-        self.sun = sun
-        self.start = start
-        self.end = end
+    def __init__(self, service_id, monday, tuesday, wednesday, thursday, friday, saturday, sunday, start_date, end_date):
+        self.service_id = service_id
+        self.monday = monday
+        self.tuesday = tuesday
+        self.wednesday = wednesday
+        self.thursday = thursday
+        self.friday = friday
+        self.saturday = saturday
+        self.sunday = sunday
+        self.start_date = start_date
+        self.end_date = end_date
 
     def __repr__(self):
-        return f"{self.id}"
+        return f"""{self.service_id} {self.monday} {self.tuesday} {self.wednesday} {self.thursday} {self.friday}
+        {self.friday} {self.saturday} {self.sunday} {self.start_date} {self.end_date}"""
+
     
 via_calendar = {}
 
