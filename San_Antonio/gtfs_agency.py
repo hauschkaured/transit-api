@@ -1,4 +1,4 @@
-text = open("gtfs_static_feed/agency.txt", "r")
+text = open("San_Antonio/gtfs_static_feed/agency.txt", "r")
 
 
 class Agency:

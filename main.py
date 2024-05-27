@@ -14,11 +14,11 @@ from Pittsburgh.gtfs_stops import prt_stops
 # from Pittsburgh.gtfs_trips import prt_trips
 
 # from San_Antonio.gtfs_stops import via_stops
-# from San_Antonio.gtfs_agency import via_agency
+from San_Antonio.gtfs_agency import via_agency
 # from San_Antonio.gtfs_calendar_dates import via_calendar_dates
 # from San_Antonio.gtfs_calendar import via_calendar
 from San_Antonio.gtfs_feed_info import via_feed
-# from San_Antonio.gtfs_routes import via_routes
+from San_Antonio.gtfs_routes import via_routes
 # from San_Antonio.gtfs_shapes import via_shapes
 # from San_Antonio.gtfs_stop_times import via_stoptimes
 from San_Antonio.gtfs_stops import via_stops
@@ -520,4 +520,5 @@ elif x == "Pittsburgh":
             buses_at_stop_prt(stopInfo, input)
 
 elif x == "Debug":
-    static_feed_validity()
+    pprint(via_agency)
+    pprint(via_routes)
