@@ -177,3 +177,8 @@ class Trips:
         return f'''{self.route_id} {self.service_id} {self.trip_id} {self.trip_headsign} 
         {self.trip_short_name} {self.direction_id} {self.block_id} {self.shape_id} 
         {self.wheelchair_accessible} {self.bikes_allowed}'''
+
+
+def static_fetcher(foo, function):
+    pass
+
