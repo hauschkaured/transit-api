@@ -1,6 +1,9 @@
 from fetcher import *
 from datetime import datetime
 
+from static.gtfs_agency import *
+from static.gtfs_calendar_dates import *
+
 # from Pittsburgh.gtfs_stops import prt_stops
 # from Pittsburgh.gtfs_agency import prt_agency
 # from Pittsburgh.gtfs_calendar_dates import prt_calendar_dates
@@ -464,6 +467,7 @@ def route_returner(input):
 def model_returner(input):
     return input[4:]
 
+
 print("Welcome to TransitFoamer!")
 x = input("What city would you like to select? ")
 
@@ -675,3 +679,5 @@ elif x == "Debug":
 
 
 # body()
+
+
