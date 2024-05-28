@@ -179,6 +179,23 @@ class Trips:
         {self.wheelchair_accessible} {self.bikes_allowed}'''
 
 
-def static_fetcher(foo, function):
-    pass
+def text_processing(text, function):
+    textdata = text.read()
+    if (function == "agency" or function == "feed_info"):
+        pass
+    else:
+        pass
 
+
+
+
+def static_fetcher(foo, function):
+    if foo == "pgh":
+        url = "static/pittsburgh/" + f"{function}" + ".txt"
+        text = open(url, "r")
+        text_processing(text, function)
+
+    elif foo == "satx":
+        url = "static/satx/" + f"{function}" + ".txt"
+        text = open(url, "r")
+        text_processing(text, function)
