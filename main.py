@@ -42,6 +42,20 @@ prediction_params = {
     **BASE_PARAMS
     }
 
+# Constants for supported cities
+
+def supported_cities():
+    list = ["Pittsburgh", "San Antonio"]
+    return list
+
+
+def supported_functions_by_city():
+    dict = {
+        "satx" : ["bus", "route"],
+        "pgh" : ["bus", "route", "stop"]
+    }
+    return dict
+
 
 def routeCall(input):
     URL = "https://truetime.portauthority.org/bustime/api/v3/"
@@ -111,9 +125,9 @@ def vehicle_processing_via(data):
     return via_vid_dict
 
 
-def vehicle_processing_prt(data):
+def vehicle_processing_prt(input):
     vid_dict = {}
-    for bus in busData["entity"]:
+    for bus in input["entity"]:
         # make dictionary with name of bus model.
         busId = bus["vehicle"]["vehicle"]["id"]
         id = {}
@@ -450,7 +464,6 @@ def route_returner(input):
 def model_returner(input):
     return input[4:]
 
-
 print("Welcome to TransitFoamer!")
 x = input("What city would you like to select? ")
 
@@ -522,3 +535,143 @@ elif x == "Pittsburgh":
 elif x == "Debug":
     pprint(via_agency)
     pprint(via_routes)
+
+# def listed_features(features, input):
+#     available_features = features[input]
+#     print(f"Features: {available_features}")
+
+
+# def list_of_values(input):
+#     dash_index = input.find('-')
+#     value_1 = input[:dash_index]
+#     value_2 = input[dash_index+1:]
+#     values = [value_1, value_2]
+#     return values
+
+
+# def data_select(input, function, city):
+#     print(city)
+#     print(function)
+#     length = len(function)
+#     raw_data = input[length+1:]
+#     print(raw_data)
+#     info = []
+#     if city == "satx":
+#         busData = main(via_bus_vehicles, "./via_bus_vehicles.out")
+#         busTripData = main(via_bus_trips, "./via_bus_trips.out")
+#         busDict = vehicle_processing_via(busData)
+#         busTripDict = trip_processing_via(busTripData)
+#         info += busDict 
+#         info += busTripDict 
+#     elif city == "pgh":
+#         busData = main(prt_bus_vehicles, "./prt_bus_vehicles.out")
+#         busTripData = main(prt_bus_trips, "./prt_bus_trips.out")
+#         trainData = main(prt_train_vehicles, "./prt_train_vehicles.out")
+#         trainTripData = main(prt_train_trips, "./prt_train_trips.out")
+#         busDict = vehicle_processing_prt(busData)
+#         busTripDict = trip_processing_prt(busTripData)
+#         trainDict = vehicle_processing_prt(trainData)
+#         trainTripDict = trip_processing_prt(trainTripData)
+#         info += busDict
+#         info += busTripDict 
+#     for item in raw_data.split(','):
+#         print(item.strip())
+#         if function == "Bus":
+#             if item.count('-') < 0:
+#                 values = list_of_values()
+#                 min_val = values[0]
+#                 max_val = values[1]
+#             else:
+#                 pass
+#                 # buses_in_range(item, item)
+#         elif function == "Stop":
+#             pass
+#         elif function == "Route":
+#             pass
+
+
+# def mode_select(input):
+#     if len(input) >= 5:
+#         if (input[0:5] == "route" or input[0:5] == "Route"):
+#             return "Route"
+#         elif (input[0:4] == "stop" or input[0:4] == "Stop"):
+#             return "Stop"
+#         elif (input[0:3] == "bus" or input[0:3] == "Bus"):
+#             return "Bus"
+#     if len(input) >= 4:
+#         if (input[0:4] == "stop" or input[0:4] == "Stop"):
+#             return "Stop"
+#         elif (input[0:3] == "bus" or input[0:3] == "Bus"):
+#             return "Bus"
+#     if len(input) >= 3:
+#         if (input[0:3] == "bus" or input[0:3] == "Bus"):
+#             return "Bus"
+#     else:
+#         return None
+
+
+# def input_processing_level3(input, city):
+#     if input == "help":
+#         print("The following inputs are legitimate queries:")
+#         print(">>> Bus 387-405, 406-420")
+#         print(">>> Route 61D, 61C, 64")
+#         print(">>> Stop 4405, 7117")
+#         main_call(city)
+#     else:
+#         function = mode_select(input)
+#         if function != None:
+#             data_select(input, function, city)
+#         else: 
+#             print("Error: invalid input. Please try again!")
+#             main_call(input, city)
+
+
+# def main_call(city):
+#     z = input("Make your selection now: ")
+#     input_processing_level3(z, city)
+
+
+# def input_processing_level2(input):
+#     features = supported_functions_by_city()
+#     if input == "satx":
+#         city_name = "satx"
+#         listed_features(features, input)
+#         main_call(city_name)
+#     elif input == "pgh":
+#         city_name = "pgh"
+#         listed_features(features, input)
+#         main_call(city_name)
+#     else:
+#         print("Error: invalid input. Please try again!")
+#         body_second_pass()
+
+
+# def input_processing_level1(input):
+#     if input == "help":
+#         print("Type one of the following cities:")
+#         for i in supported_cities():
+#             print(i)
+#         print("For debug mode, type 'debug'.")
+#         body_second_pass()
+#     elif input == "Pittsburgh" or input == "pittsburgh":
+#         input_processing_level2("pgh")
+#     elif (input == "San Antonio" or input == "san antonio" 
+#         or input == "San antonio"):
+#         input_processing_level2("satx")
+#     else: 
+#         print("Error: invalid input. Please try again!")
+#         body_second_pass()
+        
+
+# def body_second_pass():
+#     x = input("Select a city or type 'help' below. ")
+#     input_processing_level1(x)
+
+
+# def body():
+#     print("Welcome to TransitFoamer!")
+#     x = input("Select a city or type 'help' below. ")
+#     input_processing_level1(x)
+
+
+# body()
