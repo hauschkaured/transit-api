@@ -4,6 +4,8 @@ from datetime import datetime
 from static.gtfs_agency import *
 from static.gtfs_calendar_dates import *
 
+from static import interface
+
 # from Pittsburgh.gtfs_stops import prt_stops
 # from Pittsburgh.gtfs_agency import prt_agency
 # from Pittsburgh.gtfs_calendar_dates import prt_calendar_dates

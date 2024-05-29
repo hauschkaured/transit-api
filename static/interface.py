@@ -179,23 +179,151 @@ class Trips:
         {self.wheelchair_accessible} {self.bikes_allowed}'''
 
 
-def text_processing(text, function):
+agency = dict()
+calendar_dates = dict()
+calendar = dict()
+feed = dict()
+routes = dict()
+shapes = dict()
+stop_times = dict()
+stops = dict()
+transfers = dict()
+trips = dict()
+
+def text_processing(text, function, foo):
     textdata = text.read()
-    if (function == "agency" or function == "feed_info"):
-        pass
-    else:
-        pass
-
-
+    data = textdata.splitlines()
+    removed_header = data[1:]
+    for line in removed_header:
+        items = line.split(',')
+        item_list = []
+        for i in items:
+            item_list.append(i)
+        if function == "agency":
+            agency_id = item_list[0]
+            agency_name = item_list[1]
+            agency_url = item_list[2]
+            agency_timezone = item_list[3]
+            agency_lang = item_list[4]
+            agency_phone = item_list[5]
+            agency_fare_url = item_list[6]
+            obj = Agency(agency_id, agency_name, agency_url, agency_timezone, agency_lang,
+                         agency_phone, agency_fare_url)
+            agency[foo] = obj
+        elif function == "calendar_dates":
+            service_id = item_list[0]
+            date = item_list[1]
+            exception_type = item_list[2]
+            obj = Dates(service_id, date, exception_type)
+            calendar_dates[service_id] = obj
+        elif function == "calendar":
+            service_id = item_list[0]
+            monday = item_list[1]
+            tuesday = item_list[2]
+            wednesday = item_list[3]
+            thursday = item_list[4]
+            friday = item_list[5]
+            saturday = item_list[6]
+            sunday = item_list[7]
+            start_date = item_list[8]
+            end_date = item_list[9]
+            obj = Calendar(service_id, monday, tuesday, wednesday, thursday, friday, saturday,
+                        sunday, start_date, end_date)
+            calendar[service_id] = obj
+        elif function == "feed":
+            publisher = item_list[0]
+            url = item_list[1]
+            lang = item_list[2]
+            start = item_list[3]
+            end = item_list[4]
+            version = item_list[5]
+            obj = Feed(publisher, url, lang, start, end, version)
+            feed[foo] = obj
+        elif function == "routes":
+            route_id = item_list[0]
+            agency_id = item_list[1]
+            route_short_name = item_list[2]
+            route_long_name = item_list[3]
+            route_desc = item_list[4]
+            route_type = item_list[5]
+            route_url = item_list[6]
+            route_color = item_list[7]
+            route_text_color = item_list[8]
+            obj = Routes(route_id, agency_id, route_short_name, route_long_name,
+                         route_desc, route_type, route_url, route_color,
+                         route_text_color)
+            routes[route_id] = obj
+        elif function == "shapes":
+            id = item_list[0]
+            lat = item_list[1]
+            lon = item_list[2]
+            sequence = item_list[3]
+            shape_dist_traveled = item_list[4]
+            obj = Shapes(id, lat, lon, sequence, shape_dist_traveled)
+            shapes[id] = obj
+        elif function == "stop_times":
+            id = item_list[0]
+            arrival = item_list[1]
+            departure = item_list[2]
+            stop_id = item_list[3]
+            stopseq = item_list[4]
+            headsign = item_list[5]
+            pickup_type = item_list[6]
+            dropoff_type = item_list[7]
+            shape_dist_traveled = item_list[8]
+            timepoint = item_list[9]
+            obj = StopTimes(id, arrival, departure, stop_id, None, None, stopseq, headsign,
+                            None, None, pickup_type, dropoff_type,
+                            None, None, shape_dist_traveled, timepoint,
+                            None, None)
+            stop_times[stop_id] = obj
+        elif function == "stops":
+            pass
+        elif function == "transfers":
+            pass
+        elif function == "trips":
+            trip_id = item_list[0]
+            route_id = item_list[1]
+            service_id = item_list[2]
+            headsign = item_list[3]
+            short_name = item_list[4]
+            direction_id = item_list[5]
+            block_id = item_list[6]
+            shape_id = item_list[7]
+            wheelchair = item_list[8]
+            bikes = item_list[9]
+            obj = Trips(route_id, service_id, trip_id, headsign, short_name, 
+                        direction_id, block_id, shape_id, wheelchair, bikes)
+            trips[trip_id] = obj
+    if function == "agency":
+        return agency
+    elif function == "calendar_dates":
+        return calendar_dates
+    elif function == "calendar":
+        return calendar
+    elif function == "feed":
+        return feed
+    elif function == "routes":
+        return routes
+    elif function == "shapes":
+        return shapes
+    elif function == "stop_times":
+        return stop_times
+    elif function == "stops":
+        return stops
+    elif function == "transfers":
+        return transfers
+    elif function == "trips":
+        return trips
 
 
 def static_fetcher(foo, function):
     if foo == "pgh":
         url = "static/pittsburgh/" + f"{function}" + ".txt"
         text = open(url, "r")
-        text_processing(text, function)
+        text_processing(text, function, foo)
 
     elif foo == "satx":
         url = "static/satx/" + f"{function}" + ".txt"
         text = open(url, "r")
-        text_processing(text, function)
+        text_processing(text, function, foo)
