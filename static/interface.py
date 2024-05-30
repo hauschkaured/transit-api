@@ -179,19 +179,17 @@ class Trips:
         {self.wheelchair_accessible} {self.bikes_allowed}'''
 
 
-agency = dict()
-calendar_dates = dict()
-calendar = dict()
-feed = dict()
-routes = dict()
-shapes = dict()
-stop_times = dict()
-stops = dict()
-transfers = dict()
-trips = dict()
-
-
 def text_processing(text, function, foo):
+    agency = dict()
+    calendar_dates = dict()
+    calendar = dict()
+    feed = dict()
+    routes = dict()
+    shapes = dict()
+    stop_times = dict()
+    stops = dict()
+    transfers = dict()
+    trips = dict()
     textdata = text.read()
     data = textdata.splitlines()
     removed_header = data[1:]
@@ -336,9 +334,10 @@ def static_fetcher(foo, function):
     if foo == "pgh":
         url = "static/pittsburgh/" + f"{function}" + ".txt"
         text = open(url, "r")
-        text_processing(text, function, foo)
-
+        result = text_processing(text, function, foo)
+        return result
     elif foo == "satx":
         url = "static/satx/" + f"{function}" + ".txt"
         text = open(url, "r")
-        text_processing(text, function, foo)
+        result = text_processing(text, function, foo)
+        return result

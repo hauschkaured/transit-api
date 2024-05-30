@@ -14,7 +14,7 @@ class FeedHeader:
         self.timestamp = timestamp
 
     def __repr__(self):
-        return f"FEEDHEADER {self.gtfs_realtime_version} {self.incrementality} {self.timestamp}"
+        return f"FEEDHEADER {self.gtfs_realtime_version} {self.incrementality} {self.timestamp} END"
 
 
 class FeedEntity:
@@ -28,7 +28,13 @@ class FeedEntity:
 
     def __repr__(self):
         return f'''FEEDENTITY {self.id} {self.is_deleted} {self.trip_update} {self.vehicle} 
-                   {self.alert} {self.shape}'''
+                   {self.alert} {self.shape} END'''
+    
+    def fields(self):
+        if self.trip_update != None:
+            return f"ID and Trip Update"
+        elif self.vehicle != None:
+            return f"ID and Vehicle"
 
 
 class TripUpdate:
@@ -42,7 +48,7 @@ class TripUpdate:
 
     def __repr__(self):
         return f'''TRIPUPDATE {self.trip} {self.vehicle} {self.stop_time_update} {self.timestamp} {self.delay} 
-                   {self.trip_properties}'''
+                   {self.trip_properties} END'''
 
 
 class TripDescriptor:
@@ -56,7 +62,7 @@ class TripDescriptor:
 
     def __repr__(self):
         return f'''TRIPDESCRIPTOR {self.trip_id} {self.route_id} {self.direction_id} {self.start_time} 
-                   {self.start_date} {self.schedule_relationship}'''
+                   {self.start_date} {self.schedule_relationship} END'''
 
 
 class VehiclePosition:
@@ -77,8 +83,7 @@ class VehiclePosition:
 
     def __repr__(self):
         return f'''VEHICLEPOSITION {self.trip} {self.vehicle} {self.position} {self.current_stop_sequence} 
-        {self.stop_id} {self.current_status} {self.timestamp} {self.congestion_level} {self.occupancy_status} 
-        {self.occupancy_percentage} {self.multi_carriage_details} END'''
+        {self.stop_id} {self.current_status} {self.timestamp} END'''
 
 
 class VehicleDescriptor:
@@ -89,7 +94,7 @@ class VehicleDescriptor:
         self.wheelchair_accessible = wheelchair_accessible
 
     def __repr__(self):
-        return f"VEHICLEDESCRIPTOR {self.id} {self.label} {self.license_plate} {self.wheelchair_accessible} END"
+        return f"VEHICLEDESCRIPTOR {self.id} END"
 
 
 class StopTimeUpdate:
@@ -105,7 +110,7 @@ class StopTimeUpdate:
 
     def __repr__(self):
         return f'''STOPTIMEUPDATE {self.stop_sequence} {self.stop_id} {self.arrival} {self.departure}
-                   {self.departure_occupancy_status} {self.schedule_relationship} {self.stop_time_properties}'''
+                   {self.departure_occupancy_status} {self.schedule_relationship} {self.stop_time_properties} END'''
 
 
 class StopTimeEvent:
@@ -115,7 +120,7 @@ class StopTimeEvent:
         self.uncertainty = uncertainty
 
     def __repr__(self):
-        return f"STOPTIMEEVENT {self.delay} {self.time} {self.uncertainty}"
+        return f"STOPTIMEEVENT {self.delay} {self.time} {self.uncertainty} END"
 
 
 class Position:
@@ -127,4 +132,4 @@ class Position:
         self.speed = speed
 
     def __repr__(self):
-        return f"POSITION {self.latitude} {self.longitude} {self.bearing} {self.odometer} {self.speed}"
+        return f"POSITION {self.latitude} {self.longitude} {self.bearing} {self.odometer} {self.speed} END"

@@ -1,6 +1,7 @@
 from fetcher import *
 from datetime import datetime
 from functions import *
+from static.interface import *
 
 import pprint as PP
 
@@ -35,33 +36,27 @@ def list_of_values(foo):
 
 
 def data_select(foo, function, city):
-    print(city)
-    print(function)
     length = len(function)
     raw_data = foo[length+1:]
-    print(raw_data)
-    info = []
     if city == "satx":
         vehicle_data = main(via_bus_vehicles, "./via_bus_vehicles.out")
         trip_data = main(via_bus_trips, "./via_bus_trips.out")
-        vdata = processing(vehicle_data)
-        tdata = processing(trip_data)
+        vdata = processing(vehicle_data, "vehicle_position")
+        tdata = processing(trip_data, "trip_update")
     elif city == "pgh":
         vehicle_data = main(prt_bus_vehicles, "./prt_bus_vehicles.out")
         trip_data = main(prt_bus_trips, "./prt_bus_trips.out")
         # trainData = main(prt_train_vehicles, "./prt_train_vehicles.out")
         # trainTripData = main(prt_train_trips, "./prt_train_trips.out")
-        vdata = processing(vehicle_data)
-        tdata = processing(trip_data)
+        vdata = processing(vehicle_data, "vehicle_position")
+        tdata = processing(trip_data, "trip_update")
     for item in raw_data.split(','):
-        print(f"{item.strip()} !")
-        print(f"{function}")
         if function == "Bus":
-            print(f"{item}")
             if item.count('-') > 0:
                 values = list_of_values(item)
                 min_val = values[0]
                 max_val = values[1]
+                buses_in_range(min_val, max_val, vdata, tdata, city)
         elif function == "Stop":
             pass
         elif function == "Route":
