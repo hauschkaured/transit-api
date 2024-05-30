@@ -190,6 +190,7 @@ stops = dict()
 transfers = dict()
 trips = dict()
 
+
 def text_processing(text, function, foo):
     textdata = text.read()
     data = textdata.splitlines()
@@ -278,7 +279,21 @@ def text_processing(text, function, foo):
                             None, None)
             stop_times[stop_id] = obj
         elif function == "stops":
-            pass
+            stop_id = item_list[0]
+            stop_code = item_list[1]
+            stop_name = item_list[2]
+            stop_desc = item_list[3]
+            stop_lat = item_list[4]
+            stop_lon = item_list[5]
+            zone_id = item_list[6]
+            stop_url = item_list[7]
+            location_type = item_list[8]
+            parent_station = item_list[9]
+            stop_timezone = item_list[10]
+            wheelchair_boarding = item_list[11]
+            obj = Stops(stop_id, stop_code, stop_name, None, stop_desc, stop_lat, stop_lon, zone_id,
+                        stop_url, None, None, stop_timezone, wheelchair_boarding)
+            stops[stop_id] = obj
         elif function == "transfers":
             pass
         elif function == "trips":

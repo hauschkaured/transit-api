@@ -1,6 +1,6 @@
 from fetcher import *
 from datetime import datetime
-from trip_processing import *
+from functions import *
 
 import pprint as PP
 
@@ -44,27 +44,22 @@ def data_select(foo, function, city):
     if city == "satx":
         vehicle_data = main(via_bus_vehicles, "./via_bus_vehicles.out")
         trip_data = main(via_bus_trips, "./via_bus_trips.out")
-        data = processing(vehicle_data)
-        for i in data.entity:
-            print(data.entity[i])
-
+        vdata = processing(vehicle_data)
+        tdata = processing(trip_data)
     elif city == "pgh":
         vehicle_data = main(prt_bus_vehicles, "./prt_bus_vehicles.out")
         trip_data = main(prt_bus_trips, "./prt_bus_trips.out")
         # trainData = main(prt_train_vehicles, "./prt_train_vehicles.out")
         # trainTripData = main(prt_train_trips, "./prt_train_trips.out")
-        # busDict = vehicle_processing_prt(busData)
-        # busTripDict = trip_processing_prt(busTripData)
-        # trainDict = vehicle_processing_prt(trainData)
-        # trainTripDict = trip_processing_prt(trainTripData)
-        data = processing(vehicle_data)
-        for i in data.entity:
-            print(data.entity[i])
+        vdata = processing(vehicle_data)
+        tdata = processing(trip_data)
     for item in raw_data.split(','):
-        print(item.strip())
+        print(f"{item.strip()} !")
+        print(f"{function}")
         if function == "Bus":
-            if item.count('-') < 0:
-                values = list_of_values(foo)
+            print(f"{item}")
+            if item.count('-') > 0:
+                values = list_of_values(item)
                 min_val = values[0]
                 max_val = values[1]
         elif function == "Stop":

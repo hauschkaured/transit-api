@@ -1,9 +1,4 @@
 from realtime_interface import *
-import pprint as PP
-
-pp = PP.PrettyPrinter(indent=2)
-pprint = pp.pprint
-
 
 def get(foo, attr):
     if attr in foo:
@@ -61,14 +56,12 @@ def stop_time_update_get(foo):
             stop_id = get(i, "stopId")
             stop_sequence = get(i, "stopSequence")
             obj = StopTimeUpdate(stop_sequence, stop_id, arrival, departure,
-                                              None, schedule_relationship,
-                                              None)
+                                 None, schedule_relationship,
+                                 None)
             stop_time_list.append(obj)
         return stop_time_list
     else:
         return None
-
-
 
 
 def trip_get(foo):
@@ -88,7 +81,6 @@ def trip_update_get(foo):
         timestamp = get(foo["tripUpdate"], "timestamp")
         trip = trip_get(foo["tripUpdate"])
         vehicle = vehicle_get(foo["tripUpdate"])
-        pprint(foo["tripUpdate"])
         trip_update = TripUpdate(stop_time_update, trip, timestamp, vehicle, None, None)
         return trip_update
     else:
@@ -117,9 +109,8 @@ def entity_get(foo):
         id = get(entity, "id")
         vehicle_position = vehicle_position_get(entity)
         trip_update = trip_update_get(entity)
-        print(trip_update)
         item = FeedEntity(id, None, vehicle_position, trip_update, None, None)
-        id_dict[vehicle_position.vehicle.id] = item
+        id_dict[id] = item
     return id_dict
 
 
@@ -139,6 +130,3 @@ def processing(foo):
     return data
 
     # Dataset
-
-
-
