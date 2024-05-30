@@ -44,8 +44,9 @@ def data_select(foo, function, city):
     if city == "satx":
         vehicle_data = main(via_bus_vehicles, "./via_bus_vehicles.out")
         trip_data = main(via_bus_trips, "./via_bus_trips.out")
-        pprint(trip_data)
-        trip_processing(trip_data)
+        data = processing(vehicle_data)
+        for i in data.entity:
+            print(data.entity[i])
 
     elif city == "pgh":
         vehicle_data = main(prt_bus_vehicles, "./prt_bus_vehicles.out")
@@ -56,8 +57,9 @@ def data_select(foo, function, city):
         # busTripDict = trip_processing_prt(busTripData)
         # trainDict = vehicle_processing_prt(trainData)
         # trainTripDict = trip_processing_prt(trainTripData)
-        pprint(trip_data)
-        trip_processing(trip_data)
+        data = processing(vehicle_data)
+        for i in data.entity:
+            print(data.entity[i])
     for item in raw_data.split(','):
         print(item.strip())
         if function == "Bus":
