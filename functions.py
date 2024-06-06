@@ -34,9 +34,11 @@ def bus_trip(foo, trip, vdata, tdata, city):
     bus = vdata.entity[foo]
     route = bus.vehicle.trip.route_id
     trips = static_fetcher(city, "trips")
-    headsign = trips[trip].trip_headsign
-    print(f"#{foo} {route} {headsign} {end}")
-
+    if trip in trips:
+        headsign = trips[trip].trip_headsign
+        print(f"\x1b[34m#{foo} \x1b[33m{route} \x1b[0m {headsign} {end}")
+    else:
+        print(f"\x1b[34m#{foo} \x1b[33m{route} \x1b[0m {end}")
 
 def bus_no_trip(foo, vdata):
     pass
@@ -44,7 +46,7 @@ def bus_no_trip(foo, vdata):
 
 def bus_information_printer(foo, bus_route_dict, vdata, tdata, city):
     if foo in bus_route_dict:
-        if bus_route_dict[foo] != None:
+        if bus_route_dict[foo] is not None:
             trip = bus_route_dict[foo]
             bus_trip(foo, trip, vdata, tdata, city)
         else:

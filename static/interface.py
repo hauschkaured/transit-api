@@ -337,7 +337,7 @@ def static_fetcher(foo, function):
         result = text_processing(text, function, foo)
         return result
     elif foo == "satx":
-        url = "static/satx/" + f"{function}" + ".txt"
+        url = "static/san_antonio/" + f"{function}" + ".txt"
         text = open(url, "r")
         result = text_processing(text, function, foo)
         return result

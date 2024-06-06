@@ -1,7 +1,5 @@
 from fetcher import *
-from datetime import datetime
 from functions import *
-from static.interface import *
 
 import pprint as PP
 
