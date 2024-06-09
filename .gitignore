@@ -166,3 +166,8 @@ cython_debug/
 *.out
 .DS_Store
 api_key.py
+
+
+# Added by cargo
+
+/target
