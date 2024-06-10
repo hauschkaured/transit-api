@@ -56,9 +56,16 @@ def data_select(foo, function, city):
                 max_val = values[1]
                 buses_in_range(min_val, max_val, vdata, tdata, city)
         elif function == "Stop":
-            pass
+            if item.count('-') > 0:
+                pass
+            else:
+                pass
         elif function == "Route":
-            pass
+            if item.count('-') > 0:
+                pass
+            else:
+                route = raw_data
+                buses_on_route(route, vdata, tdata, city)
 
 
 def mode_select(foo):

@@ -3,7 +3,7 @@ use std::str::Lines;
 
 fn main() {
     // --snip--
-    let file_path = "src/static/sa/agency.txt";
+    let file_path = "static/san_antonio/agency.txt";
     println!("In file {}", file_path);
 
     let file_contents = fs::read_to_string(file_path)
@@ -19,5 +19,6 @@ fn main() {
 fn line_splitter(line: &str) {
     let term = line.split(",");
     let variable: Vec<&str> = term.collect();
+    
     dbg!(variable);
 }
