@@ -1,19 +1,33 @@
 # TransitFoamer
-For doing stuff with transit GTFS-RT data. 
 
-Disclaimer: This project is not currently in a working state. 
+For doing stuff with transit GTFS-RT data.
+Disclaimer: This project is not currently in a well-developed state. 
 
 # Dependencies
 
 This project was written in Python 3.12. It makes use of the `requests` module to 
 fetch data from URLs. It makes use of the `protobuf` package to parse the protobuf
-binary encodings that are fetched from the URLs. 
+binary encodings that are fetched from the URLs.
 
-# Documentation
+# Use
 
-Go to [Documentation.md](Documentation).
+To use TransitFoamer, simply run the file `main_new.py` with `python3`.
+
+# Outline
+
+`main_new.py` runs the interactive layer of the program.
+`fetcher.py` grabs the GTFS-RT data from the URL to which it is provided, outputs a dictionary.
+`trip_processing.py` converts the output dictionary from `fetcher`
 
 # Version List
+
+v0.5
+Significant reworking to base functions done. PRT API calls still not totally integrated into app. 
+Two key files added: 
+- realtime_interface.py
+- static/interface.py
+These provide descriptions of the data hierarchically and classify the data into a manner which corresponds
+to the GTFS specification. 
 
 v0.4.2
 Added PRT API for more detailed information about vehicles and added the ability to 

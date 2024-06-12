@@ -1,8 +1,6 @@
 from fetcher import *
 from datetime import datetime
 
-from static.gtfs_agency import *
-from static.gtfs_calendar_dates import *
 
 from static import interface
 

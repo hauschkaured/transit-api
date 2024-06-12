@@ -276,8 +276,8 @@ def text_processing(text, function, foo):
                             None, None, shape_dist_traveled, timepoint,
                             None, None)
             stop_times[stop_id] = obj
-        elif function == "stops":
-            stop_id = item_list[0]
+        elif function == "stops":  # Needs to be re implemented! Current problem
+            stop_id = item_list[0]  # Assigns one stop code to one list iten, when it must be done to several.
             stop_code = item_list[1]
             stop_name = item_list[2]
             stop_desc = item_list[3]

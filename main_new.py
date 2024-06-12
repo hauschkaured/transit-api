@@ -37,11 +37,13 @@ def data_select(foo, function, city):
     length = len(function)
     raw_data = foo[length+1:]
     if city == "satx":
+        # Online
         vehicle_data = main(via_bus_vehicles, "./via_bus_vehicles.out")
         trip_data = main(via_bus_trips, "./via_bus_trips.out")
         vdata = processing(vehicle_data, "vehicle_position")
         tdata = processing(trip_data, "trip_update")
     elif city == "pgh":
+        # Online
         vehicle_data = main(prt_bus_vehicles, "./prt_bus_vehicles.out")
         trip_data = main(prt_bus_trips, "./prt_bus_trips.out")
         # trainData = main(prt_train_vehicles, "./prt_train_vehicles.out")

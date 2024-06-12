@@ -1,4 +1,4 @@
-from realtime_interface import *
+from realtime.interface import *
 import pprint as PP
 
 pp = PP.PrettyPrinter(indent=2)
