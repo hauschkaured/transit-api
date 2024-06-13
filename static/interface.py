@@ -295,9 +295,9 @@ def text_processing(text, function, foo):
         elif function == "transfers":
             pass
         elif function == "trips":
-            trip_id = item_list[0]
-            route_id = item_list[1]
-            service_id = item_list[2]
+            route_id = item_list[0]
+            service_id = item_list[1]
+            trip_id = item_list[2]
             headsign = item_list[3]
             short_name = item_list[4]
             direction_id = item_list[5]

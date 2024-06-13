@@ -27,7 +27,6 @@ def write_to_file(path: str, content: str) -> None:
     """
     Writes the content string to the specified path
     """
-    path = "realtime"
     with open(path, 'w') as f:
         f.write(content)
 

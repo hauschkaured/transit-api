@@ -1,5 +1,6 @@
 from fetcher import *
 from functions import *
+from trip_processing import *
 
 import pprint as PP
 

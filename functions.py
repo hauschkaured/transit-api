@@ -30,10 +30,13 @@ def bus_trip(foo, trip, vdata, tdata, city):
         trips = static_fetcher(city, "trips")
         stops = static_fetcher(city, "stops")
 
-        trip_headsign = trips[trip].trip_headsign
-        route_name = routes[bus_route].route_short_name
+        route_name = routes[bus_route].route_long_name
+        if trip in trips:
+            trip_headsign = trips[trip].trip_headsign
+            combined_name = f"\x1b[33mRoute \x1b[34m{bus_route} \x1b[35m{route_name} to \x1b[36m{trip_headsign}\x1b[0m"
+        else:
+            combined_name = f"\x1b[33mRoute \x1b[34m{bus_route} \x1b[35m{route_name}\x1b[0m"
 
-        combined_name = f"\x1b[33mRoute \x1b[34m{bus_route} \x1b[35m{route_name} to \x1b[36m{trip_headsign}"
 
         current_trip = tdata.entity[trip]
         current_stop = current_trip.trip_update.stop_time_update[0]
@@ -68,7 +71,6 @@ def buses_in_range(foo, bar, vdata, tdata, city):
             bus = vdata.entity[str(i)]
             if bus.vehicle.trip:
                 trip = bus.vehicle.trip.trip_id
-                print(tdata.entity[trip])
                 bus_trip(str(i), trip, vdata, tdata, city)
 
 
