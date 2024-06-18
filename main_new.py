@@ -43,6 +43,7 @@ def data_select(foo, function, city):
         trip_data = main(via_bus_trips, "./via_bus_trips.out")
         vdata = processing(vehicle_data, "vehicle_position")
         tdata = processing(trip_data, "trip_update")
+        data_analyzer(raw_data, function, vdata, tdata, city)
     elif city == "pgh":
         # Online
         vehicle_data = main(prt_bus_vehicles, "./prt_bus_vehicles.out")
@@ -51,6 +52,9 @@ def data_select(foo, function, city):
         # trainTripData = main(prt_train_trips, "./prt_train_trips.out")
         vdata = processing(vehicle_data, "vehicle_position")
         tdata = processing(trip_data, "trip_update")
+        data_analyzer(raw_data, function, vdata, tdata, city)
+
+def data_analyzer(raw_data, function, vdata, tdata, city):
     for item in raw_data.split(','):
         if function == "Bus":
             if item.count('-') > 0:
@@ -64,11 +68,9 @@ def data_select(foo, function, city):
             else:
                 pass
         elif function == "Route":
-            if item.count('-') > 0:
-                pass
-            else:
-                route = raw_data
-                buses_on_route(route, vdata, tdata, city)
+            route = item
+            buses_on_route(route, vdata, tdata, city)
+    
 
 
 def mode_select(foo):
@@ -92,7 +94,6 @@ def mode_select(foo):
 
 
 def input_processing_level3(foo, city):
-    print(f"{city} cityname")
     if foo == "help":
         print("The following inputs are legitimate queries:")
         print(">>> Bus 387-405, 406-420")

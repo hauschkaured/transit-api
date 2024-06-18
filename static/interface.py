@@ -260,7 +260,7 @@ def text_processing(text, function, foo):
             shape_dist_traveled = item_list[4]
             obj = Shapes(id, lat, lon, sequence, shape_dist_traveled)
             shapes[id] = obj
-        elif function == "stop_times":
+        elif function == "stop_times":  # Needs to be re-implemented! 
             id = item_list[0]
             arrival = item_list[1]
             departure = item_list[2]

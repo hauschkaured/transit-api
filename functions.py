@@ -46,7 +46,7 @@ def bus_trip(foo, trip, vdata, tdata, city):
             bus_status = status_converter(bus_data.vehicle.current_status)
         else:
             bus_status = "in transit to"
-        string_return = f"#{bus_model} {combined_name} is {bus_status} {current_stop_name}\n"
+        string_return = f"#{bus_model} {combined_name} is {bus_status} {current_stop_name}"
         if current_stop.arrival is not None and current_stop.departure is not None:
             time_a = time_converter(int(current_stop.arrival.time))
             time_d = time_converter(int(current_stop.departure.time))
@@ -64,6 +64,7 @@ def bus_trip(foo, trip, vdata, tdata, city):
 
 
 def buses_in_range(foo, bar, vdata, tdata, city):
+    print(f"{foo}-{bar}")
     min_int = int(foo)
     max_int = int(bar)
     for i in range(min_int, max_int+1):
@@ -75,10 +76,11 @@ def buses_in_range(foo, bar, vdata, tdata, city):
 
 
 def buses_on_route(route, vdata, tdata, city):
+    route_data = str(route)
     for bus in vdata.entity:
         if vdata.entity[bus].vehicle:
             if vdata.entity[bus].vehicle.trip:
-                if vdata.entity[bus].vehicle.trip.route_id == route:
+                if vdata.entity[bus].vehicle.trip.route_id == route_data:
                     bus_id = vdata.entity[bus].vehicle.vehicle.id
                     trip = vdata.entity[bus].vehicle.trip.trip_id
                     print("The following buses are on Route {route}:")
