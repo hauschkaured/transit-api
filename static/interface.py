@@ -1,3 +1,9 @@
+import pprint as PP
+
+pp = PP.PrettyPrinter(indent=2)
+pprint = pp.pprint
+
+
 class Agency:
     def __init__(self, agency_id, agency_name, agency_url, agency_timezone, agency_lang, agency_phone, agency_fare_url):
         self.agency_id = agency_id
@@ -180,6 +186,7 @@ class Trips:
 
 
 def text_processing(text, function, foo):
+    # Dictionaries to return
     agency = dict()
     calendar_dates = dict()
     calendar = dict()
@@ -190,9 +197,14 @@ def text_processing(text, function, foo):
     stops = dict()
     transfers = dict()
     trips = dict()
+    # Reading the data 
     textdata = text.read()
     data = textdata.splitlines()
+    header = data[0]
     removed_header = data[1:]
+    namespace = dict()
+    for line in header:
+
     for line in removed_header:
         items = line.split(',')
         item_list = []
@@ -295,9 +307,9 @@ def text_processing(text, function, foo):
         elif function == "transfers":
             pass
         elif function == "trips":
-            route_id = item_list[0]
-            service_id = item_list[1]
-            trip_id = item_list[2]
+            trip_id= item_list[0]
+            route_id = item_list[1]
+            service_id = item_list[2]
             headsign = item_list[3]
             short_name = item_list[4]
             direction_id = item_list[5]
@@ -332,7 +344,7 @@ def text_processing(text, function, foo):
 
 def static_fetcher(foo, function):
     if foo == "pgh":
-        url = "static/pittsburgh/" + f"{function}" + ".txt"
+        url = "pittsburgh/" + f"{function}" + ".txt"
         text = open(url, "r")
         result = text_processing(text, function, foo)
         return result
@@ -341,3 +353,5 @@ def static_fetcher(foo, function):
         text = open(url, "r")
         result = text_processing(text, function, foo)
         return result
+    
+debug = static_fetcher("pgh", "trips")
