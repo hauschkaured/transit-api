@@ -15,7 +15,6 @@ pub struct Agency {
     fare_url: String
 }
 
-
 pub struct CalendarDates {
     service_id: String,
     date: String,
@@ -34,6 +33,79 @@ pub struct Calendar {
     start_date: String,
     end_date: String
 }
+
+pub struct FareAttributes {
+    fare_id: String,
+    price: String,
+    currency_type: String,
+    payment_method: String,
+    transfers: String,
+    transfer_duration: String
+}
+
+pub struct FareRules {
+
+}
+
+pub struct Frequencies {
+
+}
+
+pub struct Routes {
+    route_id: String,
+    agency_id: String,
+    route_short_name: String,
+    route_long_name: String,
+    route_desc: String,
+    route_type: String,
+    route_url: String,
+    route_color: String,
+    route_text_color: String
+}
+
+pub struct Shapes {
+
+}
+
+pub struct StopTimes {
+
+}
+
+pub struct Stops {
+    stop_id: String,
+    stop_code: String,
+    stop_name: String,
+    stop_desc: String,
+    stop_lat: String,
+    stop_lon: String,
+    zone_id: String,
+    stop_url: String,
+    location_type: String,
+    parent_station: String,
+    stop_timezone: String,
+    wheelchair_boarding: String
+}
+
+pub struct Transfers {
+    from_stop_id: String,
+    to_stop_id: String,
+    transfer_type: String,
+    min_transfer_time: String
+}
+
+pub struct Trips {
+    trip_id: String,
+    route_id: String,
+    service_id: String,
+    trip_headsign: String,
+    trip_short_name: String,
+    direction_id: String,
+    block_id: String,
+    shape_id: String,
+    wheelchair_accessible: String,
+    bikes_allowed: String
+}
+
 
 fn main() {
     // Initialize a list of supported cities.
@@ -106,11 +178,14 @@ fn line_splitter(line: &str, file_name: &str) {
     } else if file_name == "calendar_dates" {
         calendar_dates_assignments(variable);
     } else if file_name == "calendar" {
-
+        calendar_assignments(variable);
+    } else if file_name == "trips" {
+        trips_assignments(variable);
     }
 }
 
-fn agency_assignments(variable: Vec<&str>) {
+fn agency_assignments(variable: Vec<&str>) -> Agency {
+    // Populating agency fields with information. 
     let agency_id = variable[0].to_string();
     let agency_name = variable[1].to_string();
     let agency_url = variable[2].to_string();
@@ -118,11 +193,83 @@ fn agency_assignments(variable: Vec<&str>) {
     let agency_lang = variable[4].to_string();
     let agency_phone = variable[5].to_string();
     let agency_fare_url = variable[6].to_string();
+    
+    let agency_info = Agency {
+        id: agency_id, 
+        name: agency_name, 
+        url: agency_url, 
+        timezone: agency_timezone,
+        lang: agency_lang, 
+        phone: agency_phone, 
+        fare_url: agency_fare_url,
+    };
+    agency_info
 }
 
-fn calendar_dates_assignments(variable: Vec<&str>) {
+fn calendar_dates_assignments(variable: Vec<&str>) -> CalendarDates {
+    // Populating calendar_dates fields with information. 
     let service_id = variable[0].to_string();
     let date = variable[1].to_string();
     let exception_type = variable[2].to_string();
+
+    let calendar_dates_info = CalendarDates {
+        service_id: service_id,
+        date: date,
+        exception_type: exception_type,
+    };
+    calendar_dates_info
 }
 
+fn calendar_assignments(variable: Vec<&str>) -> Calendar {
+    let service_id = variable[0].to_string();
+    let monday = variable[1].to_string();
+    let tuesday = variable[2].to_string();
+    let wednesday = variable[3].to_string();
+    let thursday = variable[4].to_string();
+    let friday = variable[5].to_string();
+    let saturday = variable[6].to_string();
+    let sunday = variable[7].to_string();
+    let start_date = variable[8].to_string();
+    let end_date = variable[9].to_string();
+
+    let calendar_info = Calendar {
+        service_id: service_id,
+        monday: monday,
+        tuesday: tuesday,
+        wednesday: wednesday,
+        thursday: thursday,
+        friday: friday,
+        saturday: saturday,
+        sunday: sunday,
+        start_date: start_date,
+        end_date: end_date,
+    };
+    calendar_info
+}
+
+fn trips_assignments(variable: Vec<&str>) -> Trips {
+    let trip_id = variable[0].to_string();
+    let route_id = variable[1].to_string();
+    let service_id = variable[2].to_string();
+    let trip_headsign = variable[3].to_string();
+    let trip_short_name = variable[4].to_string();
+    let direction_id = variable[5].to_string();
+    let block_id = variable[6].to_string();
+    let shape_id = variable[7].to_string();
+    let wheelchair_accessible = variable[8].to_string();
+    let bikes_allowed = variable[9].to_string();
+
+    let trips_info = Trips {
+        trip_id: trip_id,
+        route_id: route_id,
+        service_id: service_id,
+        trip_headsign: trip_headsign,
+        trip_short_name: trip_short_name,
+        direction_id: direction_id,
+        block_id: block_id,
+        shape_id: shape_id,
+        wheelchair_accessible: wheelchair_accessible,
+        bikes_allowed: bikes_allowed
+    };
+    trips_info
+}
