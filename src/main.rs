@@ -6,33 +6,33 @@ use std::collections::HashSet;
 use std::collections::HashMap;
 
 pub struct Agency {
-    id: &str,
-    name: &str,
-    url: &str,
-    timezone: &str,
-    lang: &str,
-    phone: &str,
-    fare_url: &str
+    id: String,
+    name: String,
+    url: String,
+    timezone: String,
+    lang: String,
+    phone: String,
+    fare_url: String
 }
 
 
 pub struct CalendarDates {
-    service_id: &str,
-    date: &str,
-    exception_type: &str
+    service_id: String,
+    date: String,
+    exception_type: String
 }
 
 pub struct Calendar {
-    service_id: &str,
-    monday: &str,
-    tuesday: &str,
-    wednesday: &str,
-    thursday: &str,
-    friday: &str,
-    saturday: &str,
-    sunday: &str,
-    start_date: &str,
-    end_date: &str
+    service_id: String,
+    monday: String,
+    tuesday: String,
+    wednesday: String,
+    thursday: String,
+    friday: String,
+    saturday: String,
+    sunday: String,
+    start_date: String,
+    end_date: String
 }
 
 fn main() {
@@ -108,23 +108,21 @@ fn line_splitter(line: &str, file_name: &str) {
     } else if file_name == "calendar" {
 
     }
-    
-    dbg!(variable);
 }
 
 fn agency_assignments(variable: Vec<&str>) {
-    let agency_id = variable[0];
-    let agency_name = variable[1];
-    let agency_url = variable[2];
-    let agency_timezone = variable[3];
-    let agency_lang = variable[4];
-    let agency_phone = variable[5];
-    let agency_fare_url = variable[6];
+    let agency_id = variable[0].to_string();
+    let agency_name = variable[1].to_string();
+    let agency_url = variable[2].to_string();
+    let agency_timezone = variable[3].to_string();
+    let agency_lang = variable[4].to_string();
+    let agency_phone = variable[5].to_string();
+    let agency_fare_url = variable[6].to_string();
 }
 
 fn calendar_dates_assignments(variable: Vec<&str>) {
-    let service_id = variable[0];
-    let date = variable[1];
-    let exception_type = variable[2];
+    let service_id = variable[0].to_string();
+    let date = variable[1].to_string();
+    let exception_type = variable[2].to_string();
 }
 
