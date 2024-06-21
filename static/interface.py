@@ -203,8 +203,6 @@ def text_processing(text, function, foo):
     header = data[0]
     removed_header = data[1:]
     namespace = dict()
-    for line in header:
-
     for line in removed_header:
         items = line.split(',')
         item_list = []
