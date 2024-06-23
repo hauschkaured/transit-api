@@ -152,17 +152,19 @@ fn main() {
     let city_name = &args[1];
     let file_name = &args[2];
 
-    let file_path = "static/san_antonio/agency.txt";
+    let mut file_path = "static/".to_string();
+    file_path.push_str(city_name);
+    file_path.push('/');
+    file_path.push_str(file_name);
+    file_path.push_str(".txt");
+
     println!("In file {}", file_path);
     let file_contents = fs::read_to_string(file_path)
         .expect("File read should be successful.");
 
     let mut line_iterator: Lines = file_contents.lines();
 
-    let header = line_iterator.nth(0);
-    dbg!(header);
-
-
+    // let header: Option<&str> = line_iterator.nth(0);
 
     for line in line_iterator {
         line_splitter(line, file_name);
@@ -192,6 +194,8 @@ fn line_splitter(line: &str, file_name: &str) {
         let term = routes_assignments(variable);
         let route_id = term.route_id.to_string();
         routes.insert(route_id, term);
+        for (key, value) in &routes {
+            println!("{}: {}", key, value); }
     } else if file_name == "stops" {
         let term = stops_assignments(variable);
     } else if file_name == "trips" {
