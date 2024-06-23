@@ -247,6 +247,18 @@ fn calendar_assignments(variable: Vec<&str>) -> Calendar {
     calendar_info
 }
 
+fn routes_assignments(variable: Vec<&str>) -> Routes {
+    let route_id = variable[0].to_string();
+    let agency_id = variable[1].to_string();
+    let route_short_name = variable[2].to_string();
+    let route_long_name = variable[3].to_string();
+    let route_desc = variable[4].to_string();
+    let route_type = variable[5].to_string();
+    let route_url = variable[6].to_string();
+    let route_color = variable[7].to_string();
+    let route_text_color = variable[8].to_string();
+}
+
 fn trips_assignments(variable: Vec<&str>) -> Trips {
     let trip_id = variable[0].to_string();
     let route_id = variable[1].to_string();
