@@ -173,15 +173,31 @@ fn line_splitter(line: &str, file_name: &str) {
     let term = line.split(",");
     let variable: Vec<&str> = term.collect();
 
+    let mut agency = HashMap::new();
+    // let mut calendar_dates = HashMap::new();
+    // let mut calendar = HashMap::new();
+    let mut routes = HashMap::new();
+    // let mut stops = HashMap::new();
+    // let mut trips = HashMap::new();
+
     if file_name == "agency" {
-        agency_assignments(variable);
+        let term = agency_assignments(variable);
+        let name = term.name.to_string();
+        agency.insert(name, term);
     } else if file_name == "calendar_dates" {
-        calendar_dates_assignments(variable);
+        let term = calendar_dates_assignments(variable);
     } else if file_name == "calendar" {
-        calendar_assignments(variable);
+        let term = calendar_assignments(variable);
+    } else if file_name == "routes" {
+        let term = routes_assignments(variable);
+        let route_id = term.route_id.to_string();
+        routes.insert(route_id, term);
+    } else if file_name == "stops" {
+        let term = stops_assignments(variable);
     } else if file_name == "trips" {
-        trips_assignments(variable);
+        let term = trips_assignments(variable);
     }
+
 }
 
 fn agency_assignments(variable: Vec<&str>) -> Agency {
@@ -257,6 +273,50 @@ fn routes_assignments(variable: Vec<&str>) -> Routes {
     let route_url = variable[6].to_string();
     let route_color = variable[7].to_string();
     let route_text_color = variable[8].to_string();
+
+    let routes_info = Routes {
+        route_id: route_id,
+        agency_id: agency_id,
+        route_short_name: route_short_name,
+        route_long_name: route_long_name,
+        route_desc: route_desc,
+        route_type: route_type,
+        route_url: route_url,
+        route_color: route_color,
+        route_text_color: route_text_color
+    };
+    routes_info
+}
+
+fn stops_assignments(variable: Vec<&str>) -> Stops {
+    let stop_id = variable[0].to_string();
+    let stop_code = variable[1].to_string();
+    let stop_name = variable[2].to_string();
+    let stop_desc = variable[3].to_string(); 
+    let stop_lat = variable[4].to_string();
+    let stop_lon = variable[5].to_string();
+    let zone_id = variable[6].to_string();
+    let stop_url = variable[7].to_string();
+    let location_type = variable[8].to_string();
+    let parent_station = variable[9].to_string();
+    let stop_timezone = variable[10].to_string();
+    let wheelchair_boarding = variable[11].to_string();
+
+    let stops_info = Stops {
+        stop_id: stop_id,
+        stop_code: stop_code,
+        stop_name: stop_name,
+        stop_desc: stop_desc,
+        stop_lat: stop_lat,
+        stop_lon: stop_lon,
+        zone_id: zone_id,
+        stop_url: stop_url,
+        location_type: location_type,
+        parent_station: parent_station,
+        stop_timezone: stop_timezone,
+        wheelchair_boarding: wheelchair_boarding,
+    };
+    stops_info
 }
 
 fn trips_assignments(variable: Vec<&str>) -> Trips {
