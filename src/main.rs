@@ -163,8 +163,8 @@ fn main() {
     //     .expect("File read should be successful.");
     let path = "via_bus_trips.out";
     let file_contents = fs::read_to_string(path);
-    debug!(file_contents);
-    println!("{:#?}",file_contents);
+    let contents_actual = file_contents.unwrap();
+    println!("{}", contents_actual);
 
 
     // let mut line_iterator: Lines = file_contents.lines();
