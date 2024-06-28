@@ -3,7 +3,6 @@ from functions import *
 from trip_processing import *
 
 import pprint as PP
-
 pp = PP.PrettyPrinter(indent=2)
 pprint = pp.pprint
 
