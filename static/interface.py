@@ -351,5 +351,3 @@ def static_fetcher(foo, function):
         text = open(url, "r")
         result = text_processing(text, function, foo)
         return result
-    
-debug = static_fetcher("pgh", "trips")
